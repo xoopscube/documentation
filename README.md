@@ -1,0 +1,2 @@
+# docs
+XOOPSCube Legacy - Documentation
