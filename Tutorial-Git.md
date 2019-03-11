@@ -1,5 +1,10 @@
 # Tutorial - Git
 
+## 1. Git Tutorials
+## 2. Git Tools
+
+### Tutorials
+
 [Git](http://git-scm.com/)<span> </span>is a version control Swiss army knife. A reliable versatile multipurpose revision control tool whose extraordinary flexibility makes it tricky to learn, let alone master.
 
 As Arthur C. Clarke observed, any sufficiently advanced technology is indistinguishable from magic. This is a great way to approach Git: newbies can ignore its inner workings and view Git as a gizmo that can amaze friends and infuriate enemies with its wondrous abilities.
@@ -12,7 +17,6 @@ http://cheat.errtheblog.com/s/git
 ### Git Magic
 
 Rather than go into details, we provide rough instructions for particular effects. After repeated use, gradually you will understand how each trick works, and how to tailor the recipes for your needs.
-
 
 **Translations**
 
@@ -38,5 +42,36 @@ Rather than go into details, we provide rough instructions for particular effect
 *   [Physical book [Amazon.com](http://www.amazon.com/Git-Magic-Ben-Lynn/dp/1451523343/)]: 64 pages, 15.24cm x 22.86cm, black and white. Handy when there is no electricity.
 
 
-<a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" target="_blank">http://www-cs-students.stanford.edu/~blynn/gitmagic/</a>
+Git Magic : <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" target="_blank">http://www-cs-students.stanford.edu/~blynn/gitmagic/</a>
+
+## Git Tools
+
+
+### Github Desktop
+
+Extend your GitHub workflow beyond your browser with GitHub Desktop, completely redesigned with Electron. Get a unified cross-platform experience that’s completely open source and ready to customize. Mac and Windows :
+
+https://desktop.github.com/
+
+### Pull
+ 
+Keep your forks up-to-date via automated PRs https://github.com/apps/pull
+
+a GitHub App that keeps your forks up-to-date with upstream via automated pull requests.
+
+**Prerequisites**
+
+⚠️ Make a backup if you've made changes.
+
+**Basic Setup**
+
+* Just hit install.
+
+Pull app will automatically watch and pull in upstream's default (master) branch to yours with hard reset.
+
+For advanced setup and customizations, please visit wei/pull.
+
+ Github repository : https://github.com/wei/pull
+
+
   
