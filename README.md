@@ -1,2 +1,2 @@
-# docs
+# Documentation
 XOOPSCube Legacy - Documentation
