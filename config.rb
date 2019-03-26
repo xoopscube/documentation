@@ -4,7 +4,6 @@ require './lib/unique_head.rb'
 # Markdown
 set :markdown_engine, :redcarpet
 set :markdown,
-    layout_engine: :erb,
     fenced_code_blocks: true,
     smartypants: true,
     disable_indented_code_blocks: true,
@@ -36,11 +35,6 @@ activate :autoprefixer do |config|
   config.browsers = ['last 2 version', 'Firefox ESR']
   config.cascade  = false
   config.inline   = true
-end
-
-# Apply layout to the folder "about"
-activate :about do |about|
-  about.layout = "frontpage"
 end
 
 # Github pages require relative links
