@@ -15,7 +15,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title><%= current_page.data.title || "API Documentation" %></title>
+    <title><%= current_page.data.title || "Documentation" %></title>
 
     <style>
       <%= Rouge::Theme.find('base16.monokai').render(scope: '.highlight') %>
@@ -57,7 +57,7 @@
       // Console log
       console.log('DOM fully loaded and parsed');
 
-      });
+    });
 
       // Mermaidjs graph renderer
       var config = {
@@ -113,8 +113,6 @@
 
   </div>
 
-
-
     <div class="toc-wrapper">
 
       <% if language_tabs.any? %>
@@ -128,8 +126,6 @@
           <% end %>
         </div>
       <% end %>
-
-
 
       <div id="toc" class="toc-list-h1">
         <% unless current_page.data.home %>
@@ -188,6 +184,8 @@
       </div>
 
     </div>
+
     <a href="#" class="top-nav"><span class="iconify" data-icon="uil:sort-amount-up" data-inline="false"></span>Top</a>
-  </body>
+
+    </body>
 </html>

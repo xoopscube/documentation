@@ -33,9 +33,6 @@
 
     window.addEventListener('DOMContentLoaded', (event) => {
 
-      $(".search-clear-button").click(function() {
-        $("#input-search").reset(); // <-- note val() here
-
       // Top-navigation Show and Hide
       $(window).scroll(function() {
         if ($(this).scrollTop() > 200) {
@@ -53,7 +50,8 @@
 
       // Console log
       console.log('DOM fully loaded and parsed');
-      });
+
+    });
 
       // Mermaidjs graph renderer
       var config = {
