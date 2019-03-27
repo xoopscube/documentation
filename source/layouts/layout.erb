@@ -36,29 +36,86 @@
     <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
 
     <script>
-    $(window).on('load', function() {
 
-    mermaid.initialize();
+    window.addEventListener('DOMContentLoaded', (event) => {
 
-    });
+      // Top-navigation Show and Hide
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('.top-nav').fadeIn(200);
+        } else {
+          $('.top-nav').fadeOut(200);
+        }
+      });
+
+      // Animate Top-navigation
+      $('.top-nav').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 300);
+      });
+
+      // Console log
+      console.log('DOM fully loaded and parsed');
+
+      });
+
+      // Mermaidjs graph renderer
+      var config = {
+          startOnLoad:true,
+          flowchart:{
+              useMaxWidth:false,
+              htmlLabels:true
+          }
+      };
+
+      mermaid.initialize();
+
     </script>
 
   </head>
 
   <body class="<%= page_classes %>" data-languages="<%=h language_tabs.map{ |lang| lang.is_a?(Hash) ? lang.keys.first : lang }.to_json %>">
 
+  <a href="#" id="nav-button">
+  <span>
+    <%= image_tag('navbar.png') %>
+  </span>
+  </a>
 
-    <a href="#" id="nav-button">
-      <span>
-        <%= image_tag('navbar.png') %>
-      </span>
-    </a>
+  <div class="module-topbar">
+      <div class="topbar-logo">
+      <a class="logo" href="/" title="Back to API documentation">
+
+      <span class="iconify" data-icon="uil:cube" data-inline="false">
+      </a>
+      </div>
+          <div class="topbar-index">
+            <div class="topbar-index-tree">
+              <div class="branch-id">
+              <a href="/" aria-label="Log In" class="login-button"><span class="iconify" data-icon="flat-color-icons:flow-chart" data-inline="false"></span></a>
+              </div>
+            </div>
+          </div>
+
+        <% if current_page.data.search %>
+            <div class="topbar-search">
+              <div class="topbar-search-form">
+
+              <input type="text" class="search search-input-field" id="input-search" placeholder="Search">
+              <span class="search-clear-button" id="search-clear-button" ></span>
+              </div>
+                  <ul class="hidden search-options search-results">
+                  <li class="search-option">status: </li>
+                  <li class="search-option">team: </li>
+                  </ul>
+            </div>
+        <% end %>
+
+  </div>
+
+
 
     <div class="toc-wrapper">
-
-      <a href="/" title="Back to API documentation">
-        <%= image_tag "logo.png", width: "200px" %>
-      </a>
 
       <% if language_tabs.any? %>
         <div class="lang-selector">
@@ -72,12 +129,7 @@
         </div>
       <% end %>
 
-      <% if current_page.data.search %>
-        <div class="search">
-          <input type="text" class="search" id="input-search" placeholder="Search">
-        </div>
-        <ul class="search-results"></ul>
-      <% end %>
+
 
       <div id="toc" class="toc-list-h1">
         <% unless current_page.data.home %>
@@ -136,6 +188,6 @@
       </div>
 
     </div>
-
+    <a href="#" class="top-nav"><span class="iconify" data-icon="uil:sort-amount-up" data-inline="false"></span>Top</a>
   </body>
 </html>

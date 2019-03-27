@@ -33,13 +33,8 @@
 
     window.addEventListener('DOMContentLoaded', (event) => {
 
-      let mainNav = document.getElementById('js-menu');
-      let navBarToggle = document.getElementById('js-navbar-toggle');
-
-      navBarToggle.addEventListener('click', function () {
-
-      mainNav.classList.toggle('active');
-      });
+      $(".search-clear-button").click(function() {
+        $("#input-search").reset(); // <-- note val() here
 
       // Top-navigation Show and Hide
       $(window).scroll(function() {
@@ -49,16 +44,18 @@
           $('.top-nav').fadeOut(200);
         }
       });
-      
+
       // Animate Top-navigation
       $('.top-nav').click(function(event) {
         event.preventDefault();
         $('html, body').animate({scrollTop: 0}, 300);
-      });	
+      });
 
+      // Console log
       console.log('DOM fully loaded and parsed');
       });
 
+      // Mermaidjs graph renderer
       var config = {
           startOnLoad:true,
           flowchart:{
@@ -66,6 +63,7 @@
               htmlLabels:true
           }
       };
+
       mermaid.initialize(config);
 
 </script>
@@ -89,7 +87,9 @@
   <!-- Include Footer -->
   <%= partial "includes/footer" %>
 
-</div>
+  <a href="#" class="top-nav"><span class="iconify" data-icon="uil:sort-amount-up" data-inline="false"></span>Top</a>
+
+  </div>
 
   </body>
 </html>
