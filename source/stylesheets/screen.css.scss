@@ -14,7 +14,7 @@
 }
 
 html {
-  background: $main-bg linear-gradient(to bottom, rgba(#000, 0.3), rgba(#212740, 0)) no-repeat top center fixed;
+  background: $main-bg linear-gradient(to bottom, rgba(#000, 0.3), rgba(#212745, 0)) no-repeat top center fixed;
   background-size: cover;
   height: 100%;
 	-webkit-tap-highlight-color: #face74;
@@ -80,6 +80,205 @@ a:active {
   outline: 0;
 }
 
+// ------------------------------------------------------------ TOPBAR
+
+.module-topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #1d1d1d;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.74);
+-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.74);
+box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.74);
+}
+.topbar-logo {
+  float: left;
+  text-align: left;
+  width: 10%;
+}
+.topbar-logo .logo {
+  font-size:25px;
+  background-size: 42px 42px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+.topbar-index {
+  float: right;
+  max-width: 20%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.topbar-index .topbar-index-tree {
+  border-left: 1px solid #3d3c3c;
+  background-color: #1d1d1d;
+  display: inline-block;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+}
+.topbar-index .topbar-index-tree .branch-id {
+  padding: 0 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 25px;
+  text-overflow: ellipsis;
+}
+.topbar-search {
+  display: inline-block;
+  margin: 0 auto;
+}
+.topbar-search .topbar-search-form {
+  display: flex;
+  margin: 11px auto 0;
+  position: relative;
+}
+
+.topbar-search .topbar-search-form .search-input-field {
+  background: #111 url('https://api.iconify.design/flat-color-icons:fine-print.svg') no-repeat top left / contain;
+  border: 1px solid #212745;
+  color: #face74;
+  font-size: 1.15em;
+  font-family: Inconsolata,monospace;
+  height: 30px;
+  width: 220px;
+  padding: 0 42px;
+  background-position-x: 5px;
+  background-position-y: 0px;
+}
+
+.topbar-search .topbar-search-form .search-clear-button {
+  flex-grow: 1;
+  background: url("https://api.iconify.design/mdi:close-circle-outline.svg?color=%23face74") no-repeat center center;
+  border: 0;
+  color: #504b4b;
+  cursor: pointer;
+  padding: 17px;
+  position: absolute;
+  right: 0;
+  opacity: .74;
+}
+.topbar-search .search-options {
+  position: relative;
+  top: -13px;
+  list-style-type: none;
+  background: #2e2e2e;
+  border: 1px solid #504b4b;
+  border-bottom: none;
+}
+.module-topbar .topbar-search .search-option {
+  text-align: left;
+  line-height: 24px;
+  padding: 5px 0 5px 42px;
+  color: #9b9b9b;
+  border: 1px solid #363636;
+  max-width: 304px;
+  cursor: pointer;
+  font-size: 1.15em;
+  font-family: Inconsolata,monospace;
+}
+.module-topbar .topbar-search .search-option {
+  text-align: left;
+  line-height: 24px;
+  padding: 5px 0 5px 42px;
+  color: #9b9b9b;
+  border: 1px solid #363636;
+  max-width: 304px;
+  cursor: pointer;
+  font-size: 1.15em;
+  font-family: Inconsolata,monospace;
+}
+.hidden {
+  display: none!important;
+}
+
+@media (max-width: 812px) {
+  .module-topbar {
+    position: unset;
+    flex-flow: row wrap;
+    height: unset;
+    line-height: unset;
+    min-height: 40px;
+  }
+  .module-topbar .topbar-logo {
+    float: left;
+    text-align: left;
+    width: 10%;
+    visibility: hidden;
+  }
+  .module-topbar .topbar-search {
+    width: 100%;
+    order: 1;
+  }
+  .module-topbar .topbar-search .topbar-search-form {
+    margin: 16px;
+  }
+  .module-topbar .topbar-search .topbar-search-form .search-input-field {
+    width: 100%;
+  }
+  .module-topbar .topbar-search .search-options {
+    top: -17px;
+    margin: 16px;
+  }
+  .module-topbar .topbar-search .search-options .search-option {
+    max-width: unset;
+  }
+
+  .module-topbar .topbar-index {
+      max-width: 65%;
+  }
+  .module-topbar .topbar-index .topbar-index-tree {
+    border: none;
+  }
+  .module-topbar .topbar-index .topbar-index-tree .branch-id {
+    line-height: 50px;
+    border: none;
+  }
+}
+
+// ------------------------------------------------------------ Search Results
+
+.search-results {
+  margin-top: 0;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition-property: height, margin;
+  transition-duration: 180ms;
+  transition-timing-function: ease-in-out;
+  background: $nav-subitem-bg;
+  &.visible {
+    height: 20%;
+    margin-bottom: 1em;
+    z-index: 100;
+  }
+
+  li {
+    margin: 1em $nav-padding;
+    line-height: 1;
+  }
+
+  a {
+    color: $nav-text;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
 // ------------------------------------------------------------ TABLE OF CONTENTS
 
 #toc > ul > li > a > span {
@@ -95,89 +294,27 @@ a:active {
   overflow-x: hidden;
   position: fixed;
   z-index: 30;
-  top: 0;
+  top: 50px;
   left: 0;
   bottom: 0;
   width: $nav-width;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 15px;
+  padding: 1em;
+  margin-top: 1em;
 
+  .toc-menu-title {
+  font: $toc-menu-title;
+  }
 // ------------------------------------------------------------ Code language selector for mobile devices
 
   .lang-selector {
     display: none;
     a {
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
+      padding: 0.5em 0;
     }
   }
 
-// ------------------------------------------------------------ Top of the ToC
-  .logo {
-    display: block;
-    max-width: 100%;
-    margin: $logo-margin;
-  }
-
-  &>.search {
-    position: relative;
-
-    input {
-      background: $nav-bg;
-      border-width: 0 0 1px 0;
-      border-color: $search-box-border-color;
-      padding: 7px 0 7px 20px;
-      box-sizing: border-box;
-      margin: $nav-v-padding $nav-padding;
-      width: $nav-width - ($nav-padding*2);
-      outline: none;
-      color: $nav-text;
-      border-radius: 0; /* ios has a default border radius */
-    }
-
-    &:before {
-      position: absolute;
-      top: 25px;
-      right: 25px;
-      color: $nav-text;
-
-    }
-  }
-
-// ------------------------------------------------------------ Search Results
-
-  .search-results {
-    margin-top: 0;
-    box-sizing: border-box;
-    height: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transition-property: height, margin;
-    transition-duration: 180ms;
-    transition-timing-function: ease-in-out;
-    background: $nav-subitem-bg;
-    &.visible {
-      height: 20%;
-      margin-bottom: 1em;
-    }
-
-    li {
-      margin: 1em $nav-padding;
-      line-height: 1;
-    }
-
-    a {
-      color: $nav-text;
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-
-
-// ------------------------------------------------------------ The Table of Contents
+// ------------------------------------------------------------ TOC Menu
   // is composed of multiple nested
   // unordered lists.  These styles remove the default
   // styling of an unordered list because it is ugly.
@@ -197,25 +334,25 @@ a:active {
 
   // This is the currently selected ToC entry
   .toc-link.active {
-    background-color: $nav-active-bg;
-    color: $nav-active-text;
+    border-left: 5px solid $nav-active-bg;
+    color: $nav-active-bg;
   }
 
   // this is parent links of the currently selected ToC entry
   .toc-link.active-parent {
-    background-color: $nav-active-parent-bg;
+    border-left: 5px solid $nav-active-parent-bg;
     color: $nav-active-parent-text;
   }
 
   .toc-list-h2 {
     display: none;
-    background-color: $nav-subitem-bg;
+    border-left: 5px solid $nav-subitem-bg;
     font-weight: lighter;
   }
 
   .toc-h2 {
     padding-left: $nav-padding + $nav-indent;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .toc-list-h3 {
@@ -225,7 +362,7 @@ a:active {
 
   .toc-h3 {
     padding-left: $nav-padding + $nav-padding + $nav-indent;
-    font-size: 12px;
+    font-size: 14px;
   }
 
 // ------------------------------------------------------------ Footer links to XOOPS Cube Project
@@ -270,12 +407,12 @@ a:active {
     display: block;
     $side-pad: $main-padding / 2 - 8px;
     padding: $side-pad $side-pad $side-pad;
-    background-color: rgba($main-bg, 0.7);
+    background-color: #1d1d1d;
     transform-origin: 0 0;
     transform: rotate(-90deg) translate(-100%, 0);
     border-radius: 0 0 0 5px;
   }
-  padding: 0 1.5em 5em 0; // increase touch size area
+  padding: 0 1em 1em 0; // trick increase touch size area
   display: none;
   position: fixed;
   top: 0;
@@ -285,9 +422,9 @@ a:active {
   text-decoration: none;
   font-weight: normal;
   opacity: 0.7;
-  line-height: 16px;
+  line-height: 20px;
   img {
-    height: 16px;
+    height: 25px;
     vertical-align: bottom;
   }
 
@@ -316,7 +453,7 @@ a:active {
     width: $examples-width;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 50px;
     bottom: 0;
   }
 
@@ -324,20 +461,22 @@ a:active {
     position: fixed;
     z-index: 50;
     border-bottom: 5px solid $lang-select-active-bg;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.74);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.74);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.74);
   }
 }
 
 .lang-selector {
-  background-color: $lang-select-bg;
+  background-color: #1d1d1d;
   width: 100%;
-  font-weight: bold;
   a {
     display: block;
     float:left;
     color: $lang-select-text;
     text-decoration: none;
     padding: 0 10px;
-    line-height: 30px;
+    line-height: 40px;
     outline: 0;
 
     &:active, &:focus {
@@ -366,6 +505,7 @@ a:active {
   -webkit-transform: translateZ(0);
   // to place content above the code box
   position: relative;
+  padding-top: 2em;
   z-index: 30;
   &:after {
     content: '';
@@ -418,8 +558,8 @@ a:active {
     border-bottom: 2px solid $main-bg;
   }
   table {
-    margin-bottom: 1em;
-    overflow: auto;
+    margin: 1em auto;
+    /* overflow: auto; */
     th,td {
       text-align: left;
       vertical-align: top;
@@ -504,8 +644,9 @@ a:active {
 .content {
   pre, blockquote {
     background-color: $code-bg;
+    border-radius:7px;
     color: #fff;
-    margin: 0;
+    margin: 1em;
     width: $examples-width;
     float:right;
     clear:right;
@@ -529,8 +670,7 @@ a:active {
       background-color: $code-annotation-bg;
       padding: $code-annotation-padding 2em;
       color: #eee;    border-top-right-radius: var(--border-radius-8);
-      border-top-left-radius: 8px;
-      border-top-left-radius: 8px;
+      border-radius: 7px;
     }
   }
 }
@@ -564,7 +704,7 @@ a:active {
   }
   .logo {
     display: inline-block;
-    font-size: 22px;
+    font-size: 25px;
     margin-top: 10px;
     margin-left: 20px;
   }
@@ -598,6 +738,8 @@ h2 {
   }
 
 .home-cta {
+  text-align: left;
+  padding:1em 2.5em;
   margin-bottom: 30px;
 }
 // ------------------------------------------------------------ CARD
@@ -695,7 +837,6 @@ a.btn-big {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 2em;
 }
 flex-row > h1.hero-tile {
   text-align: center;
@@ -755,7 +896,8 @@ flex-row > h1.hero-tile {
 	background-color: rgba(0, 0, 0, 0.3);
 	font-size: 12px;
 	padding: 1em;
-	display: none;
+  display: none;
+  z-index:1000;
 }
 .top-nav:hover {
   color:#111;
@@ -829,33 +971,33 @@ flex-row > h1.hero-tile {
 @media (max-width: $tablet-width) {
   .toc-wrapper {
     left: -$nav-width;
+    top: -15px;
 
     &.open {
-      background: $nav-bg;
+      background: #1d1d1d;
       left: 0;
     }
   }
-  .site-header {
-    padding-top: 0;
-    height: inherit;
-      -ms-flex-preferred-size: 0;
-      flex-basis: 0;
-      -ms-flex-positive: 1;
-      flex-grow: 1;
-      max-width: 100%;
+  .toc-wrapper .lang-selector {
+    margin:0 0 1em 0;
+    position: relative;
+    display: block;
+    top: -15px;
+    left:-5px;
+    font-size:13px;
+    border-bottom: 5px solid $lang-select-active-bg;
+    -webkit-box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.74);
+    -moz-box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.74);
+    box-shadow: 1px 0px 2px 0px rgba(0,0,0,0.74);
   }
-  .site-header-title {
-    display: none;
+  .page-wrapper .lang-selector {
+    position: relative;
+    display: block;
   }
-  .site-header nav {
-    margin-left: inherit;
-    justify-content: inherit;
-    width:100%;
-    justify-content: flex-end;
+  .toc-wrapper .lang-selector a {
+    padding: 5px 8px;
   }
-  .site-header-title {
-    margin-left: none;
-  }
+
   .page-wrapper {
     margin-left: 0;
   }
@@ -877,7 +1019,11 @@ flex-row > h1.hero-tile {
     flex: 1
   }
   .flex-double-column {
-    flex: 2
+    flex: 1
+  }
+  table {
+    margin: 1em auto;
+    width:100%;
   }
 }
 
@@ -888,10 +1034,7 @@ flex-row > h1.hero-tile {
    display: none;
   }
   %left-col {
-    margin-right: 0;
-  }
-  .toc-wrapper .lang-selector {
-    display: block;
+    margin-right: 1em;
   }
   .page-wrapper .lang-selector {
     display: none;
@@ -910,18 +1053,16 @@ flex-row > h1.hero-tile {
   .container {
     max-width: 540px;
   }
-  .site-header {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%;
-  }
+
   .flex-column {
     flex: 1
   }
   .flex-double-column {
-    flex: 2
+    flex: 1
+  }
+  table {
+    margin: 1em auto;
+    width:100%;
   }
 }
 

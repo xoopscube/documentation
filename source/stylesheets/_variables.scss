@@ -1,13 +1,13 @@
-// !! CUSTOMIZE IS NOT FULL IMPLEMENTED !!
+// CUSTOMIZE IS NOT FULL IMPLEMENTED !!
 // Use these settings to help adjust the appearance
 
 // BACKGROUND COLORS
 
-$nav-bg: #212740 !default;
-$examples-bg: #212740 !default;
-$code-bg: #1E2224 !default;
+$nav-bg: #212745 !default;
+$examples-bg: #212745 !default;
+$code-bg: rgba(40, 48, 70, 0.7) !default;
 $code-annotation-bg: #191D1F !default;
-$nav-subitem-bg: #212740 !default;
+$nav-subitem-bg: #212745 !default;
 $nav-active-bg: rgb(250, 206, 116) !default;
 $nav-active-parent-bg: #212745 !default; // parent links of the current section
 $lang-select-border: #191D1F !default;
@@ -41,6 +41,7 @@ $main-padding: 30px !default; // padding to left and right of content & examples
 $nav-padding: 20px !default; // padding to left and right of navbar
 $nav-v-padding: 20px !default; // padding used vertically around search boxes and results
 $nav-indent: 20px !default; // extra padding for ToC subitems
+$toc-menu-title: 15px !default; // Toc Menu Title below nav
 $code-annotation-padding: 15px !default; // padding inside code annotations
 $h1-margin-bottom: 20px !default; // padding under the largest header tags
 $hero-title: 27px !default;
@@ -62,14 +63,13 @@ $phone-width: $tablet-width - $nav-width !default; // min width before reverting
 
 %code-font {
   font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
 
 // OTHER
-
-$nav-footer-border-color: #212740 !default;
+$nav-footer-border-color: #212745 !default;
 $search-box-border-color: #ABC !default;
 $table-th-border-color: #191D1F !default;
 
@@ -81,4 +81,9 @@ $table-th-border-color: #191D1F !default;
 %break-words {
     word-break: break-all;
     hyphens: auto;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
