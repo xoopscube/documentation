@@ -65,6 +65,12 @@
     // ESC clears the field
     if (event.keyCode === 27) searchInput.value = '';
 
+    // Search clear button
+    let button = document.querySelector(".search-clear-button");
+    button.addEventListener("click", () => {
+      searchInput.value = '';
+    });
+
     if (searchInput.value) {
       var results = index.search(searchInput.value).filter(function(r) {
         return r.score > 0.0001;
