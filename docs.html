@@ -1,0 +1,341 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Documentation</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #f8f8f2;
+  background-color: #272822;
+}
+.highlight .err {
+  color: #272822;
+  background-color: #f92672;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #f8f8f2;
+}
+.highlight .p, .highlight .pi {
+  color: #f8f8f2;
+}
+.highlight .gi {
+  color: #a6e22e;
+}
+.highlight .gd {
+  color: #f92672;
+}
+.highlight .gh {
+  color: #66d9ef;
+  background-color: #272822;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #ae81ff;
+}
+.highlight .kc {
+  color: #fd971f;
+}
+.highlight .kt {
+  color: #fd971f;
+}
+.highlight .kd {
+  color: #fd971f;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #a6e22e;
+}
+.highlight .sr {
+  color: #a1efe4;
+}
+.highlight .si {
+  color: #cc6633;
+}
+.highlight .se {
+  color: #cc6633;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #66d9ef;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #a6e22e;
+}
+.highlight .ss {
+  color: #a6e22e;
+}
+    </style>
+
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+
+    <link href="images/images/favicon.ico" rel="icon" type="image/ico" />
+
+      <script src="javascripts/all.js"></script>
+
+    <script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+
+    <script>
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+      // Top-navigation Show and Hide
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('.top-nav').fadeIn(200);
+        } else {
+          $('.top-nav').fadeOut(200);
+        }
+      });
+
+      // Animate Top-navigation
+      $('.top-nav').click(function(event) {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 300);
+      });
+
+      // Console log
+      console.log('DOM fully loaded and parsed');
+
+    });
+
+      // Mermaidjs graph renderer
+      var config = {
+          startOnLoad:true,
+          flowchart:{
+              useMaxWidth:false,
+              htmlLabels:true
+          }
+      };
+
+      mermaid.initialize();
+
+    </script>
+
+  </head>
+
+  <body class="docs" data-languages="[&quot;php&quot;,&quot;smarty&quot;,&quot;html&quot;,&quot;javascript&quot;]">
+
+  <a href="#" id="nav-button">
+  <span>
+    <img src="images/navbar.png" alt="Navbar" />
+  </span>
+  </a>
+
+  <div class="module-topbar">
+      <div class="topbar-logo">
+      <a class="logo" href="/" title="Back to API documentation">
+
+      <span class="iconify" data-icon="uil:cube" data-inline="false">
+      </a>
+      </div>
+          <div class="topbar-index">
+            <div class="topbar-index-tree">
+              <div class="branch-id">
+              <a href="/" aria-label="Log In" class="login-button"><span class="iconify" data-icon="flat-color-icons:flow-chart" data-inline="false"></span></a>
+              </div>
+            </div>
+          </div>
+
+            <div class="topbar-search">
+              <div class="topbar-search-form">
+
+              <input type="text" class="search search-input-field" id="input-search" placeholder="Search">
+              <span class="search-clear-button" id="search-clear-button" ></span>
+              </div>
+                  <ul class="hidden search-options search-results">
+                  <li class="search-option">status: </li>
+                  <li class="search-option">team: </li>
+                  </ul>
+            </div>
+
+  </div>
+
+    <div class="toc-wrapper">
+
+        <div class="lang-selector">
+              <a href="#" data-language-name="php">php</a>
+              <a href="#" data-language-name="smarty">smarty</a>
+              <a href="#" data-language-name="html">html</a>
+              <a href="#" data-language-name="javascript">javascript</a>
+        </div>
+
+      <div id="toc" class="toc-list-h1">
+          <a class="faux-toc-link" href="/"><span class="iconify" data-icon="uil:sitemap" data-inline="false"></span> Back to documentation</a>
+
+          <li>
+            <a href="#getting-started" class="toc-h1 toc-link" data-title="Getting Started">Getting Started</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#guide-introduction" class="toc-h2 toc-link" data-title="Guide introduction">Guide introduction</a>
+                  </li>
+                  <li>
+                    <a href="#git-workflow" class="toc-h2 toc-link" data-title="Git Workflow">Git Workflow</a>
+                  </li>
+                  <li>
+                    <a href="#questions-need-help-found-a-bug" class="toc-h2 toc-link" data-title="Questions? Need Help? Found a bug?">Questions? Need Help? Found a bug?</a>
+                  </li>
+              </ul>
+          </li>
+
+      </div>
+
+        <ul class="toc-footer">
+            <li><strong class="toc-menu-title"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> Guides</strong></li>
+            <li><a href='/guides/development.html'>Development</a></li>
+            <li><a href='/guides/design.html'>Documentation</a></li>
+            <li><a href='/guides/delivery.html'>Delivery</a></li>
+            <li><strong class="toc-menu-title"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPSCUBE Project</strong></li>
+            <li><a href='https://github.com/xoopscube/xcl'>XCL Web Application</a></li>
+            <li><a href='https://github.com/xoopscube/documentation'>Documentation</a></li>
+            <li><a href='https://github.com/xoopscube/modules'>Modules</a></li>
+            <li><a href='https://github.com/xoopscube/themes'>Themes UI</a></li>
+            <li><a href='https://github.com/xoopscube/i18n-language'>i18n-language</a></li>
+            <li><a href='https://github.com/xoopscube/preload'>Preload Extensions</a></li>
+            <li><a href='https://github.com/xoopscube/interface'>PHP Interfaces</a></li>
+        </ul>
+    </div>
+
+    <div class="page-wrapper code-page">
+
+      <div class="code-right"></div>
+
+      <div class="content">
+        <h1 id='getting-started'>Getting Started</h1>
+<p>This website documents the public API for <a href="https://github.com/xoopscube">XOOPS Cube</a></p>
+
+<p>You can view code examples in the page area to the right; switch the programming language of the examples with the tabs in the top right.</p>
+
+<p>If anything is missing or seems incorrect, please check the <a href="https://github.com/xoopscube/documentation/issues">GitHub issues</a>
+for existing known issues or <a href="https://github.com/xoopscube/documentation/issues/new">create a new issue</a>.</p>
+<h2 id='guide-introduction'>Guide introduction</h2>
+<p><span class="iconify" data-icon="flat-ui:user-interface" data-inline="false"></span>
+Check out these graph of the folders and the files included in Frontpage layout.
+<aside class="notice">
+You must replace <code>meowmeowmeow</code> with your personal API key.
+</aside></p>
+
+<blockquote>
+<p>To authorize, use this code:</p>
+</blockquote>
+<pre class="highlight markdown tab-markdown"><code>graph LR
+    Localizable --- index
+    index--&gt;Home<span class="p">[</span><span class="nv">En-JA</span><span class="p">]</span>
+    Home<span class="p">[</span><span class="nv">En-JA</span><span class="p">]</span>--&gt;header
+    Home<span class="p">[</span><span class="nv">En-JA</span><span class="p">]</span>--&gt;title
+    Home<span class="p">[</span><span class="nv">En-JA</span><span class="p">]</span>--&gt;content
+    Home<span class="p">[</span><span class="nv">En-JA</span><span class="p">]</span>--&gt;footer
+</code></pre>
+<p><span class="iconify" data-icon="flat-color-icons:workflow" data-inline="false" data-width="48" data-height="48"></span></p>
+
+<p><span class="iconify" data-icon="flat-color-icons:tree-structure" data-inline="false" data-width="48" data-height="48"></span></p>
+
+<div class="mermaid">
+graph LR
+    Localizable --- index
+    index-->Home[En-JA]
+    Home[En-JA]-->header
+    Home[En-JA]-->title
+    Home[En-JA]-->content
+    Home[En-JA]-->footer
+</div>
+<h2 id='git-workflow'>Git Workflow</h2>
+<div class="mermaid">
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+</div>
+<h3 id='prerequisites'>Prerequisites</h3>
+<p>The user-friendly solution is to download :</p>
+
+<ul>
+<li>Virtualbox</li>
+<li>Vagrant</li>
+</ul>
+
+<p>Then, clone the repo to your local machine and start with command in a terminal &#39;vagrant up&#39;</p>
+
+<p>It will download, installl and setup a virtual machine.</p>
+<h3 id='locally'>Locally</h3>
+<p>You&#39;re going to need:</p>
+
+<ul>
+<li><strong>Linux, macOS or Windows</strong></li>
+<li><strong>Ruby, version 2.3.1 or newer</strong></li>
+<li><strong>Bundler</strong> — If the <code>bundle</code> command doesn&#39;t work, just run <code>gem install bundler</code> in a terminal.</li>
+</ul>
+<h3 id='getting-set-up'>Getting Set Up</h3>
+<ol>
+<li>Fork this repository on GitHub.</li>
+<li>Clone <em>your forked repository</em> (not our original one) to your hard drive with <code>git clone https://github.com/YOURUSERNAME/documentation.git</code></li>
+<li><code>cd slate</code></li>
+<li>Initialize and start. You can either do this locally, or with Vagrant:</li>
+</ol>
+<pre class="highlight shell tab-shell"><code><span class="c"># either run this to run locally</span>
+bundle install
+bundle <span class="nb">exec </span>middleman server
+
+<span class="c"># OR run with vagrant</span>
+vagrant up
+</code></pre>
+<p>You can now see the docs at http://localhost:4574.</p>
+
+<p>Now that all is set up on your machine, you can start editing with HTML and Markdown.</p>
+<h2 id='questions-need-help-found-a-bug'>Questions? Need Help? Found a bug?</h2>
+<p>If you&#39;ve got questions about setup, deploying, special feature implementation in your fork,
+or just want to chat with the developer, please feel free to post an <strong>issue</strong> or <strong>request</strong>.</p>
+
+      </div>
+
+      <div class="code-right">
+          <div class="lang-selector">
+                <a href="#" data-language-name="php">php</a>
+                <a href="#" data-language-name="smarty">smarty</a>
+                <a href="#" data-language-name="html">html</a>
+                <a href="#" data-language-name="javascript">javascript</a>
+          </div>
+      </div>
+
+    </div>
+
+    <a href="#" class="top-nav"><span class="iconify" data-icon="uil:sort-amount-up" data-inline="false"></span>Top</a>
+
+    </body>
+</html>
