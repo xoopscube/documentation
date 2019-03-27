@@ -310,7 +310,7 @@
           <div class="study-blurb">
             <h2>Development Tools</h2>
             <p>Build your Web Application Platform - Content Management System practicing continuous integration.</p>
-            <a href="https://xoopscube.github.io/guides/development.html" class="btn btn-big btn-primary card-sticky-button"" role="button">
+            <a href="https://xoopscube.github.io/documentation/guides/development.html" class="btn btn-big btn-primary card-sticky-button"" role="button">
               Read More
             </a>
           </div>
