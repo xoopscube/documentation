@@ -3,7 +3,7 @@ title: Guides
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - php
-  - smarty
+  - md
   - html
   - javascript
 
@@ -36,8 +36,9 @@ You can view code examples in the page area to the right; switch the programming
 
 If anything is missing or seems incorrect, please check the [GitHub issues](https://github.com/xoopscube/documentation/issues)
 for existing known issues or [create a new issue](https://github.com/xoopscube/documentation/issues/new).
+  <h1>Git Workflow</h1>
 
-  <span class="iconify" data-icon="flat-color-icons:workflow" data-inline="false" data-width="48" data-height="48"></span>
+# Layout components
 
   <span class="iconify" data-icon="flat-color-icons:tree-structure" data-inline="false" data-width="48" data-height="48"></span>
 
@@ -51,26 +52,71 @@ for existing known issues or [create a new issue](https://github.com/xoopscube/d
       Home[En-JA]-->footer
   </div>
 
-  ## Git Workflow
+# Git Workflow
 
-  <div class="mermaid">
-  gitGraph:
-  options
-  {
-    "nodeSpacing": 100,
-    "nodeRadius": 10
-  }
-  end
-  commit
-  branch newbranch
-  checkout newbranch
-  commit
-  commit
-  checkout master
-  commit
-  commit
-  merge newbranch
-  </div>
+<span class="iconify" data-icon="flat-color-icons:workflow" data-inline="false" data-width="48" data-height="48"></span>
+
+> Render a workflow graph.
+
+```md
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+```
+> Code HTML
+
+```html
+<div class="mermaid">
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+</div>
+```
+
+<div class="mermaid">
+gitGraph:
+options
+{
+  "nodeSpacing": 100,
+  "nodeRadius": 10
+}
+end
+commit
+branch newbranch
+checkout newbranch
+commit
+commit
+checkout master
+commit
+commit
+merge newbranch
+</div>
 
 ## Test
 

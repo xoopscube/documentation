@@ -87,7 +87,7 @@ a:active {
   top: 0;
   width: 100%;
   z-index: 999;
-  background: #1d1d1d;
+  background: #111127;;
   color: #fff;
   height: 50px;
   line-height: 50px;
@@ -120,7 +120,7 @@ box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.74);
 
 .topbar-index .topbar-index-tree {
   border-left: 1px solid #3d3c3c;
-  background-color: #1d1d1d;
+  background-color: #111127;;
   display: inline-block;
   line-height: 50px;
   width: 100%;
@@ -144,36 +144,36 @@ box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.74);
 }
 
 .topbar-search .topbar-search-form .search-input-field {
-  background: #111 url('https://api.iconify.design/flat-color-icons:fine-print.svg') no-repeat top left / contain;
+  background: #111 url('https://api.iconify.design/mdi-light:magnify.svg?color=%23face74') no-repeat center center / contain;
   border: 1px solid #212745;
   color: #face74;
   font-size: 1.15em;
   font-family: Inconsolata,monospace;
   height: 30px;
-  width: 220px;
-  padding: 0 42px;
+  width: 100%;
+  padding: 0 50px;
   background-position-x: 5px;
   background-position-y: 0px;
 }
 
 .topbar-search .topbar-search-form .search-clear-button {
   flex-grow: 1;
-  background: url("https://api.iconify.design/mdi:close-circle-outline.svg?color=%23face74") no-repeat center center;
+  background: url('https://api.iconify.design/mdi-light:delete.svg?color=%23face74') no-repeat center center / contain;
   border: 0;
-  color: #504b4b;
+  color: #face74;
   cursor: pointer;
-  padding: 17px;
+  padding: 12px;
   position: absolute;
   right: 0;
   opacity: .74;
 }
 .topbar-search .search-options {
   position: relative;
-  top: -13px;
+  top: 10px;
   list-style-type: none;
-  background: #2e2e2e;
+  background: #111127;
   border: 1px solid #504b4b;
-  border-bottom: none;
+  /* border-bottom: none; */
 }
 .module-topbar .topbar-search .search-option {
   text-align: left;
