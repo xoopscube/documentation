@@ -261,10 +261,10 @@
       <a href="/" class="nav-links"><span class="iconify" data-icon="uil:apps" data-inline="true"></span> Home</a>
       </li>
       <li>
-          <a href="/guides.html" class="nav-links"><span class="iconify" data-icon="uil:book-reader" data-inline="false"></span> Guides</a>
+          <a href="https://xoopscube.github.io/documentation/guides.html" class="nav-links"><span class="iconify" data-icon="uil:book-reader" data-inline="false"></span> Guides</a>
       </li>
       <li>
-          <a href="/docs.html" class="nav-links"><span class="iconify" data-icon="uil:books" data-inline="false"></span> Docs</a>
+          <a href="https://xoopscube.github.io/documentation/docs.html" class="nav-links"><span class="iconify" data-icon="uil:books" data-inline="false"></span> Docs</a>
       </li>
       <li>
           <a href="https://github.com/xoopscube" class="nav-links" target="_blank"><span class="iconify" data-icon="fe:github" data-inline="false"></span> Github</a>
@@ -286,10 +286,10 @@
     </span>
     </div>
     <div class="flex-row home-cta">
-      <p><a href="/guides.html" class="btn btn-big btn-primary" >
+      <p><a href="https://xoopscube.github.io/documentation/guides.html" class="btn btn-big btn-primary" >
           Contribute
       </a>
-      <a href="/docs.html" class="btn btn-outline btn-big" >
+      <a href="https://xoopscube.github.io/documentation/docs.html" class="btn btn-outline btn-big" >
       Hello JA World
       </a></p>
     </div>
@@ -310,7 +310,7 @@
           <div class="study-blurb">
             <h2>Development Tools</h2>
             <p>Build your Web Application Platform - Content Management System practicing continuous integration.</p>
-            <a href="/guides/development.html" class="btn btn-big btn-primary card-sticky-button"" role="button">
+            <a href="https://xoopscube.github.io/guides/development.html" class="btn btn-big btn-primary card-sticky-button"" role="button">
               Read More
             </a>
           </div>
@@ -340,7 +340,7 @@
           <div class="study-blurb">
             <h2>Continuous delivery</h2>
             <p>Sync your source code and release new changes to your customers quickly in a sustainable way.</p>
-            <a href="/guides/delivery.html" class="btn btn-big btn-primary card-sticky-button"" role="button">
+            <a href="https://xoopscube.github.io/documentation/guides/delivery.html" class="btn btn-big btn-primary card-sticky-button"" role="button">
               Read More
             </a>
           </div>
@@ -366,7 +366,7 @@
           <div class="study-blurb">
             <h2>Comprehensive Docs</h2>
             <p>Build exactly what you need with modern frameworks and libraries.</p>
-            <a href="/docs.html" class="plain-link card-sticky-button">
+            <a href="https://xoopscube.github.io/documentation/docs.html" class="plain-link card-sticky-button">
               Explore docs <i class="fa fa-angle-right"></i>
             </a>
           </div>
@@ -377,7 +377,7 @@
           <div class="study-blurb">
             <h2>Guides and Tutorials</h2>
             <p>Detailed step-by-step instructions to build integrations quickly and easily.</p>
-            <a href="/guides.html" class="plain-link card-sticky-button">
+            <a href="https://xoopscube.github.io/documentation/guides.html" class="plain-link card-sticky-button">
               Explore guides <i class="fa fa-angle-right"></i>
             </a>
           </div>
