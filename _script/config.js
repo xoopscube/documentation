@@ -7,8 +7,8 @@ window.$docsify = {
   // nameLink: '/',
   // The name link for each route.
   nameLink: {
-    '/fr-fr/': '/fr/home.md',
-    '/ja-jp/': '/ja/home.md',
+    '/fr/': '/fr/home.md',
+    '/ja/': '/ja/home.md',
     '/': '/index'
   },
   // Logo in the sidebar, can be resized by CSS.
