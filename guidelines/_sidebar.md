@@ -1,6 +1,13 @@
 - Guidelines
 
-  - [Quick start](guidelines/ecosystem.md)
+  - [Introduction](guidelines/README.md)
+  - [UI Layout](guidelines/ui-layout.md)
+  - [UI Templates](guidelines/ui-templates.md)
+  - [UI Style](guidelines/ui-style.md)
+  - [UI Components](guidelines/ui-components.md)
+  - [UI Typography](guidelines/ui-typography.md)
+  - [UI Iconography](guidelines/ui-iconography.md)
+  - [Embed Files](guidelines/embed.md)
   - [Basics](guidelines/basics.md)
   - [Mermaid](guidelines/mermaid.md)
   - [Embed Files](guidelines/embed.md)

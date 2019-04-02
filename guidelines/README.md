@@ -21,162 +21,6 @@ This section of guidelines also contains behavior of responsive design.
 
 Design responsive layout grid adapts to screen size and orientation.
 
-#### Components
-
-These guidelines provide specs and usage of UI components that display on interface and a user interacts with them.
-
-UI components include standard controls like input controls, windows, dialogs, panels, menus, views, scrollbars, buttons and many other similar items.
-
-**Navigation**
-
-XCL Navigation enables users to move through an app.
-
-**Search**
-
-XCL Search allows users to quickly find app content
-
-#### Style
-
-Style guidelines define the visual expression of an organization that it presents to the world. Every organization has its own style guide which they use to build logos, colors, icons and typography.
-
-**Color scheme**
-
-Theme color scheme.
-
-**Icons**
-
-Icons used by XCL.
-
-**Typography**
-
-Textual guidelines cover tone and style of text to be used on UI. Text should be understandable for different cultures and audience.
-
-Text specs like font size, color, and style are part of these guidelines. Text displays on UI as fields, labels, messages, and information for user.
-
-What are those system fonts? At the time of this writing, it breaks down as follows:
-
-<table style='margin: 0px'>
-<thead style="box-sizing: border-box;">
-<tr style="background: rgb(51, 51, 52);">
-<th>OS</th>
-<th>Version</th>
-<th>System Font</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Mac OS X</td>
-<td>El Capitan</td>
-<td>
-
-[San Francisco](https://github.com/supermarin/YosemiteSanFranciscoFont)
-</td>
-</tr>
-<tr>
-<td>Mac OS X</td>
-<td>Yosemite</td>
-<td>
-
-[Helvetica Neue](https://www.myfonts.com/fonts/linotype/neue-helvetica/)
-</td>
-</tr>
-<tr>
-
-<td>Mac OS X</td>
-<td>Mavericks</td>
-<td>
-
-[Lucida Grande](https://en.wikipedia.org/wiki/Lucida_Grande)
-</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>Vista</td>
-<td>
-
-[Segoe UI](http://www.microsoft.com/typography/Fonts/family.aspx?FID=331)
-</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>XP</td>
-<td>
-
-[Tahoma](http://www.microsoft.com/typography/fonts/family.aspx?FID=19)
-</td>
-</tr>
-<tr>
-<td>Windows</td>
-<td>3.1 to ME</td>
-<td>
-
-[Microsoft Sans Serif](http://www.microsoft.com/typography/fonts/family.aspx?FID=244)</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>Ice Cream Sandwich (4.0)+</td>
-<td>
-
-[Roboto](https://fonts.google.com/specimen/Roboto)</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>
-Cupcake (1.5) to Honeycomb (3.2.6)</td>
-<td>
-
-[Droid Sans](https://fonts.google.com/specimen/Droid+Sans)</td>
-</tr>
-<tr>
-<td>Ubuntu</td>
-<td>All versions</td>
-<td>
-
-[Ubuntu](http://font.ubuntu.com/)</td>
-</tr>
-</tbody>
-</table>
-
-GitHub uses one simple method applying system fonts on the body element:
-
-```css
-/* System Fonts as used by GitHub */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-```
-
-Other popuplar websites use a similar approach with support for [Oxygen Sans](https://fonts.google.com/specimen/Oxygen) (created for the GNU+Linux operating system) and [Cantarell](https://en.wikipedia.org/wiki/Cantarell_(typeface)) (created for the [GNOME](https://en.wikipedia.org/wiki/GNOME) operating system).
-
-```css
-/* System Fonts as used by Medium and WordPress */
-body {
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-}
-```
-
-> !Note: This method should only be used on the font-family property instead of the font shorthand. 
-
-The limitation of the first method is that you have to call the full stack of fonts each time it's used on an element.
-
-Jonathan Neal offers an alternative method where system fonts are declared using @font-face.
-
-```css
-/* Define the "system" font family */
-@font-face {
-  font-family: system;
-  font-style: normal;
-  font-weight: 300;
-  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-}
-
-/* Now, let's apply it on an element */
-body {
-  font-family: "system";
-}
-```
-> !Note that Jonathan's full example illustrates the capability to define variations of the system font family that was defined in the snippet above to account for italics, bolding, and additional weights.
-
 #### Interaction
 
 Types of interaction (click, gesture, voice) that a user performs with a design, and system response in return to these interactions are part of these guidelines.
@@ -191,12 +35,6 @@ The UI guidelines of an organization cover details of all types of supported pla
 
 Designing an accessible system requires specific set of guidelines for different types of disabled users, so that they can access the design like a normal user.
 
-#### Patterns
-
-Reusable design patterns are included in UI guidelines. These patterns define behavior for certain controls.
-
-Few examples are navigation, search, forms, data formats, states, and pagination.
-
 #### Resources
 
 Guidelines have a collection of resources that can be used while designing a system.
@@ -209,8 +47,8 @@ Below is a collection of UI guidelines from few popular organizations that are h
 
 Microsoft provides innovative experience to its users worldwide and has published design guidelines for its various types of applications.
 
-*   [**Desktop design guidelines**](https://developer.microsoft.com/en-us/windows/desktop/design)<span> </span>are helpful if you want to design beautiful and user-friendly desktop applications to be used on Windows operating system.
-*   For fluent design system, Microsoft provides [UWP Apps design guidelines](https://developer.microsoft.com/en-us/windows/apps/design).
++ [Desktop design guidelines](https://developer.microsoft.com/en-us/windows/desktop/design)<span> </span>are helpful if you want to design beautiful and user-friendly desktop applications to be used on Windows operating system.
++ For fluent design system, Microsoft provides [UWP Apps design guidelines](https://developer.microsoft.com/en-us/windows/apps/design).
 
 #### Apple
 
