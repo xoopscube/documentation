@@ -1,0 +1,6 @@
+- Translations
+  - [:us: English](/)
+  - [:ja: 日本語](/ja/home.md)
+  - [:fr: Français](/fr/home.md)
+  - [:es: Spanish](/es/home.md)
+  - [:ru: Russian](/ru/home.md)
