@@ -2,11 +2,11 @@
 
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/2.0.0/active.svg)](https://www.repostatus.org/#active)
 
-## X-Codex
+## X-Codex documentation
 
-The script converts a folder structure of markdown files to HTML to upload and edit the result to the repository documentation.
+The script converts a folder structure of markdown files to HTML [documentation website](https://xoopscube.github.io/documentation/ 'X-Codex Documentation'). The documents have a link to edit the mardown files on the Github repository.
 
-Templates are easy to identify. The folder or file name starts with _underscore
+Templates are easy to identify. The folder name or the file name starts with _underscore
 
 + _coverpage.md
 + _navbar.md
@@ -42,6 +42,6 @@ Report any issue or suggestion to project Github tracker.
 License
 ----
 
-The project is licensed under the BSD license.
+The project is licensed under the MIT license.
 
 
