@@ -14,7 +14,7 @@ window.$docsify = {
   // Logo in the sidebar, can be resized by CSS.
   logo: '/_media/logo.png',
   // Base path of the website. You can set it to another directory or another domain name.
-  // basePath: '/path/',
+  basePath: '/documentation/',
   // Load the files from another site.
   // basePath: 'https://xoopscube.github.io/documentation/',
   // Load files from other repo.
@@ -120,7 +120,7 @@ window.$docsify = {
       var footer = [
         // '<hr/>',
         '<footer>',
-        '<span><a href="https://github.com/xoopscube">XOOPS CUBE Project</a> &copy;2019</span>',
+        '<span><a href="https://github.com/xoopscube" target="_blank">XOOPS CUBE Project</a> &copy;2019</span>',
         ' - <span>Web Application Platform <a href="https://github.com/xoopscube/xcl" target="_blank">XCL</a> - <span> User Interface <a href="https://github.com/xoopscube/xoopscube.github.io" target="_blank">Prototype</span>',
         '</footer>'
       ].join('');
