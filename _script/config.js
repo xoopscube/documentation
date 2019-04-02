@@ -9,7 +9,7 @@ window.$docsify = {
   nameLink: {
     '/fr/': '/fr/home.md',
     '/ja/': '/ja/home.md',
-    '/': '/index'
+    '/': '/'
   },
   // Logo in the sidebar, can be resized by CSS.
   logo: '/_media/logo.png',

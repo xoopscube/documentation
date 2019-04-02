@@ -22,6 +22,7 @@ graph TD;
     B-->D;
     C-->D;
 ```
+_When you copy the code, remember to remove the parenthesis ( ) around quotes ``` !_
 
 ### Sequence diagram
 
@@ -117,7 +118,7 @@ Class01 : int gorilla
 Class08 <--> C2: Cool label
 ```
 
-When you copy the code, remember to remove the parenthesis () around quotes (```) !
+> When you copy the code, remember to remove the parenthesis ( ) around quotes ``` !
 
 ```md
     (```)mermaid
