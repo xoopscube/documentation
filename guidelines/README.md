@@ -5,11 +5,11 @@ Design guidelines are sets of recommendations towards good practice in design. T
 
 A design guideline (e.g., “text should be easy to read”) sits between a principle in design (e.g., “an interface should be easy to use”) and a standard or rule for implementing it (e.g., “background: white; font-color: black; font-size: 20px”). A design guideline is thus intended to help designers understand how to implement a principle, without restricting their creativity in design, as the commanding inflexibility of a rule might —  Interaction-Design.
 
-#### XCL UI
+#### UI Prototype
 
 The <a href="https://xoopscube.github.io/" target="_blank">XCL User Interface Prototype</a> gives everyone an exact idea of which direction to take. The finalized version of the prototype is handed off for development. This is a far more effective way to communicate a design’s intent than a static screenshot. For example, the crafted prototype shows a responsive alternative to a table in HTML, the common layout format for displaying collections of items through a matrix of rows and columns.
 
-![XCL Prototype ](https://github.com/xoopscube/documentation/blob/master/_media/xcl-prototype.png "XCL User Interface Prototype")
+![XCL Prototype ](https://raw.githubusercontent.com/xoopscube/documentation/master/_media/xcl-prototype.png "XCL User Interface Prototype")
 
 #### Layout 
 
