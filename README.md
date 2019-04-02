@@ -36,7 +36,7 @@ Contribute
 Support
 -------
 
-If you are having issues or if you have suhggestions, please let us know.
+If you are having issues or if you have suggestions, please let us know.
 Report any issue or suggestion to project Github tracker.
 
 License
