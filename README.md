@@ -9,6 +9,12 @@ The script converts a folder structure of markdown files to HTML with a link to 
 + [English docs website](https://xoopscube.github.io/documentation/ 'X-Codex English')
 + [Japanese docs website](https://xoopscube.github.io/documentation/#/ja/ 'X-Codex Japanese')
 
+
+![X-Codex](https://github.com/xoopscube/documentation/blob/master/_media/xcl-codemo-screenshot.png "XCL Documentation")
+
+
+Templates
+----
 Templates are easy to identify. The folder name or the file name starts with _underscore
 
 + _coverpage.md
