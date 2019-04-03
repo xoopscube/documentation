@@ -1,4 +1,4 @@
-### X-Codex
+### <span class="iconify" data-icon="fa-brands:markdown"></span> X-Codex
 
 The script converts a folder structure of markdown files to HTML with a link to edit the mardown files on the Github repository.
 
@@ -18,7 +18,7 @@ Templates are easy to identify. The folder name or the file name starts with _un
 + _navbar.md
 + _sidebar.md
 
-### <span class="iconify" data-icon="fa-brands:markdown"></span>Why Markdown?
+### Why Markdown?
 
 It's easy.  It's not overly bloated, unlike HTML.  Also, as the creator of [markdown] says,
 

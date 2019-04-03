@@ -61,7 +61,7 @@ Settings recommended ...
 
 ### Cache
 
-Fast render cntent !
+Fast render content !
 
 ### SSL
 
