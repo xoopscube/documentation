@@ -19,12 +19,12 @@ window.$docsify = {
   // Logo in the sidebar, can be resized by CSS.
   logo: '/_media/logo.png',
   // 1. Base path of the website. You can set it to another directory or another domain name.
-  basePath: '/documentation/',
+  // basePath: '/documentation/',
   // 2. Load the files from another site.
-  // basePath: 'https://xoopscube.github.io/documentation/',
+  basePath: 'https://xoopscube.github.io/documentation/',
   // 3. Load files from other repo.
   // basePath:
-  // 'https://raw.githubusercontent.com/xoopscube/documentation/gh-pages/',
+  // 'https://raw.githubusercontent.com/xoopscube/documentation/master/',
   // GitHub Corner icon 
   // 1. repo: 'username/repo',
   // 2. repo: 'https://github.com/xoopscube/documentation',

@@ -1,4 +1,0 @@
-- Translations
-  - [:us: English](/)
-  - [:fr: Français](/fr/)
-  - [:jp: 日本語](/ja/)

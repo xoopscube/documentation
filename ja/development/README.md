@@ -1,6 +1,6 @@
 # <span class="iconify" data-icon="mdi:cube-outline"></span> About
 
-### XOOPS Cube ドキュメンテーション**
+### ドキュメンテーション
 
 **XOOPS Cube** is a web application platform : a simple, secure and scalable modular architecture built with PHP, SQL and a smarty powered theming system. The BSD License allows proprietary use and allows the software released under the license to be incorporated into proprietary products. 
 
