@@ -14,7 +14,7 @@ window.$docsify = {
   // Logo in the sidebar, can be resized by CSS.
   logo: '/_media/logo.png',
   // Base path of the website. You can set it to another directory or another domain name.
-  basePath: '/documentation/',
+  //basePath: '/documentation/',
   // Load the files from another site.
   // basePath: 'https://xoopscube.github.io/documentation/',
   // Load files from other repo.

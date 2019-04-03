@@ -27,7 +27,9 @@ function newFunction() {
                 };
                 var header = [
                     '<div style="overflow: auto">',
-                    '<p style="float: right"><a href="',
+                    '<p style="float: right">',
+                    '<span class="iconify" data-icon="mdi:github-circle" data-width="18" data-height="18"></span> ',
+                    '<a href="',
                     docBase,
                     '" target="_blank" onclick="EditOnGithubPlugin.onClick(event)">',
                     title,

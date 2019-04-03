@@ -2,10 +2,10 @@
 
 -   Guidelines
 
-  - [Quick start](guidelines/quickstart.md)
-  - [Basics](guidelines/basics.md)
-  - [Mermaid](guidelines/mermaid.md)
-  - [Embed Files](guidelines/embed.md)
+  - [Introduction](guidelines/)
+  - [Markdown](guidelines/markdown/)
+  - [User Interface](guidelines/user-interface/)
+
 
 - Developement
 

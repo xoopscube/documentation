@@ -1,12 +1,12 @@
 <!-- _coverpage.md -->
 <div class="nav-header">
     <div class="navbar">
-        <a href="#" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube</a>
+        <a href="#" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube Project</a>
         <ul class="navmain">
-        <li><a href="#/about" class="nav-links"><span class="iconify" data-icon="uil:apps" data-inline="true"></span> About</a></li>
-        <li><a href="#/guide" class="nav-links"><span class="iconify" data-icon="uil:book-reader" data-inline="false"></span> Guide</a></li>
-        <li><a href="#/documentation" class="nav-links"><span class="iconify" data-icon="uil:books" data-inline="false"></span> Documentation</a></li>
-        <li><a href="https://github.com/xoopscube" class="nav-links" target="_blank"><span class="iconify" data-icon="fe:github" data-inline="false"></span> Github</a></li>
+        <li><a href="#/about" class="nav-links"><span class="iconify" data-icon="uil:apps"></span> About</a></li>
+        <li><a href="#/guide" class="nav-links"><span class="iconify" data-icon="uil:book-reader"></span> Guide</a></li>
+        <li><a href="#/documentation" class="nav-links"><span class="iconify" data-icon="uil:books"></span> Documentation</a></li>
+        <li><a href="https://github.com/xoopscube" class="nav-links" target="_blank"><span class="iconify" data-icon="fe:github"></span> Github</a></li>
         </ul>
     </div>
 </div>
@@ -39,7 +39,7 @@
     <div class="study-blurb">
         <h2>Continuous delivery</h2>
         <p>Synchronize deployements and continuously delivered projects in a sustainable way.</p>
-        <span class="quick-start"><a href="#/delivery/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> delivery</a></span>
+        <span class="quick-start"><a href="#/delivery/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> Delivery</a></span>
     </div>
 </div>
 <h2 style="margin:1.5em auto 0;">Welcome to XOOPS Cube Project Documentation</h2>

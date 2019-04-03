@@ -1,9 +1,8 @@
 - Guidelines
 
-  - [Quick start](guidelines/ecosystem.md)
-  - [Basics](guidelines/basics.md)
-  - [Mermaid](guidelines/mermaid.md)
-  - [Embed Files](guidelines/embed.md)
+  - [Introduction](guidelines/readme.md)
+  - [Documentation ](guidelines/markdown/)
+  - [User Interface](guidelines/user-interface/)
 
 - Delivery
 
@@ -19,4 +18,4 @@
   - [Download](development/download.md)
   - [Configuration](development/configuration.md)
 
-  [<span class="iconify" data-icon="mdi:account-group"></span> About](/index)
+  [<span class="iconify" data-icon="mdi:account-group"></span> About](/about)

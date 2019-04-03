@@ -1,16 +1,8 @@
 - Guidelines
 
-  - [Introduction](guidelines/README.md)
-  - [UI Layout](guidelines/ui-layout.md)
-  - [UI Templates](guidelines/ui-templates.md)
-  - [UI Style](guidelines/ui-style.md)
-  - [UI Components](guidelines/ui-components.md)
-  - [UI Typography](guidelines/ui-typography.md)
-  - [UI Iconography](guidelines/ui-iconography.md)
-  - [Embed Files](guidelines/embed.md)
-  - [Basics](guidelines/basics.md)
-  - [Mermaid](guidelines/mermaid.md)
-  - [Embed Files](guidelines/embed.md)
+  - [Introduction](guidelines/readme.md)
+  - [Documentation ](guidelines/markdown/)
+  - [User Interface](guidelines/user-interface/)
 
 - Delivery
 
@@ -26,4 +18,4 @@
   - [Download](development/download.md)
   - [Configuration](development/configuration.md)
 
-  [<span class="iconify" data-icon="mdi:account-group"></span> About](/index)
+  [<span class="iconify" data-icon="mdi:account-group"></span> About](/about)
