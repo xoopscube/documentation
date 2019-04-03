@@ -1,22 +1,22 @@
 [<span class="iconify" data-icon="mdi:account-group"></span> About](/about.md)
 
 -   Guidelines
+  - [Quick Start](/ja/guidelines/quick-start.md)
+  - [Design](/ja/guidelines/)
+  - [Markdown](/ja/guidelines/markdown/)
+  - [User Interface](/ja/guidelines/user-interface/)
 
-  - [Quick start](guidelines/quickstart.md)
-  - [Basics](guidelines/basics.md)
-  - [Mermaid](guidelines/mermaid.md)
-  - [Embed Files](guidelines/embed.md)
 
 - Developement
-
-  - [Requirements](/development/requirements.md)
-  - [Download](/development/download.md)
-  - [Configuration](/development/configuration.md)
+  - [Ecosystem](/ja/development/)
+  - [Installation](/ja/development/installation.md)
+  - [Preload](/ja/development/module.md)
+  - [Theme](/ja/development/preload.md)
 
 -   Delivery
-
-  - [X-Update](/delivery/x-update.md)
-  - [Store](/delivery/x-store.md)
-  - [Module](/delivery/update-module.md)
-  - [Theme](/delivery/update-theme.md)
-  - [Extension](/delivery/update-preload.md)
+  - [Introduction](/ja/delivery/)
+  - [X-Update](ja/delivery/setup-x-update.md)
+  - [Store](/ja/delivery/setup-x-store.md)
+  - [Module](/ja/delivery/update-module.md)
+  - [Theme](/ja/delivery/update-theme.md)
+  - [Extension](/ja/delivery/update-preload.md)

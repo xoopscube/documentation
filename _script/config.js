@@ -7,33 +7,36 @@ window.$docsify = {
   // nameLink: '/',
   // The name link for each route.
   nameLink: {
-    '/fr/': '/fr/home.md',
-    '/ja/': '/ja/home.md',
+    '/fr/': '/fr/',
+    '/ja/': '/ja/',
     '/': '/'
   },
   // Logo in the sidebar, can be resized by CSS.
   logo: '/_media/logo.png',
-  // Base path of the website. You can set it to another directory or another domain name.
-  //basePath: '/documentation/',
-  // Load the files from another site.
+  // 1. Base path of the website. You can set it to another directory or another domain name.
+  basePath: '/documentation/',
+  // 2. Load the files from another site.
   // basePath: 'https://xoopscube.github.io/documentation/',
-  // Load files from other repo.
+  // 3. Load files from other repo.
   // basePath:
   // 'https://raw.githubusercontent.com/xoopscube/documentation/gh-pages/',
-  // repo: 'username/repo',
-  // repo: 'https://github.com/xoopscube/documentation',
-  // README.md in your docs folder will be treated as homepage for your website,
-  // but sometimes you may need to serve another file as your homepage.
-  // Change to /home.md.
+  // GitHub Corner icon 
+  // 1. repo: 'username/repo',
+  // 2. repo: 'https://github.com/xoopscube/documentation',
+  // Default homepage index
+  // is the docs folder README.md (uppercase).
+  // Serve another file as your homepage.
+  // 1. Change to /home.md.
   homepage: 'home.md',
-  // Or use the readme in your repo.
+  // 2. Or use the readme in your repo.
   // homepage:
   // 'https://raw.githubusercontent.com/xoopscube/documentation/master/README.md',
-  // Activate the cover feature. If true, it will load from _coverpage.md.
+  // Activate the cover feature.
+  // 1. If true, it will load from _coverpage.md.
   // coverpage: true,
-  // Activate custom file name.
+  // 2. Activate custom file name.
   // coverpage: 'cover.md',
-  // Activate mutiple covers and custom file name.
+  // 3. Activate mutiple covers and custom file name.
   coverpage: {
     '/fr/': '_coverpage-fr.md',
     '/ja/': '_coverpage-ja.md',
@@ -47,9 +50,11 @@ window.$docsify = {
   // Activate only coverpage to load when visiting the home page.
   onlyCover: true,
   // Loads navbar from the Markdown file _navbar.md if true.
-  loadNavbar: false,
+  loadNavbar: true,
   // or else from the path specified.
   // loadNavbar: 'nav.md',
+  // Navbar merged with the sidebar on smaller screens.
+  mergeNavbar: true,
   // Loads sidebar from the Markdown file _sidebar.md if true.
   loadSidebar: true,
   // or else from the path specified.
@@ -62,8 +67,16 @@ window.$docsify = {
   subMaxLevel: 5,
   // Scrolls to the top of the screen when the route is changed.
   auto2top: true,
+  // Execute the script on the page. Only parse the first script tag. If Vue is present, it is 'true' by default.
+  executeScript: true,
+  notFoundPage: {
+    '/fr': '404fr.md',
+    '/ja': 'ja/404ja.md',
+    '/'  : '404.md'
+  },
   // Date format
-  formatUpdated: '{MM}/{DD} {HH}:{mm}',
+  // display the file update date through {docsify-updated} variable.
+  formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
   // Markdown configuration.
   // https://github.com/markedjs/marked
   // You can customize how it renders your Markdown content to HTML.
@@ -127,7 +140,8 @@ window.$docsify = {
       hook.afterEach(function (html) {
         return html + footer;
       });
-    }
+    },
+
   ],
   search: {
     // Localization

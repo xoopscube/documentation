@@ -129,3 +129,23 @@ body {
 }
 ```
 !> _Note_ that Jonathan's full example illustrates the capability to define variations of the system font family that was defined in the snippet above to account for italics, bolding, and additional weights.
+
+The new GitHub font stack has a handful of system fonts, plus some extras as fallback and emoji. Developers love their emoji like anyone else—maybe more.
+
+```css
+/* Define the "system" font family */
+@font-face {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+ Helvetica, Arial, sans-serif,
+ "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+ }
+
+/* Now, let's apply it on an element */
+body {
+  font-family: "system";
+}
+```
+
+From Mark Otto, Senior Director of Design at GitHub and creator of Bootstrap. 
+
+Article : http://markdotto.com/2018/02/07/github-system-fonts/

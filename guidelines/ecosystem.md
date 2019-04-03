@@ -93,3 +93,8 @@ Explore the concepts of modular design and their application to user interface d
 Plan a living style guide, what to include as well as pitfalls to avoid. 
 
 How to create pages and document stylesheets using open source tools.
+
+SVG editor online, effects, download as svg, png or jpeg.
+http://vectorpaint.yaks.co.nz/
+
+https://vectr.com/new

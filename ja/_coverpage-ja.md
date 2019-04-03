@@ -3,9 +3,10 @@
     <div class="navbar">
         <a href="#" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube</a>
         <ul class="navmain">
-        <li><a href="#/about" class="nav-links"><span class="iconify" data-icon="uil:apps" data-inline="true"></span> 你好，世界！</a></li>
-        <li><a href="#/guide" class="nav-links"><span class="iconify" data-icon="uil:book-reader" data-inline="false"></span> Guidelines</a></li>
-        <li><a href="#/documentation" class="nav-links"><span class="iconify" data-icon="uil:books" data-inline="false"></span> Development</a></li>
+        <li><a href="#/ja/about-ja" class="nav-links"><span class="iconify" data-icon="uil:apps" data-inline="true"></span> 你好，世界！</a></li>
+        <li><a href="#/ja/guidelines/guide" class="nav-links"><span class="iconify" data-icon="uil:book-reader" data-inline="false"></span> ガイド</a></li>
+        <li><a href="#/ja/development/" class="nav-links"><span class="iconify" data-icon="uil:books" data-inline="false"></span> ドキュメンテーション</a></li>
+        <li><a href="../" class="nav-links">[ English ]</a></li>
         <li><a href="https://github.com/xoopscube" class="nav-links" target="_blank"><span class="iconify" data-icon="fe:github" data-inline="false"></span> Github</a></li>
         </ul>
     </div>
