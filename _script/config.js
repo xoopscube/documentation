@@ -9,7 +9,7 @@ window.$docsify = {
   nameLink: {
     '/documentation/fr/': '/documentation/fr/',
     '/documentation/ja/': '/documentation/ja/',
-    '/documentation/': '/documentation/'
+    '/': '/documentation/'
   },
   alias: {
     '/.*/_navbar.md': '/_navbar.md',
@@ -19,9 +19,9 @@ window.$docsify = {
   // Logo in the sidebar, can be resized by CSS.
   logo: '/_media/logo.png',
   // 1. Base path of the website. You can set it to another directory or another domain name.
-  // basePath: '/documentation/',
+  basePath: '/documentation/',
   // 2. Load the files from another site.
-  basePath: 'https://xoopscube.github.io/documentation/',
+  // basePath: 'https://xoopscube.github.io/documentation/',
   // 3. Load files from other repo.
   // basePath:
   // 'https://raw.githubusercontent.com/xoopscube/documentation/master/',
@@ -67,9 +67,9 @@ window.$docsify = {
   // Automatic header title to the page from the sidebar link.
   autoHeader: true,
   // Maximum Table of content level. Default: 6.
-  maxLevel: 5,
+  maxLevel: 4,
   // Add table of contents (TOC) in custom sidebar.
-  subMaxLevel: 5,
+  subMaxLevel: 3,
   // Scrolls to the top of the screen when the route is changed.
   auto2top: true,
   // Execute the script on the page. Only parse the first script tag. If Vue is present, it is 'true' by default.

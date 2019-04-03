@@ -40,8 +40,6 @@ The next sections will walk you through these steps in detail.
 
 ?> **NOTE** : This tutorial assumes that you have already downloaded and installed VirtualBox for your platform.
 
-![alt text](_media/icon-stack-vm.svg "Stack Virtual Machine")
-
 Step 1: Launch A Virtual Machine
 
 At the end of this step, you will have launched a virtual machine.
