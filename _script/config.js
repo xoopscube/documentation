@@ -7,9 +7,9 @@ window.$docsify = {
   // nameLink: '/',
   // The name link for each route.
   nameLink: {
-    '/fr/': '/fr/',
-    '/ja/': '/ja/',
-    '/': '/'
+    'documentation/fr/': 'documentation/fr/',
+    'documentation/ja/': 'documentation/ja/',
+    'documentation/': 'documentation/'
   },
   alias: {
     '/.*/_navbar.md': '/_navbar.md',

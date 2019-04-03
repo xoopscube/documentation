@@ -6,7 +6,6 @@
         <li><a href="#/about" class="nav-links"><span class="iconify" data-icon="uil:apps"></span> About</a></li>
         <li><a href="#/guidelines/guide" class="nav-links"><span class="iconify" data-icon="uil:book-reader"></span> Guide</a></li>
         <li><a href="#/development/" class="nav-links"><span class="iconify" data-icon="uil:books"></span> Documentation</a></li>
-        <li><a href="#/ja/" class="nav-links"><span class="iconify" data-icon="emojione-v1:flag-for-flag-japan"></span> 日本語</a></li>
         <li><a href="https://github.com/xoopscube" class="nav-links" target="_blank"><span class="iconify" data-icon="fe:github"></span> Github</a></li>
         </ul>
     </div>
