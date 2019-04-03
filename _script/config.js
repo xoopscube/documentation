@@ -11,6 +11,11 @@ window.$docsify = {
     '/ja/': '/ja/',
     '/': '/'
   },
+  alias: {
+    '/.*/_navbar.md': '/_navbar.md',
+    '/fr/(.*)': 'https://raw.githubusercontent.com/xoopscube/documentation/master/fr/$1',
+    '/ja/(.*)': 'https://raw.githubusercontent.com/xoopscube/documentation/master/ja/$1'
+  },
   // Logo in the sidebar, can be resized by CSS.
   logo: '/_media/logo.png',
   // 1. Base path of the website. You can set it to another directory or another domain name.
@@ -27,7 +32,7 @@ window.$docsify = {
   // is the docs folder README.md (uppercase).
   // Serve another file as your homepage.
   // 1. Change to /home.md.
-  homepage: 'home.md',
+  // homepage: 'home.md',
   // 2. Or use the readme in your repo.
   // homepage:
   // 'https://raw.githubusercontent.com/xoopscube/documentation/master/README.md',
@@ -70,8 +75,8 @@ window.$docsify = {
   // Execute the script on the page. Only parse the first script tag. If Vue is present, it is 'true' by default.
   executeScript: true,
   notFoundPage: {
-    '/fr': '404fr.md',
-    '/ja': 'ja/404ja.md',
+    '/fr': '404-fr.md',
+    '/ja': 'ja/404-ja.md',
     '/'  : '404.md'
   },
   // Date format
