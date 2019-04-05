@@ -28,7 +28,7 @@ The X-Codex Documentation provides information about how to delivery and update 
 
 -----
 
-# <span class="iconify" data-icon="mdi:cube-outline"></span> 你好、世界！
+# <span class="iconify" data-icon="mdi:cube-outline"></span> Welcome
 
 **XOOPS Cube** is a simple, secure and scalable web application platform. The modular architecture is built with PHP, SQL and a smarty powered theming system. This empowers everyone to create dynamic and content rich apps with ease - from the best looking blogs, portfolios, community forums, intranet and business websites to the much safer desktop applications on Linux, Mac or Windows.
 
