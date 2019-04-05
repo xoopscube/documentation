@@ -3,7 +3,7 @@
     <div class="navbar">
         <a href="#" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube</a>
         <ul class="navmain">
-        <li><a href="#/ja/readme" class="nav-links"><span class="iconify" data-icon="uil:apps" data-inline="true"></span> 你好，世界！</a></li>
+        <li><a href="#/ja/" class="nav-links"><span class="iconify" data-icon="uil:apps" data-inline="true"></span> 你好，世界！</a></li>
         <li><a href="#/ja/guidelines/" class="nav-links"><span class="iconify" data-icon="uil:book-reader" data-inline="false"></span> ガイド</a></li>
         <li><a href="#/ja/development/" class="nav-links"><span class="iconify" data-icon="uil:books" data-inline="false"></span> ドキュメンテーション</a></li>
         <li><a href="https://github.com/xoopscube" class="nav-links" target="_blank"><span class="iconify" data-icon="fe:github" data-inline="false"></span> Github</a></li>
