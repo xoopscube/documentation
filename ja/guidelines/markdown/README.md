@@ -1,13 +1,82 @@
-### <span class="iconify" data-icon="fa-brands:markdown"></span> X-Codex
+<dl>
+  <dt>X-Codex converts a folder structure of markdown files to HTML with a link to edit on the Github repository.</dt>
+  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
+  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
+  <dd>This information is intended for administrators and developers.</dd>
+</dl>
 
-The script converts a folder structure of markdown files to HTML with a link to edit the mardown files on the Github repository.
+<details>
+<summary style="cursor: pointer;">Why Markdown</summary>
 
+- Markdown Guide
+- Basics
+- Examples
+
+</details>
+
+<details>
+<summary style="cursor: pointer;">Plugins</summary>
+
+- Mermaid
+- Prism
+- Search
+- Tabs
+
+</details>
+
+<details>
+<summary style="cursor: pointer;">Folder Structure</summary>
+
+- media
+- script
+- development
+- guidelines
+- delivery
+
+</details>
+
+<details>
+<summary style="cursor: pointer;">Docs Templates</summary>
+
+- Cover page
+- Navbar
+- Sidebar
+- 404
+
+</details>
+
+-----
+
+### Why Markdown?
+
+It's easy.  It's not overly bloated, unlike HTML.  Also, as the creator of [markdown] says,
+
+_"The overriding design goal for Markdown's formatting syntax is to make it as readable as possible. The idea is that a
+Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags
+or formatting instructions."_
+
+### Markdown Guide
+-----
+
+Ready to start writing?  Either start changing stuff or read more about.
+
+[Marked]: https://github.com/markedjs/marked/
+[Markdown]: http://daringfireball.net/projects/markdown/
+
+### Basics
+-----
+
+### Examples
+-----
+
+### Plugins
+-----
+
+### Folder Structure
+-----
 
 + [English docs website](https://xoopscube.github.io/documentation/ 'X-Codex English')
 + [Japanese docs website](https://xoopscube.github.io/documentation/#/ja/ 'X-Codex Japanese')
-
-
-![X-Codex](https://github.com/xoopscube/documentation/blob/master/_media/xcl-codemo-screenshot.png "XCL Documentation")
 
 
 Templates
@@ -18,22 +87,9 @@ Templates are easy to identify. The folder name or the file name starts with _un
 + _navbar.md
 + _sidebar.md
 
-### Why Markdown?
+### Templates
+-----
 
-It's easy.  It's not overly bloated, unlike HTML.  Also, as the creator of [markdown] says,
-
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
-
-Ready to start writing?  Either start changing stuff or read more about.
-
-[Marked]: https://github.com/markedjs/marked/
-[Markdown]: http://daringfireball.net/projects/markdown/
 
 ## Headings
 

@@ -3,28 +3,54 @@ window.$docsify = {
   el: '#app',
   // The name in the sidebar.
   name: 'xcodex',
-  // The name of the link.
-  // nameLink: '/',
-  // The name link for each route.
-  nameLink: {
-    '/documentation/fr/': '/documentation/fr/',
-    '/documentation/ja/': '/documentation/ja/',
-    '/': '/documentation/'
-  },
-  alias: {
-    '/.*/_navbar.md': '/_navbar.md',
-    '/fr/(.*)': 'https://raw.githubusercontent.com/xoopscube/documentation/master/fr/$1',
-    '/ja/(.*)': 'https://raw.githubusercontent.com/xoopscube/documentation/master/ja/$1'
-  },
   // Logo in the sidebar, can be resized by CSS.
   logo: '/_media/logo.png',
-  // 1. Base path of the website. You can set it to another directory or another domain name.
+  // Base path of the website. 
+  // 1. You can set it to another directory or another domain name.
   basePath: '/documentation/',
   // 2. Load the files from another site.
   // basePath: 'https://xoopscube.github.io/documentation/',
   // 3. Load files from other repo.
   // basePath:
   // 'https://raw.githubusercontent.com/xoopscube/documentation/master/',
+  // The name of the link.
+  // nameLink: '/',
+  // The name link for each route.
+  nameLink: {
+    '/en/': '#/en/',
+    '/ja/': '#/ja/',
+    '/': '/'
+  },
+  // Loads navbar from the Markdown file _navbar.md if true.
+  loadNavbar: true,
+  // or else from the path specified.
+  // loadNavbar: 'nav.md',
+  // Navbar merged with the sidebar on smaller screens.
+  mergeNavbar: true,
+  // Loads sidebar from the Markdown file _sidebar.md if true.
+  loadSidebar: true,
+  // or else from the path specified.
+  // loadSidebar: 'summary.md',
+  alias: {
+    // '/.*/_navbar.md': '/_navbar.md',
+    '/en/.*/_navbar.md': '/en/_navbar.md',
+    '/en/.*/_sidebar.md': '/en/_sidebar.md',
+    '/en/(.*)': '/en/$1',
+    '/fr/.*/_navbar.md': '/fr/_sidebar.md',
+    '/fr/.*/_sidebar.md': '/fr/_sidebar.md',
+    '/fr/(.*)': '/fr/$1',
+    '/ja/.*/_navbar.md': '/ja/_navbar.md',
+    '/ja/.*/_sidebar.md': '/ja/_sidebar.md',
+    '/ja/(.*)': '/ja/$1',
+  },
+    // Automatic header title to the page from the sidebar link.
+    autoHeader: true,
+    // Maximum Table of content level. Default: 6.
+    maxLevel: 4,
+    // Add table of contents (TOC) in custom sidebar.
+    subMaxLevel: 3,
+    // Scrolls to the top of the screen when the route is changed.
+    auto2top: true,
   // GitHub Corner icon 
   // 1. repo: 'username/repo',
   // 2. repo: 'https://github.com/xoopscube/documentation',
@@ -47,38 +73,23 @@ window.$docsify = {
     '/ja/': '_coverpage-ja.md',
     '/': '_coverpage.md'
   },
+  // Activate only coverpage to load when visiting the home page.
+  onlyCover: true,
+
+  // Custom 404
+  notFoundPage: {
+    '/fr': '/fr/_404.md',
+    '/ja': '/ja/_404.md',
+    '/en': '/en/_404.md'
+  },
+
   // Theme custom style.
   themeable: {
     readyTransition: true,
     responsiveTables: true // default 'true'
   },
-  // Activate only coverpage to load when visiting the home page.
-  onlyCover: true,
-  // Loads navbar from the Markdown file _navbar.md if true.
-  loadNavbar: true,
-  // or else from the path specified.
-  // loadNavbar: 'nav.md',
-  // Navbar merged with the sidebar on smaller screens.
-  mergeNavbar: true,
-  // Loads sidebar from the Markdown file _sidebar.md if true.
-  loadSidebar: true,
-  // or else from the path specified.
-  // loadSidebar: 'summary.md',
-  // Automatic header title to the page from the sidebar link.
-  autoHeader: true,
-  // Maximum Table of content level. Default: 6.
-  maxLevel: 4,
-  // Add table of contents (TOC) in custom sidebar.
-  subMaxLevel: 3,
-  // Scrolls to the top of the screen when the route is changed.
-  auto2top: true,
-  // Execute the script on the page. Only parse the first script tag. If Vue is present, it is 'true' by default.
-  executeScript: true,
-  notFoundPage: {
-    '/fr': '404-fr.md',
-    '/ja': 'ja/404-ja.md',
-    '/'  : '404.md'
-  },
+   // Execute the script on the page. Only parse the first script tag. If Vue is present, it is 'true' by default.
+   executeScript: true,
   // Date format
   // display the file update date through {docsify-updated} variable.
   formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
@@ -112,17 +123,17 @@ window.$docsify = {
     buttonText: {
       '/fr/': 'Copier le code',
       '/ja/': '点击复制',
-      '/': 'Copy to clipboard'
+      '/en/': 'Copy to clipboard'
     },
     errorText: {
       '/fr/': 'erreur',
       '/ja/': '错误',
-      '/': 'Error'
+      '/en/': 'Error'
     },
     successText: {
       '/fr/': 'Copié',
       '/ja/': '复制',
-      '/': 'Copied'
+      '/en/': 'Copied'
     }
   },
   // Pagination
@@ -153,13 +164,13 @@ window.$docsify = {
     noData: {
       '/fr/': 'Aucun résultat',
       '/ja/': '結果が見つかりません',
-      '/': 'No results!'
+      '/en/': 'No results!'
     },
     paths: 'auto',
     placeholder: {
       '/fr/': 'Rechercher',
       '/ja/': '検索する',
-      '/': 'Search'
+      '/en/': 'Search'
     }
   },
 };

@@ -75,6 +75,12 @@ color: white;
   padding: 0 !important;
   width: 100%;
 }
+
+nav .i18n-link{
+    color: #fff;
+    font-size: 1.2rem;
+    padding-right:0.4em;
+}
 .nav-header {
     padding: 10px 0;
     margin-bottom: 2.5em;
@@ -87,7 +93,7 @@ color: white;
 .nav-header .navbar {
   display:flex;
   justify-content: space-between;
-    font-size: 18px;
+    font-size: 15px;
     background-image: linear-gradient(260deg, #5E35B1 0%, #1976d2 100%);
     border: 1px solid rgba(0, 0, 0, 0.2);
     height: 270px;
@@ -101,19 +107,18 @@ color: white;
 }
 .nav-header .navbar .navmain li {
     text-align: center;
-    margin: 15px auto
+    margin: 1.5em 1em;
 }
 .nav-header .navbar .navmain li a.nav-links, 
 .nav-header .navbar .navmain .logo {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.7);
-    margin-left: 40px;
+    color: rgba(255, 255, 255, 0.8);
 }
 .nav-header .navbar .logo {
     display: inline-block;
     font-size: 25px;
-    margin-top: 10px;
-    margin-left: 20px
+    text-decoration: none;
+    margin: 1em;
 }
 .navbar-toggle {
     position: absolute;
@@ -123,17 +128,18 @@ color: white;
     color: rgba(255, 255, 255, 0.8);
     font-size: 24px
 }
-.index-page {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto
-}
-h2.hero-title {
+
+.hero-title {
     font-size: 27px;
     font-weight: lighter;
     margin: 0 auto 2.5em;
+}
+.hero-desc {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 1em auto 0;
+    width:100%;
+    text-align: center;
 }
 .card-list {
     display: -ms-flexbox;
@@ -146,14 +152,7 @@ h2.hero-title {
     flex-wrap: wrap;
     margin: 0 auto;
 }
-.card-list .quick-start {
-    display: block;
-    background-color: #558b2f;
-    border: 1px solid #689F38;
-    padding: 0.3em 1.5em;
-    margin: 0 auto;
-    text-align: center;
-}
+
 .card-list .quick-start a {
     text-decoration: none;
 }
@@ -195,15 +194,23 @@ h2.hero-title {
     font-size: 25px;
     margin: 0
 }
-.card-sticky-button {
-    position: relative
+
+.quick-start {
+    display: block;position: relative;
+    background-color: #558b2f;
+    border: 1px solid #689F38;
+    padding: 0.3em 1.5em;
+    margin: 0 auto;
+    text-align: center;
 }
+
+
 .sidebar {
     border-color: #121727;
     background: #0d0f1c;
 }
 main>.content {
-    margin-left: var(--sidebar-width);
+    /* margin-left: var(--sidebar-width); */
     /* background: #212745 linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, #21274500 100%) no-repeat top center fixed; */
     background: #212745;
     /* background: radial-gradient(ellipse at center, rgba(27, 44, 74, 0.27) 0%,#121727 100%) no-repeat top center fixed;
@@ -213,21 +220,48 @@ main>.content {
     height: 100%;
     min-height: 100vh;
 }
+
 .markdown-section {
     background: #121727;
     min-height: 100vh;
 }
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0.5em;
+    margin-inline-end: 0px;
+}
+
+dd {
+    display: block;
+    margin: 1em auto;
+    margin-inline-start: 2em;
+}
+.markdown-section details {
+    background-color: rgba(34, 44, 74, 0.5);
+    border-bottom: 1px solid #121827;
+    /* margin:0;
+    padding:0; */
+    margin: 0 2em;
+    
+}
+.markdown-section summary {
+    cursor: pointer;
+    background-color: #182744;
+    border-bottom: 1px solid #121827;
+    padding: 0.5rem 1rem;
+}
+.markdown-section details ul {
+    padding: 0.5rem 2rem;
+    margin:0;
+}
+.markdown-section details p {
+    padding: 1rem 2rem;
+}
+
 footer {    
     font-size: 0.8rem;
     padding: 2em 0;
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-
-    text-align: center;
-    margin: 0 auto;
-    background: #0d0f1c;
-    display: block;
-    width: 100%;
-    z-index: 100; */
 }
