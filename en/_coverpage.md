@@ -1,7 +1,7 @@
 <!-- _coverpage.md -->
 <div class="nav-header">
     <div class="navbar">
-        <a href="#" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube Project</a>
+        <a href="#/en/" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube Project</a>
         <ul class="navmain">
         <li><a href="#/en/" class="nav-links"><span class="iconify" data-icon="uil:apps"></span> About</a></li>
         <li><a href="#/en/guidelines/guide" class="nav-links"><span class="iconify" data-icon="uil:book-reader"></span> Guide</a></li>

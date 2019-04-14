@@ -1,7 +1,7 @@
 <!-- _coverpage-ja.md -->
 <div class="nav-header">
     <div class="navbar">
-        <a href="#" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube</a>
+        <a href="#/ja/" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube</a>
         <ul class="navmain">
         <li><a href="#/ja/" class="nav-links"><span class="iconify" data-icon="uil:apps" data-inline="true"></span> 你好，世界！</a></li>
         <li><a href="#/ja/guidelines/" class="nav-links"><span class="iconify" data-icon="uil:book-reader" data-inline="false"></span> ガイド</a></li>

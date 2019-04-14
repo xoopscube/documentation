@@ -30,13 +30,17 @@ The X-Codex Documentation provides information about how to delivery and update 
 
 # <span class="iconify" data-icon="mdi:cube-outline"></span> Welcome
 
-**XOOPS Cube** is a simple, secure and scalable web application platform. The modular architecture is built with PHP, SQL and a smarty powered theming system. This empowers everyone to create dynamic and content rich apps with ease - from the best looking blogs, portfolios, community forums, intranet and business websites to the much safer desktop applications on Linux, Mac or Windows.
+**XOOPS Cube** is a simple, secure and scalable web application platform. The modular architecture is built on top of the simple Cube core with PHP, SQL and a smarty powered theming system. This empowers everyone to create dynamic and content rich apps with ease - from the best looking blogs, portfolios, community forums, intranet and business websites to the much safer desktop applications on Linux, Mac or Windows.
 
 # <span class="iconify" data-icon="logos:opensource"></span> The Project
 
 **The XOOPS Cube Project** is free and Open Source, friendly maintained, developed and supported by a volunteer group to expand the vision of a free internet integrating everyone's creativity and skills. 
 
-The development is careful to trendy cross site script attack, so website owners benefit from high level of security while maintaining full control over their own data.
+The XOOPS CUBE Project forked from the original XOOPS to follow a different path with the modular architecture. The fork was announced by Onokazu in May 2005 and started by the former Xoops Japan team, who felt that security and multi-byte character support were not adequately addressed by the former Xoops management team.
+
+ The Xoops Cube team maintained Xoops 2.0.x JP series, a temporary branch for Japanese users, while developing Xoops Cube (the new application core developed from scratch by Kazuhisa Minato, lead programmer in the game industry) and Legacy (a set of modules to ensure backward compatibility).
+
+Xoops Cube Legacy 2.1.0 final was released on April 30, 2007. Since then the project follows the values and principles of Open Source. So website owners benefit from high level of security while maintaining full control over their own data.
 
 #  <span class="iconify" data-icon="flat-color-icons:about"></span> The App
 
