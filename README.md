@@ -4,6 +4,14 @@
 
 ## X-Codex documentation
 
+📘 X-Codex Documentation provides information about how to install, configure, deploy and use XCL.📖 
+
+📦 This documentation applies to all 2.3.x releases.
+
+**Intended Audiences :**
+
+👥 This information is intended for administrators and developers.
+
 The script converts a folder structure of markdown files to HTML with a link to edit the mardown files on the Github repository.
 
 + [English docs website](https://xoopscube.github.io/documentation/ 'X-Codex English')

@@ -1,4 +1,4 @@
-<!-- _coverpage.md -->
+<!-- english _coverpage.md -->
 <div class="nav-header">
     <div class="navbar">
         <a href="#/en/" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube Project</a>

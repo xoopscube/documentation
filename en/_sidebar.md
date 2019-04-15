@@ -1,4 +1,4 @@
-[<span class="iconify" data-icon="mdi:cube-outline"></span> TOC](/en/README.md)
+[<span class="iconify" data-icon="mdi:cube-outline"></span> XOOPS Cube](/en/README.md)
 
 - Developement
   - [Introduction](/en/development/)
