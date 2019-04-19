@@ -1,8 +1,7 @@
-[<span class="iconify" data-icon="mdi:cube-outline"></span> XOOPS Cube](/en/README.md)
+[<span class="iconify" data-icon="mdi:cube-outline"></span> What is XOOPS Cube](/en/README.md)
 
 - Developement
-  - [Introduction](/en/development/)
-  - [Overview](/en/development/overview.md)
+  - [Overview](/en/development/)
   - [Installation](/en/development/installation.md)
   - [Administration](/en/development/administration.md)
   - [User Guide](/en/development/user-guide.md)
@@ -12,6 +11,7 @@
 
 -   Guidelines
   - [Quick Start](/en/guidelines/quick-start.md)
+  - [Overview](/en/guidelines/overview.md)
   - [Design](/en/guidelines/)
   - [Markdown](/en/guidelines/markdown/)
   - [User Interface](/en/guidelines/user-interface/)
