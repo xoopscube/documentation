@@ -20,7 +20,11 @@
 
 -----
 
-### Requirements
+### Requirements 
+
+<span class="iconify" data-icon="logos:apache" data-width="32" data-height="32"></span> 
+<span class="iconify" data-icon="logos:mysql" data-width="32" data-height="32"></span> 
+<span class="iconify" data-icon="logos:php" data-width="32" data-height="32"></span>
 
 First, make sure you have installed [Apache](https://httpd.apache.org/docs/2.4/) or [Nginx](https://www.nginx.com/), [Mysql](https://dev.mysql.com/downloads/) or [Mariadb](https://mariadb.org/) and [PHP7](https://www.php.net/).
 
@@ -46,14 +50,14 @@ If you want to setup PHP and are using IIS, the easiest way is to use [Microsoft
 + [XML Parser](https://www.php.net/manual/en/book.xml.php)
 + [Zlib](https://www.php.net/manual/en/book.zlib.php)
 
-Please note, OS distributions can require you to manually install and configure the PHP JSON and XML extensions. For example, when using Ubuntu this can be done via _apt-get install php7.2-json_ and _apt-get install php7.2-xml_ respectively.
+Please note, some OS distributions can require you to manually install and configure the PHP JSON and XML extensions. For example, when using Ubuntu this can be done via _apt-get install php7.2-json_ and _apt-get install php7.2-xml_ respectively.
 
 ?> These PHP extensions are often enabled by default. Extensions should match the PHP version.
 
 -----
 ### Quick Start
 
-**Installation wizard**
+**GUI Installation Wizard**
 
 1. Download [XCL 2.3.x](#download)
 2. Decompress and upload the files to your public html directory
@@ -81,11 +85,11 @@ Example of the most relevant information about your installation.
 + MYSQL Version : 5.6.34
 + **PHP Settings**
 + Safe Mode : Off
-+ Max. execution time : 900 sec.
-+ Memory Limit : 256Mb
++ Max. execution time : 300 sec.
++ Memory Limit : 128Mb
 + Display Errors : Off
 + Short Open Tags : Off
-+ File Uploads : On ( Upload Max File Size:1000M, Post Max Size:1000M )
++ File Uploads : On ( Upload Max File Size:64M, Post Max Size:64M )
 + Magic Quotes : Off
 + Register Globals : Off
 + Output Buffering : On
@@ -300,7 +304,7 @@ After download, just follow the steps of the GUI Installation Wizard.
 
 A remote installer script can be used with a hosting environment for automated installation. 
 
-XCL instaler is available in the following formats.
+XCL installer is available in the following format.
 
 ```git
 $ git clone https://github.com/xoopscube : installer
@@ -310,9 +314,9 @@ $ git clone https://github.com/xoopscube : installer
 ### Upgrade
 
 The upgrade from an existing XOOPS Cube Legacy 2.2.x takes advantage of the functionality enhancements in XCL 2.3.x. 
-For details, check what's new in **XCL 2.3.0 CHANGELOG**
+For details, check what's new in release notes or **XCL 2.3.0 CHANGELOG**
 
-XCL 2.3.0 provides a seamless upgrade for implementations. A simply GUI wizard to upgrae and update from Admin dashboard. The upgrade GUI Installation Wizard will update the installation and retain the 2.x.x customizations in the new XCL 2.3.0 application.
+XCL 2.3.0 provides a seamless upgrade for implementations. A simply GUI wizard to upgrade and update from Admin dashboard. The upgrade GUI Installation Wizard will update the installation and retain the 2.x.x customizations in the new XCL 2.3.0 application.
 
 ?> Note: If the 2.x.x is a full install, then a 2.3.0 version will represents a full install (with all required modules). Upgrading a minimal installation takes less time due to fewer modules.
 
