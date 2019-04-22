@@ -64,13 +64,13 @@ Xoops Cube Legacy 2.1.0 final was released on April 30, 2007. Meanwhile, Gigamas
 
 10key, Aaki, Argon, Asunta, Bandit-x, Beduino, Bindi, Bluemooninc, Domifara, Fugafuga, Gara, Gigamaster, GIJOE, Gusagi, Halt, Hamanaka, Hiroki, Hypweb (Nao-pon), Hxrr, JardaR, Jidaikobo, Kilica, Leco, Lumbago, Marijuana, Marine, Mat, Matchan, Metal, Mikhail Miguel, Minahito, Moegiiro, Mumincacao, Masarap, Naao, Nao-pon, Neko88, Nobunobu, Nor, Nbuy (Nobu, OhYear, Ohwada, Okuhiki, Onokazu, Orrisroot, Otneg, Plusangel, Pcboy, Roger, Sacchan,  Sak-Axyz, Salamander, Shige-p, Shiraga, Slayer_cg, Sohgo, Sow, Suin, Toemon, Tokitam, Tohokuaiki, Tom_g3x, Tomoro, Wanderer, Wanikoo.
 
-# <span class="iconify" data-icon="flat-color-icons:multiple-devices"></span> The App 
+# <span class="iconify" data-icon="flat-color-icons:multiple-devices"></span> The XCL App 
 
 **XCL** refers to the excellent design of the modular architecture composed of separate components that can be connected together. The latest XCL development avoids constraining new designs with legacy backwards compatibility issues. The design process is simplified to take advantage from the extendable modular design of **Cube Core** — to manage internationalization and localization, customization and personalization for flexible and extensible production with an intuitive graphical user interface.
 
-# <span class="iconify" data-icon="flat-color-icons:reading"></span> The Docs 
+# <span class="iconify" data-icon="flat-color-icons:reading"></span> The X-Codex 
 
-**X-Codex** documentation is built on top of Docsify using a Markdown processor (also commonly referred to as a “parser”) to take the Markdown-formatted text and output it to HTML format. Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. The X-Codex documentation can be easily edited locally or on Github and it is composed of the following parts: 
+The documentation is built on top of Docsify using a Markdown processor (also commonly referred to as a “parser”) to take the Markdown-formatted text and output it to HTML format. Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. The X-Codex documentation can be easily edited locally or on Github and it is composed of the following parts: 
 
 + Overview and set up of your XCL application
 + Development environment with open source software

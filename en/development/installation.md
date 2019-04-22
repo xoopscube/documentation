@@ -8,13 +8,13 @@
 <details>
 <summary style="cursor: pointer;">Installation Guide</summary>
 
-- [Server Requirements](#requirements) and default PHP Extensions
-- [Quick Start](#quick-start) : installation wizard
-- [Apache Settings](#apache-settings) : Recommended configuration for performance
-- [Nginx Settings](#nginx-settings) : Tunning for performance
-- [Free SSL Certificate](#free-ssl-certificate) : Get a free SSL certificate in minutes
-- [Download](#download) : clone the git repository or download a zip archive
-- [Upgrading](#upgrade) to the latest release  
+- [Server Requirements](#requirements) and default PHP Extensions.
+- [Quick Start](#quick-start) fundamentals of the folder structure and the installation wizard.
+- [Apache Settings](#apache-settings) recommended for performance.
+- [Nginx Settings](#nginx-settings) tunning for performance.
+- [Free SSL Certificate](#free-ssl-certificate) get a free SSL certificate in minutes.
+- [Download](#download) zip archive or clone the git repository.
+- [Upgrading](#upgrade) to the latest release.
 
 </details>
 
@@ -56,6 +56,75 @@ Please note, some OS distributions can require you to manually install and confi
 
 -----
 ### Quick Start
+
+**Folder Structure**
+
+XCL is designed to work exactly as the directory structure organized in the unzipped package.
+It is critical that you do not move nor rename any folder or file under "html". You need to know your web root directory (eg. public_html) to put all its content. 
+
+The unzipped package will contain two directories that must be deployed or manually upload :
+
+<span class="iconify" data-icon="flat-color-icons:opened-folder" data-width="24" data-height="24"></span> html
+
++ class
++ common
++ core
++ images
++ include
++ install
++ kernel
++ language
++ modules
++ modules
++ preload
++ themes
++ uploads
+
+<span class="iconify" data-icon="flat-color-icons:opened-folder" data-width="24" data-height="24"></span> trust_path
+
++ cache
++ libs
++ modules
++ PEAR
++ settings
++ templates_c
++ uploads
+.htaccess
+
+### Duplicable Modules
+
+XCL can run many instances of a single _duplicable module_ (D3) developed and utilizing XOOPS_TRUST_PATH. The concept is to secure a duplicable module by moving all of the module’s PHP files out of web root or DOCUMENT_ROOT. The system architecture of D3 and Trust Path was implemented by GIJOE — developer of the most useful and frequently used modules like altsys, pico and protector. So far there is a module generator to take advantage of the system and most of Japanese developers release modules based on D3.
+
+?> The folder TRUST_PATH can be renamed to whatever name you wish.
+
+!> The module name under the TRUST_PATH can not be changed. The new instance name will be automatically prefixed onto all elements, templates and MySQL tables.
+
+### Local Installation
+
+If you're running a local environment for development or testing, make sure that you have met the previous requirements.
+
+Once this is done :
+
+copy the contents of the HTML directory to the root document path of your web environment.
+copy the contents of the XOOPS_TRUST_PATH directory to the root document path of your web environment.
+Create a database
+Once the files are copied there, you can start the install by typing http://localhost/html/
+
+This will start the install process.
+
+### Hosting platform
+
+If you're running in a hosted environment, unpack the XOOPS Cube Legacy files locally or on the server if you have telnet or SSH access.
+
+Once this is done :
+
+copy the contents of the HTML directory to the root document path of your web environment*
+copy the contents of the XOOPS_TRUST_PATH directory to the root document path of your web environment.
+Create a database
+Once the files are copied there, you can start the install by typing http://my-site-domain.com/.
+This will start the install process.
+
+* your provider usually provides this location with directions.
 
 **GUI Installation Wizard**
 
@@ -326,4 +395,4 @@ Every XOOPS Cube Legacy 2.2.x upgrade should complete the following steps:
 + Deactivate (stop) any modules (for example, protector) that are currently running in the 2.x.x installation.
 + Install-upgrade XCL 2.3.0 package. 
 
-!> Download XCL and install-upgrade locally to prevent any issues on the production environnment. After the local test, the application can be deployed to the production environnment.
+!> Download XCL and install-upgrade locally to prevent any issues on the production environnment. After the local test, deploy the application to the production environnment.
