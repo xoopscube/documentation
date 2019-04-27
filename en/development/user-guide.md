@@ -37,3 +37,27 @@
 ### Themes and templates
 -----
 
+### Install Wizard
+-----
+XCL is really easy to get started with. The GUI Installation Wizard requires some information:
+
++ localhost
++ database
++ username
++ path
++ ...
+
+### Remote Update
+-----
+The X-upgrade module provides an intuitive GUI to update and install new modules, preloads extensions and themes. X-update is the easy way to access multiple developers repositories from the Admin dashboard. Select the packages (modules, themes) to install and click Update. X-update runs like a downloader manager.
+
+### Permissions
+-----
+Users Roles and Groups Permissions
+
+### Customizing XCL
+-----
+
+**Cache**
+
+Fast render content !
