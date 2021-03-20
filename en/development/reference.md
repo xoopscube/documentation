@@ -35,19 +35,23 @@ and are loaded in the following order:
 
 The setting value read earlier is overwritten with the later.
 
-**How to get the value set in site_default.ini and site_custom.ini of XOOPSCube**
+#### How to get the value set in site_default.ini and site_custom.ini of XOOPSCube
 
-`$root = XCube_Root :: getSingleton ();  
-$value = $root-> getSiteConfig ('section name','parameter name'));`  
+```
+    $root = XCube_Root :: getSingleton ();  
+    $value = $root-> getSiteConfig ('section name','parameter name'));
+``` 
 
 Example : site_custom.ini   
 
-`[Foo]   
-Bar = Baz     
-$root  =  XCube_Root :: getSingleton ();      
-$value  =  $root- > getSiteConfig ( 'Foo' ,  'Bar' ));      
-echo  $value ;      
-// Output is Baz`   
+```php 
+    [Foo]    
+    Bar = Baz    
+    $root  =  XCube_Root :: getSingleton ();    
+    $value  =  $root- > getSiteConfig ( 'Foo' ,  'Bar' ));    
+    echo  $value ;    
+// Output is Baz
+```
   
 _TRUST_PATH/settings/ site_custom.ini overwrites _TRUST_PATH/settings/site_default.ini.
 
