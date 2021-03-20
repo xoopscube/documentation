@@ -14,9 +14,9 @@
 - PHP Class Abstraction
 - Delegate and Preload mechanism, single file extension 
 - Interface
-- Render engine
-- Development of modules
-- Development of themes
+- Render Engine
+- Module Development
+- Theme Design
 
 </details>
 
@@ -24,6 +24,34 @@
 
 ### Cube Core API
 -----
+
+The ini file of XOOPS Cube follows an inheritance pattern  
+and are loaded in the following order: 
+
+1. site_default.ini
+2. site_default.dist.ini
+3. site_custom.ini
+4. site_custom_ {XOOPS_SALT} .ini  
+
+The setting value read earlier is overwritten with the later.
+
+**How to get the value set in site_default.ini and site_custom.ini of XOOPSCube**
+
+`$root = XCube_Root :: getSingleton ();  
+$value = $root-> getSiteConfig ('section name','parameter name'));`  
+
+Example : site_custom.ini   
+
+`[Foo]   
+Bar = Baz     
+$root  =  XCube_Root :: getSingleton ();      
+$value  =  $root- > getSiteConfig ( 'Foo' ,  'Bar' ));      
+echo  $value ;      
+// Output is Baz`   
+  
+_TRUST_PATH/settings/ site_custom.ini overwrites _TRUST_PATH/settings/site_default.ini.
+
+
 
 ### Legacy compatibility
 -----
@@ -40,10 +68,10 @@
 ### Interface
 -----
 
-### Render engine
+### Render Engine
 -----
 
-### Development of modules
+### Module Development
 -----
 
-### Development of Themes
+### Theme Design
