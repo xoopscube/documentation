@@ -1,5 +1,10 @@
-Style guidelines define the visual expression of an organization that it presents to the world. Every organization has its own style guide which they use to build logos, colors, icons and typography.
+#### User Interface
 
+- A **theme** is a collection of files (html, css, javascript) with Smarty Template Engine _Variables_ and _Constants_ that are assigned from PHP (core, module or preload). 
+- Regardless of your experience level, it's relatively easy to create, install and edit a theme or customize modules templates.   
+- Technically, a simple theme only requires four files : manifesto.ini.php, screenshot.png, style.css, theme.html 
+- Backend and frontend themes can be created with popular CSS frameworks to easily implement user-friendly UIs  
+- Style guidelines define the visual expression of an organization that it presents to the world. Every organization has its own style guide which they use to build logos, colors, icons and typography. 
 
 #### Render Engine
 
