@@ -21,13 +21,13 @@
 
 ### Introduction XCL
 -----
-XOOPS Cube is a simple, secure and scalable web application platform. The modular architecture is built with PHP, SQL and a smarty powered theming system. This empowers everyone to create dynamic and content rich apps with ease - from the best looking blogs, portfolios, community forums, intranet and business websites to the much safer desktop applications on Linux, Mac or Windows.
+XOOPSCube is a simple, secure and scalable web application platform. The modular architecture is built with PHP, SQL and a smarty powered theming system. This empowers everyone to create dynamic and content rich apps with ease - from the best looking blogs, portfolios, community forums, intranet and business websites to the much safer desktop applications on Linux, Mac or Windows.
 
 ### Requiremments
 -----
 Whether you plan to create your own personal or corporate community web site with news, forums, blog, photo album, portfolio, etc. You need a reliable Web Host running Apache, MySQL and PHP.
 
-XOOPS Cube will run smoothly on a LAMP environment. In most cases your site will be hosted on the popular open source web platform consisting of Linux, Apache, MySQL, and PHP. Though XOOPS Cube can run on any other Operating System (OS) as well.
+XOOPSCube will run smoothly on a LAMP environment. In most cases your site will be hosted on the popular open source web platform consisting of Linux, Apache, MySQL, and PHP. Though XOOPS Cube can run on any other Operating System (OS) as well.
 
 ### Git Workflow
 -----
@@ -41,7 +41,7 @@ XOOPS Cube will run smoothly on a LAMP environment. In most cases your site will
 
 ### Features
 -----
-Below is a list of some of XOOPS Cube Legacy features.
+Below is a list of some of XOOPSCube Legacy features.
 
 * Easy install procedure based on a wizard
 * Modular architecture

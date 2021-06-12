@@ -1,4 +1,4 @@
-[<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPS Cube](/en/about.md)
+[<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/en/about.md)
 
 - Developement
   - [Quick Start](/en/quick-start.md)

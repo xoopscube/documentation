@@ -1,11 +1,11 @@
 <!-- default _coverpage.md -->
 <div class="nav-header">
     <div class="navbar">
-        <a href="#/" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPS Cube Project</a>
+        <a href="#/" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPSCube Project</a>
         <ul class="navmain">
-        <li><a href="#/en/about" class="nav-links"><span class="iconify" data-icon="uil:apps"></span> About</a></li>
-        <li><a href="#/en/guidelines/" class="nav-links"><span class="iconify" data-icon="uil:book-reader"></span> Guide</a></li>
-        <li><a href="#/en/development/" class="nav-links"><span class="iconify" data-icon="uil:books"></span> Documentation</a></li>
+        <li><a href="#/en/development/" class="nav-links"><span class="iconify" data-icon="file-icons:devcontainer"></span> Development</a></li>
+        <li><a href="#/en/design/" class="nav-links"><span class="iconify" data-icon="ic:round-design-services"></span> Design</a></li>
+        <li><a href="#/en/deploy/" class="nav-links"><span class="iconify" data-icon="flat-color-icons:deployment"></span> Deploy</a></li>
         <li><a href="https://github.com/xoopscube" class="nav-links" target="_blank"><span class="iconify" data-icon="fe:github"></span> Github</a></li>
         </ul>
     </div>
@@ -43,6 +43,6 @@
     </div>
 </div>
 <h4 class="hero-desc">X-Codex Documentation provides information about how to install, configure, deploy and use XCL.</h4>
-<span class="quick-start" style="margin:1.5em auto;"><a href="#/en/guidelines/quick-start">Quick Start</a></span>
+<span class="quick-start" style="margin:1.5em auto;"><a href="#/en/quick-start">Quick Start</a></span>
 
 </div><!-- End Card-list -->

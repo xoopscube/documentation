@@ -30,11 +30,11 @@ The X-Codex Documentation provides information about how to delivery and update 
 
 # <span class="iconify" data-icon="mdi:cube-outline"></span> 你好、世界！
 
-**XOOPS Cube** is a simple, secure and scalable web application platform. The modular architecture is built with PHP, SQL and a smarty powered theming system. This empowers everyone to create dynamic and content rich apps with ease - from the best looking blogs, portfolios, community forums, intranet and business websites to the much safer desktop applications on Linux, Mac or Windows.
+**XOOPSCube** is a simple, secure and scalable web application platform. The modular architecture is built with PHP, SQL and a smarty powered theming system. This empowers everyone to create dynamic and content rich apps with ease - from the best looking blogs, portfolios, community forums, intranet and business websites to the much safer desktop applications on Linux, Mac or Windows.
 
 # <span class="iconify" data-icon="logos:opensource"></span> The Project
 
-**The XOOPS Cube Project** is free and Open Source, friendly maintained, developed and supported by a volunteer group to expand the vision of a free internet integrating everyone's creativity and skills. 
+**The XOOPSCube Project** is free and Open Source, friendly maintained, developed and supported by a volunteer group to expand the vision of a free internet integrating everyone's creativity and skills. 
 
 The development is careful to trendy cross site script attack, so website owners benefit from high level of security while maintaining full control over their own data.
 
@@ -56,7 +56,7 @@ The development is careful to trendy cross site script attack, so website owners
 The BSD License allows proprietary use and allows the software released under the license to be incorporated into proprietary products.
 
 ```html
-Copyright 2019 XOOPS Cube
+Copyright 2021 XOOPSCube
 
 Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:

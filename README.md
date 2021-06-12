@@ -16,7 +16,8 @@ The script converts a folder structure of markdown files to HTML with a link to 
 
 + [English docs website](https://xoopscube.github.io/documentation/ 'X-Codex English')
 + [Japanese docs website](https://xoopscube.github.io/documentation/#/ja/ 'X-Codex Japanese')
-
++ [français docs website](https://xoopscube.github.io/documentation/#/fr/ 'X-Codex Français')
++ [portugues docs website](https://xoopscube.github.io/documentation/#/pt/ 'X-Codex Portugues')
 
 ![X-Codex](https://github.com/xoopscube/documentation/blob/master/_media/xcl-codemo-screenshot.png "XCL Documentation")
 
@@ -54,7 +55,7 @@ Support
 -------
 
 If you are having issues or if you have suggestions, please let us know.
-Report any issue or suggestion to project Github tracker.
+Report any issue or suggestion to project GitHub tracker.
 
 License
 ----

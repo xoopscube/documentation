@@ -1,24 +1,29 @@
-[<span class="iconify" data-icon="mdi:account-group"></span> About](/about.md)
-
--   Guidelines
-  - [Quick Start](design/quick-start.md)
-  - [Design](design/)
-  - [Theme](design/theme/)
-  - [Template](design/template/)  
-  - [User Interface](guidelines/user-interface/)
-
+[<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/en/about.md)
 
 - Developement
-  - [Ecosystem](/development/)
-  - [Installation](/development/installation.md)
-  - [Preload](/development/module.md)
-  - [Theme](/development/preload.md)
+    - [Quick Start](/en/quick-start.md)
+    - [Overview](/en/development/)
+    - [Installation](/en/development/installation.md)
+    - [Administration](/en/development/administration.md)
+    - [User Guide](/en/development/user-guide.md)
+    - [Reference](/en/development/reference.md)
+    - [Troubleshooting](/en/development/debug.md)
+    - [Knowledge base](/en/development/knowledge-base.md)
+
+-   Design
+    - [Quick Start](/en/quick-start.md)
+    - [Overview](/en/design/overview.md)
+    - [Theme](/en/design/theme/)
+    - [Template](/en/design/template/)
+    - [User Interface](/en/design/user-interface/)
 
 -   Delivery
-  - [Introduction](/delivery/)
-  - [X-Update](/delivery/setup-x-update.md)
-  - [Store](/delivery/setup-x-store.md)
-  - [Module](/delivery/update-module.md)
-  - [Theme](/delivery/update-theme.md)
-  - [Extension](/delivery/update-preload.md)
+    - [Introduction](/en/delivery/)
+    - [X-Update Service](/en/delivery/setup-x-update.md)
+    - [Create Your Store](/en/delivery/setup-x-store.md)
+    - [Module Update](/en/delivery/update-module.md)
+    - [Theme Update](/en/delivery/update-theme.md)
+    - [Preload Update](/en/delivery/update-preload.md)
 
+- Documentation
+    - [Markdown](/en/markdown/)

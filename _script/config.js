@@ -18,7 +18,9 @@ window.$docsify = {
   // The name link for each route.
   nameLink: {
     '/en/': '#/en/',
+    '/fr/': '#/fr/',
     '/ja/': '#/ja/',
+    '/pt/': '#/pt/',
     '/': '/'
   },
   // Loads navbar from the Markdown file _navbar.md if true.
@@ -42,6 +44,9 @@ window.$docsify = {
     '/ja/.*/_navbar.md': '/ja/_navbar.md',
     '/ja/.*/_sidebar.md': '/ja/_sidebar.md',
     '/ja/(.*)': '/ja/$1',
+    '/pt/.*/_navbar.md': '/pt/_navbar.md',
+    '/pt/.*/_sidebar.md': '/pt/_sidebar.md',
+    '/pt/(.*)': '/pt/$1',
   },
     // Automatic header title to the page from the sidebar link.
     autoHeader: true,
@@ -71,6 +76,7 @@ window.$docsify = {
   coverpage: {
     '/fr/': '_coverpage-fr.md',
     '/ja/': '_coverpage-ja.md',
+    '/pt/': '_coverpage-pt.md',
     '/': '_coverpage.md'
   },
   // Activate only coverpage to load when visiting the home page.
@@ -78,9 +84,10 @@ window.$docsify = {
 
   // Custom 404
   notFoundPage: {
+    '/en': '/en/_404.md',
     '/fr': '/fr/_404.md',
     '/ja': '/ja/_404.md',
-    '/en': '/en/_404.md'
+    '/pt': '/pt/_404.md'
   },
 
   // Theme custom style.
@@ -121,19 +128,22 @@ window.$docsify = {
   // Copy-code (defaults)
   copyCode: {
     buttonText: {
+      '/en/': 'Copy to clipboard',
       '/fr/': 'Copier le code',
       '/ja/': '点击复制',
-      '/en/': 'Copy to clipboard'
+      '/pt/': 'Copiar'
     },
     errorText: {
+      '/en/': 'Error',
       '/fr/': 'erreur',
       '/ja/': '错误',
-      '/en/': 'Error'
+      '/pt/': 'Erro'
     },
     successText: {
+      '/en/': 'Copied',
       '/fr/': 'Copié',
       '/ja/': '复制',
-      '/en/': 'Copied'
+      '/pt/': 'Copiado'
     }
   },
   // Pagination
@@ -149,7 +159,7 @@ window.$docsify = {
       var footer = [
         // '<hr/>',
         '<footer>',
-        '<span><a href="https://github.com/xoopscube" target="_blank">XOOPS CUBE Project</a> &copy;2019</span>',
+        '<span><a href="https://github.com/xoopscube" target="_blank">XOOPSCUBE Project</a> &copy;2021</span>',
         ' - <span>Web Application Platform <a href="https://github.com/xoopscube/xcl" target="_blank">XCL</a> - <span> User Interface <a href="https://github.com/xoopscube/xoopscube.github.io" target="_blank">Prototype</span>',
         '</footer>'
       ].join('');
@@ -162,15 +172,17 @@ window.$docsify = {
   search: {
     // Localization
     noData: {
+      '/en/': 'No results!',
       '/fr/': 'Aucun résultat',
       '/ja/': '結果が見つかりません',
-      '/en/': 'No results!'
+      '/pt/': 'Sem resultados!'
     },
     paths: 'auto',
     placeholder: {
+      '/en/': 'Search',
       '/fr/': 'Rechercher',
       '/ja/': '検索する',
-      '/en/': 'Search'
+      '/pt/': 'Pesquisar'
     }
   },
 };
