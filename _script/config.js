@@ -7,7 +7,7 @@ window.$docsify = {
   logo: '/_media/logo.png',
   // Base path of the website. 
   // 1. You can set it to another directory or another domain name.
-  basePath: '/documentation/',
+  // basePath: '/documentation/',
   // 2. Load the files from another site.
   // basePath: 'https://xoopscube.github.io/documentation/',
   // 3. Load files from other repo.
