@@ -1,9 +1,10 @@
 [<span class="iconify" data-icon="mdi:account-group"></span> About](/about.md)
 
 -   Guidelines
-  - [Quick Start](guidelines/quick-start.md)
-  - [Design](guidelines/)
-  - [Markdown](guidelines/markdown/)
+  - [Quick Start](design/quick-start.md)
+  - [Design](design/)
+  - [Theme](design/theme/)
+  - [Template](design/template/)  
   - [User Interface](guidelines/user-interface/)
 
 

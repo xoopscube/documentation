@@ -1,6 +1,7 @@
 [<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPS Cube](/en/about.md)
 
 - Developement
+  - [Quick Start](/en/quick-start.md)
   - [Overview](/en/development/)
   - [Installation](/en/development/installation.md)
   - [Administration](/en/development/administration.md)
@@ -9,12 +10,12 @@
   - [Troubleshooting](/en/development/debug.md)
   - [Knowledge base](/en/development/knowledge-base.md)
 
--   Guidelines
-  - [Quick Start](/en/guidelines/quick-start.md)
-  - [Overview](/en/guidelines/overview.md)
-  - [Design](/en/guidelines/)
-  - [Markdown](/en/guidelines/markdown/)
-  - [User Interface](/en/guidelines/user-interface/)
+-   Design
+  - [Quick Start](/en/quick-start.md)
+  - [Overview](/en/design/overview.md)
+  - [Theme](/en/design/theme/)
+  - [Template](/en/design/template/)
+  - [User Interface](/en/design/user-interface/)
 
 -   Delivery
   - [Introduction](/en/delivery/)
@@ -23,3 +24,6 @@
   - [Module Update](/en/delivery/update-module.md)
   - [Theme Update](/en/delivery/update-theme.md)
   - [Preload Update](/en/delivery/update-preload.md)
+
+- Documentation
+  - [Markdown](/en/markdown/)
