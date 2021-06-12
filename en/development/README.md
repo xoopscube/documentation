@@ -114,7 +114,7 @@ Its foundational design concept covers the free choice of frameworks and librari
 
 The new XCube core implements concepts of object-oriented programming, design patterns and real-time 3D rendering. The XCube core was developed from scratch by Kazuhisa Minato (lead programmer in the game industry). The underlying logic of the core main classes which the project team narrowed down the "**Core program**" is a simple design concept "**No Framework**". Moreover, such software design was needed to develop a modular architecture allowing web developers and designers to run their favorite frameworks and libraries within XCube. If anyone aims to implement new features, it can be done with a custom base module running on XCube platform, aside initial Legacy.
 
-**Base Legacy** is a base set of modules. With XCube, web developers are able to choose from different CMS. Legacy is one of them. The XOOPSCube Team released Legacy before XCube 1.0 was completed by Minahito as the first XCube major version. Therefore, Legacy implements many features to emulate Xoops v2. So the Base system Legacy is an exception, made by highly skilled developers and high experimented designers to ensure backwards compatibility and interoperability with XOOPS the older legacy system. Base Legacy main functions have been placed into their own modules, such as user account management and private messages.
+**Package Legacy** is a base set of modules. With XCube, web developers are able to choose from different CMS. Legacy is one of them. The XOOPSCube Team released Legacy before XCube 1.0 was completed by Minahito as the first XCube major version. Therefore, Legacy implements many features to emulate Xoops v2. So the Base system Legacy is an exception, made by highly skilled developers and high experimented designers to ensure backwards compatibility and interoperability with XOOPS the older legacy system. Base Legacy main functions have been placed into their own modules, such as user account management and private messages.
 
 **XOOPS** is an acronym of "eXtensible Object Oriented Portal System". Though started as a portal system, it later developed into a web application framework. It aims to serve as a web framework for use by small, medium and large sites. The first versions of XOOPS, like other Nuke derivatives such as PHP-Nuke, were labeled as (CMS), that can be extended with modules. Webmaster can add or change some functions or install modules. Though it is less flexible when webmasters need to customize authentication functions or personalize web accessibility.
 
@@ -186,3 +186,18 @@ XCL can run many public instances of a single _duplicable module_ (D3) from the 
 XCube is simple and recommended to be used as a tool for automatic complex work. 
 + Manifesto is a special file document for tools that work automatically with XCube. 
 + Cubson is a code generator for the Base Legacy and works with extoolsD.dll
+
+
+**Related projects**
+
++ Custom Legacy was planned by Tom's company. That's light-weight Legacy. Maybe source code will be developd from scratch, and it will lose some compatibilities. Tom said that this base module aims to D3 modules. Not sure whether it is front controller type. The licence should be GPL, because it uses some parts of Legacy.
+
++ Oreteki Legacy was planned by Marijuana who made Oreteki-XOOPS before.
+
++ Non-DB base was planned by Ryuji. But, this is just idea, so it's uncertain whether he plan to develop or not. It is special light-weight base module to run special modules which don't use DB. And, by XCube_Service or other methods, these modules are attached to Legacy through Legacy's module adapter.
+
++ Onokazu's Framework is a new framework developed by Onokazu to be an independent PHP application. But, the modules developed with this framework will be attached to XOOPSCube through the specific base module or the specific adapter.
+
++ XUGJ/Hoda-juku Distribution is a package which includes some modules and some specific configurations : a "right out of the box" distro. The distribution was planned by XUGJ or Hoda-Juku. Because GIJOE is a member of them, the distribution will include his great work which is also available as moules. [http://hodajuku.sourceforge.net/]
+
++ Momoxo
