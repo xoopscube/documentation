@@ -67,7 +67,7 @@ The project is licensed under the MIT license.
 ### Big Thanks
 
 
-<p align="center">[JetBrains](https://www.jetbrains.com/) is an active participant in the [Open Source community](https://www.jetbrains.com/opensource/).
+<p align="center"><a href="https://www.jetbrains.com/" target="_blank">JetBrains</a> is an active participant in the <a href="https://www.jetbrains.com/opensource/" target="_blank">Open Source community</a>.<br>
 Big thanks to the JetBrains Team for supporting XOOPSCube Project ^_^/  </p>
 
 <p align=center><img src="https://raw.githubusercontent.com/xoopscube/artwork-social-media/master/logo/jetbrains-logo-variant-3-256.png" alt="Big thanks to the JetBrains Team for supporting XOOPSCube Project" title="Big thanks to the JetBrains Team for supporting XOOPSCube Project" /></p>
