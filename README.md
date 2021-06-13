@@ -62,4 +62,28 @@ License
 
 The project is licensed under the MIT license.
 
+-----
+
+### Big Thanks
+
+
+<p align="center">[JetBrains](https://www.jetbrains.com/) is an active participant in the [Open Source community](https://www.jetbrains.com/opensource/).
+Big thanks to the JetBrains Team for supporting XOOPSCube Project ^_^/  </p>
+
+<p align=center><img src="https://raw.githubusercontent.com/xoopscube/artwork-social-media/master/logo/jetbrains-logo-variant-3-256.png" alt="Big thanks to the JetBrains Team for supporting XOOPSCube Project" title="Big thanks to the JetBrains Team for supporting XOOPSCube Project" /></p>
+
+-----
+
+      —///////////////////////—
+
+_When you know who you are, you know what to do, you know what story to tell, and the stories that you want to hear and see. We share the essential knowledge and understanding of “open source” necessary to create tools that encourage creativity and free speech._
+
+
+>"Learn everything you can.  
+Try everything that comes along.  
+Look at everything there is to see.  
+Search, experiment, make mistakes, fail, stand up.  
+Turn religious, turn conservative, turn radical.  
+And then forget all about it and find your way to create."    
+
 
