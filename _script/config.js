@@ -173,7 +173,7 @@ window.$docsify = {
     // Localization
     noData: {
       '/en/': 'No results!',
-      '/fr/': 'Aucun résultat',
+      '/fr/': 'Aucun résultat!',
       '/ja/': '結果が見つかりません',
       '/pt/': 'Sem resultados!'
     },

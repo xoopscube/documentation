@@ -4,20 +4,20 @@
 
 ## X-Codex documentation
 
-📘 X-Codex Documentation provides information about how to install, configure, deploy and use XCL.
+📘 X-Codex Documentation provides information about how to install, configure, deploy and use the Web Application Platform XCL.
 
 📦 This documentation applies to all 2.3.x releases.
 
-Intended Audiences :**
+**Intended Audiences :**
 
 👥 This information is intended for administrators, developers and designers.
 
-The script converts a folder structure of markdown files to HTML with a link to edit the mardown files on the Github repository.
+The folder structure of markdown files with a link to edit on the Github repository.
 
 + [English docs website](https://xoopscube.github.io/documentation/ 'X-Codex English')
 + [Japanese docs website](https://xoopscube.github.io/documentation/#/ja/ 'X-Codex Japanese')
-+ [français docs website](https://xoopscube.github.io/documentation/#/fr/ 'X-Codex Français')
-+ [portugues docs website](https://xoopscube.github.io/documentation/#/pt/ 'X-Codex Portugues')
++ [Français docs website](https://xoopscube.github.io/documentation/#/fr/ 'X-Codex Français')
++ [Portugues docs website](https://xoopscube.github.io/documentation/#/pt/ 'X-Codex Portugues')
 
 ![X-Codex](https://github.com/xoopscube/documentation/blob/master/_media/xcl-codemo-screenshot.png "XCL Documentation")
 
@@ -32,11 +32,13 @@ Templates are easy to identify. The folder name or the file name starts with _un
 
 Features
 ----
+- Iconify 
+- Mermaid  
+- Prism 
+- Theme dark/light
+- xLayout Helper 
+- zoom-image    
 
-- Be awesome
-- Make things faster
-- Write Tutorials
-- Share Tips and code samples
 
 Installation
 ----
@@ -47,9 +49,13 @@ Install locally by running:
 
 Contribute
 ----
-
-- Issue Tracker: https://github.com/xoopscube/documentation/issues
-- Source Code: https://github.com/xoopscube/documentation
+- Be awesome
+- Make things faster
+- Write Tutorials
+- Share Tips and code samples  
+   
+Issue Tracker: https://github.com/xoopscube/documentation/issues  
+Source Code: https://github.com/xoopscube/documentation  
 
 Support
 -------
