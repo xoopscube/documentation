@@ -34,7 +34,12 @@ First, make sure you have installed [Apache](https://httpd.apache.org/docs/2.4/)
 XCL is designed to run smoothly on any local server environment bundle [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)), [MAMP](https://www.mamp.info/en/), [XAMPP](https://www.apachefriends.org/index.html).  
 If you want to install PHP with IIS, the easiest way is to use [Microsoft's Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx).
 
-Download XCL bundle package from Github. This is everything you need to get started.
+- Apache, Nginx, etc.
+- PHP 7.2.x ^
+- MySQL 5.6.x ^, MariaDB
+- Database InnoDB utf8 / utf8mb4
+
+<a href="https://github.com/xoopscube/xcl" target="_blank">Download XCL 2.3.x bundle package from GitHub</a>. This is everything you need to get started.
 
 -----
 ### Quick Start
@@ -52,7 +57,9 @@ To install XCL for the first time, verify if the prerequisite software is instal
 <span class="iconify" data-icon="emojione-v1:black-square-button" data-inline="false"></span> Enable cookies and JavaScript support in your browser.   
   
 ### Disk Space
-A standard installation requires a minimum of 100 MB with the file mananger and wysiwyg editor. In general, with many contributed modules and themes installed, media uploaded, backups and other files, the more disk space you have, the more data you can store.
+A standard installation, including <a href="https://github.com/Studio-42/elFinder" target="_blank">elFinder file manager</a> and <a href="https://github.com/ckeditor/ckeditor4" target="_blank">wysiwyg CKEditor</a>, 
+requires a minimum of 100 MB.  
+Considering user's storage space, modules and themes installed, media uploaded, backups and other files, the more disk space you have, the more data you can store.
 
 ### Web Server
 Apache, Nginx, Microsoft IIS or any other web server with PHP support.
@@ -85,32 +92,32 @@ html
 ├── class  
 │   ├── database   [ factory, mysql, sqlutility ]  
 │   ├── mail       [ phpmailer ]  
-│   ├── smarty     [ moved to trust path ]  
+│   ├── smarty     [ This was moved to trust path! ]  
 │   ├── xml        [ rpc, rss, parser ]  
 │   └── xoopsform  [ abstract base class for forms ]  
-├── common         [ javascripts shared locally ]  
-├── core           [ XCube, XCube IniHandler class ]  
-├── images         [ system banners, icons, logos ]  
-├── include        [ cube core init and legacy backwards compatibility ]  
+├── common         [ CSS and Javascript shared locally ]  
+├── core           [ XCube Core IniHandler class ]  
+├── images         [ banners, icons, logos ]  
+├── include        [ legacy backwards compatibility ]  
 ├── kernel         [ interface for handling general configurations ]  
-├── language       [ system translations ]  
-├── modules        [ system, render, filemanager and wysiwyg editor ]  
+├── language       [ Core translations ]  
+├── modules        [ user and group management, render, private message, wysiwyg CKEditor ]  
 ├── preload        [ single-file custom extensions ]  
 ├── themes         [ frontend and backend gui ]  
-└── uploads        [ moved to trust path ]  
+└── uploads        [ public uploads for custom icons: user rank, smilies. Filemanager uploads on trust path ]  
 ```
 <span class="iconify" data-icon="flat-color-icons:opened-folder" data-width="24" data-height="24"></span> Trust Path
 ```
 trust_path  
 ├── cache          [ application cache data - can be deleted without data loss ]  
-├── libs           [ shared libraries ]  
-├── modules        [ D3 modules, secure and duplicable ]  
+├── libs           [ shared libraries: altsys, elfinder ]  
+├── modules        [ D3 modules, secure and duplicable on public/html/modules/ ]  
 │   ├── pico       [ Content edition with granular permissions ]  
 │   ├── protector  [ application security module ]  
 │   ├── xelfinder  [ file manager with multi-root and cloud storage support ]  
-│   └── xupdate    [ download and update modules, themes and preloads ]  
+│   └── xupdate    [ Update manager deploy store modules, themes and preloads ]  
 ├── PEAR           [ PEAR - "PHP Extension and Application Repository ]  
-├── settings       [ XCube ini file uses an inheritance pattern. ]  
+├── settings       [ XCube ini environment file using an inheritance pattern. ]  
 ├── themplates_c   [ the generated templates - can be deleted without data loss ]  
 ├── uploads        [ read ]  
 └── .htaccess      [ read ]  
@@ -130,8 +137,6 @@ trust_path
 These folders are used to store cached files, templates, images and any file uploads  
 through the File-manager or packages delivered by the X-Update manager interface.
 
-<img src="_media/xcl-installer-wizard.jpg" title="Installer Wizard">
-
 ### Duplicable Modules
 
 XCL can run many public instances of a single _duplicable module_ (D3) from your TRUST_PATH. The concept is to secure a duplicable module by moving all of the module’s PHP files out of web root or DOCUMENT_ROOT.
@@ -142,24 +147,30 @@ XCL can run many public instances of a single _duplicable module_ (D3) from your
 
 If you're running a local environment for development or testing, make sure that you have met the previous requirements. Once it is done :
 
-+ copy the contents of the HTML directory to the root document path of your web environment.
-+ copy the contents of the TRUST_PATH directory to the root document path of your web environment.
++ copy the contents of the HTML directory to the root document path of your web environment (public).
++ copy the contents of the TRUST_PATH directory to the root document path of your web environment (private if possible).
 + Create a database
 
 Once the files are copied there, you can point your browser to http://localhost/
 
 This will start the install wizard process.
 
+<img src="_media/xcl-installer-wizard.jpg" title="Installer Wizard">
+
 ### Hosting platform
 
-Since XCL is server based, we try to make it easy to install and run on most hosting platforms. XCL is designed to be installed and to run with web server minimum requirements. Most web hosting providers meet these requirements. However, many shared hosting providers choose to disable PHP modules and extensions: cURL, .htaccess support, mod rewrite. Consider selecting one hosting provider without such limits and restrictions.
+Since XCL is server based, we try to make it easy to install and run on most hosting platforms.   
+XCL iss designed to be installed and to run with web server minimum requirements.   
+Most web hosting providers meet these requirements.   
+However, many shared hosting providers choose to disable PHP modules and extensions: cURL, .htaccess support, mod rewrite.   
+When choosing a hosting provider, consider a hosting without such limits and restrictions.
 
-If you're running in a hosted environment, unpack the XCL files locally or on the server if you have CPanel, telnet or SSH access.
+If you're running in a hosted environment, unpack the XCL files locally, or directly on the server if you have CPanel, telnet or SSH access.
 
 Once this is done :
 
-+ copy the contents of the HTML directory to the root document path of your web environment*
-+ copy the contents of the TRUST_PATH directory to the root document path of your web environment.
++ copy the contents of the HTML directory to the root document path of your web environment (public)
++ copy the contents of the TRUST_PATH directory to the root document path of your web environment (private if possible).
 + Create a database
 
 Once the files are copied there, you can start the install by typing http://my-site-domain.com/
