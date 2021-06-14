@@ -2,7 +2,7 @@
   <dt>The X-Codex Documentation provides information about modules Template design.</dt>
   <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
   <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
-  <dd>This information is intended for administrators and developers.</dd>
+  <dd>This information is intended for Webmasters, UIX Designers and Frontend Developers.</dd>
 </dl>
 
 <details>

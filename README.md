@@ -92,4 +92,3 @@ Search, experiment, make mistakes, fail, stand up.
 Turn religious, turn conservative, turn radical.  
 And then forget all about it and find your way to create."    
 
-

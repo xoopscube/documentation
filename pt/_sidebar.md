@@ -1,29 +1,30 @@
 [<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/en/about.md)
 
 - Developement
-  - [Quick Start](/pt/quick-start.md)
-  - [Overview](/pt/development/)
-  - [Installation](/pt/development/installation.md)
-  - [Administration](/pt/development/administration.md)
-  - [User Guide](/pt/development/user-guide.md)
-  - [Reference](/pt/development/reference.md)
-  - [Troubleshooting](/pt/development/debug.md)
-  - [Knowledge base](/pt/development/knowledge-base.md)
+  - [Quick Start](/en/quick-start.md)
+  - [Overview](/en/development/)
+  - [Installation](/en/development/installation.md)
+  - [Reference](/en/development/reference.md)
+  - [Troubleshooting](/en/development/debug.md)
 
--   Design
-  - [Quick Start](/pt/quick-start.md)
-  - [Overview](/pt/design/overview.md)
-  - [Theme](/pt/design/theme/)
-  - [Template](/pt/design/template/)
-  - [User Interface](/pt/design/user-interface/)
 
--   Delivery
-  - [Introduction](/pt/delivery/)
-  - [X-Update Service](/pt/delivery/setup-x-update.md)
-  - [Create Your Store](/pt/delivery/setup-x-store.md)
-  - [Module Update](/pt/delivery/update-module.md)
-  - [Theme Update](/pt/delivery/update-theme.md)
-  - [Preload Update](/pt/delivery/update-preload.md)
+- Design
+  - [Quick Start](/en/quick-start.md)
+  - [Overview](/en/design/overview.md)
+  - [Theme](/en/design/theme/)
+  - [Template](/en/design/template/)
+  - [User Interface](/en/design/user-interface/)
+
+- Delivery
+  - [Introduction](/en/delivery/)
+  - [X-Update Service](/en/delivery/setup-x-update.md)
+  - [Create Your Store](/en/delivery/setup-x-store.md)
+  - [Module Update](/en/delivery/update-module.md)
+  - [Theme Update](/en/delivery/update-theme.md)
+  - [Preload Update](/en/delivery/update-preload.md)
 
 - Documentation
-  - [Markdown](/pt/markdown/)
+  - [Administration Guide](/en/administration.md)
+  - [User Guide](/en/user-guide.md)
+  - [Knowledge base](/en/knowledge-base.md)
+  - [X-Codex Markdown](/en/markdown/)

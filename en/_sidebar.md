@@ -4,20 +4,18 @@
   - [Quick Start](/en/quick-start.md)
   - [Overview](/en/development/)
   - [Installation](/en/development/installation.md)
-  - [Administration](/en/development/administration.md)
-  - [User Guide](/en/development/user-guide.md)
   - [Reference](/en/development/reference.md)
   - [Troubleshooting](/en/development/debug.md)
-  - [Knowledge base](/en/development/knowledge-base.md)
 
--   Design
+
+- Design
   - [Quick Start](/en/quick-start.md)
   - [Overview](/en/design/overview.md)
   - [Theme](/en/design/theme/)
   - [Template](/en/design/template/)
   - [User Interface](/en/design/user-interface/)
 
--   Delivery
+- Delivery
   - [Introduction](/en/delivery/)
   - [X-Update Service](/en/delivery/setup-x-update.md)
   - [Create Your Store](/en/delivery/setup-x-store.md)
@@ -26,4 +24,7 @@
   - [Preload Update](/en/delivery/update-preload.md)
 
 - Documentation
-  - [Markdown](/en/markdown/)
+  - [Administration Guide](/en/administration.md)
+  - [User Guide](/en/user-guide.md)
+  - [Knowledge base](/en/knowledge-base.md)
+  - [X-Codex Markdown](/en/markdown/)

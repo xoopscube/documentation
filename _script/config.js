@@ -118,7 +118,7 @@ window.$docsify = {
   // Tabs
   tabs: {
     persist: true,
-    sync: true,
+    sync: false, // default 'true',
     theme: 'classic',
     tabComments: true,
     tabHeadings: true // default 'true', 

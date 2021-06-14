@@ -102,7 +102,7 @@
 
 XCL is both a Content Management System (CMS) and a Web Application Platform (WAP). A simple solution to benefit from PHP7 performance and high level of security, a scalable architecture and continuous delivery that empowers site owners while maintaining full control over their own data. 
 
-![Admin Modules](/../../_media/xcl-admin-modules.png "XCL Admin Modules")
+![Admin Modules](/../../_media/xcl-ui-modules.png "XCL Admin Modules")
 _XCL 2.3.0 GUI Protoype_
 
 ### Why XCube Core?

@@ -1,29 +1,30 @@
-[<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/fr/about.md)
+[<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/en/about.md)
 
 - Developement
-  - [Quick Start](/fr/quick-start.md)
-  - [Overview](/fr/development/)
-  - [Installation](/fr/development/installation.md)
-  - [Administration](/fr/development/administration.md)
-  - [User Guide](/fr/development/user-guide.md)
-  - [Reference](/fr/development/reference.md)
-  - [Troubleshooting](/fr/development/debug.md)
-  - [Knowledge base](/fr/development/knowledge-base.md)
+  - [Quick Start](/en/quick-start.md)
+  - [Overview](/en/development/)
+  - [Installation](/en/development/installation.md)
+  - [Reference](/en/development/reference.md)
+  - [Troubleshooting](/en/development/debug.md)
 
--   Design
-  - [Quick Start](/fr/quick-start.md)
-  - [Overview](/fr/design/overview.md)
-  - [Theme](/fr/design/theme/)
-  - [Template](/fr/design/template/)
-  - [User Interface](/fr/design/user-interface/)
 
--   Delivery
-  - [Introduction](/fr/delivery/)
-  - [X-Update Service](/fr/delivery/setup-x-update.md)
-  - [Create Your Store](/fr/delivery/setup-x-store.md)
-  - [Module Update](/fr/delivery/update-module.md)
-  - [Theme Update](/fr/delivery/update-theme.md)
-  - [Preload Update](/fr/delivery/update-preload.md)
+- Design
+  - [Quick Start](/en/quick-start.md)
+  - [Overview](/en/design/overview.md)
+  - [Theme](/en/design/theme/)
+  - [Template](/en/design/template/)
+  - [User Interface](/en/design/user-interface/)
+
+- Delivery
+  - [Introduction](/en/delivery/)
+  - [X-Update Service](/en/delivery/setup-x-update.md)
+  - [Create Your Store](/en/delivery/setup-x-store.md)
+  - [Module Update](/en/delivery/update-module.md)
+  - [Theme Update](/en/delivery/update-theme.md)
+  - [Preload Update](/en/delivery/update-preload.md)
 
 - Documentation
-  - [Markdown](/fr/markdown/)
+  - [Administration Guide](/en/administration.md)
+  - [User Guide](/en/user-guide.md)
+  - [Knowledge base](/en/knowledge-base.md)
+  - [X-Codex Markdown](/en/markdown/)
