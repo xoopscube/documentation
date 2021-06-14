@@ -1,5 +1,5 @@
 - Translations
-  - [:united-kingdom: English](/en/)
-  - [:france: Français](/fr/)
-  - [:japan: 日本語](/ja/)
+  - [English](/en/)
+  - [Français](/fr/)
+  - [日本語](/ja/)
   - [:portugal: Portugues](/pt/)

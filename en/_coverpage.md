@@ -42,7 +42,10 @@
         <span class="quick-start"><a href="#/en/delivery/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> Delivery</a></span>
     </div>
 </div>
+
 <h2 style="margin:1.5em auto 0;">Welcome to XOOPSCube Project Documentation</h2>
+
 <p>X-Codex describes how to set up XCL, organize and manage content, distribute documentation and tutorials of modules and themes.</p>
 <span class="quick-start"><a href="#/en/quick-start">Quick Start</a></span>
+
 </div>
