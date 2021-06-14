@@ -355,6 +355,7 @@ This is <sup>superscript</sup>
 
 <!-- tabs:end -->
 
+
 ## Blockquotes
 
 <!-- tabs:start -->
@@ -381,6 +382,7 @@ This is <sup>superscript</sup>
 
 <!-- tabs:end -->
 
+
 ## Code
 
 <!-- tabs:start -->
@@ -402,8 +404,29 @@ console.log(total); // 3
 </body>
 ```
 
+#### ** Markdown **
+
+````markdown
+This is `inline code`
+
+```javascript
+const add   = (num1, num2) => num1 + num2;
+const total = add(1, 2);
+
+console.log(total); // 3
+```
+
+```html
+<body>
+    <p>Hello</p>
+</body>
+```
+````
+
+<!-- tabs:end -->
 
 
+## Custom CSS and HTML
 
 More advanced styling can be applied by leveraging the CSS class names and data attributes associated with tab containers, toggles, labels, and content blocks.
 
@@ -509,31 +532,6 @@ When the tab is active, note the addition of the `docsify-tabs__tab--active` cla
 <!-- tabs:end -->
 
 
-
-
-
-
-
-#### ** Markdown **
-
-````markdown
-This is `inline code`
-
-```javascript
-const add   = (num1, num2) => num1 + num2;
-const total = add(1, 2);
-
-console.log(total); // 3
-```
-
-```html
-<body>
-    <p>Hello</p>
-</body>
-```
-````
-
-<!-- tabs:end -->
 
 ## Notices
 
