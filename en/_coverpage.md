@@ -43,9 +43,7 @@
     </div>
 </div>
 
-<h2 style="margin:1.5em auto 0;">Welcome to XOOPSCube Project Documentation</h2>
+<h4 class="hero-desc">X-Codex Documentation provides information about how to install, configure, deploy and use XCL.</h4>
+<span class="quick-start" style="margin:1.5em auto;"><a href="#/en/quick-start">Quick Start</a></span>
 
-<p>X-Codex describes how to set up XCL, organize and manage content, distribute documentation and tutorials of modules and themes.</p>
-<span class="quick-start"><a href="#/en/quick-start">Quick Start</a></span>
-
-</div>
+</div><!-- End Card-list -->

@@ -2,4 +2,4 @@
   - [English](/en/)
   - [Français](/fr/)
   - [日本語](/ja/)
-  - [:portugal: Portugues](/pt/)
+  - [Portugues](/pt/)

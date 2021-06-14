@@ -1,4 +1,4 @@
-<!-- english _coverpage.md -->
+<!-- _coverpage-pt.md -->
 <div class="nav-header">
     <div class="navbar">
         <a href="#/pt/" class="logo"><span class="iconify" data-icon="uil:cube" data-inline="false"></span> XOOPSCube Project</a>
@@ -11,7 +11,7 @@
     </div>
 </div>
 
-<!-- Card -->
+<!-- Card-list -->
 <div class="card-list">
 
 <h2 class="hero-title">Getting Started with XCL Simple, Secure and Scalable Modular Architecture</h2>
@@ -42,7 +42,8 @@
         <span class="quick-start"><a href="#/pt/delivery/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> Delivery</a></span>
     </div>
 </div>
-<h2 style="margin:1.5em auto 0;">Welcome to XOOPSCube Project Documentation</h2>
-<p>X-Codex describes how to set up XCL, organize and manage content, distribute documentation and tutorials of modules and themes.</p>
-<span class="quick-start"><a href="#/pt/markdown/">Quick Start</a></span>
-</div>
+
+<h4 class="hero-desc">X-Codex Documentation provides information about how to install, configure, deploy and use XCL.</h4>
+<span class="quick-start" style="margin:1.5em auto;"><a href="#/pt/quick-start">Quick Start</a></span>
+
+</div><!-- End Card-list -->

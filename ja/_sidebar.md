@@ -1,30 +1,30 @@
-[<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/en/about.md)
+[<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/ja/about.md)
 
 - Developement
-  - [Quick Start](/en/quick-start.md)
-  - [Overview](/en/development/)
-  - [Installation](/en/development/installation.md)
-  - [Reference](/en/development/reference.md)
-  - [Troubleshooting](/en/development/debug.md)
+  - [Quick Start](/ja/quick-start.md)
+  - [Overview](/ja/development/)
+  - [Installation](/ja/development/installation.md)
+  - [Reference](/ja/development/reference.md)
+  - [Troubleshooting](/ja/development/debug.md)
 
 
 - Design
-  - [Quick Start](/en/quick-start.md)
-  - [Overview](/en/design/overview.md)
-  - [Theme](/en/design/theme/)
-  - [Template](/en/design/template/)
-  - [User Interface](/en/design/user-interface/)
+  - [Quick Start](/ja/quick-start.md)
+  - [Overview](/ja/design/overview.md)
+  - [Theme](/ja/design/theme/)
+  - [Template](/ja/design/template/)
+  - [User Interface](/ja/design/user-interface/)
 
 - Delivery
-  - [Introduction](/en/delivery/)
-  - [X-Update Service](/en/delivery/setup-x-update.md)
-  - [Create Your Store](/en/delivery/setup-x-store.md)
-  - [Module Update](/en/delivery/update-module.md)
-  - [Theme Update](/en/delivery/update-theme.md)
-  - [Preload Update](/en/delivery/update-preload.md)
+  - [Introduction](/ja/delivery/)
+  - [X-Update Service](/ja/delivery/setup-x-update.md)
+  - [Create Your Store](/ja/delivery/setup-x-store.md)
+  - [Module Update](/ja/delivery/update-module.md)
+  - [Theme Update](/ja/delivery/update-theme.md)
+  - [Preload Update](/ja/delivery/update-preload.md)
 
 - Documentation
-  - [Administration Guide](/en/administration.md)
-  - [User Guide](/en/user-guide.md)
-  - [Knowledge base](/en/knowledge-base.md)
-  - [X-Codex Markdown](/en/markdown/)
+  - [Administration Guide](/ja/administration.md)
+  - [User Guide](/ja/user-guide.md)
+  - [Knowledge base](/ja/knowledge-base.md)
+  - [X-Codex Markdown](/ja/markdown/)

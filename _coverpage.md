@@ -28,7 +28,7 @@
 <div class="study-card" style="background-color: #3949ab">
     <div class="study-card-image"><img src="_media/xcl-design.png"></div>
     <div class="study-blurb">
-        <h2>Design Guidelines</h2>
+        <h2>UIX Design</h2>
         <p>Integrate responsive frameworks and libraries in your Modules and Themes.</p>
         <span class="quick-start"><a href="#/en/design/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> Design</a></span>
     </div>
@@ -42,6 +42,7 @@
         <span class="quick-start"><a href="#/en/delivery/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> Delivery</a></span>
     </div>
 </div>
+
 <h4 class="hero-desc">X-Codex Documentation provides information about how to install, configure, deploy and use XCL.</h4>
 <span class="quick-start" style="margin:1.5em auto;"><a href="#/en/quick-start">Quick Start</a></span>
 
