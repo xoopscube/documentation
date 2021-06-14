@@ -4,7 +4,7 @@ window.$docsify = {
   // The name in the sidebar.
   name: 'xcodex',
   // Logo in the sidebar, can be resized by CSS.
-  logo: '/_media/logo.svg',
+  logo: '/_media/logo.png',
   // Base path of the website. 
   // 1. You can set it to another directory or another domain name.
   // basePath: '/documentation/',
