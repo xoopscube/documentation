@@ -72,6 +72,7 @@ Ready to start writing?  Either start changing stuff or read more about.
 ### Plugins
 -----
 
+```mermaid
 gantt
     dateFormat  YYYY-MM-DD
     title       Adding GANTT diagram functionality to mermaid
@@ -101,9 +102,11 @@ gantt
     Describe gantt syntax               :after doc1, 3d
     Add gantt diagram to demo page      :20h
     Add another diagram to demo page    :48h
+```
 
 **Gitgraph**
 
+```mermaid
 gitGraph:
 options
 {
@@ -120,7 +123,7 @@ checkout master
 commit
 commit
 merge newbranch
-
+```
     
 ### Folder Structure
 -----
