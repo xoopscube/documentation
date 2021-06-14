@@ -29,7 +29,7 @@
     <div class="study-card-image"><img src="_media/xcl-design.png"></div>
     <div class="study-blurb">
         <h2>UIX Design</h2>
-        <p>Integrar estruturas e bibliotecas reactivas em Módulos e Temas.</p>
+        <p>Integrar estruturas e bibliotecas, CSS e JS, reactivas em Módulos e Temas.</p>
         <span class="quick-start"><a href="#/pt/design/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> Design</a></span>
     </div>
 </div>

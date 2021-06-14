@@ -111,7 +111,7 @@
 /* Content
 ============================================================================= */
 :root {
-    --content-max-width                 : 55em;
+    --content-max-width                 : 65em;
 
     /* Blockquote */
     --blockquote-background             : var(--mono-tint3);

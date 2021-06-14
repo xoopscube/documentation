@@ -1,20 +1,14 @@
 :root {
---base-font-family     : -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
---base-font-size       : 15px;
---code-font-family     : Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
---code-theme-text      : #abc;
---base-background-color: #121827;
---code-theme-background: #0d0f1c;
---cover-max-width: 100%;
+--base-font-family      : -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+--base-font-size        : 15px;
+--code-font-family      : Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+--code-theme-text       : #abc;
+--base-background-color : #121827;
+--code-theme-background : #0d0f1c;
+--cover-max-width       : 100%;
 --cover-background-color: var(--base-background-color);
 --cover-background-image: #212745 linear-gradient(to bottom, rgba(0,0,0,0.3), #21274500) no-repeat top center fixed;
 /* --cover-background-image: radial-gradient(ellipse at center bottom, var(--mono-shade3), transparent); */
-
-/* 
-#051937
-#212745 
-
-*/
 
 --link-color                        : #face74 ;
 --link-color--hover                 : #fff;
@@ -42,8 +36,8 @@ color: white;
 }
 ::-webkit-scrollbar-track {
     background: #face74b4;
-    box-shadow: inset 0px 4px 0px 4px #272727;
-    border-radius: 0px
+    box-shadow: inset 0 4px 0 4px #272727;
+    border-radius: 0
 }
 ::-webkit-scrollbar-thumb {
     background: #face7488;
@@ -152,7 +146,6 @@ nav .i18n-link{
     flex-wrap: wrap;
     margin: 0 auto;
 }
-
 .card-list .quick-start a {
     text-decoration: none;
 }
@@ -192,7 +185,8 @@ nav .i18n-link{
 }
 .study-blurb>h2 {
     font-size: 25px;
-    margin: 0
+    margin: 0;
+    font-weight: 400;
 }
 
 .quick-start {
@@ -203,7 +197,6 @@ nav .i18n-link{
     margin: 0 auto;
     text-align: center;
 }
-
 
 .sidebar {
     border-color: #121727;
@@ -264,4 +257,21 @@ dd {
 footer {    
     font-size: 0.8rem;
     padding: 2em 0;
+}
+/* ---------- ---------- Extended */
+/* Codepen.js */
+[data-tab-content="codepen"] .cp_embed_wrapper {
+    position: relative;
+    top: calc(0px - var(--docsifytabs-content-padding));
+    left: calc(0px - var(--docsifytabs-content-padding));
+    width: calc(100% + calc(var(--docsifytabs-content-padding) * 2));
+    margin-bottom: calc(0px - var(--docsifytabs-content-padding));
+}
+/*Mermaid.js */
+
+.mermaid {
+    text-align: center;
+}
+.mermaid text[font-size="18"] {
+    font-size: 18px !important;
 }

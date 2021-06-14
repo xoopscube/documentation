@@ -58,7 +58,7 @@ textarea{overflow:auto;}
 svg:not([fill]) {fill: currentColor;} /* SVGs fallback to the current text color */
 /* -------------------- -------------------- LAYOUT */
 :root {
-    --ui-font-family    : system-ui, "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Oxygen", "Ubuntu", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --ui-font-family    : "Avenir", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Oxygen", "Ubuntu", "Noto Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --ui-font-monospace : SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     --ui-font-serif     : serif;
     --ui-font-size      : 16px/1.5;  /* font-size/line-height (use <number> values instead of <length> values eg.: 16px x 1.5 = 24px */
