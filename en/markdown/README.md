@@ -402,6 +402,118 @@ console.log(total); // 3
 </body>
 ```
 
+
+
+
+More advanced styling can be applied by leveraging the CSS class names and data attributes associated with tab containers, toggles, labels, and content blocks.
+
+<!-- tabs:start -->
+
+#### **Basic Tab**
+
+**HTML**
+
+```html
+<button class="docsify-tabs__tab" data-tab="basic tab">Basic Tab</button>
+<div class="docsify-tabs__content" data-tab-content="basic tab">
+  ...
+</div>
+```
+
+When the tab is active, note the addition of the `docsify-tabs__tab--active` class:
+
+```html
+<button class="docsify-tabs__tab docsify-tabs__tab--active" data-tab="basic tab">Basic Tab</button>
+```
+
+#### **Active State**
+
+**HTML**
+
+```html
+<button class="docsify-tabs__tab docsify-tabs__tab--active" data-tab="active state">Active State</button>
+<div class="docsify-tabs__content" data-tab-content="active state">
+  ...
+</div>
+```
+
+**Custom CSS**
+
+```css
+.docsify-tabs__tab--active[data-tab="active state"] {
+  box-shadow: none;
+  background: #13547a;
+  color: white;
+}
+.docsify-tabs__content[data-tab-content="active state"] {
+  background-image: linear-gradient(0deg, #80d0c7 0%, #13547a 100%);
+}
+.docsify-tabs__content[data-tab-content="active state"] p strong {
+  color: white;
+}
+```
+
+#### **CodePen**
+
+<div class="codepen" data-height="400" data-theme-id="light" data-default-tab="html,result" data-user="jhildenbiddle" data-slug-hash="wGjZLj" style="height: 400px; height: 70vh; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 0; " data-pen-title="Demo: Vertical Rhythm Reset (CSS/SCSS)"></div>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+**HTML**
+
+```html
+<button class="docsify-tabs__tab docsify-tabs__tab--active" data-tab="codepen">CodePen</button>
+<div class="docsify-tabs__content" data-tab-content="codepen">
+  ...
+</div>
+```
+
+**Custom CSS**
+
+```css
+[data-tab-content="codepen"] .cp_embed_wrapper {
+  position: relative;
+  top: calc(0px - var(--docsifytabs-content-padding));
+  left: calc(0px - var(--docsifytabs-content-padding));
+  width: calc(100% + calc(var(--docsifytabs-content-padding) * 2));
+  margin-bottom: calc(0px - var(--docsifytabs-content-padding));
+}
+```
+
+#### **Badge**
+
+**Tab Markdown**
+
+```markdown
+#### **Badge**
+```
+
+**Custom CSS**
+
+```css
+[data-tab="badge"]:after {
+  content: 'New!';
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(35%, -45%);
+  padding: 0.25em 0.35em;
+  border-radius: 3px;
+  background: red;
+  color: white;
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+```
+
+<!-- tabs:end -->
+
+
+
+
+
+
+
 #### ** Markdown **
 
 ````markdown
