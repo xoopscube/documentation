@@ -478,7 +478,7 @@ When the tab is active, note the addition of the `docsify-tabs__tab--active` cla
 
 #### **CodePen**
 
-<p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="result" data-user="iopensource" data-slug-hash="xxqjRzP" data-preview="true" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="PureCSS - ScrollBar Hover">
+<p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="result" data-user="iopensource" data-slug-hash="xxqjRzP" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 1px solid; margin: 0; padding: 0;" data-pen-title="PureCSS - ScrollBar Hover">
   <span>See the Pen <a href="https://codepen.io/iopensource/pen/xxqjRzP">
   PureCSS - ScrollBar Hover</a> by Info Opensource (<a href="https://codepen.io/iopensource">@iopensource</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
