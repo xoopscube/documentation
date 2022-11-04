@@ -1,16 +1,32 @@
 ## <span class="iconify" data-icon="flat-color-icons:about"></span> The Project
 
-**The XOOPSCube Project** is Open Source, friendly maintained, developed and supported by a volunteer group to expand the vision of a free internet integrating everyone's creativity and skills. A shared vision and the OSS guiding principles made the original project's strategy that is at the very beginning of the innovation process. Since 2005, XCube modularity in design and the freedom of choice allows developers and designers to use their favorite frameworks and libraries for their intended uses by end users. The fundamental building blocks of the project are the innovative concept **3S** that stands for : Simple, Secure, Scalable.
+**The XOOPSCube Project** is Open Source, friendly maintained, developed and supported by a volunteer group to expand the vision of a free internet integrating everyone's creativity and skills. A shared vision and the OSS guiding principles made the original project's strategy that is at the very beginning of the innovation process. Since 2005, XCube modularity in design and the freedom of choice allows developers and designers to use their favorite frameworks and libraries for their intended uses by end users. The fundamental building blocks of the project are the innovative concept **3S** that stands for: Simple, Secure, Scalable.
+
+### Secure
+
+XCube Core (©2005 Kazuhisa Minato, BSD) is secure by design, in software engineering, means that software products and capabilities have been designed to be foundationally secure.
+However, the module Protector (©peak.ne.jp) is installed to provide an extra layer of security to the subsystem Legacy — which ensures backwards compatibility with the older system XOOPS2 (©2002 Kazumi Ono @Onokazu, GPL2) and later XOOPS2-JP Japanese versions with multibyte character support.
+
+### Scalable 
+
+Scaling a web application platform means allowing more people to use the application and being able to meet increasing demand, without changing the code, data or the trusted system. You can easily extend core functionality with modules or a new subsystem. XCube core provides many essential tools for maintaining a web platform and offers a great deal of functionality and customization options for your Content Management System. In fact, the customization options for your Web Application Platform and CMS-driven websites are nearly endless with preloads (single file component).
+
+### Self-Host
+
+Self-hosted platforms are decentralized, allow for superior accessibility, customization of features and style, which means you are not dependent on a centralized service and are also free to choose your hosting service as the number of users grows.   
+You have full control over your own data and services, rather than depending on expensive third-party services (cloud, saas).
+
+---
 
 **XOOPS** is an acronym of "eXtensible Object Oriented Portal System". Though started as a portal system, it later developed into a web application framework. It aims to serve as a web framework for use by small, medium and large sites, through the installation of modules. 
 
-On the New Year’s Day of 2002, XOOPS RC1 was released to the public. The original XOOPS code was based on PHP-Nuke 4.4.1 and myPHPNuke 1.8.5, although some 70-80 percent of the code was rewritten, as Onokazu wrote on the release announcement. By the end of May 2002, the team had released three point versions, and XOOPS moved to a server in Japan. 
+On the New Year’s Day of 2002, XOOPS RC1 was released to the public (©2002 Kazumi Ono @Onokazu, GPL2). The original XOOPS code was based on PHP-Nuke 4.4.1 and myPHPNuke 1.8.5, although some 70-80 percent of the code was rewritten, as Kazumi Ono wrote on the release announcement. By the end of May 2002, the team had released three point versions, and XOOPS moved to a server in Japan. 
 
-**XOOPSCube** forked from the original XOOPS to develop a new core and follow a different path development with the modular architecture. The fork was announced by Onokazu in May 2005 and started by the former Xoops Japan Team, who felt that security and multi-byte character support were not adequately addressed by the former Xoops management team.
+**XOOPSCube** forked from later XOOPS2-JP Japanese version with multibyte character support to develop a new distribution package and follow a different path development with the new XCube Core (©2005 Kazuhisa Minato @minahito) and a modular architecture. The fork started by Kazuhisa Minato was announced by Kazumi Ono in May 2005 and joined by the former Xoops Japan Team, who felt that security and multi-byte character support were not adequately addressed by the former Xoops management team.
 
- **The XOOPSCube Team** maintained Xoops 2.0.x JP series, a temporary branch for Japanese community, while developing XOOPSCube — the new application core implementing concepts of object-oriented programming, design patterns and real-time 3D rendering. **The XCube core** was developed from scratch by Kazuhisa Minato (lead programmer in the game industry). And the **Base Legacy System** was developed to ensure backwards compatibility with a set of modules for interoperability with XOOPS the older legacy system.
+ **The XOOPSCube Team** maintained Xoops 2.0.x JP series, a temporary branch for Japanese community, while developing XOOPSCube — the new Web Application Platform (WAP) and Content Management System (CMS). **The XCube core** was developed from scratch by Kazuhisa Minato (lead programmer in the game industry) and the new base subsystem **Legacy** was developed to ensure backwards compatibility with a set of modules for interoperability with the older XOOPS2 system.
 
-XoopsCube Legacy 2.1.0 final was released on April 30, 2007. Meanwhile, Gigamaster (aka Nuno Luciano) joined the project team improving the user interface design, user experience and usability. Gijoe developed the very distinct and unique feature of duplicable modules (D3) and the community contributed in many ways to improve the core and release several D3 modules. The Package Legacy was released on july 28, 2012.
+XoopsCube Legacy 2.1.0 final was released on April 30, 2007. Meanwhile, many other developers and users joined the project improving translations, user interface design and usability. Gijoe developed the very distinct and unique feature of duplicatable modules (D3) and the community contributed in many ways to improve the core and the release of several D3 modules. A new Package Legacy was released on july 28, 2012.
 
 Since then The XOOPSCube Project is led by highly skilled developers Kilica (XCCK, Content Creation Kit) and Nao-pon (Xelfinder, file manager) ensuring that development follows the values and principles of Open Source. 
 
@@ -52,7 +68,7 @@ The documentation is built on top of Docsify using a Markdown processor (also co
 The BSD License allows proprietary use and allows the software released under the license to be incorporated into proprietary products.
 
 ```html
-Copyright 2021 XOOPSCube
+Copyright 2022 XOOPSCube
 
 Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:
