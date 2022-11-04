@@ -30,4 +30,6 @@ The X-Codex Documentation provides information about how to delivery and update 
 
 # <span class="iconify" data-icon="mdi:cube-outline"></span> Welcome
 
-**The XOOPSCube Project** is a Simple, Secure and Scalable web application platform. The modular architecture is built in PHP with the Cube core, SQL and a smarty theming system. The graphical user interface empowers everyone to create dynamic and content rich apps with HTML, CSS and Javascript - from the best looking blogs, forums, portfolios, intranet and business websites to desktop applications on Linux, Mac or Windows.
+**XOOPSCube Legacy** (XCL) is a free and open-source Web Application Platform (WAP) empowering site owners to build, manage and deploy scalable web applications, custom Content Management System (CMS), forums, community discussion board and knowledge management systems, or multiple blogs (e.g. WordPress).
+
+The XCL bundle package is designed for easy usage and to benefit from the performance of the most popular web server stack: Apache, MySQL and PHP.
