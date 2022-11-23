@@ -6,7 +6,7 @@
 </dl>
 
 <details>
-<summary style="cursor: pointer;">X-Update Service</summary>
+<summary style="cursor: pointer;">X-Update Manager</summary>
 
 - Managing Your X-Update Settings
 - Fundamentals of the folder structure and how files are organized.

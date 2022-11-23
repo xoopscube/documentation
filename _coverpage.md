@@ -5,7 +5,7 @@
         <ul class="navmain">
         <li><a href="#/en/development/" class="nav-links"><span class="iconify" data-icon="file-icons:devcontainer"></span> Development</a></li>
         <li><a href="#/en/design/" class="nav-links"><span class="iconify" data-icon="ic:round-design-services"></span> Design</a></li>
-        <li><a href="#/en/delivery/" class="nav-links"><span class="iconify" data-icon="flat-color-icons:deployment"></span> Deploy</a></li>
+        <li><a href="#/en/delivery/" class="nav-links"><span class="iconify" data-icon="flat-color-icons:deployment"></span> Deployment</a></li>
         <li><a href="https://github.com/xoopscube" class="nav-links" target="_blank"><span class="iconify" data-icon="fe:github"></span> Github</a></li>
         </ul>
     </div>
@@ -14,13 +14,13 @@
 <!-- Card-list -->
 <div class="card-list">
 
-<h2 class="hero-title">Getting Started with XCL Simple, Secure and Scalable Modular Architecture</h2>
+<h2 class="hero-title">Getting Started with XCL—Simple, Secure and Scalable Web Application Platform</h2>
 
 <div class="study-card" style="background-color: #5E35B1">
     <div class="study-card-image"><img src="_media/xcl-dev-env.png"></div>
     <div class="study-blurb">
         <h2>Development Tools</h2>
-        <p>Build your Web Application Platform practicing continuous integration into Github repository.</p>
+        <p>Build, manage and deploy a scalable Web Application Platform and Content Management System.</p>
         <span class="quick-start"><a href="#/en/development/"><span class="iconify" data-icon="mdi:checkbox-marked-outline"></span> Development</a></span>
     </div>
 </div>
@@ -28,7 +28,7 @@
 <div class="study-card" style="background-color: #3949ab">
     <div class="study-card-image"><img src="_media/xcl-design.png"></div>
     <div class="study-blurb">
-        <h2>UIX Design</h2>
+        <h2>Design Integration</h2>
         <p>Integrate responsive frameworks and libraries in your Modules and Themes.</p>
         <span class="quick-start"><a href="#/en/design/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> Design</a></span>
     </div>
@@ -37,9 +37,9 @@
 <div class="study-card" style="background-color: #1976d2">
     <div class="study-card-image"><img src="_media/xcl-deploy.png"></div>
     <div class="study-blurb">
-        <h2>Continuous delivery</h2>
+        <h2>Simple Deployment</h2>
         <p>Synchronize deployements and continuously delivered projects in a sustainable way.</p>
-        <span class="quick-start"><a href="#/en/delivery/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> Delivery</a></span>
+        <span class="quick-start"><a href="#/en/deployment/"><span class="iconify" data-icon="mdi:arrow-right-bold-hexagon-outline"></span> Delivery</a></span>
     </div>
 </div>
 

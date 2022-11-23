@@ -1,23 +1,25 @@
 <dl>
-  <dt>The X-Codex Documentation provides information about modules Template design.</dt>
+  <dt>The X-Codex Documentation provides information about design guidelines and how to write documentation.</dt>
   <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
   <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
-  <dd>This information is intended for Webmasters, UIX Designers and Frontend Developers.</dd>
+  <dd>This information is intended for administrators, developers and designers.</dd>
 </dl>
 
 <details>
-<summary style="cursor: pointer;">Template</summary>
+<summary style="cursor: pointer;">Design Integration</summary>
 
-- What are Templates?
-- Installation Guide
+- Framework Agnostic
+- Theme and Templates
+- Frontend Theme Design
+- Admin Theme Panel and Dashboard
 
 </details>
 
 <details>
-<summary style="cursor: pointer;">User Interface</summary>
+<summary style="cursor: pointer;">Smarty Render Engine</summary>
 
-- What is Smarty?
-- Render Engine
+- Smarty Template Engine
+- Module Render
 - Theme & Templates
 - Customization
 - Personalization
@@ -25,10 +27,10 @@
 </details>
 
 <details>
-<summary style="cursor: pointer;">Write The Docs</summary>
+<summary style="cursor: pointer;">Components</summary>
 
-- Why Markdown
-- Plugins
+- Single File Component
+- Preload e.g. add-on, plugin
 - Folder Structure
 - Docs Templates
 
@@ -36,9 +38,9 @@
 
 -----
 
-### Guidelines
+### Design Integration
 
-This guide aims to help anyone who wants to start a local documentation to provide resources, guidelines, and tips on how to build, maintain and develop.
+This guide aims to help anyone who wants to start customizing the user interface to provide resources, guidelines, and tips on how to implement a personalized design.
 
 All the content in this guide and in the resources repository is open source, contributions and suggestions are welcome! Feel free to communicate and share ideas by creating issues and pull requests in the GitHub repository.
 

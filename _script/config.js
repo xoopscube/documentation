@@ -19,8 +19,6 @@ window.$docsify = {
   nameLink: {
     '/en/': '#/en/',
     '/fr/': '#/fr/',
-    '/ja/': '#/ja/',
-    '/pt/': '#/pt/',
     '/': '/'
   },
   // Loads navbar from the Markdown file _navbar.md if true.
@@ -41,12 +39,6 @@ window.$docsify = {
     '/fr/.*/_navbar.md': '/fr/_sidebar.md',
     '/fr/.*/_sidebar.md': '/fr/_sidebar.md',
     '/fr/(.*)': '/fr/$1',
-    '/ja/.*/_navbar.md': '/ja/_navbar.md',
-    '/ja/.*/_sidebar.md': '/ja/_sidebar.md',
-    '/ja/(.*)': '/ja/$1',
-    '/pt/.*/_navbar.md': '/pt/_navbar.md',
-    '/pt/.*/_sidebar.md': '/pt/_sidebar.md',
-    '/pt/(.*)': '/pt/$1',
   },
     // Automatic header title to the page from the sidebar link.
     autoHeader: true,
@@ -75,8 +67,6 @@ window.$docsify = {
   // 3. Activate mutiple covers and custom file name.
   coverpage: {
     '/fr/': '_coverpage-fr.md',
-    '/ja/': '_coverpage-ja.md',
-    '/pt/': '_coverpage-pt.md',
     '/': '_coverpage.md'
   },
   // Activate only coverpage to load when visiting the home page.
@@ -85,9 +75,7 @@ window.$docsify = {
   // Custom 404
   notFoundPage: {
     '/en': '/en/_404.md',
-    '/fr': '/fr/_404.md',
-    '/ja': '/ja/_404.md',
-    '/pt': '/pt/_404.md'
+    '/fr': '/fr/_404.md'
   },
 
   // Theme custom style.
@@ -130,20 +118,14 @@ window.$docsify = {
     buttonText: {
       '/en/': 'Copy to clipboard',
       '/fr/': 'Copier le code',
-      '/ja/': '点击复制',
-      '/pt/': 'Copiar'
     },
     errorText: {
       '/en/': 'Error',
-      '/fr/': 'erreur',
-      '/ja/': '错误',
-      '/pt/': 'Erro'
+      '/fr/': 'erreur'
     },
     successText: {
       '/en/': 'Copied',
-      '/fr/': 'Copié',
-      '/ja/': '复制',
-      '/pt/': 'Copiado'
+      '/fr/': 'Copié'
     }
   },
   // Pagination
@@ -159,8 +141,8 @@ window.$docsify = {
       var footer = [
         // '<hr/>',
         '<footer>',
-        '<span><a href="https://github.com/xoopscube" target="_blank">XOOPSCUBE Project</a> &copy;2021</span>',
-        ' - <span>Web Application Platform <a href="https://github.com/xoopscube/xcl" target="_blank">XCL</a> - <span> User Interface <a href="https://github.com/xoopscube/xoopscube.github.io" target="_blank">Prototype</span>',
+        '<span><a href="https://github.com/xoopscube" target="_blank">XOOPSCUBE Project</a> &copy;2022</span>',
+        ' - <span>Web Application Platform <a href="https://github.com/xoopscube/legacy" target="_blank">XCL Bundle Package</a>',
         '</footer>'
       ].join('');
       hook.afterEach(function (html) {
@@ -174,15 +156,11 @@ window.$docsify = {
     noData: {
       '/en/': 'No results!',
       '/fr/': 'Aucun résultat!',
-      '/ja/': '結果が見つかりません',
-      '/pt/': 'Sem resultados!'
     },
     paths: 'auto',
     placeholder: {
       '/en/': 'Search',
       '/fr/': 'Rechercher',
-      '/ja/': '検索する',
-      '/pt/': 'Pesquisar'
     }
   },
 };
