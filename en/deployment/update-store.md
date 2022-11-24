@@ -1,38 +1,28 @@
 <dl>
-  <dt>The X-Codex Documentation provides information about how to manage your Store settings.</dt>
+  <dt>The X-Codex Documentation provides information about deployment and update.</dt>
   <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
   <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
   <dd>This information is intended for administrators and developers.</dd>
 </dl>
 
-<details>
-<summary style="cursor: pointer;">Store Settings</summary>
-
-- Creating and mnaging your store settings.
-
-</details>
 
 <details>
-<summary style="cursor: pointer;">Folder and File Structure</summary>
+<summary style="cursor: pointer;">Create Your Store</summary>
 
+- Creating and Managing Your Store Settings.
 - Fundamentals of the folder structure and how files are organized.
-
-</details>
-
-<details>
-<summary style="cursor: pointer;">Example</summary>
-
-- An Example of a Continuous Integration Delivery.
+- An example of a Continuous Integration.
 
 </details>
 
 -----
 
-### Set up a Store
+## Create a Store
 
-Set up your store file on Github, Gitlab or your server.
+**Update Dashboard**
+
+User-friendly dashboard to update packages from GitHub, GitLab or your Git server.
 
 Sync your source code and continuously delivered projects in a sustainable way
 
 to your users and clients.
-
