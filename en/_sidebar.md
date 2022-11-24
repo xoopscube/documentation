@@ -20,7 +20,7 @@
   - [XCube Tools](/en/development/README.md#xcube-tools)
 
 - Design
-  - [Overview](/en/design/)
+  - [Overview](/en/design/README.md)
   - [Framework Agnostic](/en/design/README.md#framework-agnostic)
   - [Theme](/en/design/theme/)
   - [Template](/en/design/template/)
