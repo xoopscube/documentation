@@ -1,11 +1,9 @@
 # Prototyping tools
 Complete (!?) list of prototyping tools
 
-There are _a lot_ of prototyping tools out there. Let me know if I've missed any :) 
+There are _a lot_ of prototyping tools out there. Feel free to edit the list ! 
 
 ## The list
-
-
 
 Name | Lowest price | Platform | Protype for
 -----|--------------|----------|------------
@@ -140,3 +138,5 @@ Name | Lowest price | Platform | Protype for
 * [Prototyping Tools Cooper](http://www.cooper.com/prototyping-tools)
 
 ## Footnotes
+
+Edit please !

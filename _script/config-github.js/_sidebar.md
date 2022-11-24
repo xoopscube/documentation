@@ -1,29 +1,34 @@
 [<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/en/about.md)
 
-- Developement
-    - [Quick Start](/en/quick-start.md)
-    - [Overview](/en/development/)
-    - [Installation](/en/development/installation.md)
-    - [Administration](/en/development/administration.md)
-    - [User Guide](/en/development/user-guide.md)
-    - [Reference](/en/development/reference.md)
-    - [Troubleshooting](/en/development/debug.md)
-    - [Knowledge base](/en/development/knowledge-base.md)
+- Development
+    - [XOOPSCube](/en/development/)
+    - [XCube Core](/en/development/xcube-core.md)
+    - [Subsystem Legacy](/en/development/xcube-legacy.md)
+    - [Code Generator](/en/development/xcube-tools.md)
 
--   Design
-    - [Quick Start](/en/quick-start.md)
-    - [Overview](/en/design/overview.md)
+- Design
+    - [Render Engine](/en/design/README.md)
+    - [Framework Agnostic](/en/design/framework-agnostic.md)
     - [Theme](/en/design/theme/)
     - [Template](/en/design/template/)
+    - [Components](/en/design/components.md)
+    - [Guidelines](/en/design/guidelines/)
     - [User Interface](/en/design/user-interface/)
 
--   Delivery
-    - [Introduction](/en/delivery/)
-    - [X-Update Service](/en/delivery/setup-x-update.md)
-    - [Create Your Store](/en/delivery/setup-x-store.md)
-    - [Module Update](/en/delivery/update-module.md)
-    - [Theme Update](/en/delivery/update-theme.md)
-    - [Preload Update](/en/delivery/update-preload.md)
+- Deployment
+    - [Introduction](/en/deployment/)
+    - [Deploy to SFTP](/en/deployment/sftp.md)
+    - [Deploy with GitHub](/en/deployment/deploy-github.md)
+    - [X-Update Manager](/en/deployment/update-manager.md)
+    - [Create Your Store](/en/deployment/update-store.md)
+    - [Module Update](/en/deployment/update-module.md)
+    - [Theme Update](/en/deployment/update-theme.md)
+    - [Preload Update](/en/deployment/update-preload.md)
 
-- Documentation
-    - [Markdown](/en/markdown/)
+- Guides
+    - [Getting Started](/en/guides/)
+    - [Installation](/en/guides/installation.md)
+    - [Administration Guide](/en/guides/administration.md)
+    - [User Guide](/en/guides/user-guide.md)
+    - [Knowledge base](/en/guides/knowledge-base.md)
+    - [X-Codex Markdown](/en/guides/markdown/)
