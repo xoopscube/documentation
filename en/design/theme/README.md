@@ -30,9 +30,9 @@
 <summary style="cursor: pointer;">Components</summary>
 
 - Single File Component
-- Preload e.g. add-on, plugin
+- Preload - add-on, extension, plugin
 - Folder Structure
-- Docs Templates
+- Modules Templates
 
 </details>
 

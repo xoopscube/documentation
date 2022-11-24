@@ -1,3 +1,41 @@
+<dl>
+  <dt>The X-Codex Documentation provides information about design guidelines and how to write documentation.</dt>
+  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
+  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
+  <dd>This information is intended for administrators, developers and designers.</dd>
+</dl>
+
+<details>
+<summary style="cursor: pointer;">Design Integration</summary>
+
+- Framework Agnostic
+- Theme and Templates
+- Frontend Theme Design
+- Admin Theme Panel and Dashboard
+
+</details>
+
+<details>
+<summary style="cursor: pointer;">Smarty Render Engine</summary>
+
+- Smarty Template Engine
+- Module Render
+- Theme & Templates
+- Customization
+- Personalization
+
+</details>
+
+<details>
+<summary style="cursor: pointer;">Components</summary>
+
+- Single File Component
+- Preload - add-on, extension, plugin
+- Folder Structure
+- Modules Templates
+
+</details>
+
 #### User Interface
 
 - A **theme** is a collection of files (html, css, javascript) with Smarty Template Engine _Variables_ and _Constants_ that are assigned from PHP (core, module or preload). 

@@ -4,17 +4,17 @@
     /* Color
     ------------------------------------------------------------------------- */
     /* Monochrome */
-    --mono-hue        : 113;
-    --mono-saturation : 0%;
+    --h        : 113;
+    --s : 0%;
 
     /* Monochrome shades (darker) and tints (lighter) */
-    --mono-shade3     : hsl(var(--mono-hue), var(--mono-saturation), 20%); /* #333333 */
-    --mono-shade2     : hsl(var(--mono-hue), var(--mono-saturation), 30%); /* #4d4d4d */
-    --mono-shade1     : hsl(var(--mono-hue), var(--mono-saturation), 40%); /* #666666 */
-    --mono-base       : hsl(var(--mono-hue), var(--mono-saturation), 50%); /* #808080 */
-    --mono-tint1      : hsl(var(--mono-hue), var(--mono-saturation), 70%); /* #b3b3b3 */
-    --mono-tint2      : hsl(var(--mono-hue), var(--mono-saturation), 89%); /* #e3e3e3 */
-    --mono-tint3      : hsl(var(--mono-hue), var(--mono-saturation), 97%); /* #f7f7f7 */
+    --mono-shade3     : hsl(var(--h), var(--s), 20%); /* #333333 */
+    --mono-shade2     : hsl(var(--h), var(--s), 30%); /* #4d4d4d */
+    --mono-shade1     : hsl(var(--h), var(--s), 40%); /* #666666 */
+    --mono-base       : hsl(var(--h), var(--s), 50%); /* #808080 */
+    --mono-tint1      : hsl(var(--h), var(--s), 70%); /* #b3b3b3 */
+    --mono-tint2      : hsl(var(--h), var(--s), 89%); /* #e3e3e3 */
+    --mono-tint3      : hsl(var(--h), var(--s), 97%); /* #f7f7f7 */
 
     /* Theme */
     --theme-hue       : 204;
@@ -48,9 +48,9 @@
     /* Utility
     ------------------------------------------------------------------------- */
     /* Borders */
-    --border-radius-s : ;
-    --border-radius-m : ;
-    --border-radius-l : ;
+    --border-radius-s : .25rem;
+    --border-radius-m : .5rem;
+    --border-radius-l : 1rem;
 
     /* Animations and transitions */
     --duration-slow   : 1s;
@@ -64,18 +64,17 @@
     --spinner-track-width        : 4px;
     --spinner-track-color        : rgba(0, 0, 0, 0.15);
     --spinner-transition-duration: var(--duration-medium);
-}
-
+ 
 
 /* Base
 ============================================================================= */
-:root {
+ 
     --base-background-color: #fff;
     --base-color           : var(--mono-shade2);
     --base-font-family     : -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --base-font-size       : 16px;
-    --base-font-weight     : ;
-    --base-letter-spacing  : ;
+    --base-font-weight     : 400;
+    --base-letter-spacing  : inherit;
     --base-line-height     : 1.7;
 
     /* Emoji */
@@ -86,13 +85,13 @@
 
     /* Mark */
     --mark-background      : #ffecb3;
-    --mark-color           : ;
+    --mark-color           : #111;
 
     /* Preformatted */
     --pre-font-family      : var(--code-font-family);
     --pre-font-size        : var(--code-font-size);
-    --pre-font-weight      : ;
-    --pre-line-height      : ;
+    --pre-font-weight      : 400;
+    --pre-line-height      : inherit;
 
     /* Selection */
     --selection-color      : #b4d5fe;
@@ -137,7 +136,7 @@
     /* Code */
     --code-font-family                  : Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     --code-font-size                    : calc(var(--font-size-m) * 0.95);
-    --code-font-weight                  : ;
+    --code-font-weight                  : 400;
     --code-tab-size                     : 4;
 
     --code-block-border-radius          : var(--border-radius-m);

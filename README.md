@@ -15,9 +15,7 @@
 The folder structure of markdown files with a link to edit on the Github repository.
 
 + [English docs website](https://xoopscube.github.io/documentation/ 'X-Codex English')
-+ [Japanese docs website](https://xoopscube.github.io/documentation/#/ja/ 'X-Codex Japanese')
 + [Français docs website](https://xoopscube.github.io/documentation/#/fr/ 'X-Codex Français')
-+ [Portugues docs website](https://xoopscube.github.io/documentation/#/pt/ 'X-Codex Portugues')
 
 ![X-Codex](https://github.com/xoopscube/documentation/blob/master/_media/xcl-codemo-screenshot.png "XCL Documentation")
 

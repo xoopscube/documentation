@@ -30,15 +30,19 @@
 <summary style="cursor: pointer;">Components</summary>
 
 - Single File Component
-- Preload e.g. add-on, plugin
+- Preload - add-on, extension, plugin
 - Folder Structure
-- Docs Templates
+- Modules Templates
 
 </details>
 
 -----
 
-### Design Integration
+## Framework Agnostic
+
+Documentation
+
+## Design Integration
 
 This guide aims to help anyone who wants to start customizing the user interface to provide resources, guidelines, and tips on how to implement a personalized design.
 

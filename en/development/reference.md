@@ -8,7 +8,9 @@
 <details>
 <summary style="cursor: pointer;">Reference</summary>
 
-- Cube Core API
+- XCube Core API
+- Environment Settings
+- Cubson Code Generator
 - Legacy compatibility
 - Design Patterns
 - PHP Class Abstraction
@@ -20,10 +22,16 @@
 
 </details>
 
------
+---
 
-### Cube Core API
------
+## API Reference
+
+
+### XCube Core
+
+XCube core is task-oriented... [ Documentation ]
+
+### Environment Settings
 
 The ini file of XOOPSCube follows an inheritance pattern  
 and are loaded in the following order: 
@@ -33,7 +41,7 @@ and are loaded in the following order:
 3. site_custom.ini
 4. site_custom_ {XOOPS_SALT} .ini  
 
-The setting value read earlier is overwritten with the later.
+The value read earlier is overwritten with the later setting.
 
 #### How to get the value set in site_default.ini and site_custom.ini of XOOPSCube
 
@@ -48,17 +56,33 @@ Example : site_custom.ini
     [Foo]    
     Bar = Baz    
     $root  =  XCube_Root :: getSingleton ();    
-    $value  =  $root- > getSiteConfig ( 'Foo' ,  'Bar' ));    
+    $value  =  $root-> getSiteConfig ( 'Foo' , 'Bar' );    
     echo  $value ;    
-// Output is Baz
+    // Output is Baz
 ```
   
-_TRUST_PATH/settings/ site_custom.ini overwrites _TRUST_PATH/settings/site_default.ini.
+_trust_path/settings/site_custom.ini_ **overwrites** _trust_path/settings/site_default.ini_
 
 
 
-### Legacy compatibility
+### Cubson PHP Code Generator 
 -----
+
+Cubson is a tool to generate modules for XOOPSCube. 
+It allows you to create from SQL, high quality modules quickly and easily. 
+Cubson was developed by Minahito, one of the main developers of XOOPSCube. 
+Part of XOOPSCube's management was also created using Cubson.
+
+Good things about Cubson :  
+
+- Easy to create secure modules
+- Allow users with no programming experience to create modules that work reasonably well.
+- Automatically generates the tedious code for you
+- Helps you cut down on module development time in a substantial way, 
+- Cubson generates boilerplate code, so you can create modules that are easier to understand later.
+ 
+Cubson was created by Minahito, and Mumincacao created Tubson with Trust Path support.  
+Kilika's website features a web version to create modules from your browser. 
 
 ### Design Patterns
 -----

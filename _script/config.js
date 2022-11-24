@@ -111,7 +111,7 @@ window.$docsify = {
     tabComments: true,
     tabHeadings: true // default 'true', 
     // standard markdown Heading levels 1-6 are supported (e.g. # - ######) 
-    // as are both asteriscks (**) and underscores (__) for bold text via markdown.
+    // as are both asterisks (**) and underscores (__) for bold text via markdown.
   },
   // Copy-code (defaults)
   copyCode: {

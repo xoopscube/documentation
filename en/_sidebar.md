@@ -1,30 +1,40 @@
 [<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/en/about.md)
 
-- Developement
+- Development
   - [Overview](/en/development/)
-  - [Installation](/en/development/installation.md)
-  - [Reference](/en/development/reference.md)
-  - [Troubleshooting](/en/development/debug.md)
-
+  - [Overview](/en/development/README.md#overview)
+  - [XCube core](/en/development/README.md#xcube-core-concept)
+  - [XCube Architecture](/en/development/README.md#xcube-architecture)
+  - [XCube Development](/en/development/README.md#xcube-development)
+  - [XCube Namespace](/en/development/README.md#xcube-namespace)
+  - [Exchangeable](/en/development/README.md#exchangeable)
+  - [Virtual Service](/en/development/README.md#virtual-service)
+  - [Render Engine](/en/development/README.md#render-engine)
+  - [Multi-render system](/en/development/README.md#multi-render)
+  - [Trust Path](/en/development/README.md#trust-path)
+  - [D3 Duplicable Modules](/en/development/README.md#duplicable-modules)
+  - [XCube Tools](/en/development/README.md#xcube-tools)
 
 - Design
   - [Overview](/en/design/)
-  - [Quick Start](/en/quick-start.md)
-  - [Overview](/en/design/overview.md)
-
+  - [Framework Agnostic](/en/design/README.md#framework-agnostic)
+  - [Theme](/en/design/theme/)
   - [Template](/en/design/template/)
+  - [Guidelines](/en/design/guidelines/)
   - [User Interface](/en/design/user-interface/)
 
-- Delivery
-  - [Introduction](/en/delivery/)
-  - [X-Update Service](/en/delivery/setup-x-update.md)
-  - [Create Your Store](/en/delivery/setup-x-store.md)
-  - [Module Update](/en/delivery/update-module.md)
-  - [Theme Update](/en/delivery/update-theme.md)
-  - [Preload Update](/en/delivery/update-preload.md)
+- Deployment
+  - [Introduction](/en/deployment/)
+  - [Deploy to SFTP](/en/deployment/sftp.md)
+  - [Deploy with GitHub](/en/deployment/deploy-github.md)
+  - [X-Update Manager](/en/deployment/update-manager.md)
+  - [Create Your Store](/en/deployment/update-store.md)
+  - [Module Update](/en/deployment/update-module.md)
+  - [Theme Update](/en/deployment/update-theme.md)
+  - [Preload Update](/en/deployment/update-preload.md)
 
-- Documentation
-  - [Administration Guide](/en/administration.md)
-  - [User Guide](/en/user-guide.md)
-  - [Knowledge base](/en/knowledge-base.md)
-  - [X-Codex Markdown](/en/markdown/)
+- Guides
+  - [Administration Guide](/en/guides/administration.md)
+  - [User Guide](/en/guides/user-guide.md)
+  - [Knowledge base](/en/guides/knowledge-base.md)
+  - [X-Codex Markdown](/en/guides/markdown/)
