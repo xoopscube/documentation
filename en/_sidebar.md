@@ -2,10 +2,9 @@
 
 - Development
   - [Overview](/en/development/)
-  - [Overview](/en/development/README.md#overview)
   - [XCube core](/en/development/README.md#xcube-core-concept)
   - [XCube Architecture](/en/development/README.md#xcube-architecture)
-  - [XCube Development](/en/development/README.md#xcube-development)
+  - [XCube Design](/en/development/README.md#design-patterns)
   - [XCube Namespace](/en/development/README.md#xcube-namespace)
   - [Exchangeable](/en/development/README.md#exchangeable)
   - [Virtual Service](/en/development/README.md#virtual-service)

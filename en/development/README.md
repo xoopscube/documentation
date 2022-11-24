@@ -10,7 +10,7 @@
 - [Overview](#overview) — Web Application Platform and Content Management System.
 - [XCube core](#xcube-core-concept) — Xcube Core concept and subsystems.
 - [XCube Architecture](#xcube-architecture) — Simple, Secure and Scalable.
-- [XCube Development](#xcube-development) — design patterns, delegate managers and controllers.
+- [XCube Design](#design-patterns) — design patterns, delegate managers and controllers.
 - [XCube Namespace](#xcube-namespace) — concepts implemented when PHP didn’t provide any.
 - [Exchangeable](#exchangeable) — inheritance, OOP polymorphism and type-safe code.
 - [Virtual Service](#virtual-service)
@@ -59,14 +59,18 @@ The [XCL Bundle Package](./xcl-package.md) includes XCube core, the subsystem Le
 Content Management System (CMS).  
    
 
-### XCube Core Concept
+## XCube Core Concept
 
 The XCube core concept "3S" stands for — Simple, Secure and Scalable.    
 Its foundational design concept covers the free choice of frameworks and libraries,
 also known as framework-agnostic. 
 
-**XCube** is the core layer of the platform giving required minimum functionality to aggregate preexistent subsystems, 
-for example, Legacy subsystem to build a customized CMS, ecommerce platform, gallery, forum, or to manage multiple WordPress, etc.
+<div layout="row sm-column p-4">
+<div>**XCube** is the core layer of the platform giving required minimum functionality to aggregate preexistent subsystems, 
+for example the **Base**  subsystem Legacy to build a customized CMS, ecommerce platform, gallery, forum, or to manage multiple WordPress, etc.
+</div>
+<div>![Core implementation](../../_media/cube-core.png)</div>
+</div>
 
 The XCube core was developed from scratch by Kazuhisa Minato (lead programmer in the game industry), 
 addressing the challenges of software development for current and future parallel hardware architectures 
@@ -92,7 +96,7 @@ The key features of the new architecture are :
 
 ![Core implementation](https://raw.githubusercontent.com/xoopscube/artwork-social-media/master/images/xcl_dia_render_base.jpg)
 
-### XCube Architecture
+## XCube Architecture
 
 The original XCube core implements programming concepts of object-oriented, design patterns and real-time 3D rendering.
 The underlying logic of the core main classes which the project team narrowed down the "**Core program**" is built
@@ -116,37 +120,7 @@ Delegates, Virtual Services and Tasks of the Task System(*) are materials for de
 At its core, XCube minimalism is being intentional to get rid of the superfluous and to be meaningful and simple.  
 The core architecture was designed to build dynamic websites, web applications and web services.
 
-
-#### Preload 
-
-A Preload is a single-file component, an extension for customization and personalization of a website, 
-so Webmasters don't have to change the source code of the trusted system.
-
-#### Type Safe 
-
-Among other things, XCube has some policies and features to ensure security.  
-One of these policies is the safe type-safe emulation.
-
-#### Action Form 
-
-Another one is Action-Form that always check and identify valid values like a peripheral driver interface.   
-
-#### Framework Agnostic
-
-Support for modern JavaScript frameworks (compiled reactjs, vue, fluent, etc.) and easily integration of CSS Frameworks.
-
-### XCube Development
-
-The XOOPSCube Team released the Legacy subsystem before XCube 1.0 was completed by Kazuhisa Minato as the first
-XCube major version. Therefore, Legacy implements many features to emulate Xoops2.
-So the Base subsystem Legacy is an exception, made by highly skilled developers and high experimented designers
-to ensure backwards compatibility and interoperability with XOOPS2 (©2002 Kazumi Ono @Onokazu, GPL2)
-and later XOOPS2-JP (©2005 XOOPS2 Japan, GPL2) Japanese versions with multibyte character support.
-
-The Legacy subsystem main functions have been placed into their own modules, such as user account management,
-and private messages.
-
-#### Design Patterns
+## Design Patterns
 
 The singleton design pattern is well-known to solve recurring design problems of reusable
 object-oriented software. It can be used to reduce memory usage and can also be used as a basis for
@@ -155,39 +129,57 @@ other design patterns, such as the abstract factory, factory method, builder, an
 **Why is such mechanism needed?**
 
 > In the 3D application world, there are many "controversies" around the question of the best process.   
-For example, the scene management has multiple solutions — Octree, Quadtree, Terrain, Sphere tree, no tree and more... 
+For example, the scene management has multiple solutions — Octree, Quadtree, Terrain, Sphere tree, no tree and more...
 > but all these controversies are useless, because the best process is determined by what the application has to do.  
 > — Kazuhisa Minato
 
-A web application has commonly the same "controversies" about required features.  
+A web application has commonly the same "controversies" about required features.
 
 XCube delegates them to managers and controllers. So developers are free to change them according to their needs.
 Thus, it's a must-have for flexibility. However, XCube also benefits from another _side effect_ of this mechanism.
 
-#### Delegate manager
-
-XCube starts up managers from the configuration settings written into the file _default.ini_ 
-or override with a simple file _custom.ini_
-
-XCube consists of several managers and each manager provides careful management of its members and a consistent API. 
-Developers can choose from managers, modules, delegate and preload mechanism or interfaces for extensible and flexible 
-customization. 
-
-Some distribution packages have been released with a good starting INI file, a set of base modules and 
-provide **preload** files for a rapid site development. A web developer can run a pre-configured bundled package as
-the starting point that meets the production expectations of a website.
-
-### XCube Namespace
+## XCube Namespace
 
 XCube used a prefix convention to implement the concept of namespace when PHP didn't provide any.  
 PHP namespaces were introduced in PHP 5.3, and subsequently updated.
 
-In the PHP world, namespaces are designed to solve two problems that authors of libraries and 
-applications encounter when creating re-usable code elements such as classes or functions: 
-Name collisions between code you create, and internal PHP classes/functions/constants or 
+In the PHP world, namespaces are designed to solve two problems that authors of libraries and
+applications encounter when creating re-usable code elements such as classes or functions:
+Name collisions between code you create, and internal PHP classes/functions/constants or
 third-party classes, functions, constants.
 
-### Exchangeable
+## Delegate manager
+
+XCube starts up managers from the configuration settings written into the file _default.ini_
+or override with a simple file _custom.ini_
+
+XCube consists of several managers and each manager provides careful management of its members and a consistent API.
+Developers can choose from managers, modules, delegate and preload mechanism or interfaces for extensible and flexible
+customization.
+
+Some distribution packages have been released with a good starting INI file, a set of base modules and
+provide **preload** files for a rapid site development. A web developer can run a pre-configured bundled package as
+the starting point that meets the production expectations of a website.
+
+## Preload 
+
+A Preload is a single-file component, an extension for customization and personalization of a website, 
+so Webmasters don't have to change the source code of the trusted system.
+
+## Type Safe 
+
+Among other things, XCube has some policies and features to ensure security.  
+One of these policies is the safe type-safe emulation.
+
+## Action Form 
+
+Another one is Action-Form that always check and identify valid values like a peripheral driver interface.   
+
+### Framework Agnostic
+
+Support for modern JavaScript frameworks (compiled reactjs, vue, fluent, etc.) and easily integration of CSS Frameworks.
+
+## Exchangeable
 
 The XCube design is probably common to the most used design pattern in modern programming languages like Java and C#. 
 Some advantages of XCube design are : 
@@ -199,13 +191,13 @@ Some advantages of XCube design are :
 The _Base_ subsystem can be replaced or written from scratch. Anyone can develop anything, anytime, anywhere, 
 except changing the core that makes everything "exchangeable" allowing for scalability, flexibility and freedom.
 
-### Virtual Service
+## Virtual Service
 
 XCube provides a server-client model for site communication and module communication. 
 The virtual service abstracts the actual program, so the client can connect with a module and from another website. 
 XCube can connect with the website service and can provide the service to other websites.
 
-### Render Engine
+## Render Engine
 
 XCube defines the render-system class as an interface which renders html data from various template-formats. 
 XCube core handles render buffer instances as output data. The Render system writes the html data. 
@@ -222,13 +214,24 @@ XCube allows you to develop your own template engine or run the default Smarty r
 + Module developers can develop their own render system.
 + Designers can plan new themes formats.
 
-### Multi-Render
+## Multi-Render
 
 XCube doesn't have a fixed specification for themes and templates. 
 The Generic Render-Sequence tries to render the final output switching render-systems. 
 This allows complete control over a finished custom designed with your favorite framework.
 
-### Trust Path
+## XCube Subsystem
+
+The XOOPSCube Team released the Legacy subsystem before XCube 1.0 was completed by Kazuhisa Minato as the first
+XCube major version. Therefore, Legacy implements many features to emulate Xoops2.
+So the Base subsystem Legacy is an exception, made by highly skilled developers and high experimented designers
+to ensure backwards compatibility and interoperability with XOOPS2 (©2002 Kazumi Ono @Onokazu, GPL2)
+and later XOOPS2-JP (©2005 XOOPS2 Japan, GPL2) Japanese versions with multibyte character support.
+
+The Legacy subsystem main functions have been placed into their own modules, such as user account management,
+and private messages.
+
+## Trust Path
 
 The TRUST PATH concept was introduced by @Gijoe from Peak.ne.jp (based on Minahito’s idea as GijoeI credited).
 It aims to secure subsystem modules by moving all module PHP files out of public _web root_ or 
@@ -240,7 +243,7 @@ webmasters are free to duplicate and rename installed D3 modules.
 
 ?> **Tip** The folder **TRUST_PATH** can be renamed to whatever name you wish.
 
-### Duplicable Modules
+## Duplicable Modules
 
 Gijoe, one of the most prominent web developers, implemented the system architecture of Trust Path and
 developed the most useful _duplicable_ or _duplicatable_ D3 modules like altsys, pico and protector.
@@ -269,7 +272,7 @@ the template files of all duplicated modules will be overwritten.
 
 A module code generator Tubson is available to take advantage of D3 and Trust Path.
 
-### XCube Tools
+## XCube Tools
 
 XCube is simple and recommended as a tool for complex tasks. In order to facilitate development, 
 the following tools automatically generate the code for modules.
