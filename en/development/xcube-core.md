@@ -136,6 +136,13 @@ the starting point that meets the production expectations of a website.
 A Preload is a single-file component, an extension for customization and personalization of a website,
 so Webmasters don't have to change the source code of the trusted system.
 
+- A delegate is a mechanism to delegate part of the processing to another program.
+- A preload is a mechanism to perform preprocessing before the module is executed.
+
+Delegate and preload are essentially different mechanisms and can be used independently.
+In practice, there will be many Single File Components, or one-file hacks, using the delegate mechanism 
+in a **preload** to modify the processing and behavior of modules.
+
 ## Type Safe
 
 Among other things, XCube has some policies and features to ensure security.  

@@ -54,32 +54,51 @@ of a subsystem is built.
 Therefore, it is not an exhaustive API reference including all possible elements, classes, objects 
 or detailed models, functions or methods.
 
-Some subpackages and submodules mentioned in the documentation that contain certain public functions 
-related to data types are public. However, the business logic, which includes services and code generators, 
-is not always publicly available.
 
-## XCube Core
+## Web frameworks
 
-The XCube core concept "3S" stands for — Simple, Secure and Scalable.
+<p>A web development framework is a set of resources and tools for software developers to build and manage 
+web applications, web services and websites. 
+There are countless frameworks and technologies that can be used to build a web platform or service.
+While the tools and services of existing development frameworks are useful in many use cases, 
+the most popular frameworks often come with high costs in terms of resource requirements, development 
+and deployment - as well as serious limitations in the integration of components — thus a rather 
+poor cost-benefit ratio.</p>
 
-At its core, XCube minimalism is being intentional to get rid of the superfluous and to be meaningful and simple.
+<p>Beyond the rather simple observation of benchmarks comparing technologies, 
+it is absolutely necessary to take into account the results. 
+Indeed, it is not only the speed of development of your web platform that is important, 
+but also the necessary resources and the undeniable financial cost in production.</p>
+
+## Self-Hosted Scalable
+
+**The XCube core concept "3S" stands for — Simple, Secure and Scalable.**
+
+<p>The XCube architecture was developed to overcome these limitations, and to serve as the basis for 
+extending an existing web platform. 
+The approach stems from real-world experience, resulting in a highly modular and extensible platform 
+for reliable resource management and scalability in a very demanding domain. 
+Self-hosted platforms are decentralized, allow for superior accessibility,
+and full control over your own data and services, rather than depending on expensive third-party services (cloud, saas).</p>
+
+## Extensible Architecture
 
 <div layout="row sm-column my-6">
 <div self="size-2of3">
+<p>
 <strong>XCube</strong> is the core layer of the platform giving required minimum functionality to aggregate 
-preexistent subsystems,for example the <b>Base</b> subsystem Legacy used to build a customized CMS.
-
-<p>If anyone aims to implement new features on XCube platform, it can be done with a custom subsystem,
-aside the initial Base subsystem Legacy or extend it with modules or single file component (ref. preload mechanism).</p>
+preexistent subsystems,for example the <b>Base</b> subsystem Legacy used to build a customized CMS. 
+At its core, XCube minimalism is being intentional to get rid of the superfluous and to be meaningful and simple framework agnostic.
+</p>
+<p>Aside the initial Base subsystem Legacy, new features can be easily integrated:</p>
+<ul>
+<li>Base new subsystem</li>
+<li>Module with extended functionality</li> 
+<li>Single file component (ref. preload mechanism).</li>
+</ul>
 </div>
 <div><img src="https://xoopscube.github.io/documentation/_media/cube-core.png" alt="core"></div>
 </div>
 
-## Subsystem Legacy
-
-XOOPSCube Legacy (XCL) is a free and open-source Web Application Platform (WAP) empowering site owners to build, 
-manage and deploy scalable web applications. 
-The [XCL Bundle Package](./xcl-package.md) includes XCube core, the subsystem Legacy and modules to customize a 
-Content Management System (CMS).  
    
 
