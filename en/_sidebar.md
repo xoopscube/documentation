@@ -1,23 +1,9 @@
 [<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/en/about.md)
 
 - Development
-  - [Overview](/en/development/README.md#overview)
-  - [XCube core](/en/development/README.md#xcube-core-concept)
-  - [XCube Architecture](/en/development/README.md#xcube-development)
-  - [XCube Subsystem](/en/development/README.md#xcube-subsystem)
-  - [Exchangeable](/en/development/README.md#exchangeable)
-  - [XCube Namespace](/en/development/README.md#xcube-namespace)
-  - [Delegate Manager](/en/development/README.md#delegate-manager)
-  - [Preload](/en/development/README.md#delegate-manager)
-  - [Type Safe](/en/development/README.md#type-safe)
-  - [Action Form](/en/development/README.md#action-form)
-  - [Virtual Service](/en/development/README.md#virtual-service)
-  - [Render Engine](/en/development/README.md#render-engine)
-  - [Multi-render](/en/development/README.md#multi-render)
-  - [Framework Agnostic](/en/development/README.md#multi-render)
-  - [Trust Path](/en/development/README.md#trust-path)
-  - [D3 Duplicable Modules](/en/development/README.md#duplicable-modules)
-  - [XCube Tools](/en/development/README.md#xcube-tools)
+  - [XOOPSCube](/en/development/)
+  - [XCube core](/en/development/xcube-core.md)
+  - [XCube Tools](/en/development/xcube-tools.md)
 
 - Design
   - [Overview](/en/design/README.md)
