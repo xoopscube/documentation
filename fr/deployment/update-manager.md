@@ -7,7 +7,7 @@
 
 
 <details>
-<summary style="cursor: pointer;">Update Modules</summary>
+<summary style="cursor: pointer;">Update Manager</summary>
 
 - Module settings.
 - Fundamentals of the folder structure and how files are organized.
@@ -17,7 +17,7 @@
 
 -----
 
-## Update Modules
+## Set up X-Update
 
 **Update Dashboard**
 

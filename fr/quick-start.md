@@ -177,6 +177,6 @@ Once the files are copied there, you can start the install by typing http://my-s
 
 This will start the install process.
 
-* your provider usually provides this location with directions.
+* your provider usually states this location with directions.
 
 !> Disclaimer : The minimum requirements of XCL can be subject to change, given the recent development of PHP and MySQL.

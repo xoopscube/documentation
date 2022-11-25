@@ -1,12 +1,12 @@
 <dl>
-  <dt>The X-Codex Documentation provides information about continuous delivery and update XCL.</dt>
+  <dt>The X-Codex Documentation provides information about deployment and update.</dt>
   <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
   <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
   <dd>This information is intended for administrators and developers.</dd>
 </dl>
 
 <details>
-<summary style="cursor: pointer;">X-Update Service</summary>
+<summary style="cursor: pointer;">X-Update Manager</summary>
 
 - Managing Your X-Update Settings
 - Fundamentals of the folder structure and how files are organized.
@@ -18,12 +18,12 @@
 
 - Creating and Managing Your Store Settings.
 - Fundamentals of the folder structure and how files are organized.
-- An example of a Continuous Integration Delivery.
+- An example of a Continuous Integration.
 
 </details>
 
 <details>
-<summary style="cursor: pointer;">Module Update Guide</summary>
+<summary style="cursor: pointer;">Update Modules</summary>
 
 - Module settings.
 - Fundamentals of the folder structure and how files are organized.
@@ -32,16 +32,7 @@
 </details>
 
 <details>
-<summary style="cursor: pointer;">Preload Update Guide</summary>
-
-- Preload settings.
-- Fundamentals of the folder structure and how files are organized.
-- An example of a Continuous Integration Delivery.
-
-</details>
-
-<details>
-<summary style="cursor: pointer;">Theme Update Guide</summary>
+<summary style="cursor: pointer;">Update Themes</summary>
 
 - Theme settings.
 - Fundamentals of the folder structure and how files are organized.
@@ -49,6 +40,14 @@
 
 </details>
 
+<details>
+<summary style="cursor: pointer;">Update Preloads</summary>
+
+- Preload settings.
+- Fundamentals of the folder structure and how files are organized.
+- An example of a Continuous Integration.
+
+</details>
 
 -----
 

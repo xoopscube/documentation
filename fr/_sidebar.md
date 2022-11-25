@@ -1,30 +1,39 @@
 [<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/fr/about.md)
 
-- Developement
-  - [Quick Start](/fr/quick-start.md)
-  - [Overview](/fr/development/)
-  - [Installation](/fr/development/installation.md)
-  - [Reference](/fr/development/reference.md)
-  - [Troubleshooting](/fr/development/debug.md)
-
+- Development
+    - [XOOPSCube](/fr/development/)
+    - [XCube Concept](/fr/development/xcube-concept.md)
+    - [XCL Package](/fr/development/xcl-package.md)
+    - [API Documentation](/fr/development/api.md)
+    - [Code Generator](/fr/development/xcube-tools.md)
+    - [Debugging in PHP](/fr/development/debug.md)
+    - [Web Frameworks](/fr/development/web-framework.md)
+    - [Git Workflow](/fr/development/git-workflow.md)
 
 - Design
-  - [Quick Start](/fr/quick-start.md)
-  - [Overview](/fr/design/overview.md)
-  - [Theme](/fr/design/theme/)
-  - [Template](/fr/design/template/)
-  - [User Interface](/fr/design/user-interface/)
+    - [Render Engine](/fr/design/)
+    - [Framework Agnostic](/fr/design/framework-agnostic.md)
+    - [Theme](/fr/design/theme.md)
+    - [Template](/fr/design/template.md)
+    - [Components](/fr/design/components.md)
+    - [Guidelines](/fr/design/guidelines.md)
+    - [Smarty](/fr/design/smarty.md)
+    - [Style Guide](/fr/design/style-guide.md)
 
-- Delivery
-  - [Introduction](/fr/delivery/)
-  - [X-Update Service](/fr/delivery/setup-x-update.md)
-  - [Create Your Store](/fr/delivery/setup-x-store.md)
-  - [Module Update](/fr/delivery/update-module.md)
-  - [Theme Update](/fr/delivery/update-theme.md)
-  - [Preload Update](/fr/delivery/update-preload.md)
+- Deployment
+    - [Introduction](/fr/deployment/)
+    - [Deploy to SFTP](/fr/deployment/sftp.md)
+    - [Deploy with GitHub](/fr/deployment/deploy-github.md)
+    - [Deploy with X-Update](/fr/deployment/update-manager.md)
+    - [Update Modules](/fr/deployment/update-module.md)
+    - [Update Themes](/fr/deployment/update-theme.md)
+    - [Update Preload](/fr/deployment/update-preload.md)
+    - [Create Your Store](/fr/deployment/update-store.md)
 
-- Documentation
-  - [Administration Guide](/fr/administration.md)
-  - [User Guide](/fr/user-guide.md)
-  - [Knowledge base](/fr/knowledge-base.md)
-  - [X-Codex Markdown](/fr/markdown/)
+- Guides
+    - [Getting Started](/fr/guides/)
+    - [Installation](/fr/guides/installation.md)
+    - [Administration Guide](/fr/guides/administration.md)
+    - [User Guide](/fr/guides/user-guide.md)
+    - [Knowledge base](/fr/guides/knowledge-base.md)
+    - [X-Codex Markdown](/fr/guides/markdown/)

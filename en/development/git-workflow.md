@@ -1,3 +1,15 @@
+<dl>
+  <dt>The X-Codex Documentation provides information about the Git Workflow.</dt>
+  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
+  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
+  <dd>This information is intended for administrators and developers.</dd>
+</dl>
+
+---
+
+A Git workflow is a recipe or recommendation for how to use Git to accomplish work in a consistent and 
+productive manner. Git workflows encourage developers and DevOps teams to leverage Git effectively and 
+consistently. Git offers a lot of flexibility in how users manage changes.
 
 #### Understanding the GitHub flow
 

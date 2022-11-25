@@ -7,17 +7,17 @@
 
 
 <details>
-<summary style="cursor: pointer;">Update Modules</summary>
+<summary style="cursor: pointer;">Create Your Store</summary>
 
-- Module settings.
+- Creating and Managing Your Store Settings.
 - Fundamentals of the folder structure and how files are organized.
-- An example of a Continuous Integration Delivery.
+- An example of a Continuous Integration.
 
 </details>
 
 -----
 
-## Update Modules
+## Create a Store
 
 **Update Dashboard**
 
@@ -26,4 +26,3 @@ User-friendly dashboard to update packages from GitHub, GitLab or your Git serve
 Sync your source code and continuously delivered projects in a sustainable way
 
 to your users and clients.
-
