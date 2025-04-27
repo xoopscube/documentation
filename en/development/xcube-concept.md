@@ -100,10 +100,10 @@ to create and release new subsystems architectures.
 
 ```mermaid
 graph LR
-    A(Object A\n(Initiator)) --> B(Object B\n(Task Processor))
-    B --> C(Object C\n(Final Processor))
-    B -- Direct Method Call --> H(Helper Object\n(Performs Sub-\ntasks for B))
-    H -- Direct Method Call --> B
+    A("Object A\n(Initiator)") --> B("Object B\n(Task Processor)")
+    B --> C("Object C\n(Final Processor)")
+    B -- "Direct Method Call" --> H("Helper Object\n(Performs Sub-\ntasks for B)")
+    H -- "Direct Method Call" --> B
 ```
 
 - Focuses on defining and executing specific, discrete units of work or procedures (tasks).
@@ -116,10 +116,10 @@ graph LR
 
 ```mermaid
 graph LR
-    A(Object A\n(Event Publisher)) --> EB(Event Bus/Broker\n(Publishes Event))
-    EB --> B(Object B\n(Event Handler))
-    C(Object C\n(Event Publisher)) --> EB
-    EB --> D(Object D\n(Event Handler))
+    A("Object A\n(Event Publisher)") --> EB("Event Bus/Broker\n(Publishes Event)")
+    EB --> B("Object B\n(Event Handler)")
+    C("Object C\n(Event Publisher)") --> EB
+    EB --> D("Object D\n(Event Handler)")
 ```
 
 - Centers around the production and consumption of events, which signify a change in state or a significant occurrence.   
@@ -132,11 +132,11 @@ graph LR
 
 ```mermaid
 graph LR
-    UI(User Interface\n(Triggers\nInteraction)) --> CH(Command Handler\n(Task-Based))
-    CH --> OS(Order Service\n(Task-Based))
+    UI("User Interface\n(Triggers\nInteraction)") --> CH("Command Handler\n(Task-Based)")
+    CH --> OS("Order Service\n(Task-Based)")
     OS --> InternalFlow((Internal Task-Based Flow))
-    CH -- Emits Event --> NS(Notification\nService\n(Event Handler))
-    OS -- Emits Event --> LS(Logging Service\n(Event Handler))
+    CH -- Emits Event --> NS("Notification\nService\n(Event Handler)")
+    OS -- Emits Event --> LS("Logging Service\n(Event Handler)")
 ```
 
 These two approaches are different in their fundamental control flow and interaction paradigms,  
