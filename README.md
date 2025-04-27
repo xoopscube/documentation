@@ -6,15 +6,18 @@
 
 **Intended Audiences : 👥 This information is intended for administrators, developers and designers.**
 
+
+
+![X-Codex](https://github.com/xoopscube/documentation/blob/master/_media/xcl-codemo-screenshot.png "XCL Documentation")
+
+
+
 > [!NOTE]
 > The folder structure of the Markdown files provides links to edit directly on the GitHub repository.
 
 ### 📦  [API Documentation XCL v2.5.x](https://xoopscube.github.io/documentation/api/)
 
 ### 📦  [API XCube Core Documentation](https://xoopscube.github.io/documentation/xcube/)
-
-
-![X-Codex](https://github.com/xoopscube/documentation/blob/master/_media/xcl-codemo-screenshot.png "XCL Documentation")
 
 
 ### Visualize the minimal XCube core 
