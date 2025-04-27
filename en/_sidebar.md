@@ -15,6 +15,7 @@
     - [Framework Agnostic](/en/design/framework-agnostic.md)
     - [Theme](/en/design/theme.md)
     - [Template](/en/design/template.md)
+    - [Template Set](/en/design/template-set.md)
     - [Components](/en/design/components.md)
     - [Guidelines](/en/design/guidelines.md)
     - [Smarty](/en/design/smarty.md)
