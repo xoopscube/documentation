@@ -1,24 +1,53 @@
-# Documentation
-
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/2.0.0/active.svg)](https://www.repostatus.org/#active)
 
-## X-Codex documentation
+## 📘 XCL documentation
 
-📘 X-Codex Documentation provides information about how to install, configure, deploy and use the Web Application Platform XCL.
+  This documentation provides information about The XOOPSCube Legacy Project and XCL Web Application Platform.
 
-📦 This documentation applies to all 2.3.x releases.
+**Intended Audiences : 👥 This information is intended for administrators, developers and designers.**
 
-**Intended Audiences :**
+> [!NOTE]
+> The folder structure of the Markdown files provides links to edit directly on the GitHub repository.
 
-👥 This information is intended for administrators, developers and designers.
+### 📦  [API Documentation XCL v2.5.x](https://xoopscube.github.io/documentation/api/)
 
-The folder structure of markdown files with a link to edit on the Github repository.
+### 📦  [API XCube Core Documentation](https://xoopscube.github.io/documentation/xcube/)
 
-+ [English docs website](https://xoopscube.github.io/documentation/ 'X-Codex English')
-+ [Français docs website](https://xoopscube.github.io/documentation/#/fr/ 'X-Codex Français')
 
 ![X-Codex](https://github.com/xoopscube/documentation/blob/master/_media/xcl-codemo-screenshot.png "XCL Documentation")
 
+
+### Visualize the minimal XCube core 
+
+Given the limited number of files and their apparent roles, the Mermaid schema is relatively simple  
+but can still illustrate the basic flow and dependencies.
+
+```mermaid
+graph LR
+    subgraph "XCube Core (html/core)"
+        bootstrap --> PathDefs((Path Definitions))
+        bootstrap --> Autoloader((Autoloader))
+        bootstrap --> CoreFuncs((Core Functions))
+        bootstrap --> XRoot((XCube_Root))
+        bootstrap --> Request((Initial Request Handling))
+
+        XRoot --> Registry((Core Object Registry))
+        Registry -- provides access to --> Controller((XCube_Controller))
+        Registry -- provides access to --> Module((XCube_Module))
+        Registry -- provides access to --> Theme((XCube_Theme))
+        Registry -- provides access to --> Language((XCube_Language))
+
+        Controller --> Dispatch((Module Dispatching))
+        Controller --> Render((Theme Rendering))
+
+        Module --> Logic((Module Logic))
+        Theme --> UI((User Interface Rendering))
+        Language --> Locale((Text Localization))
+
+        functions --> Utils((Utility Functions))
+        Utils -- used by --> CoreComponents((Various Components))
+    end
+```
 
 Templates
 ----
