@@ -1,10 +1,10 @@
 var searchData=
 [
   ['factoryclass_0',['factoryClass',['../class_x_cube___depend_class_factory.html#a2d25d3b81fcada8e112dbc54bfeae584',1,'XCube_DependClassFactory']]],
-  ['faqs_1',['FAQs',['../C:/Ampps/www/infinevo.local/x250/html/common/elfinder/README.md#autotoc_md18',1,'']]],
+  ['faqs_1',['FAQs',['../https://github.com/xoopscube/legacy/html/common/elfinder/README.md#autotoc_md18',1,'']]],
   ['fault_2',['fault',['../classnusoap__server.html#ac6a9b7aaeeeecd1e365f8846d4bfc2d9',1,'nusoap_server']]],
   ['favoritesaction_3',['favoritesAction',['../classfavorites_action.html',1,'']]],
-  ['features_4',['Features',['../C:/Ampps/www/infinevo.local/x250/html/common/elfinder/README.md#autotoc_md7',1,'Features'],['../C:/Ampps/www/infinevo.local/x250/README.md#autotoc_md42',1,'Features']]],
+  ['features_4',['Features',['../https://github.com/xoopscube/legacy/html/common/elfinder/README.md#autotoc_md7',1,'Features'],['../https://github.com/xoopscube/legacy/README.md#autotoc_md42',1,'Features']]],
   ['fetch_5',['fetch',['../class_xoops_token_handler.html#ac6a80721e802e6b8f57bf82e9ba8a43a',1,'XoopsTokenHandler\fetch()'],['../class_x_cube___action_form.html#ae48cc10bd727774bb36203986ce3b176',1,'XCube_ActionForm\fetch()'],['../class_x_cube___form_file.html#ae48cc10bd727774bb36203986ce3b176',1,'XCube_FormFile\fetch()'],['../class_x_cube___form_image_file.html#ae48cc10bd727774bb36203986ce3b176',1,'XCube_FormImageFile\fetch()'],['../class_x_cube___page_navigator.html#ae48cc10bd727774bb36203986ce3b176',1,'XCube_PageNavigator\fetch()'],['../class_x_cube___property_interface.html#a7f271168960b881a020ae8a6a19b1c38',1,'XCube_PropertyInterface\fetch()'],['../class_x_cube___file_property.html#a7f271168960b881a020ae8a6a19b1c38',1,'XCube_FileProperty\fetch()'],['../class_x_cube___file_array_property.html#a7f271168960b881a020ae8a6a19b1c38',1,'XCube_FileArrayProperty\fetch()'],['../class_legacy___action_search_form.html#ae48cc10bd727774bb36203986ce3b176',1,'Legacy_ActionSearchForm\fetch()'],['../class_legacy___notify_delete_form.html#ae48cc10bd727774bb36203986ce3b176',1,'Legacy_NotifyDeleteForm\fetch()'],['../class_legacy___search_results_form.html#ae48cc10bd727774bb36203986ce3b176',1,'Legacy_SearchResultsForm\fetch()']]],
   ['fetcharray_6',['fetchArray',['../class_xoops_my_s_q_l_database.html#a3a9c5d624ba334b33566d4df9cadde55',1,'XoopsMySQLDatabase\fetchArray()'],['../class_xoops_mysqli_database.html#a3a9c5d624ba334b33566d4df9cadde55',1,'XoopsMysqliDatabase\fetchArray()']]],
   ['fetchboth_7',['fetchBoth',['../class_xoops_my_s_q_l_database.html#ad47c4ef1d3dcfc5598a11b6297d3e578',1,'XoopsMySQLDatabase\fetchBoth()'],['../class_xoops_mysqli_database.html#ad47c4ef1d3dcfc5598a11b6297d3e578',1,'XoopsMysqliDatabase\fetchBoth()']]],
@@ -13,7 +13,7 @@ var searchData=
   ['fetchrow_10',['fetchRow',['../class_xoops_my_s_q_l_database.html#a606ca2f6d9d4169c2c5b75fab2d1d4c1',1,'XoopsMySQLDatabase\fetchRow()'],['../class_xoops_mysqli_database.html#a606ca2f6d9d4169c2c5b75fab2d1d4c1',1,'XoopsMysqliDatabase\fetchRow()']]],
   ['fetchwsdl_11',['fetchWSDL',['../classwsdl.html#aa7cee5d5e5c547aa5bb471579bcc7a19',1,'wsdl']]],
   ['file_12',['file',['../classzipfile.html#ae8b0b7ca00030bf54a95c85cd6dbd701',1,'zipfile']]],
-  ['files_20created_20or_20modified_13',['The procedure of language files created or modified?',['../C:/Ampps/www/infinevo.local/x250/html/common/elfinder/README.md#autotoc_md21',1,'']]],
+  ['files_20created_20or_20modified_13',['The procedure of language files created or modified?',['../https://github.com/xoopscube/legacy/html/common/elfinder/README.md#autotoc_md21',1,'']]],
   ['find_14',['find',['../class_legacy_render_tplfile_handler.html#a5321ccc3265db767999fbd6875fea171',1,'LegacyRenderTplfileHandler']]],
   ['for_20copying_20distribution_20and_20modification_15',['TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION',['../md__c_1_2_ampps_2www_2infinevo_8local_2x250_2gpl-2_80__license.html#autotoc_md2',1,'']]],
   ['formatdump_16',['formatDump',['../classnusoap__base.html#a25b092fe846b5b64eb91f3e69c0135d7',1,'nusoap_base']]],

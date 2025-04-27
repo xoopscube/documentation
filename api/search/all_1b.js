@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['ui_0',['jQuery / jQuery UI',['../C:/Ampps/www/infinevo.local/x250/html/common/elfinder/README.md#autotoc_md9',1,'']]],
+  ['ui_0',['jQuery / jQuery UI',['../https://github.com/xoopscube/legacy/html/common/elfinder/README.md#autotoc_md9',1,'']]],
   ['uid_1',['uid',['../class_xoops_user.html#a03790dbeab61ad2ee2ee469ee838b80c',1,'XoopsUser']]],
   ['uname_2',['uname',['../class_xoops_user.html#a2ce387529f68a659d405f7ac409fe4b7',1,'XoopsUser']]],
-  ['uncompressed_3',['uncompressed',['../C:/Ampps/www/infinevo.local/x250/html/common/elfinder/README.md#autotoc_md19',1,'Should I use elFinder builds (compressed) or source (uncompressed)?'],['../C:/Ampps/www/infinevo.local/x250/html/common/elfinder/README.md#autotoc_md14',1,'Source (uncompressed)']]],
+  ['uncompressed_3',['uncompressed',['../https://github.com/xoopscube/legacy/html/common/elfinder/README.md#autotoc_md19',1,'Should I use elFinder builds (compressed) or source (uncompressed)?'],['../https://github.com/xoopscube/legacy/html/common/elfinder/README.md#autotoc_md14',1,'Source (uncompressed)']]],
   ['undohtmlspecialchars_4',['undoHtmlSpecialChars',['../class_my_text_sanitizer.html#afb4294a0092422beedfb31b966972e97',1,'MyTextSanitizer']]],
   ['uninstallallofblocks_5',['uninstallAllOfBlocks',['../class_legacy___module_install_utils.html#a3b508d8b8d80aebc6d6091ce7269ad44',1,'Legacy_ModuleInstallUtils']]],
   ['uninstallallofconfigs_6',['uninstallAllOfConfigs',['../class_legacy___module_install_utils.html#a01381415fadd557354f6d63167c5e408',1,'Legacy_ModuleInstallUtils']]],
@@ -25,9 +25,9 @@ var searchData=
   ['updatestatus_22',['updateStatus',['../interface_legacy__i_workflow_client_delegate.html#a7c4b58acdb239ffaa2ec615b1200f1c3',1,'Legacy_iWorkflowClientDelegate']]],
   ['updateuserbyfield_23',['updateUserByField',['../class_xoops_member_handler.html#a69288d478b330b6c436dd3e8cd9ceb38',1,'XoopsMemberHandler']]],
   ['updateusersbyfield_24',['updateUsersByField',['../class_xoops_member_handler.html#ab29d8e6f4ae4364d2e46c8f08650cddd',1,'XoopsMemberHandler']]],
-  ['upgrade_25',['Upgrade',['../C:/Ampps/www/infinevo.local/x250/README.md#autotoc_md38',1,'']]],
+  ['upgrade_25',['Upgrade',['../https://github.com/xoopscube/legacy/README.md#autotoc_md38',1,'']]],
   ['upload_26',['upload',['../class_xoops_media_uploader.html#a6ade22bee6de9b13551d3e0b0d7c51e3',1,'XoopsMediaUploader']]],
-  ['use_20elfinder_20builds_20compressed_20or_20source_20uncompressed_27',['Should I use elFinder builds (compressed) or source (uncompressed)?',['../C:/Ampps/www/infinevo.local/x250/html/common/elfinder/README.md#autotoc_md19',1,'']]],
+  ['use_20elfinder_20builds_20compressed_20or_20source_20uncompressed_27',['Should I use elFinder builds (compressed) or source (uncompressed)?',['../https://github.com/xoopscube/legacy/html/common/elfinder/README.md#autotoc_md19',1,'']]],
   ['usehttppersistentconnection_28',['useHTTPPersistentConnection',['../classnusoap__client.html#a6558d144faf99ccc9ef4621ffd56bd75',1,'nusoap_client']]],
   ['usepersistentconnection_29',['usePersistentConnection',['../classsoap__transport__http.html#a8ae21fdc1993b8741956e86fc58c12b1',1,'soap_transport_http']]],
   ['user_30',['User',['../namespace_user.html',1,'']]],

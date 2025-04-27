@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['a_0',['&lt;a href=&quot;https://github.com/xoopscube/legacy/blob/master/XOOPSCube-20th-Anniversary.md&quot; &gt;The XOOPSCube Project Celebrates The 20th Anniversary&lt;/a&gt;',['../C:/Ampps/www/infinevo.local/x250/README.md#autotoc_md36',1,'']]],
-  ['a_20href_20https_3a_20github_20com_20xoopscube_20legacy_20blob_20master_20xoopscube_2020th_20anniversary_20md_20the_20xoopscube_20project_20celebrates_20the_2020th_20anniversary_20a_1',['&lt;a href=&quot;https://github.com/xoopscube/legacy/blob/master/XOOPSCube-20th-Anniversary.md&quot; &gt;The XOOPSCube Project Celebrates The 20th Anniversary&lt;/a&gt;',['../C:/Ampps/www/infinevo.local/x250/README.md#autotoc_md36',1,'']]],
+  ['a_0',['&lt;a href=&quot;https://github.com/xoopscube/legacy/blob/master/XOOPSCube-20th-Anniversary.md&quot; &gt;The XOOPSCube Project Celebrates The 20th Anniversary&lt;/a&gt;',['../https://github.com/xoopscube/legacy/README.md#autotoc_md36',1,'']]],
+  ['a_20href_20https_3a_20github_20com_20xoopscube_20legacy_20blob_20master_20xoopscube_2020th_20anniversary_20md_20the_20xoopscube_20project_20celebrates_20the_2020th_20anniversary_20a_1',['&lt;a href=&quot;https://github.com/xoopscube/legacy/blob/master/XOOPSCube-20th-Anniversary.md&quot; &gt;The XOOPSCube Project Celebrates The 20th Anniversary&lt;/a&gt;',['../https://github.com/xoopscube/legacy/README.md#autotoc_md36',1,'']]],
   ['abstractaction_2',['AbstractAction',['../class_abstract_action.html',1,'']]],
   ['abstractxoopsobject_3',['AbstractXoopsObject',['../class_abstract_xoops_object.html',1,'']]],
   ['activate_4',['activate',['../class_xoops_error_handler.html#a8fecd06f17462b0e7c224e2d44e9b0f2',1,'XoopsErrorHandler']]],
@@ -49,14 +49,14 @@ var searchData=
   ['altsyslangmgr_5flanguagemanager_46',['AltsysLangMgr_LanguageManager',['../class_altsys_lang_mgr___language_manager.html',1,'']]],
   ['and_20conditions_47',['END OF TERMS AND CONDITIONS',['../md__c_1_2_ampps_2www_2infinevo_8local_2x250_2gpl-2_80__license.html#autotoc_md3',1,'']]],
   ['and_20conditions_20for_20copying_20distribution_20and_20modification_48',['TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION',['../md__c_1_2_ampps_2www_2infinevo_8local_2x250_2gpl-2_80__license.html#autotoc_md2',1,'']]],
-  ['and_20content_20management_20system_49',['Web Application Platform and Content Management System',['../C:/Ampps/www/infinevo.local/x250/README.md#autotoc_md35',1,'']]],
+  ['and_20content_20management_20system_49',['Web Application Platform and Content Management System',['../https://github.com/xoopscube/legacy/README.md#autotoc_md35',1,'']]],
   ['and_20modification_50',['TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION',['../md__c_1_2_ampps_2www_2infinevo_8local_2x250_2gpl-2_80__license.html#autotoc_md2',1,'']]],
-  ['and_20scalable_51',['Simple, Secure and Scalable',['../C:/Ampps/www/infinevo.local/x250/README.md#autotoc_md34',1,'']]],
-  ['anniversary_20a_52',['&lt;a href=&quot;https://github.com/xoopscube/legacy/blob/master/XOOPSCube-20th-Anniversary.md&quot; &gt;The XOOPSCube Project Celebrates The 20th Anniversary&lt;/a&gt;',['../C:/Ampps/www/infinevo.local/x250/README.md#autotoc_md36',1,'']]],
-  ['anniversary_20md_20the_20xoopscube_20project_20celebrates_20the_2020th_20anniversary_20a_53',['&lt;a href=&quot;https://github.com/xoopscube/legacy/blob/master/XOOPSCube-20th-Anniversary.md&quot; &gt;The XOOPSCube Project Celebrates The 20th Anniversary&lt;/a&gt;',['../C:/Ampps/www/infinevo.local/x250/README.md#autotoc_md36',1,'']]],
+  ['and_20scalable_51',['Simple, Secure and Scalable',['../https://github.com/xoopscube/legacy/README.md#autotoc_md34',1,'']]],
+  ['anniversary_20a_52',['&lt;a href=&quot;https://github.com/xoopscube/legacy/blob/master/XOOPSCube-20th-Anniversary.md&quot; &gt;The XOOPSCube Project Celebrates The 20th Anniversary&lt;/a&gt;',['../https://github.com/xoopscube/legacy/README.md#autotoc_md36',1,'']]],
+  ['anniversary_20md_20the_20xoopscube_20project_20celebrates_20the_2020th_20anniversary_20a_53',['&lt;a href=&quot;https://github.com/xoopscube/legacy/blob/master/XOOPSCube-20th-Anniversary.md&quot; &gt;The XOOPSCube Project Celebrates The 20th Anniversary&lt;/a&gt;',['../https://github.com/xoopscube/legacy/README.md#autotoc_md36',1,'']]],
   ['appenddebug_54',['appendDebug',['../classnusoap__base.html#a659455287a25d64cd0bcb0c04ec9d62d',1,'nusoap_base']]],
   ['appendtar_55',['appendTar',['../classtar.html#aab2604fa38c83658f63095d177ca5d3a',1,'tar']]],
-  ['application_20platform_20and_20content_20management_20system_56',['Web Application Platform and Content Management System',['../C:/Ampps/www/infinevo.local/x250/README.md#autotoc_md35',1,'']]],
+  ['application_20platform_20and_20content_20management_20system_56',['Web Application Platform and Content Management System',['../https://github.com/xoopscube/legacy/README.md#autotoc_md35',1,'']]],
   ['apply_20these_20terms_20to_20your_20new_20programs_57',['How to Apply These Terms to Your New Programs',['../md__c_1_2_ampps_2www_2infinevo_8local_2x250_2gpl-2_80__license.html#autotoc_md4',1,'']]],
   ['applystringfilter_58',['applyStringFilter',['../class_x_cube___delegate_utils.html#a8a0b37e141f59b05b3d569e869231e7b',1,'XCube_DelegateUtils']]],
   ['archive_5fzip_59',['Archive_Zip',['../class_archive___zip.html',1,'Archive_Zip'],['../namespace_archive___zip.html',1,'Archive_Zip']]],
@@ -64,5 +64,5 @@ var searchData=
   ['assign_61',['assign',['../class_xoops_form.html#acae56133cdf87ab5c8e2a5854c4a911f',1,'XoopsForm']]],
   ['assignvar_62',['assignVar',['../class_xoops_object.html#a7e08ddc4bae8bec7b15bffd867aec019',1,'XoopsObject']]],
   ['assignvars_63',['assignVars',['../class_abstract_xoops_object.html#ac2bd96f7bbc31551b5721afbc2f6540b',1,'AbstractXoopsObject\assignVars()'],['../class_xoops_object.html#a8ae7539e953fc50401c0ab41310b3689',1,'XoopsObject\assignVars()'],['../class_xoops_simple_object.html#ac2bd96f7bbc31551b5721afbc2f6540b',1,'XoopsSimpleObject\assignVars()']]],
-  ['authors_64',['Authors',['../C:/Ampps/www/infinevo.local/x250/html/common/elfinder/README.md#autotoc_md27',1,'']]]
+  ['authors_64',['Authors',['../https://github.com/xoopscube/legacy/html/common/elfinder/README.md#autotoc_md27',1,'']]]
 ];
