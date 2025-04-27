@@ -1,15 +1,8 @@
 ## <span class="iconify" data-icon="flat-color-icons:about"></span> The Project
 
-The project is Open Source, maintained, developed and supported by a group of volunteers to broaden the 
-vision of a free Internet integrating everyone's creativity and skills. 
-A shared vision to create a framework-agnostic web application platform, 
-which is at the very beginning of the innovation process, 
-and the guiding principles of OSS constituted the strategy of the original project.
+The project was Open Source, maintained, developed, and supported by a group of volunteers to broaden the vision of a free Internet integrating everyone’s creativity and skills. A shared vision to create a framework-agnostic web application platform, which was at the very beginning of the innovation process, and the guiding principles of OSS constituted the strategy of the original project.
 
-Since 2005, XCube's architecture and modularity in design and the freedom of choice of 
-development tools allow developers and designers to use their favorite frameworks and libraries. 
-The fundamental principles of the project are at the origin of the innovative 3S concept
-which stands for: Simple, Secure, Scalable.
+Since 2005, XCube’s architecture and modularity in design, along with the freedom of choice of development tools, allowed developers and designers to use their favorite frameworks and libraries. The fundamental principles of the project were at the origin of the innovative 3S concept which stood for: Simple, Secure, Scalable.
 
 ---
 
@@ -17,7 +10,7 @@ which stands for: Simple, Secure, Scalable.
 
 **XOOPS** is an acronym of "eXtensible Object Oriented Portal System", according to the core developer Kazumi Ono. 
 Though started as a portal system, it later developed into a web application framework. 
-It aims to serve as a web framework for use by small, medium and large sites, through the installation of modules. 
+It aimed to serve as a web framework for use by small, medium and large sites, through the installation of modules. 
 
 On the New Year’s Day of 2002, XOOPS RC1 was released to the public (©2002 Kazumi Ono @Onokazu, GPL2). 
 The original XOOPS code was based on PHP-Nuke 4.4.1 and myPHPNuke 1.8.5, although some 70-80 percent of the code was rewritten, as Kazumi Ono wrote on the release announcement. By the end of May 2002, the team had released three point versions, and XOOPS moved to a server in Japan. 
@@ -41,14 +34,11 @@ many ways to improve the core and the release of several D3 modules.
 A new Package Legacy was released on july 28, 2012.
 
 Since then The XOOPSCube Project was led by highly skilled developers Kilica (XCCK, Content Creation Kit) 
-and Nao-pon (Xelfinder, file manager) ensuring that development follows the values and principles of Open Source. 
+and Nao-pon (Xelfinder, file manager) ensuring that development continued to follow the values and principles of Open Source.
 
 ## <span class="iconify" data-icon="flat-color-icons:multiple-devices"></span> XCL Package 
 
-**XCL is the bundle package** update to PHP7. **XCL** refers to the excellent design of the modular architecture 
-composed of separate components that can be connected together. 
-The XCL 2.3.x releases integrate Xelfinder, a file manager with cloud support, CKEditor wysiwyg content editor with 
-granular permissions and X-Update Manager to deploy and install modules, themes and extensions. 
+**XCL is the bundle package** update to PHP8. **XCL** XCL is an initialism highlighting the clever design of its modular architecture, where separate parts easily connect. Since XCL version 2.3.x, the bundle released integrates Xelfinder, a file manager with cloud support, CKEditor wysiwyg, a content editor and management with granular permissions, and X-Update Manager to deploy and install modules, themes and extensions. 
 Moreover, the latest XCL development avoids constraining new designs with legacy backwards compatibility issues. 
 The design process is simplified to take advantage from the extendable modular design of **XCube Core**. 
 Thus improving the management of internationalization and localization, customization and personalization for 
@@ -68,14 +58,14 @@ flexible and extensible production with a free choice of frameworks and librarie
 
 ## <span class="iconify" data-icon="flat-color-icons:collaboration"></span> The Contributors
 
-10key, Aaki, Argon, Asunta, Bandit-x, Beduino, Bindi, Bluemooninc, Domifara, Fugafuga, Gara, Gigamaster, GIJOE, Gusagi, Halt, Hamanaka, Hiroki, Hypweb (Nao-pon), Hxrr, JardaR, Jidaikobo, Kilica, Leco, Lumbago, Marijuana, Marine, Mat, Matchan, Metal, Mikhail Miguel, Minahito, Moegiiro, Mumincacao, Masarap, Naao, Nao-pon, Neko88, Nobunobu, Nor, Nbuy (Nobu, OhYear, Ohwada, Okuhiki, Onokazu, Orrisroot, Otneg, Plusangel, Pcboy, Roger, Sacchan,  Sak-Axyz, Salamander, Shige-p, Shiraga, Slayer_cg, Sohgo, Sow, Suin, Toemon, Tokitam, Tohokuaiki, Tom_g3x, Tomoro, Wanderer, Wanikoo.
+10key, Aaki, Argon, Asunta, Bandit-x, Beduino, Bindi, Bluemooninc, Domifara, Fugafuga, Gara, Gigamaster, GIJOE, Gusagi, Halt, Hamanaka, Hiroki, Hypweb (Nao-pon), Hxrr, JardaR, Jidaikobo, Kilica, Leco, Lumbago, Marijuana, Marine, Mat, Matchan, Metal, Mikhail Miguel, Minahito, Moegiiro, Mumincacao, Masarap, Naao, Nao-pon, Neko88, Nobunobu, Nor, Nbuy Nobu, OhYear, Ohwada, Okuhiki, Onokazu, Orrisroot, Otneg, Plusangel, Pcboy, Roger, Sacchan,  Sak-Axyz, Salamander, Shige-p, Shiraga, Slayer_cg, Sohgo, Sow, Suin, Toemon, Tokitam, Tohokuaiki, Tom_g3x, Tomoro, Wanderer, Wanikoo.
 
 ## <span class="iconify" data-icon="mdi:copyright" style="color: #face74;"></span> The License
 
 The BSD License allows proprietary use and allows the software released under the license to be incorporated into proprietary products.
 
 ```html
-Copyright 2022 XOOPSCube
+Copyright 2025 XOOPSCube
 
 Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:

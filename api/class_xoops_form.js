@@ -1,0 +1,25 @@
+var class_xoops_form =
+[
+    [ "__construct", "class_xoops_form.html#add9191d6d28d5f274ca7f3ccc9f4bae8", null ],
+    [ "addElement", "class_xoops_form.html#ac7ced8f08bee1247f682057f57ca3af1", null ],
+    [ "assign", "class_xoops_form.html#acae56133cdf87ab5c8e2a5854c4a911f", null ],
+    [ "display", "class_xoops_form.html#a0b9b6e6acd4a839fc7c2f26f96b5cfa8", null ],
+    [ "getAction", "class_xoops_form.html#a189a4abe5faf11f4320d5d3f1d3d1715", null ],
+    [ "getElementByName", "class_xoops_form.html#adc7ab5ef9cf2f9e30f53920bb1415555", null ],
+    [ "getElementNames", "class_xoops_form.html#a5b1f11abe4922ffabf9d1f2a66d518ac", null ],
+    [ "getElements", "class_xoops_form.html#a155a10de6ff3ea38379ae742f8cf2718", null ],
+    [ "getElementValue", "class_xoops_form.html#a033852ee08256dad2d869c2b30e38096", null ],
+    [ "getElementValues", "class_xoops_form.html#a869573a4d0eb3c103cb9267a49ff0d9d", null ],
+    [ "getExtra", "class_xoops_form.html#a0b498657d3e75fc0c6e6296d18cd7234", null ],
+    [ "getMethod", "class_xoops_form.html#af3e37e1a6ed9b8c87f86f659873a83b7", null ],
+    [ "getName", "class_xoops_form.html#a3d0963e68bb313b163a73f2803c64600", null ],
+    [ "getRequired", "class_xoops_form.html#acd805292b3c7a648a2b6e3f8c7ab95e5", null ],
+    [ "getTitle", "class_xoops_form.html#a95e859a4588a39a1824b717378a84c29", null ],
+    [ "insertBreak", "class_xoops_form.html#a0120b8456a5a26297f7dfe5aeefa6244", null ],
+    [ "render", "class_xoops_form.html#afde88292c44dc59faf017738dae6dffb", null ],
+    [ "renderValidationJS", "class_xoops_form.html#aa96cdb0266177339db2faafcbc0ca779", null ],
+    [ "setElementValue", "class_xoops_form.html#a092f7e49eb6bdc4d5c81a1918bbb32ac", null ],
+    [ "setElementValues", "class_xoops_form.html#a7821bf27a7f7aa6aead3498d30520513", null ],
+    [ "setExtra", "class_xoops_form.html#a0b42271e2e9090ab514c380be4451026", null ],
+    [ "setRequired", "class_xoops_form.html#a02fd743077b8b5b986ad78a3ce798f57", null ]
+];

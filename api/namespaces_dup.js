@@ -1,0 +1,26 @@
+var namespaces_dup =
+[
+    [ "Archive_Zip", "namespace_archive___zip.html", null ],
+    [ "class", "namespaceclass.html", null ],
+    [ "database", "namespacedatabase.html", null ],
+    [ "EasyLexSQL", "namespace_easy_lex_s_q_l.html", null ],
+    [ "kernel", "namespacekernel.html", null ],
+    [ "Legacy", "namespace_legacy.html", null ],
+    [ "legacy", "namespacelegacy.html", null ],
+    [ "LegacyRender", "namespace_legacy_render.html", null ],
+    [ "legacyRender", "namespacelegacy_render.html", null ],
+    [ "Message", "namespace_message.html", null ],
+    [ "Preload", "namespace_preload.html", null ],
+    [ "profile", "namespaceprofile.html", null ],
+    [ "ShadePlus", "namespace_shade_plus.html", null ],
+    [ "ShadeSoap", "namespace_shade_soap.html", null ],
+    [ "Sitemap", "namespace_sitemap.html", null ],
+    [ "stdCache", "namespacestd_cache.html", null ],
+    [ "User", "namespace_user.html", null ],
+    [ "user", "namespaceuser.html", null ],
+    [ "xcat", "namespacexcat.html", null ],
+    [ "XCL", "namespace_x_c_l.html", null ],
+    [ "XCube", "namespace_x_cube.html", null ],
+    [ "XOOPS2", "namespace_x_o_o_p_s2.html", null ],
+    [ "xoops2", "namespacexoops2.html", null ]
+];

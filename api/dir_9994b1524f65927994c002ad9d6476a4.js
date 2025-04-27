@@ -1,0 +1,28 @@
+var dir_9994b1524f65927994c002ad9d6476a4 =
+[
+    [ "interface", "dir_e00bbfdcc89387765ea9e6e9dda96dce.html", "dir_e00bbfdcc89387765ea9e6e9dda96dce" ],
+    [ "AbstractDeleteAction.class.php", "legacy_2class_2_abstract_delete_action_8class_8php_source.html", null ],
+    [ "AbstractEditAction.class.php", "legacy_2class_2_abstract_edit_action_8class_8php_source.html", null ],
+    [ "AbstractFilterForm.class.php", "legacy_2class_2_abstract_filter_form_8class_8php_source.html", null ],
+    [ "AbstractListAction.class.php", "legacy_2class_2_abstract_list_action_8class_8php_source.html", null ],
+    [ "ActionFrame.class.php", "legacy_2class_2_action_frame_8class_8php_source.html", null ],
+    [ "block_module_link.php", "block__module__link_8php_source.html", null ],
+    [ "blockctype.php", "blockctype_8php_source.html", null ],
+    [ "columnside.php", "columnside_8php_source.html", null ],
+    [ "comment.php", "modules_2legacy_2class_2comment_8php_source.html", null ],
+    [ "commentstatus.php", "commentstatus_8php_source.html", null ],
+    [ "Enum.class.php", "_enum_8class_8php.html", "_enum_8class_8php" ],
+    [ "group_permission.php", "group__permission_8php_source.html", null ],
+    [ "image.php", "modules_2legacy_2class_2image_8php_source.html", null ],
+    [ "imagebody.php", "imagebody_8php_source.html", null ],
+    [ "imagecategory.php", "modules_2legacy_2class_2imagecategory_8php_source.html", null ],
+    [ "Legacy_Debugger.class.php", "_legacy___debugger_8class_8php_source.html", null ],
+    [ "Legacy_HeaderScript.class.php", "_legacy___header_script_8class_8php_source.html", null ],
+    [ "Legacy_Utils.class.php", "_legacy___utils_8class_8php_source.html", null ],
+    [ "Legacy_Validator.class.php", "_legacy___validator_8class_8php_source.html", null ],
+    [ "Module.class.php", "legacy_2class_2_module_8class_8php_source.html", null ],
+    [ "newblocks.php", "newblocks_8php_source.html", null ],
+    [ "non_installation_module.php", "non__installation__module_8php_source.html", null ],
+    [ "smiles.php", "smiles_8php_source.html", null ],
+    [ "theme.php", "class_2theme_8php_source.html", null ]
+];

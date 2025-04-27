@@ -10,7 +10,7 @@
 
 - [XCube Core](#xcube-core)
 - [XCube Development](#xcube-development)
-- [XCube Subsystem](#xcube-subsystem)
+- [XCube Subsystem](#xcube-base-system)
 - [Exchangeable](#exchangeable)
 - [XCube Namespace](#xcube-namespace)
 - [Delegate manager](#delegate-manager)
@@ -30,37 +30,29 @@
 
 **The XCube core concept "3S" stands for — Simple, Secure and Scalable.**
 
-XCube architecture is the core to all the high-level components and how they interact with each other.
-While the web application design is about the code level design, the functionality of each module and 
-its purposes.
+The minimalist XCube core, located within the `html/core` directory, serves as the foundational layer for the XOOPS Cube Legacy application. 
+Its primary function is to bootstrap the system and handle the initial web request lifecycle. Key features include:
 
-At its core, XCube minimalism is being intentional to get rid of the superfluous and to be meaningful and simple.
-Although XCube core implements Design patterns that represent the best practices used by experienced object-oriented
-software developers, XCube design borrows ideas from traditional mechanisms outside the web — mechanisms such as
-preloading, delegates, task systems, generic render-sequence from .NET and video-game programing to implement an
-ideal specification.
+- Basic Autoloading: Mechanisms for automatically loading necessary PHP classes, enabling a modular code structure.
+- Request Handling: Core components to receive and process incoming HTTP requests.
+- Basic Class Registry: A system for managing and accessing core objects and services.
+- Initialization Routines: Essential scripts to set up the environment, including path definitions and basic configuration loading.
 
-Moreover, such software design was needed to develop a task-base modular architecture allowing
-web developers and designers to run their favorite frameworks and libraries. Thus, the underlying logic of the core main classes which the project team narrowed down the "**Core program**" is built
-on a simple design concept "**No Framework**" or **framework-agnostic**.
+**Semantic Summary**
 
-The core architecture was designed to build dynamic websites, web applications and web services.
+This core provides the essential infrastructure for XCube Legacy to start execution upon a web request. It focuses on initialization, class loading, and fundamental request management, laying the groundwork for subsequent module and theme processing. It offers a minimalist foundation without the extensive built-in tools often associated with full-fledged frameworks, emphasizing a lightweight and extensible base.
 
-- XCube handles almost everything as re-usable materials: managers, add-ons (modules), preloads (extensions)
-  and Themes are materials for end-users.
+This overview highlights the core's bootstrapping and request-handling nature, which should be the starting point for developers looking at the API documentation for these fundamental aspects of the system.
 
-- Delegates, Virtual Services and Tasks of the Task System(*) are materials for developers.
 
-- Its framework-agnostic design concept covers the free choice of frameworks and libraries for developers and designers.
+**XCube Core Design Philosophy: Minimalism and Flexibility**
+
+At its core, XCube's minimalism focuses on intentionality: eliminating the superfluous to achieve meaningful simplicity. While the XCube core incorporates established Design Patterns recognized as best practices by experienced object-oriented software developers, its design also draws inspiration from traditional mechanisms beyond the web. Concepts such as preloading, delegates, task systems, and a generic render-sequence (inspired by .NET and video-game programming) were adopted to implement an ideal specification.
 
   
 <div layout="row sm-column my-6">
 <div self="size-2of3">
-<strong>XCube</strong> is the core layer of the platform giving required minimum functionality to aggregate 
-preexistent subsystems,for example the <b>Base</b> subsystem Legacy used to build a customized CMS.
-
-<p>If anyone aims to implement new features on XCube platform, it can be done with a custom subsystem,
-aside the initial Base subsystem Legacy or extend it with modules or single file component (ref. preload mechanism).</p>
+<p>XCube design was crucial for developing a task-based, modular architecture, empowering web developers and designers to utilize their preferred frameworks and libraries. Consequently, the underlying logic of the core main classes – what the project team termed the "Core program" – is built upon a simple "No Framework" or framework-agnostic design concept, leveraging an event-driven approach for extensibility.</p>
 </div>
 <div><img src="https://xoopscube.github.io/documentation/_media/cube-core.png" alt="core"></div>
 </div>
@@ -68,17 +60,19 @@ aside the initial Base subsystem Legacy or extend it with modules or single file
   
 The XCube core was developed from scratch by Kazuhisa Minato (lead programmer in the game industry),
 addressing the challenges of software development for current and future parallel hardware architectures
-which are now dominated by multicore architectures. Thus implementing a task-oriented program execution with
-backward compatibility and the complementary concept of forward compatibility.
+which are now dominated by multicore architectures. In Object-Oriented Programming (OOP), task-based and 
+event-driven architectures represent distinct but potentially complementary approaches to structuring 
+program flow and component interaction. 
 
 The XCube concept mediates between existing computing resources and applications on the one hand,
-and the high-level goals required for personalization at scale on the other.
+and the high-level goals required for personalization at scale on the other. Thus implementing a 
+program execution with backward compatibility and the complementary concept of forward compatibility.
 
 In a slide deck (wiki), Kazuhisa Minato depicts the developed architecture to support these new capabilities.
 He also described some software engineering challenges that arise in this context.
 The key features of the new architecture are :
 - the ability to interface with existing applications, while adding considerable support for tasks;
-- the ability to incorporate other subsystems so that the web platform adapts over time;
+- the ability to incorporate other base systems so that the web platform adapts over time;
 - and the ability to cope with resource variability and mobility.
 
 ![XCube Core](https://raw.githubusercontent.com/xoopscube/artwork-social-media/f9b35edbc1b3f9106d14588201f1b7203d64b510/images/xcl_dia_render_sequence.jpg)
@@ -91,8 +85,9 @@ The key features of the new architecture are :
 
 ## XCube Development
 
-The core development follows a parallel programming methodology exploiting a task-based view of application software for
-the effective use of larger choice of exchangeable subsystems or cluster systems.
+The core development follows a parallel programming methodology exploiting a task-based view of application software 
+and event-driven architecture.
+
 Task-based programming models with static or dynamic task creation was a main topic discussed by Minahito,
 core programmer, and the prominent developers then. Mainly because the mainstream web programming model,
 or web development trend was, and still largely sequential and sort of von Neumann oriented.
@@ -101,23 +96,83 @@ Also, because sophisticated programming techniques were required to access the p
 was imperative for making the capabilities of the new XCube core available to web developers with various skills
 to create and release new subsystems architectures.
 
-**Why is such mechanism needed?**
+**Task-Based Architecture**
+
+```mermaid
+graph LR
+    A(Object A\n(Initiator)) --> B(Object B\n(Task Processor))
+    B --> C(Object C\n(Final Processor))
+    B -- Direct Method Call --> H(Helper Object\n(Performs Sub-\ntasks for B))
+    H -- Direct Method Call --> B
+```
+
+- Focuses on defining and executing specific, discrete units of work or procedures (tasks).
+- The program flow is often linear or follows a directed sequence of task execution.
+- Components typically interact through direct method calls, where one object invokes a method on another to perform a specific action.
+- Emphasis is on achieving a particular goal through a series of steps.
+- Think of it like a recipe: follow the steps in order to get the final dish.
+
+**Event-Driven Architecture**
+
+```mermaid
+graph LR
+    A(Object A\n(Event Publisher)) --> EB(Event Bus/Broker\n(Publishes Event))
+    EB --> B(Object B\n(Event Handler))
+    C(Object C\n(Event Publisher)) --> EB
+    EB --> D(Object D\n(Event Handler))
+```
+
+- Centers around the production and consumption of events, which signify a change in state or a significant occurrence.   
+- Components are decoupled and communicate indirectly by emitting and subscribing to events.   
+- When an event occurs, interested components (subscribers or listeners) react to it.   
+- The program flow is more reactive and less rigidly defined, driven by the occurrence of events.   
+- Think of it like a notification system: when something happens, those who are interested are notified and can take action.   
+
+**Difference or Complementary**
+
+```mermaid
+graph LR
+    UI(User Interface\n(Triggers\nInteraction)) --> CH(Command Handler\n(Task-Based))
+    CH --> OS(Order Service\n(Task-Based))
+    OS --> InternalFlow((Internal Task-Based Flow))
+    CH -- Emits Event --> NS(Notification\nService\n(Event Handler))
+    OS -- Emits Event --> LS(Logging Service\n(Event Handler))
+```
+
+These two approaches are different in their fundamental control flow and interaction paradigms,  
+but they are not mutually exclusive and can be highly complementary in OOP systems:
+
+- Levels of Abstraction  
+  An application might use an event-driven architecture at a higher level for inter-module communication or handling user interactions, while individual modules internally use a task-based approach to execute specific operations triggered by those events.
+
+- Combining Paradigms  
+  Objects can both perform tasks (have methods that are called directly) and emit/listen for events. For example, a "Order" object might have a processPayment() task and also emit an "OrderPaid" event upon successful completion.
+
+- Decoupling and Orchestration  
+  Event-driven architectures excel at decoupling components, making systems more flexible and scalable. However, the handlers that react to events often perform specific tasks, bringing the task-based approach into play. An orchestrator component might listen to several events and then trigger a sequence of tasks in response. 
+    
+- UI Development  
+  Event-driven programming is dominant in GUI development (handling button clicks, mouse movements), where events trigger specific task-oriented functions within the application logic.   
+
+**Why a dual-system with a dual render was needed?**
+
+While task-based architecture emphasizes direct method calls and sequential execution of operations, event-driven architecture focuses on asynchronous communication and reactive behavior based on events. In OOP, these are often complementary strategies used at different levels or in different parts of an application to achieve modularity, responsiveness, and effective handling of both internal operations and external interactions. The choice of which approach dominates depends on the specific requirements and complexity of the system being built.
 
 > In the 3D application world, there are many "controversies" around the question of the best process.   
-For example, the scene management has multiple solutions — Octree, Quadtree, Terrain, Sphere tree, no tree and more...
+> For example, the scene management has multiple solutions — Octree, Quadtree, Terrain, Sphere tree, no tree and more...
 > but all these controversies are useless, because the best process is determined by what the application has to do.  
 > — Kazuhisa Minato
 
 A web application has commonly the same "controversies" about required features.
 
-XCube delegates them to managers and controllers. So developers are free to change them according to their needs.
+XCube delegates to managers and controllers. So developers are free to change them according to their needs.
 Thus, it's a must-have for flexibility. However, XCube also benefits from another _side effect_ of this mechanism.
 
 The singleton design pattern is well-known to solve recurring design problems of reusable
 object-oriented software. It can be used to reduce memory usage and can also be used as a basis for
 other design patterns, such as the abstract factory, factory method, builder, and prototype patterns.
 
-## XCube Subsystem
+## XCube base-system
 
 The XOOPSCube Team released the Legacy subsystem before XCube 1.0 was completed by Kazuhisa Minato as the first
 XCube major version. Therefore, the package Legacy implements many features to emulate Xoops2 system.
@@ -125,21 +180,22 @@ So the Base subsystem Legacy is an exception, made by highly skilled developers 
 to ensure backwards compatibility and interoperability with XOOPS2 (©2002 Kazumi Ono @Onokazu, GPL2)
 and later XOOPS2-JP (©2005 XOOPS2 Japan, GPL2) Japanese versions with multibyte character support.
 
-The Base subsystem Legacy main functions have been placed into their own modules, such as user account management,
-and private messages.
+The Base subsystem Legacy main functions have been placed into their own modules, such as user group management,
+private messages, render engine, and standard cache.
 
 ## Exchangeable
 
 The XCube design is probably common to the most used design pattern in modern programming languages like Java and C#.
 
-Some advantages of XCube design :
+Some advantages of XCube design : 
 - inheritance, as object creation is delegated to subclasses,
 - it promotes consistency, classes are made to be polymorphic, thus interchangeable;
 - write more type-safe code than before;
 - since most objects are exchangeable, it's possible to change the layer (Base subsystem), not only managers.
 
-The _Base_ subsystem can be replaced or written from scratch. Anyone can develop anything, anytime, anywhere,
-except changing the core that makes everything "exchangeable" allowing for scalability, flexibility and freedom.
+The _Base_ subsystem is designed to be replaceable or entirely rewritten, empowering developers to create anything, anytime, anywhere.
+
+However, the core itself – the very mechanism that enables this "exchangeability" and ensures scalability, flexibility, and freedom – remains intentionally immutable.
 
 ## XCube Namespace
 
@@ -174,7 +230,7 @@ so Webmasters don't have to change the source code of the trusted system.
 
 Delegate and preload are essentially different mechanisms and can be used independently.  
 
-In practice, there will be many Single File Components, or one-file hacks, using the delegate mechanism 
+In practice, you an run several **Single File Components**, or one-file hacks, using the delegate mechanism 
 in a **preload** to modify the processing and behavior of modules.
 
 ## Type Safe

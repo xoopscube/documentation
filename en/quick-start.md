@@ -30,16 +30,15 @@
 
 ### Install Prerequisites
 
-First, make sure you have installed [Apache](https://httpd.apache.org/docs/2.4/) or [Nginx](https://www.nginx.com/), [Mysql](https://dev.mysql.com/downloads/) or [Mariadb](https://mariadb.org/) and [PHP7](https://www.php.net/) in order to run XCL properly.  
-XCL is designed to run smoothly on any local server environment bundle [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)), [MAMP](https://www.mamp.info/en/), [XAMPP](https://www.apachefriends.org/index.html).  
-If you want to install PHP with IIS, the easiest way is to use [Microsoft's Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx).
+First, make sure you have installed [Apache](https://httpd.apache.org/docs/2.4/) or [Nginx](https://www.nginx.com/), [Mysql](https://dev.mysql.com/downloads/) or [Mariadb](https://mariadb.org/) and [PHP 8.2](https://www.php.net/) in order to run XCL properly.  
+XCL is designed to run smoothly on any local server environment bundle [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)), [MAMP](https://www.mamp.info/en/), [XAMPP](https://www.apachefriends.org/index.html).
 
 - Apache, Nginx, etc.
-- PHP 7.2.x ^
-- MySQL 5.6.x ^, MariaDB
+- PHP 8.2.x ^
+- MySQL 8.0.x ^, MariaDB
 - Database InnoDB utf8 / utf8mb4
 
-<a href="https://github.com/xoopscube/xcl" target="_blank">Download XCL 2.3.x bundle package from GitHub</a>. This is everything you need to get started.
+<a href="https://github.com/xoopscube/legacy" target="_blank">Download XCL 2.5.x bundle package from GitHub</a>. This is everything you need to get started.
 
 -----
 ### Quick Start
@@ -71,7 +70,7 @@ Percona Server, PostgreSQL, SQLite or Microsoft SQL Server and Oracle.
 
 ### PHP requirements
 
-PHP 7.2 is recommended for XCL 2.3.0  
+PHP 8.2 is recommended for XCL 2.5.0  
 Some individual modules may have specific requirements and configurations  
 needed (eg. WebPhoto), please refer to the module documentation as well.
 
@@ -151,7 +150,7 @@ If you're running a local environment for development or testing, make sure that
 + copy the contents of the TRUST_PATH directory to the root document path of your web environment (private if possible).
 + Create a database
 
-Once the files are copied there, you can point your browser to http://localhost/
+Once the files are copied there, you can point your browser to http://localhost/ or https://mysite.local
 
 This will start the install wizard process.
 
@@ -173,7 +172,7 @@ Once this is done :
 + copy the contents of the TRUST_PATH directory to the root document path of your web environment (private if possible).
 + Create a database
 
-Once the files are copied there, you can start the install by typing http://my-site-domain.com/
+Once the files are copied there, you can start the install by typing https://example.com/
 
 This will start the install process.
 

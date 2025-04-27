@@ -8,22 +8,21 @@
 <summary style="cursor: pointer;">Table of Contents</summary>
 
 - [Overview](#overview) — Web Application Platform and Content Management System.
-- [XCube core](/en/development/xcube-core.md#xcube-core-concept) — Xcube Core concept and subsystems.
-- [XCube Architecture](/en/development/xcube-core.md#xcube-development) — Simple, Secure and Scalable.
-- [XCube Subsystem](/en/development/xcube-core.md#xcube-subsystem) — Base subsystem.
-- [Exchangeable](/en/development/xcube-core.md#exchangeable) — inheritance, OOP polymorphism and type-safe code.
-- [XCube Namespace](/en/development/xcube-core.md#xcube-namespace) — concept implemented when PHP did not provide any.
-- [Delegate Manager](/en/development/xcube-core.md#delegate-manager) — delegate managers and controllers.
-- [Preload](/en/development/xcube-core.md#delegate-manager) — preload mechanism, single file component.
-- [Type Safe](/en/development/xcube-core.md#type-safe)
-- [Action Form](/en/development/xcube-core.md#action-form)
-- [Virtual Service](/en/development/xcube-core.md#virtual-service)
-- [Render Engine](/en/development/xcube-core.md#render-engine)
-- [Multi-render](/en/development/xcube-core.md#multi-render)
-- [Framework Agnostic](/en/development/xcube-core.md#multi-render)
-- [Trust Path](/en/development/xcube-core.md#trust-path)
-- [D3 Duplicable Modules](/en/development/xcube-core.md#duplicable-modules)
-- [XCube Tools](/en/development/xcube-core.md#xcube-tools)
+- [XCube core](/en/development/xcube-concept.md#xcube-core) — Xcube Core concept and base systems.
+- [XCube Architecture](/en/development/xcube-concept.md#xcube-development) — Simple, Secure and Scalable.
+- [XCube Subsystem](/en/development/xcube-concept.md#xcube-base-system) — Base subsystem.
+- [Exchangeable](/en/development/xcube-concept.md#exchangeable) — inheritance, OOP polymorphism and type-safe code.
+- [XCube Namespace](/en/development/xcube-concept.md#xcube-namespace) — concept implemented when PHP did not provide any.
+- [Delegate Manager](/en/development/xcube-concept.md#delegate-manager) — delegate managers and controllers.
+- [Preload](/en/development/xcube-concept.md#preload) — preload system, single file component.
+- [Type Safe](/en/development/xcube-concept.md#type-safe)
+- [Action Form](/en/development/xcube-concept.md#action-form)
+- [Virtual Service](/en/development/xcube-concept.md#virtual-service)
+- [Render Engine](/en/development/xcube-concept.md#render-engine)
+- [Multi-render](/en/development/xcube-concept.md#multi-render)
+- [Framework Agnostic](/en/development/xcube-concept.md#framework-agnostic)
+- [Trust Path](/en/development/xcube-concept.md#trust-path)
+- [D3 Duplicable Modules](/en/development/xcube-concept.md#duplicable-modules)
 
 </details>
 
@@ -47,20 +46,15 @@
 
 ## Overview
 
-This page provides an overview of the original XCube design concept build with PHP and MySQL.
-It is a brief summary of the initial architecture idea on which the design and eventual development 
-of a subsystem is built.
-Therefore, it is not an exhaustive API reference including all possible elements, classes, objects 
-or detailed models, functions or methods.
+**The Original XCube Design Concept**  
+
+This page offers a summary of the initial architectural vision for XCube, built using PHP and MySQL. It provides a brief overview of the core design concept upon which the structure and subsequent development of various subsystems are based. Therefore, this document is not intended as a comprehensive API reference detailing every element, class, object, model, function, or method.
 
 ## Self-Hosted Scalable
 
 **The XCube core concept "3S" stands for — Simple, Secure and Scalable.**
 
-The XCube architecture was developed to overcome [web development frameworks](/en/development/web-framework.md) 
-limitations, and to serve as the basis for extending an existing web platform. 
-The approach stems from real-world experience, resulting in a highly modular and extensible platform 
-for reliable resource management and scalability in a very demanding domain. 
+The XCube architecture was developed to overcome web development frameworks limitations, and to serve as the basis for extending an existing web platform. The approach stems from real-world experience, resulting in a highly modular and extensible platform for reliable resource management and scalability. 
 Self-hosted platforms are decentralized, allow for superior accessibility,
 and full control over your own data and services, rather than depending on expensive 
 third-party services (cloud, saas).
@@ -71,9 +65,9 @@ third-party services (cloud, saas).
 <div self="size-2of3">
 <p>
 <strong>XCube</strong> is the core layer of the platform giving required minimum functionality to aggregate 
-preexistent subsystems, for example the <b>Base</b> subsystem Legacy used to build a customized CMS. 
+preexistent bbase-systems, for example the <b>Base</b> system Legacy used to build a customized CMS. 
 At its core, XCube minimalism is being intentional to get rid of the superfluous and to be meaningful 
-and simple framework agnostic. Aside the initial Base subsystem Legacy, new features can be easily integrated:</p>
+and simple framework agnostic. Aside the initial Base system Legacy, new features can be easily integrated:</p>
 <ul>
 <li>Base new subsystem</li>
 <li>Module with extended functionality</li> 
@@ -82,6 +76,4 @@ and simple framework agnostic. Aside the initial Base subsystem Legacy, new feat
 </div>
 <div><img src="https://xoopscube.github.io/documentation/_media/cube-core.png" alt="core"></div>
 </div>
-
-   
 
