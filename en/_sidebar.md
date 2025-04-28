@@ -24,7 +24,6 @@
 
 - Deployment
     - [Introduction](/en/deployment/)
-    - [Deploy to SFTP](/en/deployment/sftp.md)
     - [Deploy with GitHub](/en/deployment/deploy-github.md)
     - [Deploy with X-Update](/en/deployment/update-manager.md)
     - [Update Modules](/en/deployment/update-module.md)

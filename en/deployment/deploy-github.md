@@ -16,4 +16,6 @@
 
 ## GitHub settings
 
-TODO - Documentation
+Documentation
+
+Learn more : [XCube Store](https://xoopscube.github.io/xupdate-store/)

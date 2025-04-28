@@ -27,3 +27,4 @@ Sync your source code and continuously delivered projects in a sustainable way
 
 to your users and clients.
 
+Learn more : [XCube Store](https://xoopscube.github.io/xupdate-store/)
