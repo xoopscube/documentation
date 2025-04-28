@@ -9,43 +9,15 @@
 
 ## XCube Core API
 
-The foundational Core of XoopsCube Legacy
+The foundational Core of XoopsCube
 
 
-### 📦  [API XCube Core Documentation](https://xoopscube.github.io/documentation/xcube/)
+📦  [API XCube Core Documentation](https://xoopscube.github.io/documentation/xcube/)
 
 
-### 📦  [API Documentation XCL v2.5.x](https://xoopscube.github.io/documentation/api/)
+## XCL Bundle API
 
+The XoopsCube Legacy Project XCL Bundle v2.5.0
 
-### Environment Settings
+📦  [API Documentation XCL v2.5.x](https://xoopscube.github.io/documentation/api/)
 
-The ini file of XOOPSCube follows an inheritance pattern  
-and are loaded in the following order:
-
-1. site_default.ini
-2. site_default.dist.ini
-3. site_custom.ini
-4. site_custom_ {XOOPS_SALT} .ini
-
-The value read earlier is overwritten with the later setting.
-
-#### How to get the value set in site_default.ini and site_custom.ini of XOOPSCube
-
-```
-    $root = XCube_Root :: getSingleton ();  
-    $value = $root-> getSiteConfig ('section name','parameter name'));
-``` 
-
-Example : site_custom.ini
-
-```php 
-    [Foo]    
-    Bar = Baz    
-    $root  =  XCube_Root :: getSingleton ();    
-    $value  =  $root-> getSiteConfig ( 'Foo' , 'Bar' );    
-    echo  $value ;    
-    // Output is Baz
-```
-
-_trust_path/settings/site_custom.ini_ **overwrites** _trust_path/settings/site_default.ini_
