@@ -8,11 +8,10 @@
 <summary style="cursor: pointer;">Table of Contents</summary>
 
 - [Overview](#overview) — Web Application Platform and Content Management System.
-- [XCube core](/en/development/xcube-concept.md#xcube-core) — Xcube Core concept and base systems.
-- [XCube Architecture](/en/development/xcube-concept.md#xcube-development) — Simple, Secure and Scalable.
-- [XCube Subsystem](/en/development/xcube-concept.md#xcube-base-system) — Base subsystem.
-- [Exchangeable](/en/development/xcube-concept.md#exchangeable) — inheritance, OOP polymorphism and type-safe code.
-- [XCube Namespace](/en/development/xcube-concept.md#xcube-namespace) — concept implemented when PHP did not provide any.
+- [XCube Core](/en/development/xcube-concept.md#xcube-core) — Xcube Core concept.
+- [XCube Design](/en/development/xcube-concept.md#xcube-design) — Xcube Core dual system.
+- [XCube Base System](/en/development/xcube-concept.md#xcube-base-system) — Base subsystem.
+- [XCube Namespace](/en/development/xcube-concept.md#xcube-namespace)
 - [Delegate Manager](/en/development/xcube-concept.md#delegate-manager) — delegate managers and controllers.
 - [Preload](/en/development/xcube-concept.md#preload) — preload system, single file component.
 - [Type Safe](/en/development/xcube-concept.md#type-safe)
@@ -22,7 +21,7 @@
 - [Multi-render](/en/development/xcube-concept.md#multi-render)
 - [Framework Agnostic](/en/development/xcube-concept.md#framework-agnostic)
 - [Trust Path](/en/development/xcube-concept.md#trust-path)
-- [D3 Duplicable Modules](/en/development/xcube-concept.md#duplicable-modules)
+- [XCube Modules](/en/development/xcube-concept.md#xcube-modules)
 
 </details>
 
@@ -49,8 +48,6 @@
 **The Original XCube Design Concept**  
 
 This page offers a summary of the initial architectural vision for XCube, built using PHP and MySQL. It provides a brief overview of the core design concept upon which the structure and subsequent development of various subsystems are based. Therefore, this document is not intended as a comprehensive API reference detailing every element, class, object, model, function, or method.
-
-## Self-Hosted Scalable
 
 **The XCube core concept "3S" stands for — Simple, Secure and Scalable.**
 

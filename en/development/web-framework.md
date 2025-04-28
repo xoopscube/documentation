@@ -9,6 +9,7 @@
 
 A web development framework is a set of resources and tools for software developers to build and manage 
 web applications, web services and websites. 
+
 There are countless frameworks and technologies that can be used to build a web platform or service.
 While the tools and services of existing development frameworks are useful in many use cases, 
 the most popular frameworks often come with high costs in terms of resource requirements, development 
@@ -22,4 +23,9 @@ but also the necessary resources and the undeniable financial cost in production
 
 ## Integration
 
-[Documentation]
+Support for modern frameworks and easily integration (css, php, compiled reactjs, vue, fluent, etc.). 
+
+XCube aims to leverage both the general modularity and specific design of concepts and principles to a development
+strategy (for a software company), where over time a project leverages its architecture and platform to
+new multi-platform market applications, each one of which requires not only new standard modules,
+but also customization and personalisation.

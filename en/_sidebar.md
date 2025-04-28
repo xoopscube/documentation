@@ -3,6 +3,7 @@
 - Development
     - [XOOPSCube](/en/development/)
     - [XCube Concept](/en/development/xcube-concept.md)
+    - [XCube Core](/en/development/xcube-core.md)
     - [XCL Package](/en/development/xcl-package.md)
     - [API Documentation](/en/development/api.md)
     - [Code Generator](/en/development/xcube-tools.md)

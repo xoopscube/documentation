@@ -5,31 +5,17 @@
   <dd>This information is intended for administrators and developers.</dd>
 </dl>
 
-<details>
-<summary style="cursor: pointer;">API Documentation</summary>
-
-- XCube Core
-- Environment Settings
-- Kernel ( Backwards compatibility )
-- Module Development
-- Cubson PHP Code Generator
-- Tubson web code generator
-- Type Safe
-- Delegate and Preload
-- Interface
-- Legacy : Base subsystem and Bundle Package
-- Render Engine
-- Theme and Templates
-
-</details>
-
 ---
 
 ## XCube Core API
 
-XCube core is task-oriented... [ Documentation ]
+The foundational Core of XoopsCube Legacy
 
 
+### 📦  [API XCube Core Documentation](https://xoopscube.github.io/documentation/xcube/)
+
+
+### 📦  [API Documentation XCL v2.5.x](https://xoopscube.github.io/documentation/api/)
 
 
 ### Environment Settings
@@ -63,46 +49,3 @@ Example : site_custom.ini
 ```
 
 _trust_path/settings/site_custom.ini_ **overwrites** _trust_path/settings/site_default.ini_
-
-## Kernel
-
-Backwards compatibility [Documentation]
-
-## Module Development
-
-### Cubson PHP Code Generator
-
-Cubson is a tool to generate modules for XCube.
-It allows you to create quickly and easily high quality modules.
-Cubson was developed by Minahito, one of the core developers of XCube.
-Part of XOOPSCube's management was created using Cubson.
-
-Good things about Cubson :
-
-- Easy to create secure modules
-- Allow users with no programming experience to create modules that work reasonably well.
-- Automatically generates the tedious code for you
-- Helps you cut down on module development time in a substantial way,
-- Cubson generates boilerplate code, so you can create modules that are easier to understand later.
-
-### Tubson Web Code Generator
-
-Mumincacao created Tubson with Trust Path support.  
-Kilika's website features a web version to create modules from your browser.
-
-## Type Safe
-
-ActionFilter and ActionForm
-
-## Delegate and Preload
-
-## Interface
-
-## Legacy
-
-Base subsystem and Bundle Package  
-Backwards compatibility [Documentation]
-
-## Render Engine
-
-## Theme and Templates

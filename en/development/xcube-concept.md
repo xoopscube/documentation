@@ -9,9 +9,8 @@
 <summary style="cursor: pointer;">XCube Application Architecture</summary>
 
 - [XCube Core](#xcube-core)
-- [XCube Development](#xcube-development)
-- [XCube Subsystem](#xcube-base-system)
-- [Exchangeable](#exchangeable)
+- [XCube Design](#xcube-design)
+- [XCube Base-system](#xcube-base-system)
 - [XCube Namespace](#xcube-namespace)
 - [Delegate manager](#delegate-manager)
 - [Preload](#preload)
@@ -22,7 +21,7 @@
 - [Multi-Render](#multi-render)
 - [Framework Agnostic](#framework-agnostic)
 - [Trust Path](#trust-path)
-- [Duplicable Modules](#duplicable-modules)
+- [XCube Modules](#xcube-modules)
 
 </details>
 
@@ -38,52 +37,17 @@ Its primary function is to bootstrap the system and handle the initial web reque
 - Basic Class Registry: A system for managing and accessing core objects and services.
 - Initialization Routines: Essential scripts to set up the environment, including path definitions and basic configuration loading.
 
-**Semantic Summary**
+Learn more : [XCube Core](/en/development/xcube-core.md)
 
-This core provides the essential infrastructure for XCube Legacy to start execution upon a web request. It focuses on initialization, class loading, and fundamental request management, laying the groundwork for subsequent module and theme processing. It offers a minimalist foundation without the extensive built-in tools often associated with full-fledged frameworks, emphasizing a lightweight and extensible base.
+## XCube Design
 
-This overview highlights the core's bootstrapping and request-handling nature, which should be the starting point for developers looking at the API documentation for these fundamental aspects of the system.
+he XCube design is probably common to the most used design patterns in modern programming languages like Java and C#.
 
-
-**XCube Core Design Philosophy: Minimalism and Flexibility**
-
-At its core, XCube's minimalism focuses on intentionality: eliminating the superfluous to achieve meaningful simplicity. While the XCube core incorporates established Design Patterns recognized as best practices by experienced object-oriented software developers, its design also draws inspiration from traditional mechanisms beyond the web. Concepts such as preloading, delegates, task systems, and a generic render-sequence (inspired by .NET and video-game programming) were adopted to implement an ideal specification.
-
-  
-<div layout="row sm-column my-6">
-<div self="size-2of3">
-<p>XCube design was crucial for developing a task-based, modular architecture, empowering web developers and designers to utilize their preferred frameworks and libraries. Consequently, the underlying logic of the core main classes – what the project team termed the "Core program" – is built upon a simple "No Framework" or framework-agnostic design concept, leveraging an event-driven approach for extensibility.</p>
-</div>
-<div><img src="https://xoopscube.github.io/documentation/_media/cube-core.png" alt="core"></div>
-</div>
-  
-  
-The XCube core was developed from scratch by Kazuhisa Minato (lead programmer in the game industry),
-addressing the challenges of software development for current and future parallel hardware architectures
-which are now dominated by multicore architectures. In Object-Oriented Programming (OOP), task-based and 
-event-driven architectures represent distinct but potentially complementary approaches to structuring 
-program flow and component interaction. 
-
-The XCube concept mediates between existing computing resources and applications on the one hand,
-and the high-level goals required for personalization at scale on the other. Thus implementing a 
-program execution with backward compatibility and the complementary concept of forward compatibility.
-
-In a slide deck (wiki), Kazuhisa Minato depicts the developed architecture to support these new capabilities.
-He also described some software engineering challenges that arise in this context.
-The key features of the new architecture are :
-- the ability to interface with existing applications, while adding considerable support for tasks;
-- the ability to incorporate other base systems so that the web platform adapts over time;
-- and the ability to cope with resource variability and mobility.
-
-![XCube Core](https://raw.githubusercontent.com/xoopscube/artwork-social-media/f9b35edbc1b3f9106d14588201f1b7203d64b510/images/xcl_dia_render_sequence.jpg)
-
-* Self-initialization
-* Drive mechanism
-* Rendering sequence
-
-![Core implementation](https://raw.githubusercontent.com/xoopscube/artwork-social-media/master/images/xcl_dia_render_base.jpg)
-
-## XCube Development
+Some advantages of XCube design : 
+- inheritance, as object creation is delegated to subclasses,
+- it promotes consistency, classes are made to be polymorphic, thus interchangeable;
+- write more type-safe code than before;
+- since most objects are exchangeable, it's possible to change the layer (Base subsystem), not only managers.
 
 The core development follows a parallel programming methodology exploiting a task-based view of application software 
 and event-driven architecture.
@@ -172,7 +136,7 @@ The singleton design pattern is well-known to solve recurring design problems of
 object-oriented software. It can be used to reduce memory usage and can also be used as a basis for
 other design patterns, such as the abstract factory, factory method, builder, and prototype patterns.
 
-## XCube base-system
+## XCube Base-system
 
 The XOOPSCube Team released the Legacy subsystem before XCube 1.0 was completed by Kazuhisa Minato as the first
 XCube major version. Therefore, the package Legacy implements many features to emulate Xoops2 system.
@@ -183,15 +147,7 @@ and later XOOPS2-JP (©2005 XOOPS2 Japan, GPL2) Japanese versions with multibyte
 The Base subsystem Legacy main functions have been placed into their own modules, such as user group management,
 private messages, render engine, and standard cache.
 
-## Exchangeable
-
-The XCube design is probably common to the most used design pattern in modern programming languages like Java and C#.
-
-Some advantages of XCube design : 
-- inheritance, as object creation is delegated to subclasses,
-- it promotes consistency, classes are made to be polymorphic, thus interchangeable;
-- write more type-safe code than before;
-- since most objects are exchangeable, it's possible to change the layer (Base subsystem), not only managers.
+**Exchangeable**
 
 The _Base_ subsystem is designed to be replaceable or entirely rewritten, empowering developers to create anything, anytime, anywhere.
 
@@ -244,93 +200,14 @@ This class retrieves input values from the request using the current context obj
 It cleanly separates the data fetching and validation processes from your core application logic.
 Such a class is crucial in web programming.
  
-Additionally, this action form incorporates a one-time token mechanism.
-This token, when passed, informs the API that the token holder has been authorized to access the API and perform specific actions.
-The token is registered within templates.
- 
-This class provides a basic example of an action form and its usage is not mandatory for module developers.
-You can explore more comprehensive action form implementations in frameworks like JAVA, .NET, and other PHP frameworks.
-Furthermore, you are encouraged to utilize any suitable tool to auto-generate your specific ActionForm classes as subclasses of this base class.
- 
-XCube_ActionForm includes a one-time token feature to protect against CSRF attacks.
-However, this token is not required if the current HTTP request originates from a web service.
-Consequently, this class dynamically determines whether to employ the token based on the current context information.
-
-**XCube_ActionForm Example**
-
-XCube_ActionForm is a helper base class in XOOPSCube for safely fetching, validating and organizing HTTP request data (GET/POST) before your business‐logic runs. Rather than calling $_POST['foo'] directly all over your code, you:
-
-- Declare each field’s type and validation rules in a subclass
-- Fetch incoming values into form properties
-- Validate them (required, regex, range, etc.)
-- Consume the cleaned values in your controller
-- keeping your input handling and validation neatly separated from view- or model-logic
- 
-1. Define your own form
-
-```php
-// modules/mymodule/forms/UserEditForm.class.php
-class UserEditForm extends XCube_ActionForm
-{
-    public function prepare()
-    {
-        // Declare a “username” property of type string:
-        $this->mFormProperties['username']
-            = new XCube_StringProperty('username');
-        // Make it required:
-        $this->mFieldProperties['username']
-            = new XCube_FieldProperty($this);
-        $this->mFieldProperties['username']
-            ->setDependsByArray(['required']);
-    }
-
-    // Optionally override the CSRF token name
-    public function getTokenName()
-    {
-        return 'module_user_edit';
-    }
-}
-```
-
-2. Use it in a controller
-
-
-```php
-// modules/mymodule/admin/index.php
-require_once __DIR__ . '/forms/UserEditForm.class.php';
-
-$form = new UserEditForm();
-$form->prepare();
-
-// Pull in $_POST/$_GET
-$form->fetch();
-
-// Run validations
-$form->validate();
-
-if ($form->hasError()) {
-    // Render your template, passing $form->getErrorMessages()
-} else {
-    // Safe to read validated values:
-    $username = $form->get('username');
-    // …do your update or insert…
-    redirect_header('index.php?op=success', 2, 'User saved');
-}
-```
-
-Why use an ActionForm?
-
-- Centralized validation: define rules in one place
-- Cleaner controllers: fetch/validate in two lines, then focus on logic
-- Automatic CSRF protection via one-time token
-- Consistent error handling and easy integration with XOOPSCube’s template engine
-
+Learn more : [XCube Action Form](/en/development/xcube-action-form.md)
 
 ## Virtual Service
 
-XCube provides a server-client model for site communication and module communication.
-The virtual service abstracts the actual program, so the client can connect with a module and from another website.
-XCube can connect with the website service and can provide the service to other websites.
+XCube provides a server-client model for module and site communication.
+The virtual service abstracts the actual program, so the client can connect with a module, and from another website.
+
+Learn more : [XCube Service Manager](/en/development/xcube-service.md)
 
 ## Render Engine
 
@@ -383,33 +260,10 @@ webmasters are free to duplicate and rename installed D3 modules.
 
 ?> **Tip** The folder **TRUST_PATH** can be renamed to whatever name you wish.
 
-## Duplicable Modules
+## XCube Modules
 
-Gijoe, one of the most prominent web developers, implemented the system architecture of Trust Path and
-developed the most useful _duplicable_ or _duplicatable_ D3 modules like altsys, pico and protector.
+- Base system modules
+- Legacy modules
+- D3 Modules
 
-A XCL Legacy website can have many instances of the same module with each own template files and MySQL table files,
-and all run securely from a single trusted source outside the web root directory.
-
-Public HTML directory :
-
-- public/modules/pico
-- public/modules/cms
-- public/modules/page
-
-Trust path directory :
-
-- trust_path/modules/pico
-
-!> **Important** The module name under TRUST_PATH can not be changed !
-
-To differentiate the two instance of a module, you can customize template files,
-localization and translations from the Admin control panel.
-
-!> **Caution Using D3** Create a Template Set before any UPDATE !  
-The template files are centralized, thus if you update the module,
-the template files of all duplicated modules will be overwritten.
-
-[Code generator tools](/en/development/xcube-tools.md) like Tubson is available to take advantage of D3 and Trust Path.
-
-
+Learn more : [XCube Action Form](/en/development/xcube-modules.md)
