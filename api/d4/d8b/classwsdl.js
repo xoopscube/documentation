@@ -1,0 +1,26 @@
+var classwsdl =
+[
+    [ "__construct", "d4/d8b/classwsdl.html#ac223542521e1e49e1340556502bff026", null ],
+    [ "addComplexType", "d4/d8b/classwsdl.html#a2ea1391be64d0aa3241ff56810b3874b", null ],
+    [ "addElement", "d4/d8b/classwsdl.html#a7341d393047f63fdcb50dd44d2eff448", null ],
+    [ "addOperation", "d4/d8b/classwsdl.html#aea2a0197670e66fc6492fc77bf144b41", null ],
+    [ "addSimpleType", "d4/d8b/classwsdl.html#a20624710678e0ec5607bb28baf39da91", null ],
+    [ "character_data", "d4/d8b/classwsdl.html#a592a4f9b601cc33f15de0ad7a9c49ae5", null ],
+    [ "end_element", "d4/d8b/classwsdl.html#ad45367c512cbc2d4679d1a49db3802f2", null ],
+    [ "fetchWSDL", "d4/d8b/classwsdl.html#aa7cee5d5e5c547aa5bb471579bcc7a19", null ],
+    [ "getOperationData", "d4/d8b/classwsdl.html#a29db7f003a71dde230f8103dbbb595ef", null ],
+    [ "getOperationDataForSoapAction", "d4/d8b/classwsdl.html#a820a6b60d2cdd1f0d0a5a014e7bd4f52", null ],
+    [ "getOperations", "d4/d8b/classwsdl.html#aeecacf2925100f84fd1793910bf82c5d", null ],
+    [ "getTypeDef", "d4/d8b/classwsdl.html#a327b3186f4e3c8b71431ce4a9db77e5a", null ],
+    [ "parametersMatchWrapped", "d4/d8b/classwsdl.html#a5ba30e743ac8f337a13eb915c4128904", null ],
+    [ "parseWSDL", "d4/d8b/classwsdl.html#ab62daedb3e34c357555f63d0e6659f2a", null ],
+    [ "serialize", "d4/d8b/classwsdl.html#a25fcce1ac19624739857406748ba332a", null ],
+    [ "serializeComplexTypeAttributes", "d4/d8b/classwsdl.html#a1bebf04c625f86d2c65c6a2fc4c69f52", null ],
+    [ "serializeComplexTypeElements", "d4/d8b/classwsdl.html#a9abd63b860271a2010c4d35b5c607b45", null ],
+    [ "serializeParameters", "d4/d8b/classwsdl.html#afed507a7c4d2b216e27515ca9181361c", null ],
+    [ "serializeRPCParameters", "d4/d8b/classwsdl.html#ac0f3ecbe5f8968694a69a41073fbacb1", null ],
+    [ "serializeType", "d4/d8b/classwsdl.html#a06a97e7bc4c0fe43b1193177d3266c30", null ],
+    [ "setCredentials", "d4/d8b/classwsdl.html#a6444ccbe4d0d65e93218ddbae2b495a4", null ],
+    [ "start_element", "d4/d8b/classwsdl.html#abf9dc4b028eeac08eeca4c7309a950e2", null ],
+    [ "webDescription", "d4/d8b/classwsdl.html#a43ffc8c82e99905b889fbeb93d4ca6eb", null ]
+];

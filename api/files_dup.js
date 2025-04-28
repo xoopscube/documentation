@@ -1,4 +1,5 @@
 var files_dup =
 [
-    [ "Ampps", "dir_793f4d491481a10f1d4705f5191c5de5.html", "dir_793f4d491481a10f1d4705f5191c5de5" ]
+    [ "html", "dir_2dae0a562653f78d59931f0e4b070746.html", "dir_2dae0a562653f78d59931f0e4b070746" ],
+    [ "xoops_trust_path", "dir_6875abdc1c423e6af20bfa9e4ceba181.html", "dir_6875abdc1c423e6af20bfa9e4ceba181" ]
 ];

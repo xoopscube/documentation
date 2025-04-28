@@ -141,7 +141,7 @@ window.$docsify = {
       var footer = [
         // '<hr/>',
         '<footer>',
-        '<span><a href="https://github.com/xoopscube" target="_blank">XOOPSCUBE Project</a> &copy;2025</span>',
+        '<span><a href="https://github.com/xoopscube" target="_blank">The XOOPSCUBE Project</a> &copy;2025</span>',
         ' - <span>Web Application Platform <a href="https://github.com/xoopscube/legacy" target="_blank">XCL Bundle Package</a>',
         '</footer>'
       ].join('');

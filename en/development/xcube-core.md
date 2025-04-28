@@ -53,30 +53,5 @@ The key features of the new architecture are :
 Given the limited number of files and their apparent roles, the Mermaid schema is relatively simple  
 but can still illustrate the basic flow and dependencies.
 
-```mermaid
-graph LR
-    subgraph "XCube Core (html/core)"
-        bootstrap --> PathDefs((Path Definitions))
-        bootstrap --> Autoloader((Autoloader))
-        bootstrap --> CoreFuncs((Core Functions))
-        bootstrap --> XRoot((XCube_Root))
-        bootstrap --> Request((Initial Request Handling))
-
-        XRoot --> Registry((Core Object Registry))
-        Registry -- provides access to --> Controller((XCube_Controller))
-        Registry -- provides access to --> Module((XCube_Module))
-        Registry -- provides access to --> Theme((XCube_Theme))
-        Registry -- provides access to --> Language((XCube_Language))
-
-        Controller --> Dispatch((Module Dispatching))
-        Controller --> Render((Theme Rendering))
-
-        Module --> Logic((Module Logic))
-        Theme --> UI((User Interface Rendering))
-        Language --> Locale((Text Localization))
-
-        functions --> Utils((Utility Functions))
-        Utils -- used by --> CoreComponents((Various Components))
-    end
-```
+![Core implementation](https://xoopscube.github.io/documentation/xcube/xcube-api-diagram.jpg)
 

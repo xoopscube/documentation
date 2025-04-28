@@ -12,7 +12,7 @@
  * @version    2.3.1 Release: @package_231@
  * @link       https://github.com/xoopscube/xcl
  */
-@import "./xcl-icons.css"; /*  UI Default icons */
+@import "./x-icons.css"; /*  UI Default icons */
  /* -------------------- -------------------- NORMALIZE */
 html{box-sizing:border-box;scroll-behavior:smooth; /* native CSS feature */}
 /* CSS box-sizing Property to all elements includes the 'padding' & 'border' in elements total width & height. */

@@ -1,0 +1,27 @@
+var class_xoops_object =
+[
+    [ "__construct", "d0/d5a/class_xoops_object.html#a095c5d389db211932136b53f25f39685", null ],
+    [ "_loadFilters", "d0/d5a/class_xoops_object.html#a11e848a19c51439c6d80be467a8c2433", null ],
+    [ "assignVar", "d0/d5a/class_xoops_object.html#a7e08ddc4bae8bec7b15bffd867aec019", null ],
+    [ "assignVars", "d0/d5a/class_xoops_object.html#a8ae7539e953fc50401c0ab41310b3689", null ],
+    [ "cleanVars", "d0/d5a/class_xoops_object.html#a2adf3ca7ae924f257798959214fea6a2", null ],
+    [ "getErrors", "d0/d5a/class_xoops_object.html#a6e548ebf2656742bfd19939ead923ed2", null ],
+    [ "getHtmlErrors", "d0/d5a/class_xoops_object.html#a10ee66ee5b086b4e6692174531af900e", null ],
+    [ "getProperties", "d0/d5a/class_xoops_object.html#ad92c14b6c86304d3f1fb86b2936d3408", null ],
+    [ "getProperty", "d0/d5a/class_xoops_object.html#af183efd1b70fe670b7f5d58171e5df84", null ],
+    [ "getShow", "d0/d5a/class_xoops_object.html#ac19b3f52268bea015b0eec4d00884c51", null ],
+    [ "getVar", "d0/d5a/class_xoops_object.html#a350bcd1b842fb78cdddd3c2dc677c81e", null ],
+    [ "getVars", "d0/d5a/class_xoops_object.html#a9397faa3201d50aacccb95a2094ebe49", null ],
+    [ "initVar", "d0/d5a/class_xoops_object.html#a1a0a0bb414928862e9d2c00ca31c101e", null ],
+    [ "isNew", "d0/d5a/class_xoops_object.html#ad5305cbf1b1f253e8bef4b2c478dacb0", null ],
+    [ "registerFilter", "d0/d5a/class_xoops_object.html#a2176b39fcf418da248b375f6ab24f859", null ],
+    [ "set", "d0/d5a/class_xoops_object.html#aab787bd83f84f4215dceb35f7c305eee", null ],
+    [ "setDirty", "d0/d5a/class_xoops_object.html#ae76e7a05ced284c2760afb51b76fdc83", null ],
+    [ "setErrors", "d0/d5a/class_xoops_object.html#abf874def16059fb4f729462065ce50ce", null ],
+    [ "setFormVars", "d0/d5a/class_xoops_object.html#aa258279de06d7293914bd9075abd7817", null ],
+    [ "setNew", "d0/d5a/class_xoops_object.html#a23450cca4629764a237fce9cc206e499", null ],
+    [ "setVar", "d0/d5a/class_xoops_object.html#a08a4e4ba6c7efde6cc3e957b01782f79", null ],
+    [ "setVars", "d0/d5a/class_xoops_object.html#aa11c8b0053c206fc1cd76f239d2a965a", null ],
+    [ "xoopsClone", "d0/d5a/class_xoops_object.html#a9b489d6d2f620ea576ae00cba9c7b7e2", null ],
+    [ "$_filters", "d0/d5a/class_xoops_object.html#a2d9cb321953a34191d4a23165d245b5e", null ]
+];

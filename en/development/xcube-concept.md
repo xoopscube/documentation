@@ -266,4 +266,4 @@ webmasters are free to duplicate and rename installed D3 modules.
 - Legacy modules
 - D3 Modules
 
-Learn more : [XCube Action Form](/en/development/xcube-modules.md)
+Learn more : [XCube Modules](/en/development/xcube-module.md)

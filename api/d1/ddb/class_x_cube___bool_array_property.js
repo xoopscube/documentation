@@ -1,0 +1,4 @@
+var class_x_cube___bool_array_property =
+[
+    [ "__construct", "d1/ddb/class_x_cube___bool_array_property.html#a72e6bf4f08abda0fc36893c203e23917", null ]
+];

@@ -1,0 +1,27 @@
+var class_xoops_mysqli_database =
+[
+    [ "bind_param", "df/dec/class_xoops_mysqli_database.html#a844c81791a42c9822a41f0ce15cd1a4d", null ],
+    [ "close", "df/dec/class_xoops_mysqli_database.html#aa69c8bf1f1dcf4e72552efff1fe3e87e", null ],
+    [ "connect", "df/dec/class_xoops_mysqli_database.html#ac01a57e1a534562c4667ae2de2776e17", null ],
+    [ "errno", "df/dec/class_xoops_mysqli_database.html#ab2eeb64cab360a0f09923108b55c9099", null ],
+    [ "error", "df/dec/class_xoops_mysqli_database.html#a43b8d30b879d4f09ceb059b02af2bc02", null ],
+    [ "execute", "df/dec/class_xoops_mysqli_database.html#a2f2a0035bf7fd96abaf764c56fc1d81c", null ],
+    [ "executeF", "df/dec/class_xoops_mysqli_database.html#af5d1dd0b515b48fb48074488e20910b0", null ],
+    [ "fetchArray", "df/dec/class_xoops_mysqli_database.html#a3a9c5d624ba334b33566d4df9cadde55", null ],
+    [ "fetchBoth", "df/dec/class_xoops_mysqli_database.html#ad47c4ef1d3dcfc5598a11b6297d3e578", null ],
+    [ "fetchRow", "df/dec/class_xoops_mysqli_database.html#a606ca2f6d9d4169c2c5b75fab2d1d4c1", null ],
+    [ "freeRecordSet", "df/dec/class_xoops_mysqli_database.html#a14e3e617cd8839599f2aba9dec45a501", null ],
+    [ "genId", "df/dec/class_xoops_mysqli_database.html#ac5aea96db897087d98e949d9c6126f38", null ],
+    [ "getAffectedRows", "df/dec/class_xoops_mysqli_database.html#a66e79bdaa60aa59bde68a5d1c8aa51fc", null ],
+    [ "getFieldName", "df/dec/class_xoops_mysqli_database.html#aacd8190e0c513f4decdfc647e88d2344", null ],
+    [ "getFieldsNum", "df/dec/class_xoops_mysqli_database.html#a00942daef2dc1f7ae5e335509d530d27", null ],
+    [ "getFieldType", "df/dec/class_xoops_mysqli_database.html#a7f2864b101e23342f387f8398eb0d2c1", null ],
+    [ "getInsertId", "df/dec/class_xoops_mysqli_database.html#adda9fb830c1f42c98e409084d5e765b7", null ],
+    [ "getRowsNum", "df/dec/class_xoops_mysqli_database.html#a36a9fe9f57353c6e2739beb02028c908", null ],
+    [ "prepare", "df/dec/class_xoops_mysqli_database.html#a008a39a69d47048bd395c3c63c529ed5", null ],
+    [ "query", "df/dec/class_xoops_mysqli_database.html#a5bf3da57609381cd89eab454dd93b8e0", null ],
+    [ "queryF", "df/dec/class_xoops_mysqli_database.html#a6e37e91ef6494cded7b38dcb7f7ce8c0", null ],
+    [ "queryFromFile", "df/dec/class_xoops_mysqli_database.html#ab602f50a76405f52f2bcc8cba7087fd3", null ],
+    [ "quoteString", "df/dec/class_xoops_mysqli_database.html#a133a17a46e0f6cbd0dfee2ad81b87a2c", null ],
+    [ "setCharset", "df/dec/class_xoops_mysqli_database.html#a81ee11b0f5fadecaece55170fea54b29", null ]
+];
