@@ -41,9 +41,23 @@ Learn more : [XCube Core](/en/development/xcube-core.md)
 
 ## XCube Design
 
-he XCube design is probably common to the most used design patterns in modern programming languages like Java and C#.
+XCube design shares commonalities with widely used design patterns found in modern programming languages like Java and C#. Design patterns represent well-established solutions to recurring problems in software design. Many of these patterns are language-agnostic and aim to promote principles like:
 
-Some advantages of XCube design : 
+- Modularity: Breaking down complex systems into smaller, independent units.
+- Reusability: Designing components that can be used in different parts of the system or in other projects.
+- Maintainability: Creating code that is easier to understand, modify, and debug.
+- Flexibility: Allowing the system to adapt to changing requirements.
+
+Given that XCube has a modular architecture and emphasizes concepts like separation of concerns and extensibility, it would naturally align with many of these fundamental design principles that are also prevalent in Java and C# development. Common patterns you might find similarities with include:
+
+- Model-View-Controller (MVC): For separating application logic, user interface, and data.
+- Factory Pattern: For creating objects without specifying the exact class to be instantiated.
+- Strategy Pattern: For defining a family of algorithms and making them interchangeable.
+- Observer Pattern: For defining a one-to-many dependency between objects.
+- Dependency Injection: For reducing coupling between components.
+
+While the specific implementation details might differ due to PHP's unique features and conventions, the underlying design principles and the problems XCube aims to solve are likely to resonate with the solutions embodied in common Java and C# design patterns. Some advantages of XCube design:
+ 
 - inheritance, as object creation is delegated to subclasses,
 - it promotes consistency, classes are made to be polymorphic, thus interchangeable;
 - write more type-safe code than before;
@@ -162,6 +176,42 @@ In the PHP world, namespaces are designed to solve two problems that authors of 
 applications encounter when creating re-usable code elements such as classes or functions:
 Name collisions between code you create, and internal PHP classes, functions, constants or
 third-party classes, functions and constants.
+
+Key points regarding XCube's approach to class naming and autoloading:
+
+* **PSR-0 Style:** XCube's naming convention, with PascalCase class names and underscores acting as directory separators in the filename (e.g., XCube_ActionFilter.class.php for a class conceptually under a XCube\_ActionFilter "namespace"), was in the principles later formalized in **PSR-0 (Autoloading Standard)**. PSR-0, while now deprecated in favor of PSR-4, was an early standard for autoloading in PHP that mapped class namespaces to file system paths.  
+* **"Namespace Before Namespaces":** The underscore-based directory structure in XCube effectively served as a rudimentary form of namespacing *before* PHP had native namespace support (which was introduced in PHP 5.3). This convention helped to prevent class name collisions in large projects.  
+* **Autoloader:** The example of XCube_ActionFilter.class.php indicates that XCube had its own autoloader implementation. This autoloader been responsible for translating the class name into a file path based on the underscore convention, and including the file when the class was first used.
+
+**What is the standard in modern PHP?**
+
+The current standard for class naming and autoloading in PHP is defined by **PSR-4 (Improved Autoloading)**. Here's a summary of the key differences and the modern standard:
+
+**PSR-4 Standard:**
+
+* **Namespaces:** PSR-4 relies on PHP's native namespace system (introduced in PHP 5.3). Class names are fully qualified with namespaces (e.g., \\Vendor\\Package\\ClassName).  
+* **PascalCase for Class Names:** Class names themselves MUST be in PascalCase (also known as StudlyCaps), where each word in the class name starts with a capital letter (e.g., MyClassName, UserProfile).  
+* **Mapping Namespaces to Directories:** PSR-4 defines a direct mapping from namespaces to directory structures. The namespace separators (\\) are directly translated to directory separators (/ on most systems). A base directory is configured for each namespace prefix.  
+* **No Special Meaning for Underscores in Class Names:** Unlike XCube's convention and PSR-0's handling, underscores within the class name itself do *not* have a special meaning in PSR-4 and are not automatically converted to directory separators. If you have a class named My\_Class, the file would typically be My\_Class.php within the appropriate namespace directory.  
+* **Composer:** PSR-4 is the autoloading standard adopted by Composer, the widely used dependency manager for PHP. Composer's autoloader makes it easy to manage and load classes following PSR-4 conventions.
+
+**Comparison:**
+
+| Feature | XCube (Pre-Namespace) / PSR-0 Style | Modern PHP (PSR-4) |
+| :---- | :---- | :---- |
+| **Namespaces** | Underscores in class names/filenames | Native PHP namespaces (\\) |
+| **Class Casing** | PascalCase | PascalCase |
+| **Directory Mapping** | Underscores often to / | Namespace separators (\\) to / |
+| **Underscore Meaning** | Acts as directory separator | No special meaning in class name |
+| **Autoloading** | Custom implementation | Primarily Composer's autoloader (PSR-4) |
+
+**In summary:**
+
+XCube's approach was a common and sensible way to handle class organization and autoloading before native PHP namespaces became available. It shares similarities with the now-deprecated PSR-0 standard.
+
+Modern PHP development overwhelmingly follows the **PSR-4 standard** for class naming and autoloading, leveraging native namespaces and Composer for dependency management and autoloading. While you might still encounter legacy systems using PSR-0 conventions, new projects should adhere to PSR-4 for better interoperability and alignment with the current PHP ecosystem.
+
+XCube's extensible architecture, designed for separation of concerns and namespaces, simplifies running Composer – the PHP dependency manager providing a standard format for managing dependencies and required libraries – automatically bootstrapping its installations in the appropriate vendor folder under 'trust_path/vendor'.
 
 ## Delegate manager
 
