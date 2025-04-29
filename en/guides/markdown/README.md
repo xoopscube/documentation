@@ -404,6 +404,13 @@ console.log(total); // 3
 </body>
 ```
 
+```php
+<?php
+    echo "Hello world!";
+?>
+
+```
+
 #### ** Markdown **
 
 ````markdown
