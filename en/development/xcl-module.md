@@ -283,7 +283,7 @@ The Module System interacts with the Group Permission system to control access t
 
 When a module is installed, it goes through a series of steps handled by the Module System
 
-<img src="../../_media/xcl-legacy-module-install-process.svg" />
+<img src="_media/xcl-legacy-module-install-process.svg" />
 
 <span class="iconify" data-icon="mdi:github"></span> Sources: 
 <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/message/admin/class/myInstaller.class.php#L18-L91" target="_blank">/html/modules/message/admin/class/myInstaller.class.php#L18-L91</a></code>
