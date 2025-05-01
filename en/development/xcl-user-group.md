@@ -54,12 +54,11 @@ You can create new Groups and modify the permissions for each new Group created.
 
 The permission system is built around three key concepts:
 
-Permission Names: Predefined strings that represent specific actions (like module_read, module_admin, block_read).
+- **Permission Names**: Predefined strings that represent specific actions (like module_read, module_admin, block_read).
 
+- **Group IDs**: Each user belongs to one or more groups, and permissions are assigned to these groups
 
-Group IDs: Each user belongs to one or more groups, and permissions are assigned to these groups
-
-Item IDs: The specific item (like a module, block, or forum) that the permission applies to
+- **Item IDs**: The specific item (like a module, block, or forum) that the permission applies to
 
 The ability to perform an action requires privileges. While permissions and privileges are often used interchangeably, they technically have distinct meanings in web application security. Modules expose permissions, and users possess privileges. Privileges are essentially assigned permissions granted to User Groups. Therefore, when you assign a permission to a user group, you are granting a privilege to all its members.
 
@@ -73,11 +72,11 @@ The ability to perform an action requires privileges. While permissions and priv
 
 Permissions are stored in the `group_permission` database table with the following structure:
 
-`gperm_id`: Unique identifier  
-`gperm_groupid`: The group ID  
-`gperm_itemid`: The item ID (e.g., module ID)  
-`gperm_modid`: The module ID that owns this permission  
-`gperm_name`: The permission name (e.g., module_read)  
+- `gperm_id`: Unique identifier  
+- `gperm_groupid`: The group ID  
+- `gperm_itemid`: The item ID (e.g., module ID)  
+- `gperm_modid`: The module ID that owns this permission  
+- `gperm_name`: The permission name (e.g., module_read)  
 
 
 ### Checking Permissions
@@ -118,22 +117,23 @@ This creates a table with groups as rows and permissions as columns, allowing ad
 
 Common permission types include:
 
-1. Module permissions:
+1. **Module permissions**:
   - module_read: Can access the module
   - module_admin: Can administer the module
 
-2. Block permissions:
+2. **Block permissions**:
   - block_read: Can view the block
 
-#### Custom module permissions:
+
+### Custom module permissions:
 
 For example, in the d3forum module:
 
-- can_read: Can read forum posts
-- can_post: Can create posts
-- can_edit: Can edit posts
-- can_delete: Can delete posts
-- is_moderator: Has moderator privileges.
+- `can_read`: Can read forum posts
+- `can_post`: Can create posts
+- `can_edit`: Can edit posts
+- `can_delete`: Can delete posts
+- `is_moderator`: Has moderator privileges.
 
 ### User's Effective Permissions
 
@@ -146,10 +146,9 @@ The system makes a distinction between permissions and privileges.
 - Permissions: Actions that can be executed on a module
 - Privileges: Permissions assigned to user groups
 
-### Notes
+### Key Takeaways
 
 The permission system is modular, allowing each module to define its own permission types
 Administrators (members of the XOOPS_GROUP_ADMIN group) automatically have all permissions
 Permissions can be assigned at both group and individual user levels
 The system uses a database-driven approach, making it flexible and extensible
-Wiki pages you might want to explore:

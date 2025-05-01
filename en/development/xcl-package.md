@@ -300,10 +300,9 @@ XCL defines version constants throughout the system. The main version is defined
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L20-L20" target="_blank">Legacy_Controller.class.php#L20-L20</a></code>
 <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/include/version.php#L10-L10" target="_blank">/html/include/version.php#L10-L10</a></code>
 <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/xoops_version.php#L13-L14" target="_blank">/modules/legacy/xoops_version.php#L13-L14</a></code>
-<code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/user/xoops_version.php#L8-L9" target="_blank">/modules/user/xoops_version.php#L8-L9</a></code>
-<code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/stdCache/xoops_version.php#L10-L11" target="_blank">/modules/stdCache/xoops_version.php#L10-L11</a></code>
 
-## Version and Licensing
+
+## Licensing
 
 XOOPSCube Legacy is divided into two main licensing components. This dual-licensing approach reflects the project's history and structure, with the minimal core being more permissively licensed.
 
@@ -312,7 +311,7 @@ XOOPSCube Legacy is divided into two main licensing components. This dual-licens
 
 <span class="iconify" data-icon="mdi:github"></span> Sources: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/BSD_license.txt" target="_blank">BSD_license.txt</a></code> <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/gpl-2.0_license.md" target="_blank">gpl-2.0_license.md</a></code>
 
----
+
 
 ## History and Development
 
@@ -324,6 +323,8 @@ XOOPSCube Legacy has undergone significant development since its inception. The 
 
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/CHANGELOG.md" target="_blank">CHANGELOG.md</a></code>
 
+
+---
 
 
 ### Key Takeaways

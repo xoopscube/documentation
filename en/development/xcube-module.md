@@ -1,7 +1,7 @@
 
 
 XCube integrates legacy system modules through a structured architecture that connects the core with module functionality.  
-This integration is primarily managed by the Legacy_Controller class, which serves as a bridge between the XCube core and legacy modules.
+This integration is primarily managed by the `Legacy_Controller` class, which serves as a bridge between the XCube core and legacy modules.
 
 
 <div class="panzoom-schema">
@@ -9,37 +9,36 @@ This integration is primarily managed by the Legacy_Controller class, which serv
 </div>
 
 
-
 ### Core Integration Components
 
 The integration of legacy system modules in XCube is built around several key components:
 
-1. Legacy_Controller: The central component that manages the integration of legacy modules with the XCube core:  
+1. Legacy_Controller: The central component that manages the integration of legacy modules with the XCube core    
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L38-L42" target="_blank">/legacy/kernel/Legacy_Controller.class.php#L38-L42</a></code>
 
-2. System Modules Configuration: Defined in the site configuration file, specifying which modules are considered system modules:  
+2. System Modules Configuration: Defined in the site configuration file, specifying which modules are considered system modules  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/xoops_trust_path/settings/site_default.ini#L3-L4" target="_blank">/settings/site_default.ini#L3-L4</a></code>
 
-3. Module Class Structure: The `Legacy_AbstractModule` class provides the interface for modules to interact with the controller:  
+3. Module Class Structure: The `Legacy_AbstractModule` class provides the interface for modules to interact with the controller  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Module.class.php#L12-L30" target="_blank">/legacy/kernel/Legacy_Module.class.php#L12-L30</a></code>
 
-4. Render System Integration: The `Legacy_RenderSystem` connects modules with the rendering capabilities:  
+4. Render System Integration: The `Legacy_RenderSystem` connects modules with the rendering capabilities  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacyRender/kernel/Legacy_RenderSystem.class.php#L101-L107" target="_blank">/legacyRender/kernel/Legacy_RenderSystem.class.php#L101-L107</a></code>
 
 ### Module Loading and Initialization Process
 
 The integration process follows these steps:
 
-1. System Module Identification: The system identifies required modules from the configuration:  
+1. System Module Identification: The system identifies required modules from the configuration  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/xoops_trust_path/settings/site_default.ini#L4" target="_blank">/settings/site_default.ini#L4</a></code>
 
-2. Module Installation Check: The `Legacy_SystemModuleInstall` preload class checks if all required system modules are installed:  
+2. Module Installation Check: The `Legacy_SystemModuleInstall` preload class checks if all required system modules are installed  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/preload/Primary/SystemModuleInstall.class.php#L15-L18" target="_blank">/legacy/preload/Primary/SystemModuleInstall.class.php#L15-L18</a></code>
 
-3. Module Context Setup: The controller sets up the module context for execution:  
+3. Module Context Setup: The controller sets up the module context for execution  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L1505-L1523" target="_blank">/legacy/kernel/Legacy_Controller.class.php#L1505-L1523</a></code>
 
-4. Module Execution: The controller executes the module's functionality:  
+4. Module Execution: The controller executes the module's functionality  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacyRender/kernel/Legacy_RenderSystem.class.php#L904-L940" target="_blank">/legacyRender/kernel/Legacy_RenderSystem.class.php#L904-L940</a></code>
 
 
@@ -48,33 +47,43 @@ The integration process follows these steps:
 
 The communication between modules and the controller is facilitated through:
 
-1. Module Interface: Modules implement the `Legacy_AbstractModule` interface to communicate with the controller `Legacy_Module.class.php:31-39`
+1. Module Interface: Modules implement the `Legacy_AbstractModule` interface to communicate with the controller  
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Module.class.php#L31-L39" target="_blank">/legacy/kernel/Legacy_Module.class.php#L31-L39</a></code>
 
-2. Render Target System: Modules provide render targets that the controller uses to generate output `Legacy_Module.class.php:225-233`
+2. Render Target System: Modules provide render targets that the controller uses to generate output  
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Module.class.php#L225-L233" target="_blank">/legacy/kernel/Legacy_Module.class.php#L225-L233</a></code>
 
-3. Module Attributes: Modules can store and retrieve data through the attributes system `Legacy_Module.class.php:33-38`
+3. Module Attributes: Modules can store and retrieve data through the attributes system  
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Module.class.php#L33-L38" target="_blank">/legacy/kernel/Legacy_Module.class.php#L33-L38</a></code>
 
 ### Rendering Integration
 
 The rendering integration is a crucial part of how legacy modules work with XCube:
 
-1. Render System Selection: Modules can specify which render system they use `Legacy_Module.class.php:244-248`
+1. Render System Selection: Modules can specify which render system they use  
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L244-L248" target="_blank">/legacy/kernel/Legacy_Controller.class.php#L244-L248</a></code>
 
-2. Render Target Creation: The controller creates render targets for modules to populate with content `Legacy_Controller.class.php:907-908`
+2. Render Target Creation: The controller creates render targets for modules to populate with content  
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L907-L908" target="_blank">/legacy/kernel/Legacy_Controller.class.php#L907-L908</a></code>
 
-3. Theme Integration: The controller integrates module output with the selected theme `Legacy_Controller.class.php:947-971`
+3. Theme Integration: The controller integrates module output with the selected theme  
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L947-L971" target="_blank">/legacy/kernel/Legacy_Controller.class.php#L947-L971</a></code>
+
 
 ### System Module Installation
 
 When system modules are missing, XCube provides an automatic installation mechanism:
 
-1. Detection: The Legacy_SystemModuleInstall preload detects missing system modules:  
+1. Detection: The Legacy_SystemModuleInstall preload detects missing system modules  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/preload/Primary/SystemModuleInstall.class.php#L22-L25" target="_blank">/preload/Primary/SystemModuleInstall.class.php#L22-L25</a></code>
 
 
-2. Installation Process: The preload can install missing modules automatically `SystemModuleInstall.class.php:55-73`
+2. Installation Process: The preload can install missing modules automatically  
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/preload/Primary/SystemModuleInstall.class.php#L55-L73" target="_blank">/legacy/preload/Primary/SystemModuleInstall.class.php#L55-L73</a></code>
 
-3. Module Activation: After installation, modules are activated in the system `SystemModuleInstall.class.php:76-86`
+3. Module Activation: After installation, modules are activated in the system  
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/preload/Primary/SystemModuleInstall.class.php#L76-L86" target="_blank">/legacy/preload/Primary/SystemModuleInstall.class.php#L76-L86</a></code>
+
 
 ### Caching Mechanism
 
@@ -103,6 +112,6 @@ For system module installation, XCube provides utility classes:
 
 ### Key Takeaways
 
-The integration of legacy system modules in XCube is a complex system that provides backward compatibility with XOOPS 2.0.x modules while offering enhanced functionality. 
+The integration of legacy system modules in XCube is a complex system that provides backward compatibility with XOOPS 2.x modules while offering enhanced functionality. 
 
-The Legacy_Controller class serves as the main bridge between the XCube framework and legacy modules, managing their lifecycle and integration with the rendering system. The system modules defined in the configuration file are essential for the core functionality of the platform.
+The `Legacy_Controller` class serves as the main bridge between the XCube framework and legacy modules, managing their lifecycle and integration with the rendering system. The system modules defined in the configuration file are essential for the core functionality of the platform.

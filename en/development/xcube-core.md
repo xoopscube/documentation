@@ -6,13 +6,6 @@ Its primary function is to bootstrap the system and handle the initial web reque
 - Basic Class Registry: A system for managing and accessing core objects and services.
 - Initialization Routines: Essential scripts to set up the environment, including path definitions and basic configuration loading.
 
-### Visualize the minimal XCube core 
-
-While the schema appears relatively simple due to the limited number of files and their apparent roles, revealing the overall structure, it doesn't effectively illustrate the complexity of the main flow and its dependencies :)
-
-![Core implementation](https://xoopscube.github.io/documentation/xcube/xcube-api-diagram.jpg)
-
-
 ## XCube Bootstrap Process
 
 The XCL (XOOPS Cube Legacy) bootstrap process is a sophisticated sequence that loads the core framework,  

@@ -9,20 +9,20 @@ The XCube architecture was developed to address the limitations of existing web 
 
 
 <div layout="row m-4">
-<div self="size-1of3"><a href="/#/en/development/">
-<img src="../_media/xcl-dev-env.png">
+<div self="size-1of3"><a href="en/development/">
+<img src="_media/xcl-dev-env.png">
 <p align="center">Development<br/>
 <small>API documentation</small></p>
 </a>
 </div>
-<div self="size-1of3"><a href="/#/en/design/">
-<img src="../_media/xcl-design.png">
+<div self="size-1of3"><a href="en/design/">
+<img src="_media/xcl-design.png">
 <p align="center">Design<br/>
 <small>Guide and Usage</small></p>
 </a>
 </div>
-<div self="size-1of3"><a href="/#/en/deployment/">
-<img src="../_media/xcl-deploy.png">
+<div self="size-1of3"><a href="en/deployment/">
+<img src="_media/xcl-deploy.png">
 <p align="center">Deployment<br/>
 <small>X-Update Store</small></p>
 </a>
