@@ -1,57 +1,14 @@
+The minimalist XCube core, located within the `html/core` directory, serves as the foundational layer for the XOOPS Cube Legacy application. 
+Its primary function is to bootstrap the system and handle the initial web request lifecycle. Key features include:
 
-
-**Semantic Summary**
-
-This core provides the essential infrastructure for XCube Legacy to start execution upon a web request. It focuses on initialization, class loading, and fundamental request management, laying the groundwork for subsequent module and theme processing. It offers a minimalist foundation without the extensive built-in tools often associated with full-fledged frameworks, emphasizing a lightweight and extensible base.
-
-This overview highlights the core's bootstrapping and request-handling nature, which should be the starting point for developers looking at the API documentation for these fundamental aspects of the system.
-
-
-**XCube Core Design Philosophy: Minimalism and Flexibility**
-
-At its core, XCube's minimalism focuses on intentionality: eliminating the superfluous to achieve meaningful simplicity. While the XCube core incorporates established Design Patterns recognized as best practices by experienced object-oriented software developers, its design also draws inspiration from traditional mechanisms beyond the web. Concepts such as preloading, delegates, task systems, and a generic render-sequence (inspired by .NET and video-game programming) were adopted to implement an ideal specification.
-
-  
-<div layout="row sm-column my-6">
-<div self="size-2of3">
-<p>XCube design was crucial for developing a task-based, modular architecture, empowering web developers and designers to utilize their preferred frameworks and libraries. Consequently, the underlying logic of the core main classes – what the project team termed the "Core program" – is built upon a simple "No Framework" or framework-agnostic design concept, leveraging an event-driven approach for extensibility.</p>
-</div>
-<div><img src="https://xoopscube.github.io/documentation/_media/cube-core.png" alt="core"></div>
-</div>
-
-
-The XCube core was developed from scratch by Kazuhisa Minato (lead programmer in the game industry),
-addressing the challenges of software development for current and future parallel hardware architectures
-which are now dominated by multicore architectures. In Object-Oriented Programming (OOP), task-based and 
-event-driven architectures represent distinct but potentially complementary approaches to structuring 
-program flow and component interaction. 
-
-The XCube concept mediates between existing computing resources and applications on the one hand,
-and the high-level goals required for personalization at scale on the other. Thus implementing a 
-program execution with backward compatibility and the complementary concept of forward compatibility.
-
-In a slide deck (wiki), Kazuhisa Minato depicts the developed architecture to support these new capabilities.
-He also described some software engineering challenges that arise in this context.
-The key features of the new architecture are :
-
-- the ability to interface with existing applications, while adding considerable support for tasks;
-- the ability to incorporate other base systems so that the web platform adapts over time;
-- and the ability to cope with resource variability and mobility.
-
-![XCube Core](https://raw.githubusercontent.com/xoopscube/artwork-social-media/f9b35edbc1b3f9106d14588201f1b7203d64b510/images/xcl_dia_render_sequence.jpg)
-
-* Self-initialization
-* Drive mechanism
-* Rendering sequence
-
-![Core implementation](https://raw.githubusercontent.com/xoopscube/artwork-social-media/master/images/xcl_dia_render_base.jpg)
-
-
+- Basic Autoloading: Mechanisms for automatically loading necessary PHP classes, enabling a modular code structure.
+- Request Handling: Core components to receive and process incoming HTTP requests.
+- Basic Class Registry: A system for managing and accessing core objects and services.
+- Initialization Routines: Essential scripts to set up the environment, including path definitions and basic configuration loading.
 
 ### Visualize the minimal XCube core 
 
-Given the limited number of files and their apparent roles, the Mermaid schema is relatively simple  
-but can still illustrate the basic flow and dependencies.
+While the schema appears relatively simple due to the limited number of files and their apparent roles, revealing the overall structure, it doesn't effectively illustrate the complexity of the main flow and its dependencies :)
 
 ![Core implementation](https://xoopscube.github.io/documentation/xcube/xcube-api-diagram.jpg)
 
@@ -61,7 +18,25 @@ but can still illustrate the basic flow and dependencies.
 The XCL (XOOPS Cube Legacy) bootstrap process is a sophisticated sequence that loads the core framework,  
 initializes the rendering system, and outputs the final theme.
 
-## 1. Bootstrap Initialization (mainfile.php)
+XOOPSCube Legacy initialization begins with loading the `mainfile.php` as the entry point, which then includes `cubecore_init.php`. This initializes the `XCube_Root` singleton, loads site configuration, and sets up the controller.
+
+<p align="center">
+<img src="../../_media/xcl-legacy-flow.svg" width="760px" />
+</p>
+
+**The initialization sequence follows these steps:**
+
+1. `mainfile.php` includes `cubecore_init.php`
+2. `cubecore_init.php` gets the `XCube_Root` singleton instance
+3. Site configuration is loaded from INI files
+4. The controller is set up based on configuration
+5. The `Legacy_Controller` (extending XCube_Controller) prepares the environment
+6. Common initialization tasks are executed through `executeCommon()`
+
+<span class="iconify" data-icon="mdi:github"></span> Sources: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/include/cubecore_init.php#L31-L54" target="_blank">cubecore_init.php#L31-L54</a></code> <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L186-L235" target="_blank">Legacy_Controller.class.php#L186-L235</a></code>
+
+
+## 1. Initialization
 
 The process begins with `mainfile.php`, which serves as the entry point for all requests:
 
@@ -78,7 +53,7 @@ And requires:
 - Load common functionality if not prevented
 - Load protector post-check
 
-## 2. Core Initialization (cubecore_init.php)
+## 2. Core Initialization 
 
 `cubecore_init.php` loads the core classes and initializes the configuration system:
 
@@ -91,7 +66,7 @@ Defined configuration file paths
 - Default settings : site_default.ini
 - XCUBE_SITE_CUSTOM_FILE settings : site_custom.ini
 
-## 3. Loading Definitions (definition.inc.php)
+## 3. Loading Definitions 
 
 The system loads `definition.inc.php` which contains essential constants:
 
@@ -102,7 +77,7 @@ The system loads `definition.inc.php` which contains essential constants:
 - Render system definition
   - Legacy_RenderSystem
 
-## 4. Configuration Loading (site_default.ini)
+## 4. Configuration Loading 
 
 The system reads `site_default.ini` to configure components:
 
@@ -136,7 +111,7 @@ and are loaded in the following order:
 
 The value read earlier is overwritten with the later setting.
 
-#### How to get the value set in site_default.ini and site_custom.ini
+#### Get the value set in site_default.ini and site_custom.ini
 
 ```
     $root = XCube_Root :: getSingleton ();  
@@ -154,13 +129,13 @@ Example : site_custom.ini
     // Output is Baz
 ```
 
-_trust_path/settings/site_custom.ini_ **overwrites** _trust_path/settings/site_default.ini_
+?> **Note** `trust_path/settings/site_custom.ini` **overwrites** `trust_path/settings/site_default.ini`
 
 
 
-## 5. Controller Initialization (Legacy_Controller)
+## 5. Controller Initialization
 
-The Legacy_Controller is initialized based on the configuration:
+The `Legacy_Controller` is initialized based on the configuration:
 
 ```php
 // In Legacy_Controller.class.php
@@ -183,7 +158,7 @@ class Legacy_Controller extends XCube_Controller
 }
 ```
 
-## 6. Render System Initialization (Legacy_RenderSystem)
+## 6. Render System Initialization
 
 The Legacy_RenderSystem is loaded to handle the rendering process:
 
@@ -214,9 +189,9 @@ class Legacy_RenderSystem extends XCube_RenderSystem
 }
 ```
 
-## 7. Template Processing (Smarty)
+## 7. Template Processing
 
-The system uses Smarty for template processing:
+The system uses **Smarty** for template processing:
 
 ```php
 // In Legacy_RenderSystem.class.php

@@ -1,19 +1,24 @@
 
-## XCube Delegate
+ 
+
+## Architecture Overview
 
 The XCube_Delegate System is a core component of XOOPSCube Legacy that enables extensibility through a flexible callback mechanism. This system allows modules, themes, and plugins to modify or extend the framework's behavior without directly modifying core code. The delegate system implements a variation of the Observer pattern that facilitates loose coupling between components.
 
 This page documents the structure and functionality of the XCube_Delegate System. For information about the overall controller architecture, see Legacy_Controller and Request Lifecycle.
 
-Architecture Overview
-Sources
-https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L1-L709
-https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Root.class.php#L1-L549
+<div><img src="../../_media/xcube-delegate.svg" alt="xcube delegate"></div>
 
 
-### Core Components
+<span class="iconify" data-icon="mdi:github"></span> Sources: <code><a href="
+https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L1-L709" target="_blank">XCube_Delegate.class.php#L1-L709</a></code> <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Root.class.php#L1-L549" target="_blank">XCube_Root.class.php#L1-L549</a></code>
 
-#### XCube_Ref
+
+
+## Core Components
+
+
+## XCube_Ref
 
 A simple adapter class that solves the problem of passing variables by reference to delegate callbacks. Since PHP4, functions receive copied values of objects, but using XCube_Ref allows functions to receive the actual object.
 
@@ -26,10 +31,10 @@ $delegate->call($object); // object is copied, changes don't persist
 // Use:
 $delegate->call(new XCube_Ref($object)); // changes to object will persist
 ```
-Sources: https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L31-L59
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L31-L59" target="_blank">XCube_Delegate.class.php#L31-L59</a></code>
 
 
-### XCube_Delegate
+## XCube_Delegate
 
 The primary class that implements the delegate pattern. This class maintains a list of callback functions and executes them when called. It supports parameter type checking and priority-based execution order.
 
@@ -41,21 +46,20 @@ Key features:
 - Can load files on demand when executing callbacks
 - Callbacks can break the execution chain by returning `XCUBE_DELEGATE_CHAIN_BREAK`
 
-#### XCube_DelegateManager
+## XCube_DelegateManager
 
 Manages delegate registrations and acts as a mediator between delegates and callback functions. This class handles the case where callbacks are registered before their target delegates exist.
 
 The manager maintains these internal structures:
 
-_mDelegates: A map of registered delegates indexed by name
-_mCallbacks: Callbacks waiting to be connected to not-yet-registered delegates
-_mCallbackParameters: Parameters for pending callbacks
+- `_mDelegates`: A map of registered delegates indexed by name
+- `_mCallbacks`: Callbacks waiting to be connected to not-yet-registered delegates
+- `_mCallbackParameters`: Parameters for pending callbacks
 
-Sources: 
-https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L388-L541
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L388-L541" target="_blank">XCube_Delegate.class.php#L388-L541</a></code>
 
 
-#### XCube_DelegateUtils
+## XCube_DelegateUtils
 
 A utility class that provides static convenience methods for working with delegates. It simplifies common delegate operations with shorthand methods.
 
@@ -65,29 +69,51 @@ These utility methods make it easier to work with delegates without directly acc
 - `raiseEvent()`: Alias for call(), used for event-style delegates
 - `applyStringFilter()`: Special case for applying string filters
 
-source: https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L543-L708
+<span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L543-L708" target="_blank">XCube_Delegate.class.php#L543-L708</a></code>
 
-#### Integration with XCube_Root
+## XCube_Root Integration
 
 The delegate system is integrated with the core framework through XCube_Root, which serves as the central registry for the application.
 
 {media}
 
-Sources:
-https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Root.class.php#L48-L50
-https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Root.class.php#L325-L337
-https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Controller.class.php#L137-L142
+<span class="iconify" data-icon="mdi:github"></span> Sources : <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Root.class.php#L48-L50" target="_blank">XCube_Root.class.php#L48-L50</a></code>
+<code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Root.class.php#L325-L337" target="_blank">XCube_Root.class.php#L325-L337</a></code>
+<code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Controller.class.php#L137-L142" target="_blank">XCube_Controller.class.php#L137-L142</a></code>
 
-#### Priority System
+## XCube Priority System
 
 The delegate system includes a priority mechanism that controls the order in which callbacks are executed. Predefined constants are provided for common priority levels:
 
+<div class="table-wrapper">
 <table><thead><tr><th>Constant</th><th>Value</th><th>Purpose</th></tr></thead><tbody><tr><td>XCUBE_DELEGATE_PRIORITY_FIRST</td><td>10</td><td>Callbacks that need to run first</td></tr><tr><td>XCUBE_DELEGATE_PRIORITY_NORMAL</td><td>50</td><td>Default priority level</td></tr><tr><td>XCUBE_DELEGATE_PRIORITY_FINAL</td><td>100</td><td>Callbacks that need to run last</td></tr><tr><td>XCUBE_DELEGATE_PRIORITY_1-10</td><td>10-100</td><td>Fine-grained priorities</td></tr></tbody></table>
+</div>
 
 When callbacks are registered with the same priority, they execute in the order they were registered.
 
-<p>Sources: <a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L66-L79" target="_blank">
-https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Controller.class.php#L138-L139<span class="flex flex-shrink-0 items-center rounded-r border-l px-2 py-1.5 border-[#dddddd] bg-[#d8d8d8] text-[#666666] dark:border-[#333333] dark:bg-[#2a2a2a] dark:text-[#888888]">66-79</span></a></p>
+<span class="iconify" data-icon="mdi:github"></span> Sources : <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php#L66-L79" target="_blank">XCube_Delegate.class.php#L66-L79</a></code>
+<code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Controller.class.php#L138-L139" target="_blank">XCube_Controller.class.php#L138-L139</a></code>
 
-<p><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" style="vertical-align: -0.125em;" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"></path></svg></p>
-<div><img src="../../_media/xcube-delegate.svg" alt="xcube delegate"></div>
+---
+
+<details>
+<summary style="cursor: pointer;"><span class="iconify" data-icon="mdi:github"></span> Reference</summary>
+<ul>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_ActionFilter.class.php" target="_blank"><span>html/core/XCube_ActionFilter.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_ActionForm.class.php" target="_blank"><span>html/core/XCube_ActionForm.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Controller.class.php" target="_blank"><span>html/core/XCube_Controller.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Delegate.class.php" target="_blank"><span>html/core/XCube_Delegate.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_HttpContext.class.php" target="_blank"><span>html/core/XCube_HttpContext.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Identity.class.php" target="_blank"><span>html/core/XCube_Identity.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_LanguageManager.class.php" target="_blank"><span>html/core/XCube_LanguageManager.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Object.class.php" target="_blank"><span>html/core/XCube_Object.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_PageNavigator.class.php" target="_blank"><span>html/core/XCube_PageNavigator.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Permission.class.php" target="_blank"><span>html/core/XCube_Permission.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Property.class.php" target="_blank">html/core/XCube_Property.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_RoleManager.class.php" target="_blank"><span>html/core/XCube_RoleManager.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Root.class.php" target="_blank"><span>html/core/XCube_Root.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Service.class.php" target="_blank"><span>html/core/XCube_Service.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Session.class.php" target="_blank"><span>html/core/XCube_Session.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/XCube_Utils.class.php" target="_blank"><span>html/core/XCube_Utils.class.php</span></a></li>
+<li><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/core/libs/IniHandler.class.php" target="_blank"><span>html/core/libs/IniHandler.class.php</span></a></li>
+</ul></details>

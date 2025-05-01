@@ -1,41 +1,44 @@
-<dl>
-  <dt>The X-Codex Documentation provides information about XCube core concept.</dt>
-  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
-  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
-  <dd>This information is intended for administrators and developers.</dd>
-</dl>
 
-<details>
-<summary style="cursor: pointer;">XCube Application Architecture</summary>
+**XCube Core Design Philosophy: Minimalism and Flexibility**
 
-- [XCube Core](#xcube-core)
-- [XCube Design](#xcube-design)
-- [XCube Base-system](#xcube-base-system)
-- [XCube Namespace](#xcube-namespace)
-- [Delegate manager](#delegate-manager)
-- [Preload](#preload)
-- [Type Safe](#type-safe)
-- [Action Form](#action-form)
-- [Virtual Service](#virtual-service)
-- [Render Engine](#render-engine)
-- [Multi-Render](#multi-render)
-- [Framework Agnostic](#framework-agnostic)
-- [Trust Path](#trust-path)
-- [XCube Modules](#xcube-modules)
+At its core, XCube's minimalism focuses on intentionality: eliminating the superfluous to achieve meaningful simplicity. While the XCube core incorporates established Design Patterns recognized as best practices by experienced object-oriented software developers, its design also draws inspiration from traditional mechanisms beyond the web. Concepts such as preloading, delegates, task systems, and a generic render-sequence (inspired by .NET and video-game programming) were adopted to implement an ideal specification.
 
-</details>
+  
+<div layout="row sm-column my-6">
+<div self="size-2of3">
+<p>XCube design was crucial for developing a modular architecture, empowering web developers and designers to utilize their preferred frameworks and libraries.  
+</p>
+<p>
+Consequently, the underlying logic of the core main classes – what the project team termed the "Core program" – is built upon a simple "No Framework" or framework-agnostic design concept, leveraging an event-driven approach for extensibility.</p>
+</div>
+<div><img src="https://xoopscube.github.io/documentation/_media/cube-core.png" alt="core"></div>
+</div>
 
-## XCube Core
 
-**The XCube core concept "3S" stands for — Simple, Secure and Scalable.**
+The XCube core was developed from scratch by Kazuhisa Minato (lead programmer in the game industry),
+addressing the challenges of software development for current and future parallel hardware architectures
+which are now dominated by multicore architectures. 
 
-The minimalist XCube core, located within the `html/core` directory, serves as the foundational layer for the XOOPS Cube Legacy application. 
-Its primary function is to bootstrap the system and handle the initial web request lifecycle. Key features include:
+The XCube concept mediates between existing computing resources and applications on the one hand,
+and the high-level goals required for personalization at scale on the other. Thus implementing a 
+program execution with backward compatibility and the complementary concept of forward compatibility.
 
-- Basic Autoloading: Mechanisms for automatically loading necessary PHP classes, enabling a modular code structure.
-- Request Handling: Core components to receive and process incoming HTTP requests.
-- Basic Class Registry: A system for managing and accessing core objects and services.
-- Initialization Routines: Essential scripts to set up the environment, including path definitions and basic configuration loading.
+In a slide deck (wiki), Kazuhisa Minato depicts the developed architecture to support these new capabilities.
+He also described some software engineering challenges that arise in this context.
+The key features of the new architecture are :
+
+- the ability to interface with existing applications, while adding considerable support for tasks;
+- the ability to incorporate other base systems so that the web platform adapts over time;
+- and the ability to cope with resource variability and mobility.
+
+![XCube Core](https://raw.githubusercontent.com/xoopscube/artwork-social-media/f9b35edbc1b3f9106d14588201f1b7203d64b510/images/xcl_dia_render_sequence.jpg)
+
+* Self-initialization
+* Drive mechanism
+* Rendering sequence
+
+![Core implementation](https://raw.githubusercontent.com/xoopscube/artwork-social-media/master/images/xcl_dia_render_base.jpg)
+
 
 Learn more : [XCube Core](/en/development/xcube-core.md)
 
@@ -56,15 +59,34 @@ Given that XCube has a modular architecture and emphasizes concepts like separat
 - Observer Pattern: For defining a one-to-many dependency between objects.
 - Dependency Injection: For reducing coupling between components.
 
+
 While the specific implementation details might differ due to PHP's unique features and conventions, the underlying design principles and the problems XCube aims to solve are likely to resonate with the solutions embodied in common Java and C# design patterns. Some advantages of XCube design:
  
 - inheritance, as object creation is delegated to subclasses,
 - it promotes consistency, classes are made to be polymorphic, thus interchangeable;
-- write more type-safe code than before;
-- since most objects are exchangeable, it's possible to change the layer (Base subsystem), not only managers.
+- benefit from type-safe code than before;
+- since most objects are exchangeable, it's possible to change the layer (base system), not only managers.
 
-The core development follows a parallel programming methodology exploiting a task-based view of application software 
-and event-driven architecture.
+?> **NOTE** XOOPSCube Legacy does follow an event-driven architecture and implements aspects of a task-based view of application software. While not strictly a parallel programming methodology in the traditional sense, its design reflects solutions to common issues that only later became available as standards, such as those in PHP.
+
+**A parallel programming methodology exploiting a task-based view of application software 
+and event-driven architecture.**
+
+These two approaches are different in their fundamental control flow and interaction paradigms,  
+but they are not mutually exclusive and can be highly complementary in OOP systems:
+
+- Levels of Abstraction  
+  An application might use an event-driven architecture at a higher level for inter-module communication or handling user interactions, while individual modules internally use a task-based approach to execute specific operations triggered by those events.
+
+- Combining Paradigms  
+  Objects can both perform tasks (have methods that are called directly) and emit/listen for events. For example, a "Order" object might have a processPayment() task and also emit an "OrderPaid" event upon successful completion.
+
+- Decoupling and Orchestration  
+  Event-driven architectures excel at decoupling components, making systems more flexible and scalable. However, the handlers that react to events often perform specific tasks, bringing the task-based approach into play. An orchestrator component might listen to several events and then trigger a sequence of tasks in response. 
+    
+- UI Development  
+  Event-driven programming is dominant in GUI development (handling button clicks, mouse movements), where events trigger specific task-oriented functions within the application logic.   
+  
 
 Task-based programming models with static or dynamic task creation was a main topic discussed by Minahito,
 core programmer, and the prominent developers then. Mainly because the mainstream web programming model,
@@ -117,20 +139,6 @@ graph LR
     OS -- Emits Event --> LS("Logging Service\n(Event Handler)")
 ```
 
-These two approaches are different in their fundamental control flow and interaction paradigms,  
-but they are not mutually exclusive and can be highly complementary in OOP systems:
-
-- Levels of Abstraction  
-  An application might use an event-driven architecture at a higher level for inter-module communication or handling user interactions, while individual modules internally use a task-based approach to execute specific operations triggered by those events.
-
-- Combining Paradigms  
-  Objects can both perform tasks (have methods that are called directly) and emit/listen for events. For example, a "Order" object might have a processPayment() task and also emit an "OrderPaid" event upon successful completion.
-
-- Decoupling and Orchestration  
-  Event-driven architectures excel at decoupling components, making systems more flexible and scalable. However, the handlers that react to events often perform specific tasks, bringing the task-based approach into play. An orchestrator component might listen to several events and then trigger a sequence of tasks in response. 
-    
-- UI Development  
-  Event-driven programming is dominant in GUI development (handling button clicks, mouse movements), where events trigger specific task-oriented functions within the application logic.   
 
 **Why a dual-system with a dual render was needed?**
 
@@ -150,20 +158,20 @@ The singleton design pattern is well-known to solve recurring design problems of
 object-oriented software. It can be used to reduce memory usage and can also be used as a basis for
 other design patterns, such as the abstract factory, factory method, builder, and prototype patterns.
 
-## XCube Base-system
+## XCube Base System
 
-The XOOPSCube Team released the Legacy subsystem before XCube 1.0 was completed by Kazuhisa Minato as the first
+The XOOPSCube Team released the _Base Legacy System_ before XCube 1.0 was completed by Kazuhisa Minato as the first
 XCube major version. Therefore, the package Legacy implements many features to emulate Xoops2 system.
-So the Base subsystem Legacy is an exception, made by highly skilled developers and high experimented designers
+So the _Base System Legacy_ is an exception, made by highly skilled developers and high experimented designers
 to ensure backwards compatibility and interoperability with XOOPS2 (©2002 Kazumi Ono @Onokazu, GPL2)
 and later XOOPS2-JP (©2005 XOOPS2 Japan, GPL2) Japanese versions with multibyte character support.
 
-The Base subsystem Legacy main functions have been placed into their own modules, such as user group management,
+The _Base System Legacy_ main functions have been placed into their own modules, such as user group management,
 private messages, render engine, and standard cache.
 
 **Exchangeable**
 
-The _Base_ subsystem is designed to be replaceable or entirely rewritten, empowering developers to create anything, anytime, anywhere.
+The _Base System_ is designed to be replaceable or entirely rewritten, empowering developers to create anything, anytime, anywhere.
 
 However, the core itself – the very mechanism that enables this "exchangeability" and ensures scalability, flexibility, and freedom – remains intentionally immutable.
 
@@ -181,7 +189,8 @@ Key points regarding XCube's approach to class naming and autoloading:
 
 * **PSR-0 Style:** XCube's naming convention, with PascalCase class names and underscores acting as directory separators in the filename (e.g., XCube_ActionFilter.class.php for a class conceptually under a XCube\_ActionFilter "namespace"), was in the principles later formalized in **PSR-0 (Autoloading Standard)**. PSR-0, while now deprecated in favor of PSR-4, was an early standard for autoloading in PHP that mapped class namespaces to file system paths.  
 * **"Namespace Before Namespaces":** The underscore-based directory structure in XCube effectively served as a rudimentary form of namespacing *before* PHP had native namespace support (which was introduced in PHP 5.3). This convention helped to prevent class name collisions in large projects.  
-* **Autoloader:** The example of XCube_ActionFilter.class.php indicates that XCube had its own autoloader implementation. This autoloader been responsible for translating the class name into a file path based on the underscore convention, and including the file when the class was first used.
+* **Autoloader:** The example of XCube_ActionFilter.class.php indicates that XCube had its own autoloader implementation.  
+This autoloader been responsible for translating the class name into a file path based on the underscore convention, and including the file when the class was first used.
 
 **What is the standard in modern PHP?**
 
@@ -211,20 +220,18 @@ XCube's approach was a common and sensible way to handle class organization and 
 
 Modern PHP development overwhelmingly follows the **PSR-4 standard** for class naming and autoloading, leveraging native namespaces and Composer for dependency management and autoloading. While you might still encounter legacy systems using PSR-0 conventions, new projects should adhere to PSR-4 for better interoperability and alignment with the current PHP ecosystem.
 
-XCube's extensible architecture, designed for separation of concerns and namespaces, simplifies running Composer – the PHP dependency manager providing a standard format for managing dependencies and required libraries – automatically bootstrapping its installations in the appropriate vendor folder under 'trust_path/vendor'.
+?> **NOTE** XCube's extensible architecture, designed for separation of concerns and namespaces, simplifies running Composer – the PHP dependency manager providing a standard format for managing dependencies and required libraries – automatically bootstrapping its installations in the appropriate vendor folder under 'trust_path/vendor'.
 
 ## Delegate manager
 
-XCube starts up managers from the configuration settings written into the file _default.ini_
-or override with a simple file _custom.ini_
+XCube starts up managers from the configuration settings written into the file `default.ini`
+or override with a simple file `custom.ini`
 
 XCube consists of several managers and each manager provides careful management of its members and a consistent API.
-Developers can choose from managers, modules, delegate and preload mechanism or interfaces for extensible and flexible
+Developers can choose from managers, modules, delegate and preload system for extensible and flexible
 customization.
 
-Some distribution packages have been released with a good starting INI file, a set of base modules and
-provide **preload** files for a rapid site development. A web developer can run a pre-configured bundled package as
-the starting point that meets the production expectations of a website.
+Some distribution packages have been released with a well-configured starting INI file and a set of base modules to facilitate rapid site development. Allowing web developers to use a pre-configured bundled package as a starting point that meets the production expectations.
 
 ## Preload
 
@@ -236,7 +243,7 @@ so Webmasters don't have to change the source code of the trusted system.
 
 Delegate and preload are essentially different mechanisms and can be used independently.  
 
-In practice, you an run several **Single File Components**, or one-file hacks, using the delegate mechanism 
+In practice, you an run several **Single File Components**, or one-file hacks, using the delegate   
 in a **preload** to modify the processing and behavior of modules.
 
 ## Type Safe
@@ -249,38 +256,32 @@ One of these policies is the safe type-safe emulation.
 This class retrieves input values from the request using the current context object and then validates them.
 It cleanly separates the data fetching and validation processes from your core application logic.
 Such a class is crucial in web programming.
- 
-Learn more : [XCube Action Form](/en/development/xcube-action-form.md)
 
 ## Virtual Service
 
 XCube provides a server-client model for module and site communication.
 The virtual service abstracts the actual program, so the client can connect with a module, and from another website.
 
-Learn more : [XCube Service Manager](/en/development/xcube-service.md)
-
 ## Render Engine
 
 XCube defines the render-system class as an interface which renders html data from various template-formats.
 XCube core handles render buffer instances as output data. The Render system writes the html data.
 
-![Render Engine](https://raw.githubusercontent.com/xoopscube/artwork-social-media/master/images/xcl_dia_render_layout_output.jpg)
-
 Common render systems are registered in the Root. However, it's not a good solution if the render system is only
 used by a single module. So a custom render system shouldn't need to be registered to the root, instead the render
 system should be a sub-class of the XCube layer. If the class doesn't depend on modules, it can be re-used.
 
-This mechanism means that XCube doesn't enforce a template format nor impose any to developers and designers.
+This mechanism means that XCube doesn't enforce a template format nor impose any to developers and designers.  
 XCube allows you to develop your own template engine or run the default Smarty render engine.
 
 + Module developers can develop their own render system.
-+ Designers can plan new themes formats.
++ Designers can create new themes formats.
 
 ## Multi-Render
 
 XCube doesn't have a fixed specification for themes and templates.
-The Generic Render-Sequence tries to render the final output switching render-systems.
-This allows complete control over a finished custom designed with your favorite framework.
+The Generic Render-Sequence enables rendering the final output by switching render systems. T
+This allows complete control over a finished custom design using your preferred framework.
 
 ## Framework Agnostic
 
@@ -312,8 +313,5 @@ webmasters are free to duplicate and rename installed D3 modules.
 
 ## XCube Modules
 
-- Base system modules
-- Legacy modules
-- D3 Modules
+The Module System is the core extensibility mechanism in XOOPSCube Legacy (XCL) that allows developers to add new functionality to the platform through modular components.
 
-Learn more : [XCube Modules](/en/development/xcube-module.md)

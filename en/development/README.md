@@ -1,76 +1,12 @@
-<dl>
-  <dt>The X-Codex Documentation provides information about installation, deployment, API and tools.</dt>
-  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
-  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences: This information is intended for administrators and developers.</dd>
-</dl>
 
-<details>
-<summary style="cursor: pointer;">Table of Contents</summary>
+Welcome to the documentation for XOOPSCube Legacy (XCL), an open-source web application platform built using PHP and MySQL, with a rich history and innovation community. This project, hosted at <a href="https://github.com/xoopscube/legacy" target="_blank">https://github.com/xoopscube/legacy</a>, represents a significant evolution in content management and web application development.
 
-- [Overview](#overview) — Web Application Platform and Content Management System.
-- [XCube Core](/en/development/xcube-concept.md#xcube-core) — Xcube Core concept.
-- [XCube Design](/en/development/xcube-concept.md#xcube-design) — Xcube Core dual system.
-- [XCube Base System](/en/development/xcube-concept.md#xcube-base-system) — Base subsystem.
-- [XCube Namespace](/en/development/xcube-concept.md#xcube-namespace)
-- [Delegate Manager](/en/development/xcube-concept.md#delegate-manager) — delegate managers and controllers.
-- [Preload](/en/development/xcube-concept.md#preload) — preload system, single file component.
-- [Type Safe](/en/development/xcube-concept.md#type-safe)
-- [Action Form](/en/development/xcube-concept.md#action-form)
-- [Virtual Service](/en/development/xcube-concept.md#virtual-service)
-- [Render Engine](/en/development/xcube-concept.md#render-engine)
-- [Multi-render](/en/development/xcube-concept.md#multi-render)
-- [Framework Agnostic](/en/development/xcube-concept.md#framework-agnostic)
-- [Trust Path](/en/development/xcube-concept.md#trust-path)
-- [XCube Modules](/en/development/xcube-concept.md#xcube-modules)
+This documentation is structured to guide you through the key components of XOOPSCube Legacy Project. 
 
-</details>
+To provide an understanding of its architecture and capabilities, we will explore two distinct yet interconnected parts of the system:
 
-<details>
-<summary style="cursor: pointer;">API Reference</summary>
+- [XCube Core](/en/development/): This section delves into the modern architectural foundation of the platform. It outlines the the core design concept that underpins the structure and subsequent development of the base system Legacy. The platform giving required minimum functionality to aggregate preexistent base systems, and design patterns for building robust and extensible web applications within the XCube ecosystem. Understanding the core is essential for leveraging the platform's full potential for new development.
 
-- Cube Core 
-- Subsystems
-- Design Patterns
-- Delegate manager  
-- Preload mechanism : Single file extension 
-- Abstract, interface, inheritance, polymorphism
-- Virtual Service
-- Tools : Code generator
+- [Legacy System (XCL)](/en/development/): Recognizing the importance of continuity and the ecosystem of existing modules and customizations, XOOPSCube incorporates a dedicated Legacy system (XCL). This section explains how this layer provides backward compatibility with modules and code developed for earlier versions. It details how this bridge allows for a smoother transition and continued support for established functionalities.
 
-</details>
-
------
-
-!> Note ! There are a number of topics that aren’t written yet. That means you can contribute to making this guide better.
-
-## Overview
-
-**The Original XCube Design Concept**  
-
-This page offers a summary of the initial architectural vision for XCube, built using PHP and MySQL. It provides a brief overview of the core design concept upon which the structure and subsequent development of various subsystems are based. Therefore, this document is not intended as a comprehensive API reference detailing every element, class, object, model, function, or method.
-
-**The XCube core concept "3S" stands for — Simple, Secure and Scalable.**
-
-The XCube architecture was developed to overcome web development frameworks limitations, and to serve as the basis for extending an existing web platform. The approach stems from real-world experience, resulting in a highly modular and extensible platform for reliable resource management and scalability. 
-Self-hosted platforms are decentralized, allow for superior accessibility,
-and full control over your own data and services, rather than depending on expensive 
-third-party services (cloud, saas).
-
-## Extensible Architecture
-
-<div layout="row sm-column my-6">
-<div self="size-2of3">
-<p>
-<strong>XCube</strong> is the core layer of the platform giving required minimum functionality to aggregate 
-preexistent bbase-systems, for example the <b>Base</b> system Legacy used to build a customized CMS. 
-At its core, XCube minimalism is being intentional to get rid of the superfluous and to be meaningful 
-and simple framework agnostic. Aside the initial Base system Legacy, new features can be easily integrated:</p>
-<ul>
-<li>Base new subsystem</li>
-<li>Module with extended functionality</li> 
-<li>Single file component (ref. preload mechanism).</li>
-</ul>
-</div>
-<div><img src="https://xoopscube.github.io/documentation/_media/cube-core.png" alt="core"></div>
-</div>
-
+By understanding both the modern XCube Core and the backward-compatible Legacy System (XCL), developers can effectively build new applications, maintain existing ones, and contribute to the ongoing evolution of the XOOPSCube Legacy project. 

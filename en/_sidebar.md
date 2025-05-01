@@ -1,15 +1,18 @@
 [<span class="iconify" data-icon="mdi:cube-outline"></span> About XOOPSCube](/en/about.md)
 
 - Development
-    - [XOOPSCube](/en/development/)
+    - [Introduction](/en/development/)
+    - [API Documentation](/en/development/api.md)
     - [XCube Concept](/en/development/xcube-concept.md)
     - [XCube Core](/en/development/xcube-core.md)
+    - [XCube Delegate](/en/development/xcube-delegate.md)
+    - [XCube Module](/en/development/xcube-module.md)
+    - [XCube Service](/en/development/xcube-service.md)
     - [XCL Package](/en/development/xcl-package.md)
-    - [API Documentation](/en/development/api.md)
-    - [Code Generator](/en/development/xcube-tools.md)
-    - [Debugging in PHP](/en/development/debug.md)
-    - [Web Frameworks](/en/development/web-framework.md)
-    - [Git Workflow](/en/development/git-workflow.md)
+    - [XCL Database](/en/development/xcl-database.md)
+    - [XCL Module](/en/development/xcl-module.md)
+    - [XCL User Group](/en/development/xcl-user-group.md)
+    - [XCL Render](/en/development/xcl-render.md)
 
 - Design
     - [Render Engine](/en/design/)
@@ -18,9 +21,7 @@
     - [Template](/en/design/template.md)
     - [Template Set](/en/design/template-set.md)
     - [Components](/en/design/components.md)
-    - [Guidelines](/en/design/guidelines.md)
-    - [Smarty](/en/design/smarty.md)
-    - [Style Guide](/en/design/style-guide.md)
+
 
 - Deployment
     - [Introduction](/en/deployment/)

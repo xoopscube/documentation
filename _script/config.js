@@ -43,9 +43,9 @@ window.$docsify = {
     // Automatic header title to the page from the sidebar link.
     autoHeader: true,
     // Maximum Table of content level. Default: 6.
-    maxLevel: 4,
+    maxLevel: 3,
     // Add table of contents (TOC) in custom sidebar.
-    subMaxLevel: 3,
+    subMaxLevel: 2,
     // Scrolls to the top of the screen when the route is changed.
     auto2top: true,
   // GitHub Corner icon 

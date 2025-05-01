@@ -1,13 +1,13 @@
-##
+## Virtual service
 
 In XCube the “virtual service” is simply the built-in RPC layer that lets one module call another (or call itself) without ever doing an HTTP/SOAP round-trip. Under the hood:
 
 1. Service Definition  
-   You build up a service–and its operations–by instantiating an XCube_Service object and registering methods
-   on it (via addFunction() or register()). That lives in PHP memory.
+   You build up a service–and its operations–by instantiating an `XCube_Service` object and registering methods
+   on it, via `addFunction()` or `register()`. That lives in PHP memory.
 
 2. Service Manager  
-   XCube_ServiceManager holds all of your XCube_Service instances. When you ask it for a client:
+   `XCube_ServiceManager` holds all of your `XCube_Service` instances. When you ask it for a client:
 
 ```php
 <?php
@@ -89,4 +89,4 @@ print_r($result['item']);
 
 – If no SOAP/REST adapter is installed on Site B it’ll fall back to a virtual service (in-process RPC) when the service lives on the same site; but when you register an external WSDL, `createClient()` hands you a real SOAP client under the hood, so your code doesn’t change whether you’re calling Site A or Site B.
 
-That’s how XOOPSCube lets one site communicate with another seamlessly.
+That’s how XCube lets one module communicate with another in XOOPSCube or websites seamlessly.

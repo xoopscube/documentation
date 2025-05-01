@@ -6,7 +6,7 @@ Since 2005, XCube’s architecture and modularity in design, along with the free
 
 ---
 
-## Brief History
+## <span class="iconify" data-icon="fluent-color:history-24"></span> Brief History
 
 **XOOPS** is an acronym of "eXtensible Object Oriented Portal System", according to the core developer Kazumi Ono. 
 Though started as a portal system, it later developed into a web application framework. 

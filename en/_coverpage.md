@@ -43,7 +43,7 @@
     </div>
 </div>
 
-<h4 class="hero-desc">X-Codex Documentation provides information about how to install, configure, deploy and use XCL.</h4>
+<h4 class="hero-desc">This documentation provides information about the Core API, its design, and XCL deployment.</h4>
 <span class="quick-start" style="margin:1.5em auto;"><a href="#/en/quick-start">Quick Start</a></span>
 
 </div><!-- End Card-list -->

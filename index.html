@@ -17,6 +17,56 @@
   <link rel="stylesheet" href="_script/xlayout.css">
   <!-- Custom CSS -->    
   <link rel="stylesheet" href="_script/import.css">
+  <style>
+.panzoom-schema {
+  width: 100%; /* Or a specific width layout */
+  max-width: 884px; /* Layout max width */
+  height: 540px; /* Define a height for the viewport */
+  border: 8px solid hsla(227, 40%, 20%, 0.8); /* visual for the container */
+  overflow: hidden; /* Essential: Clips the SVG content */
+  margin: 20px auto; /* centering */
+  cursor: grab; /* Indicate interactivity */
+  position: relative; /* For positioning child controls */
+}
+/* Style when actively panning */
+.panzoom-schema:active {
+  cursor: grabbing;
+}
+.panzoom-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10; /* Ensure controls are above the SVG */
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 5px; /* Space between buttons */
+}
+.panzoom-controls button {
+  background-color: hsla(228, 40%, 27%, 0.8);
+  border: #303b49;
+  border-radius: 4px;
+  padding: 4px 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+.panzoom-controls button:hover {
+  background-color: hsla(228, 40%, 27%, 0.8);
+}
+.panzoom-controls button:active {
+  background-color: hsla(228, 40%, 27%, 1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
+}
+/* Ensure the SVG itself behaves correctly */
+.panzoom-schema .flowchart {
+  display: block; /* Prevents extra space below SVG */
+  /* Panzoom will handle transforms, don't set width/height here usually */
+}
+
+  </style>
 </head>
 <body>
   <nav>
@@ -30,42 +80,106 @@
 
 <!-- Extension - Edit on Github -->
 <script src="_script/edit-on-github.js"></script>
-
 <!-- Load config -->
 <script src="_script/config.js"></script>
 <!-- Load doc render -->
 <script src="_script/docsify.min.js"></script>
 <!-- Load extensions -->
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-php.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-php-extras.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-phpdoc.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-php.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-php-extras.min.js"></script>
+
 <script src="_script/plugins.js"></script>
+<script src="_script/panzoom.min.js"></script>
 <script src="_script/mermaid.min.js"></script>
 <script>
-  // Mermaid initialization.
+// Mermaid initialization.
   var num = 0;
-/*     mermaid.initialize({ 
-        startOnLoad: false,
-        flowchart:{
-            useMaxWidth:false,
-            htmlLabels:true
-        },
-        "theme": "forest",
-        "themeCSS": ".node rect { fill: red; }"
-        */
- //    }); 
-     mermaid.initialize({ 
-         startOnLoad:false, 
-         cloneCssStyles:false,
-         flowchart:{ 
-             useMaxWidth:true, 
-             htmlLabels:true, 
-             width: '80%',
-             curve:'basis', }, 
-             theme: 'dark', 
-     });
-</script>
+  mermaid.initialize({ 
+  startOnLoad:false, 
+  cloneCssStyles:false,
+  flowchart:{ 
+    useMaxWidth:true, 
+    htmlLabels:true, 
+    width: '80%',
+    curve:'basis', }, 
+    theme: 'dark', 
+  });
 
-<!-- <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> -->
+  // Docsify Hooks
+  window.$docsify = window.$docsify || {}; // Ensure $docsify exists
+  window.$docsify.plugins = (window.$docsify.plugins || []).concat(function(hook, vm) {
+    hook.doneEach(function() {
+      // Find all Panzoom container elements
+      const panzoomContainers = document.querySelectorAll('.panzoom-schema');
+
+      panzoomContainers.forEach(container => {
+        const contentElement = container.querySelector('.flowchart');
+
+        if (contentElement) {
+           // Prevent initializing multiple times
+           if (contentElement._panzoomInstance) {
+             return;
+           }
+
+          // Initialize Panzoom on the CONTENT element (the SVG)
+          const panzoomInstance = Panzoom(contentElement, {
+            maxScale: 5,
+            minScale: 0.5,
+            contain: 'outside',
+            canvas: true,
+            wheel: true,
+            step: 0.2
+          });
+
+          // Store the instance on the element
+          contentElement._panzoomInstance = panzoomInstance;
+
+          // --- Dynamically Create and Append Controls ---
+          // Check if controls already exist (e.g., from a previous render)
+          if (!container.querySelector('.panzoom-controls')) {
+            const controlsDiv = document.createElement('div');
+            controlsDiv.className = 'panzoom-controls';
+
+            // Create Zoom In button
+            const zoomInButton = document.createElement('button');
+            zoomInButton.className = 'zoom-in';
+            zoomInButton.textContent = '+';
+            zoomInButton.setAttribute('aria-label', 'Zoom In'); // Accessibility
+            zoomInButton.addEventListener('click', () => panzoomInstance.zoomIn());
+            zoomInButton.addEventListener('mousedown', (e) => e.stopPropagation());
+            controlsDiv.appendChild(zoomInButton);
+
+            // Create Zoom Out button
+            const zoomOutButton = document.createElement('button');
+            zoomOutButton.className = 'zoom-out';
+            zoomOutButton.textContent = '-';
+            zoomOutButton.setAttribute('aria-label', 'Zoom Out'); // Accessibility
+            zoomOutButton.addEventListener('click', () => panzoomInstance.zoomOut());
+            zoomOutButton.addEventListener('mousedown', (e) => e.stopPropagation());
+            controlsDiv.appendChild(zoomOutButton);
+
+            // Create Reset button
+            const resetButton = document.createElement('button');
+            resetButton.className = 'zoom-reset';
+            resetButton.textContent = 'Reset';
+            resetButton.setAttribute('aria-label', 'Reset Zoom'); // Accessibility
+            resetButton.addEventListener('click', () => panzoomInstance.reset());
+            resetButton.addEventListener('mousedown', (e) => e.stopPropagation());
+            controlsDiv.appendChild(resetButton);
+
+            // Append the controls container to the main container
+            container.appendChild(controlsDiv);
+          }
+          // --- End Dynamically Create Controls ---
+
+        } else {
+           console.warn("Panzoom container found, but no '.flowchart' SVG inside:", container);
+        }
+      });
+
+      console.log('Panzoom initialized with dynamic controls for:', vm.route.path);
+    });
+  });
+</script>
 </body>
 </html>
