@@ -1,0 +1,65 @@
+# ## XCL 
+# Folders cache, temp and upload
+# Temporary files, cache, templates
+bak/*
+*.bak
+
+# Files by IDE/VS
+.hintrc
+*.meta
+*.obj
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.scc
+*.bak
+## Linux
+*~
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+# KDE directory preferences
+.directory
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+## Mac 
+# ignore general files
+.DS_Store
+.AppleDouble
+.LSOverride
+# Files that might appear in the root of a volume
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+# Thumbnails
+._*
+# Folder config file
+[Dd]esktop.ini
+## Windows 
+# ignore thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+# Windows shortcuts
+*.lnk
+# DW files
+_notes
+_compareTemp
+configs/
+dwsync.xml
+dw_php_codehinting.config
+*.mno
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.project
