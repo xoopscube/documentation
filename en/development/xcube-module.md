@@ -109,6 +109,7 @@ For system module installation, XCube provides utility classes:
 2. Module Updater: Manages the update process for modules:  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/admin/class/ModuleUpdater.class.php#L18-L49" target="_blank">/legacy/admin/class/ModuleUpdater.class.php#L18-L49</a></code>
 
+---
 
 ### Key Takeaways
 

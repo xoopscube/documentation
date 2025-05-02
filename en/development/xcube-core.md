@@ -74,7 +74,7 @@ The system loads `definition.inc.php` which contains essential constants:
 
 The system reads `site_default.ini` to configure components:
 
-```ini
+```php
 [Cube]
 Root=XOOPS_ROOT_PATH
 Controller=Legacy_Controller
@@ -106,7 +106,7 @@ The value read earlier is overwritten with the later setting.
 
 #### Get the value set in site_default.ini and site_custom.ini
 
-```
+```php
     $root = XCube_Root :: getSingleton ();  
     $value = $root-> getSiteConfig ('section name','parameter name'));
 ``` 
