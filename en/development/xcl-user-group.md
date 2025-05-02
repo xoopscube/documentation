@@ -146,6 +146,8 @@ The system makes a distinction between permissions and privileges.
 - Permissions: Actions that can be executed on a module
 - Privileges: Permissions assigned to user groups
 
+---
+
 ### Key Takeaways
 
 The permission system is modular, allowing each module to define its own permission types

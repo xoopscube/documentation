@@ -18,6 +18,72 @@
   <!-- Custom CSS -->    
   <link rel="stylesheet" href="_script/import.css">
   <style>
+:root{--mermaid-font-family:sans-serif}
+
+
+[class^="xcl-"] p, svg[class^="xcl-"] label {margin:0}
+svg.xcl-diagram {font-family:sans-serif;font-size:14px}
+svg.xcl-diagram .flowchart {fill:transparent!important;}
+svg.xcl-diagram .flowchart {font-family:sans-serif;font-size:14px;fill:#fff}
+
+svg.xcl-diagram .edge-thickness-normal{stroke-width:1px}
+svg.xcl-diagram .edge-pattern-solid{stroke-dasharray:0}
+svg.xcl-diagram .edgeLabel,
+svg.xcl-diagram .nodeLabel{color:#fff}
+.flowchart .edgeLabel rect{opacity:.5;background-color:#171d30;fill:#fff}
+.flowchart .edgeLabel{background-color:#171d30;text-align:center}
+.flowchart .node .label{text-align:center}
+.flowchart .flowchart-link{stroke:#999;fill:none}
+.flowchart .label{color:#fff}
+svg.xcl-diagram .edgeLabel .label span,
+svg.xcl-diagram .labelBkg{background:#171d30}
+svg.xcl-diagram .labelText {fill: #5c6bc0;stroke: none;}
+svg.xcl-diagram .labelBox {fill: #212745;stroke: #5c6bc0;stroke-width:1px}
+svg.xcl-diagram .node circle, .node circle,
+svg.xcl-diagram .node path{fill: #212745;stroke: #5c6bc0;stroke-width:1px}
+.flowchart .node circle,
+
+svg.xcl-diagram .cluster, .cluster rect {fill: #121727 !important;stroke: #5c6bc0 !important;}
+svg.xcl-diagram .actor,
+svg.xcl-diagram.flowchart .node circle,
+svg.xcl-diagram.flowchart .node path,
+svg.xcl-diagram.flowchart .node rect{fill: #212745;stroke: #face74;stroke-width:1px}
+svg.xcl-diagram text.actor,
+svg.xcl-diagram text.actor > tspan {fill: #fff; stroke:none}
+
+svg.xcl-diagram .divider{stroke:#ddd;stroke-width:1}
+svg.xcl-diagram .relation{stroke:#999;stroke-width:1;fill:none}
+svg.xcl-diagram .composition,
+svg.xcl-diagram .dependency{fill:#999!important;stroke:#999!important;stroke-width:1}
+svg.xcl-diagram .aggregation,
+svg.xcl-diagram .extension,
+svg.xcl-diagram .lollipop{fill:transparent!important;stroke:#999!important;stroke-width:1}
+svg.xcl-diagram .lollipop{fill:#fff!important}
+svg.xcl-diagram .loopLine{fill:#5c6bc0;stroke:#5c6bc0;}
+
+.flowchart span{fill:#fff;color:#fff}
+
+svg.xcl-diagram .flowchart .marker{fill:#999;stroke:#999}
+svg.xcl-diagram .flowchart .marker.cross{stroke:#999}
+svg.xcl-diagram .flowchart .label,
+svg.xcl-diagram .messageLine0 {stroke: #ccc;}
+/* svg.xcl-diagram.flowchart .nodes .default .label-container, */
+svg.xcl-diagram .messageText {fill: #fff;stroke: none;}
+
+svg.xcl-diagram #arrowhead {fill: #999;}
+#crosshead {
+fill:rgb(243, 194, 33);stroke: orange;
+}
+#filled-head {
+    fill:#5c6bc0;
+    /* stroke: orange; */
+}
+#clock {
+    fill:green;
+    stroke: green;
+}
+
+    /* Panzoom schema xcl-diagram flowchart */
 .panzoom-schema {
   width: 100%; /* Or a specific width layout */
   max-width: 884px; /* Layout max width */
@@ -61,12 +127,12 @@
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.2);
 }
 /* Ensure the SVG itself behaves correctly */
+.panzoom-schema .xcl-diagram,
 .panzoom-schema .flowchart {
   display: block; /* Prevents extra space below SVG */
   /* Panzoom will handle transforms, don't set width/height here usually */
 }
-
-  </style>
+</style>
 </head>
 <body>
   <nav>
@@ -85,12 +151,11 @@
 <!-- Load doc render -->
 <script src="_script/docsify.min.js"></script>
 <!-- Load extensions -->
+<script src="_script/plugins.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-php.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1.30.0/components/prism-php-extras.min.js"></script>
-
-<script src="_script/plugins.js"></script>
-<script src="_script/panzoom.min.js"></script>
 <script src="_script/mermaid.min.js"></script>
+<script src="_script/panzoom.min.js"></script>
 <script>
 // Mermaid initialization.
   var num = 0;
@@ -113,7 +178,7 @@
       const panzoomContainers = document.querySelectorAll('.panzoom-schema');
 
       panzoomContainers.forEach(container => {
-        const contentElement = container.querySelector('.flowchart');
+        const contentElement = container.querySelector('.xcl-diagram'); // svg class
 
         if (contentElement) {
            // Prevent initializing multiple times
@@ -123,7 +188,8 @@
 
           // Initialize Panzoom on the CONTENT element (the SVG)
           const panzoomInstance = Panzoom(contentElement, {
-            maxScale: 5,
+            startScale: 0.5,
+            maxScale: 2,
             minScale: 0.5,
             contain: 'outside',
             canvas: true,

@@ -7,7 +7,7 @@ The XCube_Delegate System is a core component of XOOPSCube Legacy that enables e
 
 This page documents the structure and functionality of the XCube_Delegate System. For information about the overall controller architecture, see Legacy_Controller and Request Lifecycle.
 
-<div><img src="../../_media/xcube-delegate.svg" alt="xcube delegate"></div>
+<div><img src="_media/xcube-delegate.svg" alt="xcube delegate"></div>
 
 
 <span class="iconify" data-icon="mdi:github"></span> Sources: <code><a href="

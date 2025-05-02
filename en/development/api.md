@@ -6,7 +6,7 @@
 The foundational Core of XoopsCube
 
 
-📦  [API XCube Core Documentation](https://xoopscube.github.io/documentation/xcube/)
+📘 [API XCube Core Documentation](https://xoopscube.github.io/documentation/xcube/)
 
 
 ### XCL Package API
@@ -14,7 +14,7 @@ The foundational Core of XoopsCube
 The XOOPSCube Legacy Project - XCL distribution package v2.5.0  
 XCL is a package containing all the necessary files, settings, and dependencies required to install or deploy a web application platform or CMS. It's essentially a self-contained bundle that makes it easy to distribute and install across different platforms.
 
-📦  [API Documentation XCL v2.5.x](https://xoopscube.github.io/documentation/api/)
+📙 [API Documentation XCL v2.5.x](https://xoopscube.github.io/documentation/api/)
 
 
 ---

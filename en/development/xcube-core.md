@@ -14,7 +14,7 @@ initializes the rendering system, and outputs the final theme.
 XOOPSCube Legacy initialization begins with loading the `mainfile.php` as the entry point, which then includes `cubecore_init.php`. This initializes the `XCube_Root` singleton, loads site configuration, and sets up the controller.
 
 <p align="center">
-<img src="../../_media/xcl-legacy-flow.svg" width="760px" />
+<img src="_media/xcl-legacy-flow.svg" width="100%" />
 </p>
 
 **The initialization sequence follows these steps:**

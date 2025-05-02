@@ -1,4 +1,4 @@
-// CDN Settings
+// CDN Settings - docsify version 4.9.1 
 window.$docsify = {
   el: '#app',
   // The name in the sidebar.
