@@ -44,9 +44,15 @@ svg.xcl-diagram .node path{fill: #212745;stroke: #5c6bc0;stroke-width:1px}
 .flowchart .node circle,
 
 svg.xcl-diagram .cluster, .cluster rect {fill: #121727 !important;stroke: #5c6bc0 !important;}
+svg.xcl-diagram #arrowhead {fill: #999;}
+svg.xcl-diagram .flowchart .label,
+svg.xcl-diagram .messageLine0,
+svg.xcl-diagram .messageLine1,
+svg.xcl-diagram .actor-line {stroke: #999;}
 svg.xcl-diagram .actor,
 svg.xcl-diagram.flowchart .node circle,
 svg.xcl-diagram.flowchart .node path,
+svg.xcl-diagram.flowchart .node polygon,
 svg.xcl-diagram.flowchart .node rect{fill: #212745;stroke: #face74;stroke-width:1px}
 svg.xcl-diagram text.actor,
 svg.xcl-diagram text.actor > tspan {fill: #fff; stroke:none}
@@ -65,15 +71,10 @@ svg.xcl-diagram .loopLine{fill:#5c6bc0;stroke:#5c6bc0;}
 
 svg.xcl-diagram .flowchart .marker{fill:#999;stroke:#999}
 svg.xcl-diagram .flowchart .marker.cross{stroke:#999}
-svg.xcl-diagram .flowchart .label,
-svg.xcl-diagram .messageLine0 {stroke: #ccc;}
+
 /* svg.xcl-diagram.flowchart .nodes .default .label-container, */
 svg.xcl-diagram .messageText {fill: #fff;stroke: none;}
 
-svg.xcl-diagram #arrowhead {fill: #999;}
-#crosshead {
-fill:rgb(243, 194, 33);stroke: orange;
-}
 #filled-head {
     fill:#5c6bc0;
     /* stroke: orange; */

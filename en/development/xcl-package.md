@@ -166,10 +166,11 @@ https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/user/xoops_versio
 <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacyRender/xoops_version.php#L7-L17" target="_blank">xoops_version.php#L7-L17</a></code>
 <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L490-L521" target="_blank">Legacy_Controller.class.php#L490-L521</a></code>
 
-?>**Note** For information about XCube Core component, see <a href="xcube-module.md"> XCube Module</a>
+
+?>**Note** For information about XCube Core component, see [XCube Module](/en/development/xcube-module.md)
+
 
 ## Render System
-
 
 
 ### Header Script and Meta Information
@@ -194,7 +195,8 @@ $headerScript->addScript('alert("Hello World!");');
 <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacyRender/admin/actions/AdminRenderAction.class.php#L35-L73" target="_blank">AdminRenderAction.class.php#L35-L73</a></code>
 
 
-?>**Note** For information about the Render System, see <a href="xcl-render.md"> XCL Render</a>
+?>**Note** For information about the Render System, see [XCL Render](/en/development/xcl-render.md)
+
 
 ### Delegate System
 
@@ -224,7 +226,7 @@ public function __construct()
 https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L116-L146" target="_blank">Legacy_Controller.class.php#L116-L146</a></code>
 
 
-?>**Note** For information about this Core component, see <a href="xcube-delegate.md"> XCube Delegate</a>
+?>**Note** For information about this Core component, see [XCube Delegate](/en/development/xcube-delegate.md)
 
 
 ## Database Abstraction Layer
@@ -260,7 +262,7 @@ public function _setupDB()
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Controller.class.php#L624-L646" target="_blank">/kernel/Legacy_Controller.class.php#L624-L646</a></code>
 
 
-?>**Note** For information about the Database Abstraction, see <a href="xcl-database.md"> XCL Database</a>
+?>**Note** For information about the Database Abstraction, see [XCL Database](/en/development/xcl-database.md)
 
 
 ## Caching Mechanism
