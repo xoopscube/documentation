@@ -1,72 +1,17 @@
-<dl>
-  <dt>The X-Codex Documentation provides information about deployment and update.</dt>
-  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
-  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
-  <dd>This information is intended for administrators and developers.</dd>
-</dl>
 
-<details>
-<summary style="cursor: pointer;">X-Update Manager</summary>
+The module **X-Update Manager** functions as a dedicated software update service (SUS) for the XOOPSCube Legacy (XCL)   
+web application platform. As a core "trust module" within the XCL package, its primary purpose is to streamline the process of keeping the platform and its components up-to-date and secure.
 
-- Managing Your X-Update Settings
-- Fundamentals of the folder structure and how files are organized.
+**Key Features and Functionality:**
 
-</details>
+* **Comprehensive Updates:** Allows administrators to update the XCL core system easily.
+* **Add-on Management:** Facilitates the installation and updating of various add-ons, including modules, themes, and preloads.
+* **Timely Patches:** Enables the download of critical updates and security patches as soon as they become available.
+* **Component Stores:** Provides access to information ("stores") about available modules, preloads, and themes.
 
-<details>
-<summary style="cursor: pointer;">Create Your Store</summary>
+**Scope and Limitations:**
 
-- Creating and Managing Your Store Settings.
-- Fundamentals of the folder structure and how files are organized.
-- An example of a Continuous Integration.
+Please note that X-Update's primary role is the installation and updating of components, acting as a discovery gateway for add-ons.  
+It is not designed for creating your own modules, themes, or preloads, nor for establishing your own component store. For assistance with installing the X-Update service, please contact a developer.
 
-</details>
-
-<details>
-<summary style="cursor: pointer;">Update Modules</summary>
-
-- Module settings.
-- Fundamentals of the folder structure and how files are organized.
-- An example of a Continuous Integration Delivery.
-
-</details>
-
-<details>
-<summary style="cursor: pointer;">Update Themes</summary>
-
-- Theme settings.
-- Fundamentals of the folder structure and how files are organized.
-- An example of a Continuous Integration Delivery.
-
-</details>
-
-<details>
-<summary style="cursor: pointer;">Update Preloads</summary>
-
-- Preload settings.
-- Fundamentals of the folder structure and how files are organized.
-- An example of a Continuous Integration.
-
-</details>
-
------
-
-### The DevOps
-
-The DevOps trend has given rise to a number of buzzwords and methodologies aiming to speed delivery and accuracy, giving developers the tools they need to deliver better products, with fewer bugs, and implement improvements continuously. Speaking of continuously, you may be familiar with the terms continuous delivery, continuous deployment, and continuous integration. The differences between the three can be confusing, but there are some important distinctions to know.
-
-The Continuous Integration (CI), Continuous Delivery (CD), and Continuous Deployment (CD) process is a framework that enables this approach. The biggest difference between these stages (CI/CDs) is whom it benefits most at each stage.
-
-CI benefits developers most because it allows for code produced to be automatically tested and continuously “integrated” with other developers’ code, and with the existing codebase. The developer benefits from receiving continuous and immediate feedback regarding code and integration errors.
-
-Continuous Delivery benefits business users because as soon as code is successfully accepted in the CI stage and a logical function can be tested, it is released to users. They verify that the features meet their expectations and provide feedback to developers who then address the feedback in this stage. This feedback loop between users and developers is continuous and seamless.
-
-Continuous Deployment seamlessly pushes code that has been successfully accepted in the CI/CD cycle into the production environment. This stage benefits everybody, from application developers to end-users as new features are available and in a production-ready state.
-
-What are the benefits for continuous delivery?
-
-Top Benefits of Continuous Delivery. Deliver software with fewer bugs and lower risk. When you release smaller changes more frequently, you catch errors much earlier in the development process. When you implement automated testing at every stage of development, you don't pass failed code to the next stage.
-
-What is the difference between continuous integration and continuous delivery?
-
-Continuous delivery is an approach which incorporates the concepts of continuous integration, automated testing and continuous deployment. The difference between continuous delivery and deployment is that business teams may decide not to release software into production with continuous delivery due to various reasons.
+This documentation provides comprehensive information about the X-Update module’s functionality, features, and configuration.

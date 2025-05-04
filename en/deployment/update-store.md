@@ -1,30 +1,36 @@
-<dl>
-  <dt>The X-Codex Documentation provides information about deployment and update.</dt>
-  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
-  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
-  <dd>This information is intended for administrators and developers.</dd>
-</dl>
+### Leverage Git for Custom Update Repositories & Continuous Delivery
+
+#### Create Custom Update Sources
+Integrate directly with your Git workflows. Establish your own update repositories for packages hosted on GitHub, GitLab, or your private Git servers.
+
+#### Enable Sustainable Continuous Delivery
+Implement a robust continuous delivery pipeline. Sync your source code and reliably deploy updates, custom modules, and themes to your users and clients through this system.
 
 
-<details>
-<summary style="cursor: pointer;">Create Your Store</summary>
+### Centralized Management with X-Update
 
-- Creating and Managing Your Store Settings.
-- Fundamentals of the folder structure and how files are organized.
-- An example of a Continuous Integration.
+#### Unified Update Notifications
+The X-Update module monitors both central repositories (like the official X-Update Store) and your configured custom sources. It automatically notifies administrators when updates become available from any source.
 
-</details>
+#### Streamlined Deployment
+Use X-Update to seamlessly deploy updates for the core system, modules, and themes sourced from central or custom repositories.
 
------
+#### Third-Party Integration
+Benefit from centralized updates and potential integration points with other third-party systems or workflows.
 
-## Create a Store
 
-**Update Dashboard**
+### Advanced Administration with X-Update Manager
 
-User-friendly dashboard to update packages from GitHub, GitLab or your Git server.
+#### Comprehensive Dashboard
+Manage the entire update process via the X-Update Manager administration dashboard.
 
-Sync your source code and continuously delivered projects in a sustainable way
+#### Automation & Efficiency
+Utilize features such as batch process automation for handling multiple updates efficiently.
 
-to your users and clients.
+#### Consistent Management
+Ensure consistent update management across diverse components, including support for shared and heterogeneous functionalities within your application environment.
+
+
+### Create Your Store
 
 Learn more : [XCube Store](https://xoopscube.github.io/xupdate-store/)
