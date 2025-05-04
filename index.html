@@ -41,6 +41,8 @@ svg.xcl-diagram .labelText {fill: #5c6bc0;stroke: none;}
 svg.xcl-diagram .labelBox {fill: #212745;stroke: #5c6bc0;stroke-width:1px}
 svg.xcl-diagram .node circle, .node circle,
 svg.xcl-diagram .node path{fill: #212745;stroke: #5c6bc0;stroke-width:1px}
+/* svg.xcl-diagram .node .default,
+svg.xcl-diagram .label-container, */
 .flowchart .node circle,
 
 svg.xcl-diagram .cluster, .cluster rect {fill: #121727 !important;stroke: #5c6bc0 !important;}
@@ -50,13 +52,17 @@ svg.xcl-diagram .messageLine0,
 svg.xcl-diagram .messageLine1,
 svg.xcl-diagram .actor-line {stroke: #999;}
 svg.xcl-diagram .actor,
-svg.xcl-diagram.flowchart .node circle,
 svg.xcl-diagram.flowchart .node path,
-svg.xcl-diagram.flowchart .node polygon,
-svg.xcl-diagram.flowchart .node rect{fill: #212745;stroke: #face74;stroke-width:1px}
+/* svg.xcl-diagram .flowchart .label-container, */
+.flowchart .node .default,
+.flowchart .node circle,
+
+.flowchart .node polygon,
+.flowchart .node rect{fill: #212745;stroke: #face74;stroke-width:1px}
 svg.xcl-diagram text.actor,
 svg.xcl-diagram text.actor > tspan {fill: #fff; stroke:none}
-
+svg.xcl-diagram .note {stroke: #5c6bc0;fill: #212745;}
+svg.xcl-diagram .noteText {fill: #ddd;stroke: none;}
 svg.xcl-diagram .divider{stroke:#ddd;stroke-width:1}
 svg.xcl-diagram .relation{stroke:#999;stroke-width:1;fill:none}
 svg.xcl-diagram .composition,

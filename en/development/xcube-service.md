@@ -1,4 +1,8 @@
-## Virtual service
+## Virtual Service
+
+
+!> **TODO** update this document with working code sample!
+
 
 In XCube the “virtual service” is simply the built-in RPC layer that lets one module call another (or call itself) without ever doing an HTTP/SOAP round-trip. Under the hood:
 

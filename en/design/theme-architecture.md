@@ -1,7 +1,4 @@
 
-
-Theme Architecture
-
 This page documents the theming architecture of the XOOPSCube Legacy framework, explaining how themes are structured, rendered, and customized. It covers both public-facing themes and the administration theme system. For information about creating custom themes, see Creating Themes.
 
 ## Overview

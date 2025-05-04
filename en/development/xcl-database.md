@@ -87,7 +87,7 @@ The framework implements an object-oriented approach for managing persistent dat
 </p>
 
 
-### The object handler system provides:
+### The Object Handler Provides
 
 1. Standard CRUD operations: Through the `XoopsObjectGenericHandler`
 2. Integration with other services: Via the `Legacy_AbstractClientObjectHandler`
@@ -311,7 +311,7 @@ For database operations, the language manager configures the appropriate charact
 <span class="iconify" data-icon="mdi:github"></span> Sources: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_LanguageManager.class.php" target="_blank">/legacy/kernel/Legacy_LanguageManager.class.php</a></code>
 
 
-## Integration with delegate
+## Delegate Integration
 
 XOOPSCube Legacy's data handling components integrate with other subsystems through delegate-based extension points.
 

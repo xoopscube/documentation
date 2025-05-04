@@ -1,0 +1,1 @@
+Template Sets are a core feature of the XCL rendering system that allows for customization of the appearance of modules and themes. You can create custom Template Sets by cloning the default one and then modifying the templates within the new set. Template Sets can be managed through the legacyRender module's admin interface or AltSys Components.

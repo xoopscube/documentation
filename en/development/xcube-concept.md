@@ -222,7 +222,7 @@ Modern PHP development overwhelmingly follows the **PSR-4 standard** for class n
 
 ?> **NOTE** XCube's extensible architecture, designed for separation of concerns and namespaces, simplifies running Composer – the PHP dependency manager providing a standard format for managing dependencies and required libraries – automatically bootstrapping its installations in the appropriate vendor folder under 'trust_path/vendor'.
 
-## Delegate manager
+## Delegate Manager
 
 XCube starts up managers from the configuration settings written into the file `default.ini`
 or override with a simple file `custom.ini`

@@ -56,6 +56,7 @@ The communication between modules and the controller is facilitated through:
 3. Module Attributes: Modules can store and retrieve data through the attributes system  
 <span class="iconify" data-icon="mdi:github"></span> Source: <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacy/kernel/Legacy_Module.class.php#L33-L38" target="_blank">/legacy/kernel/Legacy_Module.class.php#L33-L38</a></code>
 
+
 ### Rendering Integration
 
 The rendering integration is a crucial part of how legacy modules work with XCube:
