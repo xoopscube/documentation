@@ -15,11 +15,12 @@
     - [📦 XCL Render](/en/development/xcl-render.md "XOOPSCube Modular Render System - Frontend and Backend")
     - [📦 XCL Render System](/en/development/xcl-render-system.md "XOOPSCube Render System - Frontend")
     - [📦 XCL Render Admin](/en/development/xcl-render-admin.md "XOOPSCube Render System - Backend")
+    - [📦 XCL Render Delegate](/en/development/xcl-render-delegate.md "XOOPSCube Powerful Delegate System")
 
 - Design
     - [Introduction](/en/design/ "XOOPSCube XCL Design Themes and Templats")
+    - [Theme Default](/en/design/theme-default.md "XCL Default Frontend Theme")
     - [Theme Admin](/en/design/theme-admin.md "XCL Default Backend Theme Admin")
-    - [Theme Default](/en/design/theme-default.md "XCL Default Frontend Theme system")
     - [Templates](/en/design/template.md "XOOPSCube XCL Design Templates")
     - [Template Set](/en/design/template-set.md "XOOPSCube XCL Design Template Set")
     - [Components](/en/design/components.md "XCL UI Components")
