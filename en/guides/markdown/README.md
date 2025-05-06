@@ -1,9 +1,9 @@
 <dl>
-  <dt>X-Codex converts a folder structure of markdown files to HTML with a link to edit on the Github repository.</dt>
-  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
-  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
-  <dd>This information is intended for administrators and developers.</dd>
+  <dt>The XOOPSCube Documentation provides information about XCube and XOOPSCUBE Legacy XCL Package.</dt>
+  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all versions released after the 2.3.x series.</dd>
+  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> This information is intended for administrators and developers.</dd>
 </dl>
+
 
 <details>
 <summary style="cursor: pointer;">Why Markdown</summary>
@@ -96,11 +96,7 @@ commit
 merge module
 ```
     
-### Folder Structure
------
-
-+ [English docs website](https://xoopscube.github.io/documentation/ 'X-Codex English')
-+ [Japanese docs website](https://xoopscube.github.io/documentation/#/ja/ 'X-Codex Japanese')
+## Directory Structure
 
 
 Templates
@@ -111,8 +107,8 @@ Templates are easy to identify. The folder name or the file name starts with _un
 + _navbar.md
 + _sidebar.md
 
-### Templates
------
+
+
 
 
 ## Headings

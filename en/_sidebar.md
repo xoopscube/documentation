@@ -33,7 +33,5 @@
     - [Create Your Store](/en/deployment/update-store.md "XCL Software Update Service - Create Your Store")
 
 - Guides
-    - [Getting Started](/en/guides/)
-    - [Installation](/en/guides/installation.md)
-    - [Administration Guide](/en/guides/administration.md)
+    - [Installation](/en/installation.md)
     - [X-Codex Markdown](/en/guides/markdown/)

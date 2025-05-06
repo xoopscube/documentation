@@ -7,6 +7,8 @@
 The XCube architecture was developed to address the limitations of existing web development frameworks and to provide a new foundation for innovation while extending the lifespan of the XOOPS2 Content Management System through the base system Legacy, thus ensuring backward compatibility. This approach, born from real-world experience, resulted in a highly modular and extensible platform designed for reliable resource management and scalability.
 
 
+!> Note ! There are a number of topics that aren’t written yet. That means you can contribute to making this guide better.
+
 
 <div layout="row m-4">
 <div self="size-1of3"><a href="#/en/development/">

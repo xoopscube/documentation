@@ -44,6 +44,6 @@
 </div>
 
 <h4 class="hero-desc">This documentation provides information about the XCube Core API, its design, and XCL deployment.</h4>
-<span class="quick-start" style="margin:1.5em auto;"><a href="#/en/quick-start">Quick Start</a></span>
+<span class="quick-start" style="margin:1.5em auto;"><a href="#/en/installation">Installation</a></span>
 
 </div><!-- End Card-list -->

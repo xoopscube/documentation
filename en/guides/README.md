@@ -1,8 +1,7 @@
 <dl>
-  <dt>X-Codex Documentation provides information about the installation and usage of XCL Web Application Platform.</dt>
-  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all 2.3.x releases.</dd>
-  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> Intended Audiences :</dd>
-  <dd>This information is intended for administrators, developers and designers.</dd>
+  <dt>The XOOPSCube Documentation provides information about XCube core concept.</dt>
+  <dd><span class="iconify" data-icon="mdi:cube-scan" data-width="18px" data-height="18px"></span> This documentation applies to all versions released after the 2.3.x series.</dd>
+  <dd><span class="iconify" data-icon="mdi:account-multiple" data-width="18px" data-height="18px"></span> This information is intended for administrators and developers.</dd>
 </dl>
 
 <details>

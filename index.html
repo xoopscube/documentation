@@ -23,9 +23,10 @@
 
 [class^="xcl-"] p, svg[class^="xcl-"] label {margin:0}
 svg.xcl-diagram {font-family:sans-serif;font-size:14px}
-svg.xcl-diagram .flowchart {fill:transparent!important;}
-svg.xcl-diagram .flowchart {font-family:sans-serif;font-size:14px;fill:#fff}
-
+/* svg.xcl-diagram .flowchart {fill:transparent!important;}
+svg.xcl-diagram .flowchart {font-family:sans-serif;font-size:14px;fill:#fff} */
+svg.xcl-diagram .er{stroke:#eee;}
+svg.xcl-diagram .relationshipLine{stroke:#999;stroke-width:1;fill:none}
 svg.xcl-diagram .edge-thickness-normal{stroke-width:1px}
 svg.xcl-diagram .edge-pattern-solid{stroke-dasharray:0}
 svg.xcl-diagram .edgeLabel,
@@ -41,10 +42,7 @@ svg.xcl-diagram .labelText {fill: #5c6bc0;stroke: none;}
 svg.xcl-diagram .labelBox {fill: #212745;stroke: #5c6bc0;stroke-width:1px}
 svg.xcl-diagram .node circle, .node circle,
 svg.xcl-diagram .node path{fill: #212745;stroke: #5c6bc0;stroke-width:1px}
-/* svg.xcl-diagram .node .default,
-svg.xcl-diagram .label-container, */
 .flowchart .node circle,
-
 svg.xcl-diagram .cluster, .cluster rect {fill: #121727 !important;stroke: #5c6bc0 !important;}
 svg.xcl-diagram #arrowhead {fill: #999;}
 svg.xcl-diagram .flowchart .label,
@@ -53,7 +51,7 @@ svg.xcl-diagram .messageLine1,
 svg.xcl-diagram .actor-line {stroke: #999;}
 svg.xcl-diagram .actor,
 svg.xcl-diagram.flowchart .node path,
-/* svg.xcl-diagram .flowchart .label-container, */
+
 .flowchart .node .default,
 .flowchart .node circle,
 
