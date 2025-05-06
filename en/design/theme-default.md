@@ -1,11 +1,25 @@
 
-## Render Engine
+
+This guide aims to help anyone who wants to start customizing the user interface to provide resources, guidelines, and tips on how to implement a personalized design.
+
+All the content in this guide and in our resources repository is open source, contributions and suggestions are  always welcome!   
+Feel free to communicate and share ideas by creating issues and pull requests in the GitHub repository.
+
+
+## Theme Render 
+
+The Web Application Platform Renderer employs the Smarty Template Engine for both Frontend and Backend rendering. This allows you to edit themes and templates for both environments using standard web technologies (HTML, CSS, JavaScript) as well as Smarty syntax for incorporating logic, dynamic data, and personalization rules.
+
+
+### Render System and Template Engine
 
 The theme rendering process involves several key classes that work together to generate the final HTML output:
 
 <div class="panzoom-schema">
 <svg xmlns="http://www.w3.org/2000/svg" id="mermaid-cyqcvt0zzee" width="100%" aria-roledescription="flowchart-v2" class="xcl-diagram flowchart" style="max-width:1744px" viewBox="0 0 1744.325 1530.075"><defs/><marker id="mermaid-cyqcvt0zzee_flowchart-v2-pointEnd" class="marker flowchart-v2" markerHeight="8" markerUnits="userSpaceOnUse" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10"><path d="m0 0 10 5-10 5z" class="arrowMarkerPath" style="stroke-width:1;stroke-dasharray:1,0"/></marker><marker id="mermaid-cyqcvt0zzee_flowchart-v2-pointStart" class="marker flowchart-v2" markerHeight="8" markerUnits="userSpaceOnUse" markerWidth="8" orient="auto" refX="4.5" refY="5" viewBox="0 0 10 10"><path d="m0 5 10 5V0z" class="arrowMarkerPath" style="stroke-width:1;stroke-dasharray:1,0"/></marker><marker id="mermaid-cyqcvt0zzee_flowchart-v2-circleEnd" class="marker flowchart-v2" markerHeight="11" markerUnits="userSpaceOnUse" markerWidth="11" orient="auto" refX="11" refY="5" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width:1;stroke-dasharray:1,0"/></marker><marker id="mermaid-cyqcvt0zzee_flowchart-v2-circleStart" class="marker flowchart-v2" markerHeight="11" markerUnits="userSpaceOnUse" markerWidth="11" orient="auto" refX="-1" refY="5" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width:1;stroke-dasharray:1,0"/></marker><marker id="mermaid-cyqcvt0zzee_flowchart-v2-crossEnd" class="marker cross flowchart-v2" markerHeight="11" markerUnits="userSpaceOnUse" markerWidth="11" orient="auto" refX="12" refY="5.2" viewBox="0 0 11 11"><use xlink:href="#reuse-0" class="arrowMarkerPath" style="stroke-width:2;stroke-dasharray:1,0"/></marker><marker id="mermaid-cyqcvt0zzee_flowchart-v2-crossStart" class="marker cross flowchart-v2" markerHeight="11" markerUnits="userSpaceOnUse" markerWidth="11" orient="auto" refX="-1" refY="5.2" viewBox="0 0 11 11"><use xlink:href="#reuse-0" class="arrowMarkerPath" style="stroke-width:2;stroke-dasharray:1,0"/></marker><g class="root"><g class="clusters"><g id="subGraph1" class="cluster" data-look="classic"><rect width="1098.063" height="208" x="8" y="1081.075"/><foreignObject width="116.162" height="24" class="cluster-label" transform="translate(498.95 1081.075)"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>Theme Structure</p></span></div></foreignObject></g><g id="subGraph0" class="cluster" data-look="classic"><rect width="610.263" height="890.075" x="1126.063" y="632"/><foreignObject width="107.5" height="24" class="cluster-label" transform="translate(1377.444 632)"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>Render Process</p></span></div></foreignObject></g></g><g class="edgePaths"><path id="L_A_B_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1415.447 62v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_B_C_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1415.447 166v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_C_D_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1415.447 270v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_D_E_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1415.447 374v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_E_F_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1415.447 478v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_F_G_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1415.447 582v71" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_G_H_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1415.447 711v4.167c0 4.166 0 12.5.07 20.25s.211 14.917.281 18.5l.07 3.584" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_H_I_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m1463.22 856.302 27.857 13.962c27.857 13.962 83.571 41.887 111.428 61.349 27.858 19.462 27.858 30.462 27.858 35.962v5.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_H_J_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m1427.952 891.57 1.578 8.084c1.578 8.084 4.733 24.253 6.311 37.837 1.578 13.584 1.578 24.584 1.578 30.084v5.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_H_K_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m1371.813 859.441-22.267 13.439c-22.267 13.439-66.8 40.317-89.067 59.256-22.266 18.939-22.266 29.939-22.266 35.439v5.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_I_L_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1630.363 1031.075v25c0 8.333 0 16.667-18.126 25.734s-54.377 18.869-72.503 23.769l-18.126 4.901" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_J_L_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1437.419 1031.075v25c0 8.333 0 16.667.041 24.333.042 7.667.125 14.667.166 18.167l.041 3.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_K_L_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m1284.737 1031.075 7.18 4.167c7.18 4.166 21.539 12.5 28.719 20.833 7.18 8.333 7.18 16.667 15.408 24.716 8.229 8.048 24.686 15.813 32.915 19.695l8.229 3.882" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_L_M_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1438.034 1160.075v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_M_N_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1438.034 1264.075v71" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_N_O_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="M1438.034 1393.075v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_P_Q_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m432.528 1142.594-53.205 7.08c-53.204 7.08-159.614 21.241-212.818 31.821-53.205 10.58-53.205 17.58-53.205 21.08v3.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_P_R_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m432.528 1153.769-18.036 5.217c-18.036 5.218-54.108 15.654-72.144 24.371-18.035 8.718-18.035 15.718-18.035 19.218v3.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_P_S_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m515.468 1160.075 1.76 4.167c1.761 4.166 5.282 12.5 7.043 20.166 1.76 7.667 1.76 14.667 1.76 18.167v3.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_P_T_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m575.591 1150.34 23.985 5.789c23.984 5.789 71.954 17.368 95.939 26.657 23.985 9.289 23.985 16.289 23.985 19.789v3.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_P_U_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m575.591 1141.206 64.32 7.312c64.32 7.311 192.961 21.934 257.281 32.746 64.321 10.811 64.321 17.811 64.321 21.311v3.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_K_P_0" marker-end="url(#mermaid-cyqcvt0zzee_flowchart-v2-pointEnd)" d="m1214.289 1031.075-3.692 4.167c-3.692 4.166-11.076 12.5-14.768 20.833-3.691 8.333-3.691 16.667-105.785 28.549-102.093 11.882-306.279 27.313-408.372 35.028l-102.093 7.716" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/></g><g class="edgeLabels"><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="35.438" height="24" class="label" transform="translate(1612.644 928.075)"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"><p>Main</p></span></div></foreignObject></g><g class="edgeLabel"><foreignObject width="37.775" height="24" class="label" transform="translate(1418.531 928.075)"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"><p>Block</p></span></div></foreignObject></g><g class="edgeLabel"><foreignObject width="47.963" height="24" class="label" transform="translate(1214.231 928.075)"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"><p>Theme</p></span></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g></g><g class="nodes"><g id="flowchart-A-0" class="node default" transform="translate(1415.447 35)"><rect width="185.613" height="54" x="-92.806" y="-27" class="basic label-container"/><g class="label" transform="translate(-62.806 -12)"><rect/><foreignObject width="125.613" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>Legacy_Controller</p></span></div></foreignObject></g></g><g id="flowchart-B-1" class="node default" transform="translate(1415.447 139)"><rect width="148.063" height="54" x="-74.031" y="-27" class="basic label-container"/><g class="label" transform="translate(-44.031 -12)"><rect/><foreignObject width="88.063" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>executeView</p></span></div></foreignObject></g></g><g id="flowchart-C-3" class="node default" transform="translate(1415.447 243)"><rect width="215.25" height="54" x="-107.625" y="-27" class="basic label-container"/><g class="label" transform="translate(-77.625 -12)"><rect/><foreignObject width="155.25" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>Legacy_RenderSystem</p></span></div></foreignObject></g></g><g id="flowchart-D-5" class="node default" transform="translate(1415.447 347)"><rect width="196.625" height="54" x="-98.313" y="-27" class="basic label-container"/><g class="label" transform="translate(-68.313 -12)"><rect/><foreignObject width="136.625" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>createRenderTarget</p></span></div></foreignObject></g></g><g id="flowchart-E-7" class="node default" transform="translate(1415.447 451)"><rect width="187.025" height="54" x="-93.513" y="-27" class="basic label-container"/><g class="label" transform="translate(-63.513 -12)"><rect/><foreignObject width="127.025" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>setTemplateName</p></span></div></foreignObject></g></g><g id="flowchart-F-9" class="node default" transform="translate(1415.447 555)"><rect width="143.438" height="54" x="-71.719" y="-27" class="basic label-container"/><g class="label" transform="translate(-41.719 -12)"><rect/><foreignObject width="83.438" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>setAttribute</p></span></div></foreignObject></g></g><g id="flowchart-G-11" class="node default" transform="translate(1415.447 684)"><rect width="106.338" height="54" x="-53.169" y="-27" class="basic label-container"/><g class="label" transform="translate(-23.169 -12)"><rect/><foreignObject width="46.338" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>render</p></span></div></foreignObject></g></g><g id="flowchart-H-13" class="node default" transform="translate(1415.447 832.038)"><polygon points="71.038 0 142.075 -71.038 71.038 -142.075 0 -71.038" class="label-container" transform="translate(-71.038 71.038)"/><g class="label" transform="translate(-44.038 -12)"><rect/><foreignObject width="88.075" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>Target Type?</p></span></div></foreignObject></g></g><g id="flowchart-I-15" class="node default" transform="translate(1630.363 1004.075)"><rect width="141.775" height="54" x="-70.888" y="-27" class="basic label-container"/><g class="label" transform="translate(-40.888 -12)"><rect/><foreignObject width="81.775" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>renderMain</p></span></div></foreignObject></g></g><g id="flowchart-J-17" class="node default" transform="translate(1437.419 1004.075)"><rect width="144.113" height="54" x="-72.056" y="-27" class="basic label-container"/><g class="label" transform="translate(-42.056 -12)"><rect/><foreignObject width="84.113" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>renderBlock</p></span></div></foreignObject></g></g><g id="flowchart-K-19" class="node default" transform="translate(1238.213 1004.075)"><rect width="154.3" height="54" x="-77.15" y="-27" class="basic label-container"/><g class="label" transform="translate(-47.15 -12)"><rect/><foreignObject width="94.3" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>renderTheme</p></span></div></foreignObject></g></g><g id="flowchart-L-21" class="node default" transform="translate(1438.034 1133.075)"><rect width="159.425" height="54" x="-79.713" y="-27" class="basic label-container"/><g class="label" transform="translate(-49.713 -12)"><rect/><foreignObject width="99.425" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>fetchTemplate</p></span></div></foreignObject></g></g><g id="flowchart-M-27" class="node default" transform="translate(1438.034 1237.075)"><rect width="229.963" height="54" x="-114.981" y="-27" class="basic label-container"/><g class="label" transform="translate(-84.981 -12)"><rect/><foreignObject width="169.963" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>Smarty Template Engine</p></span></div></foreignObject></g></g><g id="flowchart-N-29" class="node default" transform="translate(1438.034 1366.075)"><rect width="159.287" height="54" x="-79.644" y="-27" class="basic label-container"/><g class="label" transform="translate(-49.644 -12)"><rect/><foreignObject width="99.287" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>Template Files</p></span></div></foreignObject></g></g><g id="flowchart-O-31" class="node default" transform="translate(1438.034 1470.075)"><rect width="156.45" height="54" x="-78.225" y="-27" class="basic label-container"/><g class="label" transform="translate(-48.225 -12)"><rect/><foreignObject width="96.45" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>HTML Output</p></span></div></foreignObject></g></g><g id="flowchart-P-32" class="node default" transform="translate(504.06 1133.075)"><rect width="143.063" height="54" x="-71.531" y="-27" class="basic label-container"/><g class="label" transform="translate(-41.531 -12)"><rect/><foreignObject width="83.063" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>Theme Files</p></span></div></foreignObject></g></g><g id="flowchart-Q-34" class="node default" transform="translate(113.3 1237.075)"><rect width="140.6" height="54" x="-70.3" y="-27" class="basic label-container"/><g class="label" transform="translate(-40.3 -12)"><rect/><foreignObject width="80.6" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>theme.html</p></span></div></foreignObject></g></g><g id="flowchart-R-36" class="node default" transform="translate(324.313 1237.075)"><rect width="181.425" height="54" x="-90.713" y="-27" class="basic label-container"/><g class="label" transform="translate(-60.713 -12)"><rect/><foreignObject width="121.425" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>manifesto.ini.php</p></span></div></foreignObject></g></g><g id="flowchart-S-38" class="node default" transform="translate(526.031 1237.075)"><rect width="122.013" height="54" x="-61.006" y="-27" class="basic label-container"/><g class="label" transform="translate(-31.006 -12)"><rect/><foreignObject width="62.013" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>CSS Files</p></span></div></foreignObject></g></g><g id="flowchart-T-40" class="node default" transform="translate(719.5 1237.075)"><rect width="164.925" height="54" x="-82.463" y="-27" class="basic label-container"/><g class="label" transform="translate(-52.463 -12)"><rect/><foreignObject width="104.925" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>JavaScript Files</p></span></div></foreignObject></g></g><g id="flowchart-U-42" class="node default" transform="translate(961.513 1237.075)"><rect width="219.1" height="54" x="-109.55" y="-27" class="basic label-container"/><g class="label" transform="translate(-79.55 -12)"><rect/><foreignObject width="159.1" height="24"><div style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>Component Templates</p></span></div></foreignObject></g></g></g></g></svg>
+
 </div>
+
 
 <div class="table-wrapper">
 <table><thead><tr><th>Target Type</th><th>Constant</th><th>Description</th></tr></thead><tbody><tr><td>Buffer</td><td>LEGACY_RENDER_TARGET_TYPE_BUFFER</td><td>Generic rendering buffer</td></tr><tr><td>Main</td><td>LEGACY_RENDER_TARGET_TYPE_MAIN</td><td>Main content area</td></tr><tr><td>Block</td><td>LEGACY_RENDER_TARGET_TYPE_BLOCK</td><td>Sidebar blocks</td></tr><tr><td>Theme</td><td>LEGACY_RENDER_TARGET_TYPE_THEME</td><td>Complete page with theme</td></tr></tbody></table>
@@ -42,8 +56,112 @@ public function render(&$target)
 <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/class/template.php#L23-L98" target="_blank">template.php#L23-L98</a></code>
 
 
+## Render Smarty Syntax
 
-### Theme Header 
+
+### Smarty Delimiters
+
+Themes and templates use a Smarty markup-like syntax which is similar to HTML tags.
+The tags are shorter and more readable than embedding plain PHP on pages.
+
+### Tag delimiters
+
+All Smarty tags, variables and functions start with a left delimiter curly bracket ` { `  
+and end with a right curly bracket ` } ` customized to easier usage like HTML tags:
+
+- open smarty tag ` <{ `
+- close smarty tag ` }> `
+
+The Render engine will handle the delimiters present in Theme and templates to generate valid HTML.
+
+### Template Variables
+
+Smarty variables start with the $dollar sign. They can contain numbers, letters and underscores, much like a PHP variable.
+
+You can reference arrays by index numerically or non-numerically. Also reference object properties and methods.  
+Smarty documentation : [Smarty Template variables](https://www.smarty.net/docs/en/language.syntax.variables.tpl ':target=_blank')
+
+<!-- tabs:start -->
+
+#### ** PHP **
+
+```php
+<?php echo $variable; ?>
+```
+
+```php
+<?php
+    echo 'This is a test'; // This is a one-line c++ style comment
+    /* This is a multi line comment
+       yet another line of comment */
+    echo 'This is yet another test';
+    echo 'One Final Test'; # This is a one-line shell-style comment
+?>
+```
+
+#### ** Smarty **
+
+```smarty
+<{$variable}>
+```
+
+```html
+
+<{* This is a Smarty Comment *}>
+<{* Smarty comments are NOT displayed in the final output of the template *}>
+  <{$variable}>
+<!-- This HTML comment is sent to the browser -->
+  <h2> <{$variable_title}> </h2>
+<{* Use Smarty comments are for internal template notes, not sent to the browser. *}>
+```    
+<!-- tabs:end -->
+
+
+### Template File Extensions
+
+The Render system typically uses the `.html` extension for module and block templates.   
+However, email templates conventionally use the `.tpl` extension.
+
+
+## System Themes
+
+
+### The Frontend Theme  
+
+The **default theme** ensures how the webpage appears on the client browser:
+
+- The default frontend theme folder is named with a suffix " **_default** "  
+- it is placed in the folder themes e.g. `/html/themes/xcl_default/`
+
+### The Backend Theme 
+
+The **admin theme** provides a user interface to manage system preferences,   
+including the module settings, roles and user permissions.
+
+- The backend admin theme inherits its name from the Admin Render System with a prefix " **admin_** " 
+- it is placed in the folder `/html/modules/legacy/admin/theme/`
+
+!> **Attention: Do Not Modify Core Themes!**  
+The default and admin themes are critical for the correct rendering and functionality of your application.  
+To ensure stability, these core themes must not be directly edited or modified. See Theme Customization
+
+
+
+
+
+## Themes and Templates
+
+Theme specifies areas and appearance, module templates specify shape.
+
+Template files are regular HTML documents, with additional Smarty-specific tags.
+
+Each installed module has a number of templates.
+These templates are automatically added to the default template set.
+
+
+
+
+## Theme Header 
 
 ### Script and Meta Information
 
@@ -67,9 +185,25 @@ $headerScript->addScript('alert("Hello World!");');
 <code><a href="https://github.com/xoopscube/legacy/blob/7f33bc98/html/modules/legacyRender/admin/actions/AdminRenderAction.class.php#L35-L73" target="_blank">AdminRenderAction.class.php#L35-L73</a></code>
 
 
-## Theme structure
+?> You can use your `theme.html` or a Preload to customize and extend the header.
 
-A theme structure refers to the organization of files and folders within a website theme, which controls its design, functionality, and how content is displayed. It's a hierarchical system that includes various components like HTML templates, CSS stylesheets, JavaScript files, and potentially image and font resources
+
+## Theme Structure
+
+A theme structure refers to the organization of files and folders within a website theme, which controls its design, functionality, and how content is displayed. It's a hierarchical system that includes various components like HTML templates, CSS stylesheets, JavaScript files, and potentially image and font resources.
+
+A theme requires four files, all other folders and files are optional.
+
+<div class="table-wrapper">
+<table>
+<thead><tr><th>File</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td><code>theme.html</code></td><td>Main template file defining the HTML structure and layout</td></tr>
+<tr><td><code>style.css</code></td><td>Main stylesheet for the theme</td></tr>
+<tr><td><code>manifesto.ini.php</code></td><td>Configuration file with theme metadata</td></tr>
+<tr><td><code>screenshot.jpg</code></td><td>Image used by the Render administration and the block themes</td></tr>
+</tbody></table>
+</div>
 
 
 <div class="panzoom-schema">
@@ -77,10 +211,46 @@ A theme structure refers to the organization of files and folders within a websi
 </div>
 
 
-### Design Integration
+## Default Theme
 
-This guide aims to help anyone who wants to start customizing the user interface to provide resources, guidelines, and tips on how to implement a personalized design.
 
-All the content in this guide and in the resources repository is open source, contributions and suggestions are welcome! Feel free to communicate and share ideas by creating issues and pull requests in the GitHub repository.
+
+<div class="panzoom-schema">
+<svg xmlns="http://www.w3.org/2000/svg" id="mermaid-mn7owkf1gp" aria-roledescription="flowchart-v2" class="xcl-diagram flowchart" style="max-width:1050.3563232421875px" viewBox="0 0 1050.356 622"><marker id="mermaid-mn7owkf1gp_flowchart-v2-pointEnd" class="marker flowchart-v2" markerHeight="8" markerUnits="userSpaceOnUse" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10"><path d="m0 0 10 5-10 5z" class="arrowMarkerPath" style="stroke-width:1;stroke-dasharray:1,0"/></marker><g class="root"><g class="edgePaths"><path id="L_root_comp_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="m527.956 49.584-30.098 6.236c-30.098 6.236-90.293 18.708-120.391 32.444C347.369 102 347.369 117 347.369 124.5v7.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_root_css_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="M598.344 62v70" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_root_js_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="m668.731 52.027 24.096 5.829c24.096 5.829 72.288 17.486 96.383 30.815C813.306 102 813.306 117 813.306 124.5v7.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_root_temp_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="m527.956 42.967-64.837 7.339c-64.838 7.339-194.513 22.016-259.35 36.855C138.931 102 138.931 117 138.931 124.5v7.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_root_files1_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="m668.731 44.794 50.554 7.034c50.555 7.035 151.663 21.103 202.217 31.638C972.056 94 972.056 101 972.056 104.5v3.5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_comp_comp_files_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="M347.369 190v70" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_css_css_files_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="M598.344 190v118" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_js_js_files_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="M813.306 190v130" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_temp_leg_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="M138.931 190v142" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/><path id="L_leg_leg_files_0" marker-end="url(#mermaid-mn7owkf1gp_flowchart-v2-pointEnd)" d="M138.931 390v118" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link"/></g><g class="edgeLabels"><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g><g class="edgeLabel"><foreignObject width="0" height="0" class="label"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="edgeLabel"/></div></foreignObject></g></g><g class="nodes"><g id="flowchart-root-0" class="node default"><path d="M-70.388-27H70.387v54H-70.388z" class="basic label-container" transform="translate(598.344 35)"/><g class="label" transform="translate(557.956 23)"><rect/><foreignObject width="80.775" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>xcl_default/</p></span></div></foreignObject></g></g><g id="flowchart-comp-1" class="node default"><path d="M-73.731-27H73.732v54H-73.731z" class="basic label-container" transform="translate(347.369 163)"/><g class="label" transform="translate(303.637 151)"><rect/><foreignObject width="87.463" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>component/</p></span></div></foreignObject></g></g><g id="flowchart-css-2" class="node default"><path d="M-43.606-27h87.212v54h-87.212z" class="basic label-container" transform="translate(598.344 163)"/><g class="label" transform="translate(584.737 151)"><rect/><foreignObject width="27.212" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>css/</p></span></div></foreignObject></g></g><g id="flowchart-js-3" class="node default"><path d="M-38.45-27h76.9v54h-76.9z" class="basic label-container" transform="translate(813.306 163)"/><g class="label" transform="translate(804.856 151)"><rect/><foreignObject width="16.9" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>js/</p></span></div></foreignObject></g></g><g id="flowchart-temp-4" class="node default"><path d="M-67.906-27H67.907v54H-67.906z" class="basic label-container" transform="translate(138.931 163)"/><g class="label" transform="translate(101.025 151)"><rect/><foreignObject width="75.813" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>templates/</p></span></div></foreignObject></g></g><g id="flowchart-leg-5" class="node default"><path d="M-55.587-27H55.588v54H-55.587z" class="basic label-container" transform="translate(138.931 363)"/><g class="label" transform="translate(113.344 351)"><rect/><foreignObject width="51.175" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>legacy/</p></span></div></foreignObject></g></g><g id="flowchart-files1-6" class="node default"><path d="M-70.3-51H70.3V51H-70.3z" class="basic label-container" transform="translate(972.056 163)"/><g class="label" transform="translate(931.756 127)"><rect/><foreignObject width="80.6" height="72"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>index.php<br/>style.css<br/>theme.html</p></span></div></foreignObject></g></g><g id="flowchart-comp_files-7" class="node default"><path d="M-102.85-99h205.7V99h-205.7z" class="basic label-container" transform="translate(347.369 363)"/><g class="label" transform="translate(274.519 279)"><rect/><foreignObject width="145.7" height="168"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>_inc_block_edit.html<br/>_inc_hero.html<br/>_inc_nav_theme.html<br/>_inc_top_center.html<br/>admin-panel.html<br/>block-left.html<br/>block-right.html</p></span></div></foreignObject></g></g><g id="flowchart-css_files-8" class="node default"><path d="M-98.125-51h196.25V51h-196.25z" class="basic label-container" transform="translate(598.344 363)"/><g class="label" transform="translate(530.219 327)"><rect/><foreignObject width="136.25" height="72"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>dropdown.css<br/>index.html<br/>jquery-ui.theme.css</p></span></div></foreignObject></g></g><g id="flowchart-js_files-9" class="node default"><path d="M-66.838-39H66.837v78H-66.838z" class="basic label-container" transform="translate(813.306 363)"/><g class="label" transform="translate(776.469 339)"><rect/><foreignObject width="73.675" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table-cell;white-space:nowrap;line-height:1.5;max-width:200px;text-align:center"><span class="nodeLabel"><p>index.html<br/>plugins.js</p></span></div></foreignObject></g></g><g id="flowchart-leg_files-10" class="node default"><path d="M-130.931-51h261.863V51h-261.863z" class="basic label-container" transform="translate(138.931 563)"/><g class="label" transform="translate(38 527)"><rect/><foreignObject width="201.863" height="72"><div xmlns="http://www.w3.org/1999/xhtml" style="display:table;white-space:break-spaces;line-height:1.5;max-width:200px;text-align:center;width:200px"><span class="nodeLabel"><p>index.html<br/>legacy_block_themes.html<br/>legacy_block_usermenu.html</p></span></div></foreignObject></g></g></g></g></svg>
+
+</div>
 
 !> Note ! There are a number of topics that aren’t written yet. That means you can contribute to making this guide better.
+
+
+
+
+
+
+## Theme Customization
+
+For safe customization, please use the following methods:
+
+- **General Theme Customization**: To customize a theme, first duplicate its folder. Apply all your modifications to this duplicated copy e.g., `mycustomtheme`
+
+- **Overriding the Admin Theme**: You can override the default admin theme by creating a custom theme in the themes folder. Name your custom admin theme folder with the prefix **admin_** e.g., `admin_mycustomtheme`
+
+
+### Templates Customization 
+
+You can clone the default templates using the following modules:
+
+- Admin > Control Panel > Render > Template Management
+- Admin > Control Panel > Components > Templates
+
+In order to customize modules templates or blocks templates (prefix block_)
+
+- You can copy the templates from each module into your personalized theme
+/themes/custom-theme/templates/modulename/
+
+- You can override only the templates you want to customize, and that,
+without making any changes to the default set.
+
+
+?> Custom themes can save time and effort, they are also a safer solution
+since you can rely on the automatic fallback to default settings.

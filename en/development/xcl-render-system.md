@@ -3,11 +3,12 @@
 
 `Legacy_RenderSystem`
 
-This document details the Legacy_RenderSystem component in XOOPSCube Legacy, which serves as the rendering engine that processes and displays content through templates. It provides compatibility with XOOPS 2 themes and templates while implementing modern rendering practices.
+This document details the `Legacy_RenderSystem` component in XOOPSCube Legacy, which serves as the rendering engine that processes and displays content through templates. It provides compatibility with XOOPS v2 themes and templates while implementing modern rendering practices.
 
 For information about the broader rendering architecture, see Rendering System. For theme-specific details, see Theme Architecture.
 
-## Overview
+
+## Render System and Template Engine
 
 The `Legacy_RenderSystem` is responsible for generating HTML output by processing templates through the Smarty template engine. It manages various render targets (main content, blocks, themes) and ensures proper variable assignment and template processing.
 
