@@ -27,6 +27,7 @@
 
 - Deployment
     - [Introduction](/en/deployment/ "XCL Software Update Service")
+    - [Key Terms](/en/deployment/update-key-terms.md "XCL Deployment, Delivery, Software Update Service")
     - [X-Update Manager](/en/deployment/update-manager.md "XCL GUI Update Manager - Software Update Service")
     - [Module Store](/en/deployment/update-module.md "XCL GUI Update Service - Modules")
     - [Theme Store](/en/deployment/update-theme.md "XCL GUI Update Service - Themes")
